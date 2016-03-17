@@ -23,6 +23,37 @@
   }
 }
 
+.navigation {
+  .navigation__button {
+    &.navigation__button--hamburger {
+
+    }
+    &.navigation__button--logo {
+      float: right;
+      padding: 0px 20px 0 0;
+      right: 20px;
+      top: 0px;
+      .navigation__button__image {
+        padding: 0px;
+      }
+    }
+    &.navigation__button--search {
+      position: relative;
+      float: right;
+      height: @navbar-height + @navbar-margin-bottom/2;
+      width: @navbar-height + @navbar-margin-bottom/2;
+      margin: 0px;
+    }
+    &.navigation__button--enza {
+      position: relative;
+      float: right;
+      height: @navbar-height + @navbar-margin-bottom/2;
+      margin: 0px;
+    }
+
+  }
+}
+
 .navbar-brand {
   float: right;
 }

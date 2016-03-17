@@ -6748,6 +6748,28 @@ button.close {
   right: 0;
   bottom: 0;
 }
+.navigation .navigation__button.navigation__button--logo {
+  float: right;
+  padding: 0px 20px 0 0;
+  right: 20px;
+  top: 0px;
+}
+.navigation .navigation__button.navigation__button--logo .navigation__button__image {
+  padding: 0px;
+}
+.navigation .navigation__button.navigation__button--search {
+  position: relative;
+  float: right;
+  height: 60px;
+  width: 60px;
+  margin: 0px;
+}
+.navigation .navigation__button.navigation__button--enza {
+  position: relative;
+  float: right;
+  height: 60px;
+  margin: 0px;
+}
 .navbar-brand {
   float: right;
 }
