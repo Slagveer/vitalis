@@ -42,7 +42,7 @@ module.exports = function (grunt) {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
-          '<%= yeoman.app %>/*.html',
+          '<%= yeoman.app %>/**/*.html',
           '{.tmp,<%= yeoman.app %>}/styles/{,*/}*.css',
           '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
@@ -93,6 +93,13 @@ module.exports = function (grunt) {
         }]
       },
       server: '.tmp'
+    },
+    bootlint: {
+      options: {
+        stoponerror: false,
+        relaxerror: []
+      },
+      files: ['<%= yeoman.app %>/index.html']
     },
     fileblocks: {
       app: {
