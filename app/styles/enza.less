@@ -24,31 +24,46 @@
 }
 
 .navigation {
+  .navbar-header {
+    &.flex {
+      display: flex;
+    }
+  }
   .navigation__button {
+    margin: 0px;
+    //float: left;
+    height: @navbar-height + @navbar-margin-bottom/2;
     &.navigation__button--hamburger {
-
+      height: @navbar-height + @navbar-margin-bottom/2;
+      width: @navbar-height + @navbar-margin-bottom/2;
+      order: 1;
     }
     &.navigation__button--logo {
-      float: right;
+      //float: right;
       padding: 0px 20px 0 0;
       right: 20px;
       top: 0px;
+      order: 4;
       .navigation__button__image {
         padding: 0px;
       }
     }
     &.navigation__button--search {
       position: relative;
-      float: right;
+      //float: right;
       height: @navbar-height + @navbar-margin-bottom/2;
       width: @navbar-height + @navbar-margin-bottom/2;
       margin: 0px;
+      order: 3;
     }
     &.navigation__button--enza {
       position: relative;
-      float: right;
       height: @navbar-height + @navbar-margin-bottom/2;
-      margin: 0px;
+      text-align: left;
+      background-color: @navigation-backgroundcolor;
+      color: @navigation-color;
+      order: 2;
+      width: 100%;
     }
 
   }

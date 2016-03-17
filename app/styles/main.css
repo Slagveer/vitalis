@@ -6748,27 +6748,42 @@ button.close {
   right: 0;
   bottom: 0;
 }
+.navigation .navbar-header.flex {
+  display: flex;
+}
+.navigation .navigation__button {
+  margin: 0px;
+  height: 60px;
+}
+.navigation .navigation__button.navigation__button--hamburger {
+  height: 60px;
+  width: 60px;
+  order: 1;
+}
 .navigation .navigation__button.navigation__button--logo {
-  float: right;
   padding: 0px 20px 0 0;
   right: 20px;
   top: 0px;
+  order: 4;
 }
 .navigation .navigation__button.navigation__button--logo .navigation__button__image {
   padding: 0px;
 }
 .navigation .navigation__button.navigation__button--search {
   position: relative;
-  float: right;
   height: 60px;
   width: 60px;
   margin: 0px;
+  order: 3;
 }
 .navigation .navigation__button.navigation__button--enza {
   position: relative;
-  float: right;
   height: 60px;
-  margin: 0px;
+  text-align: left;
+  background-color: #333333;
+  color: #ffffff;
+  order: 2;
+  width: 100%;
 }
 .navbar-brand {
   float: right;
