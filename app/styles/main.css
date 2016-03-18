@@ -6724,6 +6724,58 @@ button.close {
     display: none !important;
   }
 }
+.navigation {
+  border-radius: 0;
+  border-width: 0;
+}
+.navigation .navbar-header.flex {
+  display: flex;
+}
+.navigation .navigation__button {
+  border-radius: 0;
+  border-width: 0;
+  color: #fff;
+  font-size: 14px;
+  height: 60px;
+  margin: 0px;
+}
+.navigation .navigation__button.navigation__button--hamburger {
+  background-color: #000;
+  height: 60px;
+  order: 1;
+  width: 90px;
+}
+.navigation .navigation__button.navigation__button--logo {
+  flex-shrink: 0;
+  order: 4;
+  padding: 0px 20px 0 0;
+  right: 20px;
+  top: 0px;
+  width: 120px;
+}
+.navigation .navigation__button.navigation__button--logo .navigation__button__image {
+  padding: 0px;
+  position: absolute;
+  z-index: 1;
+}
+.navigation .navigation__button.navigation__button--search {
+  background-color: #fff;
+  color: #333;
+  height: 60px;
+  margin: 0px;
+  order: 3;
+  position: relative;
+  width: 90px;
+}
+.navigation .navigation__button.navigation__button--enza {
+  background-color: #333333;
+  color: #ffffff;
+  height: 60px;
+  order: 2;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
 .teaserbox {
   background: #000;
   color: #fff;
@@ -6747,49 +6799,6 @@ button.close {
   left: 0;
   right: 0;
   bottom: 0;
-}
-.navigation .navbar-header.flex {
-  display: flex;
-}
-.navigation .navigation__button {
-  margin: 0px;
-  height: 60px;
-}
-.navigation .navigation__button.navigation__button--hamburger {
-  height: 60px;
-  width: 60px;
-  order: 1;
-}
-.navigation .navigation__button.navigation__button--logo {
-  padding: 0px 20px 0 0;
-  right: 20px;
-  top: 0px;
-  order: 4;
-}
-.navigation .navigation__button.navigation__button--logo .navigation__button__image {
-  padding: 0px;
-}
-.navigation .navigation__button.navigation__button--search {
-  position: relative;
-  height: 60px;
-  width: 60px;
-  margin: 0px;
-  order: 3;
-}
-.navigation .navigation__button.navigation__button--enza {
-  position: relative;
-  height: 60px;
-  text-align: left;
-  background-color: #333333;
-  color: #ffffff;
-  order: 2;
-  width: 100%;
-}
-.navbar-brand {
-  float: right;
-}
-.navbar-toggle {
-  float: left;
 }
 #wrapper {
   padding-left: 0;

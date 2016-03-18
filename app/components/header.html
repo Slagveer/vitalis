@@ -28,55 +28,35 @@
       <a class="navbar-brand navigation__button navigation__button--logo" href="#">
         <img class="navigation__button__image" src="../images/logo.jpg" alt="">
       </a>
-      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--hamburger" data-toggle="dropdown" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="glyphicon glyphicon-menu-hamburger"></span>
       </button>
-      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--search" data-toggle="dropdown" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--search" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
         <span class="glyphicon glyphicon-search"></span>
       </button>
-      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--enza" data-toggle="dropdown" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--enza" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
         Enza Zaden
       </button>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- HEADER-NAVIGATION:MENUITEMS::START -->
+    <div class="navigation__menu collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
+        <li class="navigation__menu__item"><a href="#">News & Innovation</a></li>
+        <li><a href="#">Products & Services</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Careers & learning <span class="caret"></span></a>
+          <!-- HEADER-NAVIGATION:SUBMENUITEMS::START -->
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="#">Product Overview</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
           </ul>
+          <!-- HEADER-NAVIGATION:SUBMENUITEMS::END -->
         </li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
+    </div>
+    <!-- HEADER-NAVIGATION:MENUITEMS::END -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Link</a></li>
@@ -123,7 +103,10 @@
 <!-- build:js scripts/main.js -->
 <script src="../bower_components/jquery/jquery.js"></script>
 <!-- fileblock:js appScript -->
-<script src="../scripts/core.js"></script>
+<script src="/scripts/core.js"></script>
+<script src="/scripts/hello.js"></script>
+<script src="/scripts/main.js"></script>
+<script src="/scripts/teaserbox.js"></script>
 <!-- endfileblock -->
 <!-- endbuild -->
 
