@@ -6730,12 +6730,16 @@ button.close {
   border-width: 0;
 }
 .navigation .navigation__menu {
+  border-top: none;
   border-left: none;
   border-right: none;
   border-color: #555;
 }
 .navigation .navigation__menu .nav.navbar-nav {
   margin-top: 0px;
+}
+.navigation .navigation__menu .navigation__menu__form {
+  border-width: 0;
 }
 .navigation .navigation__menu .navigation__menu__item .dropdown-menu {
   padding: 0px;
@@ -6752,6 +6756,12 @@ button.close {
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--sub .navigation__menu__item__label {
   color: #555;
 }
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country.open {
+  border-bottom: 1px solid #555;
+}
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country.open .navigation__menu__item__label .arrow:before {
+  content: '\e114';
+}
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label {
   background-color: #333;
   border: 1px solid #555;
@@ -6759,12 +6769,16 @@ button.close {
   border-right: none;
   border-top: none;
   color: #fff;
+  padding-right: 20px;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .flag {
   margin-right: 5px;
 }
-.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .glyphicon {
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .arrow {
   float: right;
+}
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .arrow:before {
+  content: '\e080';
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .dropdown-menu {
   height: 60px;
@@ -6784,6 +6798,7 @@ button.close {
   width: 40%;
 }
 .navigation .navbar-header.flex {
+  background-color: #fff;
   display: flex;
 }
 .navigation .navigation__button {
@@ -6799,6 +6814,12 @@ button.close {
   height: 60px;
   order: 1;
   width: 90px;
+}
+.navigation .navigation__button.navigation__button--hamburger .menu:before {
+  content: "\e014";
+}
+.navigation .navigation__button.navigation__button--hamburger.collapsed .menu:before {
+  content: "\e236";
 }
 .navigation .navigation__button.navigation__button--logo {
   flex-shrink: 0;
@@ -6834,12 +6855,18 @@ button.close {
   text-align: left;
   width: 100%;
 }
-.navigation .flag.flag-gb {
+.navigation .flag {
   background: url(../images/flags.png) no-repeat;
   background-position: -176px -44px;
   display: inline-block;
   height: 11px;
   width: 16px;
+}
+.navigation .flag.flag-gb {
+  background-position: -176px -44px;
+}
+.navigation .flag.flag-nl {
+  background-position: -80px -110px;
 }
 .teaserbox {
   background: #000;

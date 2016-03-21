@@ -21,35 +21,56 @@
 </head>
 <body>
 
-<!-- HEADER::START -->
+<!-- NAVIGATION::START -->
 <nav class="navigation navbar navbar-default navbar-static-top js-navigation">
+  <!-- NAVIGATION:MENUBUTTONS::START -->
   <div class="container-fluid">
     <div class="navbar-header flex">
       <a class="navbar-brand navigation__button navigation__button--logo js-logo" href="#">
         <img class="navigation__button__image" src="../images/logo.jpg" alt="">
       </a>
-      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--hamburger js-menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="glyphicon glyphicon-menu-hamburger js-hamburger"></span>
+      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--hamburger js-menu"
+              data-toggle="collapse" data-target=".js-navigation-menu" aria-expanded="false">
+        <span class="menu glyphicon"></span>
       </button>
-      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--search" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-        <span class="glyphicon glyphicon-search"></span>
+      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--search js-search"
+              data-toggle="collapse" data-target=".js-navigation-search" aria-expanded="false">
+        <span class="glyphicon glyphicon-search js-search"></span>
       </button>
-      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--enza" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--enza"
+              data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
         Enza Zaden
       </button>
     </div>
-
-    <!-- HEADER-NAVIGATION:MENUITEMS::START -->
-    <div class="navigation__menu collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- NAVIGATION:MENUBUTTONS::END -->
+    <!-- NAVIGATION:MENUITEMS::START -->
+    <div class="navigation__menu collapse navbar-collapse js-navigation-menu">
       <ul class="nav navbar-nav">
         <li class="dropdown navigation__menu__item navigation__menu__item--country">
           <a href="#" class="dropdown-toggle navigation__menu__item__label"
              data-toggle="dropdown" role="button"
              aria-haspopup="true"
              aria-expanded="false">
-            <span class="flag flag-gb"></span>UNITED KINGDOM<span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="flag flag-nl"></span>NEDERLAND<span class="arrow glyphicon"></span>
           </a>
-          <!-- HEADER-NAVIGATION:SUBMENUITEMS::START -->
+          <!-- NAVIGATION:SUBMENUITEMS::START -->
+          <ul class="dropdown-menu">
+            <li class="navigation__menu__item navigation__menu__item--contact">
+              <a class="navigation__menu__item__label navigation__menu__item__label--email"
+                 title="INFO@ENZAZADEN.CO.UK" href="#">INFO@ENZAZADEN.NL</a>
+              <a class="navigation__menu__item__label navigation__menu__item__label--phone clearfix"
+                 title="0044 - 123456789" href="#">0031 - 123456789</a></li>
+          </ul>
+          <!-- NAVIGATION:SUBMENUITEMS::END -->
+        </li>
+        <li class="dropdown navigation__menu__item navigation__menu__item--country">
+          <a href="#" class="dropdown-toggle navigation__menu__item__label"
+             data-toggle="dropdown" role="button"
+             aria-haspopup="true"
+             aria-expanded="false">
+            <span class="flag flag-gb"></span>UNITED KINGDOM<span class="arrow glyphicon"></span>
+          </a>
+          <!-- NAVIGATION:SUBMENUITEMS::START -->
           <ul class="dropdown-menu">
             <li class="navigation__menu__item navigation__menu__item--contact">
               <a class="navigation__menu__item__label navigation__menu__item__label--email"
@@ -57,7 +78,7 @@
               <a class="navigation__menu__item__label navigation__menu__item__label--phone clearfix"
                  title="0044 - 123456789" href="#">0044 - 123456789</a></li>
           </ul>
-          <!-- HEADER-NAVIGATION:SUBMENUITEMS::END -->
+          <!-- NAVIGATION:SUBMENUITEMS::END -->
         </li>
         <li class="navigation__menu__item">
           <a class="navigation__menu__item__label" href="#">News & Innovation</a></li>
@@ -78,25 +99,22 @@
         </li>
       </ul>
     </div>
-    <!-- HEADER-NAVIGATION:MENUITEMS::END -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a class="navigation__menu__item__label" href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    <!-- NAVIGATION:MENUITEMS::END -->
+    <!-- NAVIGATION:MENUITEMS:SEARCH::START -->
+    <div class="navigation__menu collapse navbar-collapse js-navigation-search">
+      <form class="navigation__menu__form navbar-form navbar-left form-inline" role="search">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Zoeken">
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-default">Zoeken</button>
+          </span>
+        </div>
+      </form>
+    </div>
+    <!-- NAVIGATION:MENUITEMS:SEARCH::END -->
+  </div>
 </nav>
-<!-- HEADER::END -->
+<!-- NAVIGATION::END -->
 
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
@@ -126,9 +144,9 @@
 <script src="../bower_components/jquery/jquery.js"></script>
 <!-- fileblock:js appScript -->
 <script src="/scripts/core.js"></script>
-<script src="/scripts/header.js"></script>
 <script src="/scripts/hello.js"></script>
 <script src="/scripts/main.js"></script>
+<script src="/scripts/navigation.js"></script>
 <script src="/scripts/teaserbox.js"></script>
 <!-- endfileblock -->
 <!-- endbuild -->
