@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Crete+Round:400,400italic);
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -1071,7 +1072,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Crete Round', serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -5963,7 +5964,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6081,7 +6082,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6728,6 +6729,60 @@ button.close {
   border-radius: 0;
   border-width: 0;
 }
+.navigation .navigation__menu {
+  border-left: none;
+  border-right: none;
+  border-color: #555;
+}
+.navigation .navigation__menu .nav.navbar-nav {
+  margin-top: 0px;
+}
+.navigation .navigation__menu .navigation__menu__item .dropdown-menu {
+  padding: 0px;
+}
+.navigation .navigation__menu .navigation__menu__item .navigation__menu__item__label {
+  color: #555;
+  padding: 20px 0px 20px 15px;
+}
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--sub {
+  background-color: #ccc;
+  font-size: 12px;
+  padding-left: 30px;
+}
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--sub .navigation__menu__item__label {
+  color: #555;
+}
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label {
+  background-color: #333;
+  border: 1px solid #555;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  color: #fff;
+}
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .flag {
+  margin-right: 5px;
+}
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .glyphicon {
+  float: right;
+}
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .dropdown-menu {
+  height: 60px;
+}
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label.navigation__menu__item__label--email,
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label.navigation__menu__item__label--phone {
+  display: inline;
+  float: left;
+  font-size: 12px;
+  vertical-align: middle;
+  width: 60%;
+}
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label.navigation__menu__item__label--phone {
+  border-left: 1px solid #555;
+  clear: right;
+  text-align: center;
+  width: 40%;
+}
 .navigation .navbar-header.flex {
   display: flex;
 }
@@ -6758,6 +6813,9 @@ button.close {
   position: absolute;
   z-index: 1;
 }
+.navigation .navigation__button.navigation__button--logo.hide-logo {
+  opacity: 0;
+}
 .navigation .navigation__button.navigation__button--search {
   background-color: #fff;
   color: #333;
@@ -6775,6 +6833,13 @@ button.close {
   position: relative;
   text-align: left;
   width: 100%;
+}
+.navigation .flag.flag-gb {
+  background: url(../images/flags.png) no-repeat;
+  background-position: -176px -44px;
+  display: inline-block;
+  height: 11px;
+  width: 16px;
 }
 .teaserbox {
   background: #000;

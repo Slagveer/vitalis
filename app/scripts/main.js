@@ -6,6 +6,13 @@ $(document).ready(function() {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
   });
+
+  $( function() {
+    var x = $('body').navigation( {
+      propertyName: 'a custom value'
+    } );
+    console.log(x);
+  } );
 });
 }());
 

@@ -22,14 +22,14 @@
 <body>
 
 <!-- HEADER::START -->
-<nav class="navigation navbar navbar-default navbar-static-top">
+<nav class="navigation navbar navbar-default navbar-static-top js-navigation">
   <div class="container-fluid">
     <div class="navbar-header flex">
-      <a class="navbar-brand navigation__button navigation__button--logo" href="#">
+      <a class="navbar-brand navigation__button navigation__button--logo js-logo" href="#">
         <img class="navigation__button__image" src="../images/logo.jpg" alt="">
       </a>
-      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--hamburger js-menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="glyphicon glyphicon-menu-hamburger js-hamburger"></span>
       </button>
       <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--search" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
         <span class="glyphicon glyphicon-search"></span>
@@ -42,24 +42,46 @@
     <!-- HEADER-NAVIGATION:MENUITEMS::START -->
     <div class="navigation__menu collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="navigation__menu__item"><a href="#">News & Innovation</a></li>
-        <li><a href="#">Products & Services</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Careers & learning <span class="caret"></span></a>
+        <li class="dropdown navigation__menu__item navigation__menu__item--country">
+          <a href="#" class="dropdown-toggle navigation__menu__item__label"
+             data-toggle="dropdown" role="button"
+             aria-haspopup="true"
+             aria-expanded="false">
+            <span class="flag flag-gb"></span>UNITED KINGDOM<span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
           <!-- HEADER-NAVIGATION:SUBMENUITEMS::START -->
           <ul class="dropdown-menu">
-            <li><a href="#">Product Overview</a></li>
-            <li><a href="#">Menu Item</a></li>
-            <li><a href="#">Menu Item</a></li>
+            <li class="navigation__menu__item navigation__menu__item--contact">
+              <a class="navigation__menu__item__label navigation__menu__item__label--email"
+                 title="INFO@ENZAZADEN.CO.UK" href="#">INFO@ENZAZADEN.CO.UK</a>
+              <a class="navigation__menu__item__label navigation__menu__item__label--phone clearfix"
+                 title="0044 - 123456789" href="#">0044 - 123456789</a></li>
           </ul>
           <!-- HEADER-NAVIGATION:SUBMENUITEMS::END -->
+        </li>
+        <li class="navigation__menu__item">
+          <a class="navigation__menu__item__label" href="#">News & Innovation</a></li>
+        <li class="navigation__menu__item navigation__menu__item--sub">
+          <a class="navigation__menu__item__label" href="#">Products & Services</a>
+        </li>
+        <li class="navigation__menu__item navigation__menu__item--sub">
+          <a class="navigation__menu__item__label" href="#">Careers & learning</a>
+        </li>
+        <li class="navigation__menu__item">
+          <a class="navigation__menu__item__label" href="#">News & Innovation</a>
+        </li>
+        <li class="navigation__menu__item navigation__menu__item--sub">
+          <a class="navigation__menu__item__label" href="#">Products & Services</a>
+        </li>
+        <li class="navigation__menu__item navigation__menu__item--sub">
+          <a class="navigation__menu__item__label" href="#">Careers & learning</a>
         </li>
       </ul>
     </div>
     <!-- HEADER-NAVIGATION:MENUITEMS::END -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <li><a class="navigation__menu__item__label" href="#">Link</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -104,6 +126,7 @@
 <script src="../bower_components/jquery/jquery.js"></script>
 <!-- fileblock:js appScript -->
 <script src="/scripts/core.js"></script>
+<script src="/scripts/header.js"></script>
 <script src="/scripts/hello.js"></script>
 <script src="/scripts/main.js"></script>
 <script src="/scripts/teaserbox.js"></script>

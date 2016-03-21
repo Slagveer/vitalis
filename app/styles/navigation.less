@@ -1,8 +1,69 @@
 .navigation {
   border-radius: 0;
   border-width: 0;
-  .collapse {
-
+  .navigation__menu {
+    border-left: none;
+    border-right: none;
+    border-color: #555;
+    .nav {
+      &.navbar-nav {
+        margin-top: 0px;
+      }
+    }
+    .navigation__menu__item {
+      .dropdown-menu {
+        padding: 0px;
+      }
+      .navigation__menu__item__label {
+        color: #555;
+        padding: 20px 0px 20px 15px;
+      }
+      &.navigation__menu__item--sub {
+        background-color: #ccc;
+        font-size: 12px;
+        padding-left: 30px;
+        .navigation__menu__item__label {
+          color: #555;
+        }
+      }
+      &.navigation__menu__item--country {
+        .navigation__menu__item__label {
+          background-color: #333;
+          border: 1px solid #555;
+          border-left: none;
+          border-right: none;
+          border-top: none;
+          color: #fff;
+          .flag {
+            margin-right: 5px;
+          }
+          .glyphicon {
+            float: right;
+          }
+        }
+        .dropdown-menu {
+          height:3 * @navbar-margin-bottom;
+        }
+      }
+      &.navigation__menu__item--contact {
+        .navigation__menu__item__label {
+          &.navigation__menu__item__label--email,
+          &.navigation__menu__item__label--phone {
+            display: inline;
+            float: left;
+            font-size: 12px;
+            vertical-align: middle;
+            width: 60%;
+          }
+          &.navigation__menu__item__label--phone {
+            border-left: 1px solid #555;
+            clear: right;
+            text-align: center;
+            width: 40%;
+          }
+        }
+      }
+    }
   }
   .navbar-header {
     &.flex {
@@ -34,6 +95,9 @@
         position: absolute;
         z-index: 1;
       }
+      &.hide-logo {
+        opacity: 0;
+      }
     }
     &.navigation__button--search {
       background-color: #fff;
@@ -52,6 +116,15 @@
       position: relative;
       text-align: left;
       width: 100%;
+    }
+  }
+  .flag {
+    &.flag-gb {
+      background:url(../images/flags.png) no-repeat;
+      background-position: -176px -44px;
+      display: inline-block;
+      height: 11px;
+      width: 16px;
     }
   }
 }
