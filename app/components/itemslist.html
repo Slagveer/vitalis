@@ -21,106 +21,41 @@
 </head>
 <body>
 
-<!-- NAVIGATION::START -->
-<nav class="navigation navbar navbar-default navbar-static-top js-navigation">
-  <!-- NAVIGATION:MENUBUTTONS::START -->
-  <div class="container-fluid">
-    <div class="navbar-header flex">
-      <a class="navbar-brand navigation__button navigation__button--logo js-logo" href="#">
-        <img class="navigation__button__image" src="../images/logo.jpg" alt="">
-      </a>
-      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--hamburger js-menu"
-              data-toggle="collapse" data-target="#menu" aria-expanded="false">
-        <span class="menu glyphicon"></span>
-      </button>
-      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--search js-search"
-              data-toggle="collapse" data-target="#search" aria-expanded="false">
-        <span class="glyphicon glyphicon-search"></span>
-      </button>
-      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--enza"
-              data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-        Enza Zaden
-      </button>
+<!-- ITEMSLIST::START -->
+<div class="container itemslist">
+  <header>
+    <div class="row">
+      <div class="col-xs-12">
+        <h4 class="itemslist__header">Related Content</h4>
+      </div>
     </div>
-    <!-- NAVIGATION:MENUBUTTONS::END -->
-    <!-- NAVIGATION:MENUITEMS::START -->
-    <div class="navigation__menu collapse navbar-collapse js-navigation-menu" id="menu">
-      <ul class="nav navbar-nav">
-        <li class="dropdown navigation__menu__item navigation__menu__item--country">
-          <a href="#" class="dropdown-toggle navigation__menu__item__label"
-             data-toggle="dropdown" role="button"
-             aria-haspopup="true"
-             aria-expanded="false">
-            <span class="flag flag-nl"></span>NEDERLAND<span class="arrow glyphicon"></span>
-          </a>
-          <!-- NAVIGATION:SUBMENUITEMS::START -->
-          <ul class="dropdown-menu">
-            <li class="navigation__menu__item navigation__menu__item--contact">
-              <a class="navigation__menu__item__label navigation__menu__item__label--email"
-                 title="INFO@ENZAZADEN.CO.UK" href="#">INFO@ENZAZADEN.NL</a>
-              <a class="navigation__menu__item__label navigation__menu__item__label--phone clearfix"
-                 title="0044 - 123456789" href="#">0031 - 123456789</a></li>
-          </ul>
-          <!-- NAVIGATION:SUBMENUITEMS::END -->
-        </li>
-        <li class="dropdown navigation__menu__item navigation__menu__item--country">
-          <a href="#" class="dropdown-toggle navigation__menu__item__label"
-             data-toggle="dropdown" role="button"
-             aria-haspopup="true"
-             aria-expanded="false">
-            <span class="flag flag-gb"></span>UNITED KINGDOM<span class="arrow glyphicon"></span>
-          </a>
-          <!-- NAVIGATION:SUBMENUITEMS::START -->
-          <ul class="dropdown-menu">
-            <li class="navigation__menu__item navigation__menu__item--contact">
-              <a class="navigation__menu__item__label navigation__menu__item__label--email"
-                 title="INFO@ENZAZADEN.CO.UK" href="#">INFO@ENZAZADEN.CO.UK</a>
-              <a class="navigation__menu__item__label navigation__menu__item__label--phone clearfix"
-                 title="0044 - 123456789" href="#">0044 - 123456789</a></li>
-          </ul>
-          <!-- NAVIGATION:SUBMENUITEMS::END -->
-        </li>
-        <li class="navigation__menu__item">
-          <a class="navigation__menu__item__label" href="#">News & Innovation</a></li>
-        <li class="navigation__menu__item navigation__menu__item--sub">
-          <a class="navigation__menu__item__label" href="#">Products & Services</a>
-        </li>
-        <li class="navigation__menu__item navigation__menu__item--sub">
-          <a class="navigation__menu__item__label" href="#">Careers & learning</a>
-        </li>
-        <li class="navigation__menu__item">
-          <a class="navigation__menu__item__label" href="#">This is Enza Zaden</a>
-        </li>
-        <li class="navigation__menu__item navigation__menu__item--sub">
-          <a class="navigation__menu__item__label" href="#">Company profile</a>
-        </li>
-        <li class="navigation__menu__item navigation__menu__item--sub">
-          <a class="navigation__menu__item__label" href="#">History</a>
-        </li>
-        <li class="navigation__menu__item navigation__menu__item--sub">
-          <a class="navigation__menu__item__label" href="#">Enza worldwide</a>
-        </li>
-        <li class="navigation__menu__item navigation__menu__item--sub">
-          <a class="navigation__menu__item__label" href="#">Contact</a>
-        </li>
-      </ul>
+  </header>
+  <article class="itemslist__item">
+    <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+        <img class="itemslist__item__image" src="http://dummyimage.com/1000x800/ff0000/fff" alt="">
+      </div>
+      <div class="col-xs-6">
+          <header>
+            <a class="itemslist__item__title clearfix" href="#" title="">
+              <span class="label">NEWS</span>
+            </a>
+          </header>
+          <p class="itemslist__item__description">
+            Improving America's support of Agriculture
+          </p>
+      </div>
+      <div class="col-xs-2" style="display:table-cell;vertical-align: bottom;float: none;">
+        <a href="#" title="" class="itemslist__item__link">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
     </div>
-    <!-- NAVIGATION:MENUITEMS::END -->
-    <!-- NAVIGATION:MENUITEMS:SEARCH::START -->
-    <div class="navigation__menu collapse navbar-collapse js-navigation-search" id="search">
-      <form class="navigation__menu__form navbar-form navbar-left form-inline" role="search">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Zoeken">
-          <span class="input-group-btn">
-            <button type="submit" class="btn btn-default">Zoeken</button>
-          </span>
-        </div>
-      </form>
     </div>
-    <!-- NAVIGATION:MENUITEMS:SEARCH::END -->
-  </div>
-</nav>
-<!-- NAVIGATION::END -->
+  </article>
+</div>
+<!-- ITEMSLIST::END -->
 
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade

@@ -104,7 +104,9 @@ module.exports = function (grunt) {
     fileblocks: {
       app: {
         files: [{
-          src: ['<%= yeoman.app %>/index.html','<%= yeoman.app %>/components/navigation.html'],
+          src: ['<%= yeoman.app %>/index.html'
+            ,'<%= yeoman.app %>/components/navigation.html'
+            ,'<%= yeoman.app %>/components/itemslist.html'],
           options: {
             removeFiles: true,
             templatesFn: {

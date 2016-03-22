@@ -1,7 +1,9 @@
+'use strict';
+
 var ENZA = ENZA || {};
 
-ENZA.namespace = function (ns_string) {
-  var parts = ns_string.split('.'),
+ENZA.namespace = function (nsString) {
+  var parts = nsString.split('.'),
     parent = ENZA,
     i;
   // strip redundant leading global

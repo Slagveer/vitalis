@@ -1,8 +1,8 @@
 ;( function( $, window, document, undefined ) {
 
-  "use strict";
+  'use strict';
 
-  var pluginName = "navigation",
+  var pluginName = 'navigation',
     defaults = {
       animation: true
     },
@@ -92,8 +92,8 @@
 
   $.fn[ pluginName ] = function( options ) {
     return this.each( function() {
-      if ( !$.data( this, "plugin_" + pluginName ) ) {
-        $.data( this, "plugin_" +
+      if ( !$.data( this, 'plugin_' + pluginName ) ) {
+        $.data( this, 'plugin_' +
           pluginName, new Plugin( this, options ) );
       }
     } );
