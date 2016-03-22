@@ -4,11 +4,13 @@
 
   var pluginName = "navigation",
     defaults = {
-      propertyName: "value"
+      animation: true
     },
     $menu,
     $search,
     $navigation,
+    $navigationMenu,
+    $navigationSearch,
     $logo;
 
   function Plugin ( element, options ) {
@@ -25,60 +27,65 @@
       $logo = $(this.element).find('.js-logo');
       $search = $(this.element).find('.js-search');
       $navigation = $(this.element).find('.js-navigation');
+      $navigationMenu = $(this.element).find('.js-navigation-menu');
+      $navigationSearch = $(this.element).find('.js-navigation-search');
+
+      $navigationMenu.on('show.bs.collapse hide.bs.collapse', disableButtons);
+      $navigationMenu.on('shown.bs.collapse hidden.bs.collapse',enableButtons);
+      $navigationSearch.on('show.bs.collapse hide.bs.collapse', disableButtons);
+      $navigationSearch.on('shown.bs.collapse hidden.bs.collapse',enableButtons);
 
       $menu.data('active', false);
       $menu.on('click', function onClick(evt) {
-        collapseAllAndOpen();
-        $menu.data('active', !$menu.data('active')); console.log($search.data('active'));
-        checkLogo();
+        collapseAll();
+        $menu.data('active', !$menu.data('active'));
+        if($menu.data('active')) {
+          $navigationMenu.collapse('show');
+        }
+        setLogo(evt);
       });
       $search.data('active', false);
       $search.on('click', function onClick(evt) {
-        collapseAllAndOpen();
-        $search.data('active', !$search.data('active')); console.log($search.data('active'));
-        checkLogo();
-        evt.stopPropagation();
+        collapseAll();
+        $search.data('active', !$search.data('active'));
+        if($search.data('active')) {
+          $navigationSearch.collapse('show');
+        }
+        setLogo(evt);
       });
 
-      function collapseAllAndOpen() {
-        var promises = [];
-        // Disable all the buttons in the navigation
-        $search.attr('disabled', 'disabled');
-        $menu.attr('disabled', 'disabled');
+      function collapseAll() {
         $('.navigation button[data-toggle="collapse"]').each(function(){
           var objectID = $(this).data('target');
-          var deferred  = $.Deferred();
 
           // Collapse all the open navigation menu's first
           if($(objectID).hasClass('in') === true) {
-
-            $(objectID).on('hidden.bs.collapse', function() {
-              $(objectID).off('hidden.bs.collapse');
-              deferred.resolve();
-              promises.push(deferred);
-            });
             $(objectID).collapse('hide');
           }
-
         });
-        if(promises.length === 0) {
-          $menu.removeAttr('disabled');
-          $search.removeAttr('disabled');
-        }
-        // Wait till all the menu's are collapsed
-        $.when.apply(null, promises)
-          .done(function() {
-            $search.removeAttr('disabled');
-            $menu.removeAttr('disabled');
-          });
       }
 
-      function checkLogo() {
+      function setLogo(evt) {
+        if(/search/i.test($(evt.target)[0].className)) {
+          $menu.data('active', false);
+        } else {
+          $search.data('active', false);
+        }
         if($menu.data('active') === true || $search.data('active') === true) {
           $logo.addClass('hide-logo');
         } else {
           $logo.removeClass('hide-logo');
         }
+      }
+
+      function disableButtons() {
+        $search.attr('disabled', 'disabled');
+        $menu.attr('disabled', 'disabled');
+      }
+
+      function enableButtons() {
+        $search.removeAttr('disabled');
+        $menu.removeAttr('disabled');
       }
     }
   } );
