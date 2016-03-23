@@ -6893,11 +6893,6 @@ button.close {
   right: 0;
   bottom: 0;
 }
-.itemslist .pull-bottom {
-  display: inline-block;
-  vertical-align: bottom;
-  float: none;
-}
 .itemslist .itemslist__header {
   line-height: 100px;
   font-family: 'Crete Round', serif;
@@ -6909,7 +6904,7 @@ button.close {
   display: flex;
   margin-top: 15px;
   padding: 15px 0px;
-  max-height: 200px;
+  height: 200px;
 }
 .itemslist .itemslist__item.first {
   margin-top: 0px;
@@ -6935,7 +6930,7 @@ button.close {
   text-align: left;
 }
 .itemslist .itemslist__item .itemslist__item__content .itemslist__item__title .label-square {
-  color: #555555;
+  color: #515151;
   font-size: 12.1pt;
   font-weight: bold;
   line-height: 13.2pt;
@@ -6972,6 +6967,132 @@ button.close {
   width: 24.2pt;
 }
 .itemslist .itemslist__item .itemslist__item__link svg path {
+  fill: #aac426;
+}
+.block-with-text {
+  display: block;
+  /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-width: 400px;
+  height: 72.8px;
+  /* Fallback for non-webkit */
+  margin: 0 auto;
+  font-size: 26px;
+  line-height: 1.4;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.varietylist .varietylist__item {
+  align-content: stretch;
+  border: 1px solid #cccccc;
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 15px;
+  padding: 15px 0px;
+  height: 415px;
+}
+.varietylist .varietylist__item:hover {
+  text-decoration: none;
+}
+.varietylist .varietylist__item .varietylist__item__top {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.varietylist .varietylist__item .varietylist__item__top .varietylist__item__image {
+  border: 1px solid #cccccc;
+  float: left;
+  height: 180px;
+  max-width: 200px;
+  margin-left: 10px;
+  width: 100%;
+}
+.varietylist .varietylist__item .varietylist__item__top .varietylist__item__content {
+  flex-grow: 5;
+  height: 180px;
+  padding-left: 15px;
+  position: relative;
+}
+.varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__title {
+  clear: right;
+  color: #aac426;
+  display: inline;
+  float: left;
+  font-family: 'Crete Round', serif;
+  line-height: 13.2pt;
+  padding: 4px;
+  text-align: left;
+}
+.varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__title .label-square {
+  font-size: 12.1pt;
+  font-weight: bold;
+  line-height: 13.2pt;
+  padding: 0px;
+}
+.varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list {
+  bottom: 0px;
+  clear: left;
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12.1pt;
+  line-height: 13.2pt;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  margin-top: 0px;
+  position: absolute;
+}
+.varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list .varietylist__item__list__title,
+.varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list .varietylist__item__list__description {
+  float: left;
+  margin-left: 50px;
+}
+.varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list .varietylist__item__list__title {
+  clear: left;
+  margin-left: 0px;
+}
+.varietylist .varietylist__item .varietylist__item__bottom {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 15px;
+}
+.varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__tags {
+  clear: left;
+  color: #aac426;
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12.1pt;
+  font-weight: bold;
+  line-height: 15.84pt;
+  margin-left: 10px;
+  position: relative;
+  top: 0px;
+  width: 90%;
+}
+.varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__tags .badge.badge--variety {
+  border-radius: 0px;
+  background-color: #f0f6d2;
+  color: #aac426;
+  margin: 2px 2px 2px 0;
+}
+.varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__link {
+  align-self: flex-end;
+  border: 1px solid #aac426;
+  border-radius: 50%;
+  bottom: 10px;
+  color: #aac426;
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 12.1pt;
+  height: 24.2pt;
+  line-height: 23.76pt;
+  position: absolute;
+  right: 25px;
+  text-align: center;
+  vertical-align: middle;
+  width: 24.2pt;
+}
+.varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__link svg path {
   fill: #aac426;
 }
 .block-with-text {

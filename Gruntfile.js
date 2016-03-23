@@ -106,6 +106,7 @@ module.exports = function (grunt) {
         files: [{
           src: ['<%= yeoman.app %>/index.html'
             ,'<%= yeoman.app %>/components/navigation.html'
+            ,'<%= yeoman.app %>/components/varietylist.html'
             ,'<%= yeoman.app %>/components/itemslist.html'],
           options: {
             removeFiles: true,
