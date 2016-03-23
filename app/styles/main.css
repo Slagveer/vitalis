@@ -6926,6 +6926,7 @@ button.close {
   display: inline;
   float: left;
   line-height: 13.2pt;
+  margin-bottom: 0px;
   padding: 4px;
   text-align: left;
 }
