@@ -23,10 +23,11 @@
       margin-top: 0px;
     }
     .itemslist__item__image {
+      border: 1px solid @grey;
       float:left;
       height: 170px;
       max-width: 170px;
-      padding-left: 10px;
+      margin-left: 10px;
       width: 100%;
     }
     .itemslist__item__content {
@@ -37,7 +38,7 @@
         display: inline;
         float: left;
         line-height: @label-line-height;
-        padding:2px;
+        padding: 4px;
         text-align: left;
         .label-square {
           color: @itemlist-color;
@@ -58,7 +59,7 @@
         font-family: @font-family-open-sanse;
         font-size: @label;
         font-weight: bold;
-        line-height: @label-line-height;
+        line-height: 1.2 * @label-line-height;
       }
     }
     .itemslist__item__link {
@@ -77,6 +78,11 @@
       text-align: center;
       vertical-align: middle;
       width: 2 * @label;
+      svg {
+        path {
+          fill: @green;
+        }
+      }
     }
   }
 }
