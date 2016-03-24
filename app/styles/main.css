@@ -6729,12 +6729,18 @@ button.close {
 .navigation {
   border-radius: 0;
   border-width: 0;
+  font-family: 'Crete Round', serif;
+  font-size: 16.5pt;
+  line-height: 38pt;
 }
 .navigation .navigation__menu {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-color: #555;
+  border-bottom: none;
+}
+.navigation .navigation__menu.in {
+  border-top: 1px solid #515151;
 }
 .navigation .navigation__menu .nav.navbar-nav {
   margin-top: 0px;
@@ -6746,26 +6752,33 @@ button.close {
   padding: 0px;
 }
 .navigation .navigation__menu .navigation__menu__item .navigation__menu__item__label {
-  color: #555;
-  padding: 20px 0px 20px 15px;
+  color: #515151;
+  padding: 20px 0px 20px 25px;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--sub {
-  background-color: #ccc;
-  font-size: 12px;
+  background-color: #ededed;
+  border-bottom: 1px solid #cccccc;
+  font-size: 10.725pt;
   padding-left: 30px;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--sub .navigation__menu__item__label {
-  color: #555;
+  color: #515151;
+}
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10.725pt;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country.open {
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #515151;
 }
-.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country.open .navigation__menu__item__label .arrow:before {
-  content: '\e114';
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country.open .navigation__menu__item__label .arrow {
+  right: -11px;
+  top: -32px;
+  transform: rotate(90deg);
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label {
-  background-color: #333;
-  border: 1px solid #555;
+  background-color: #222222;
+  border: 1px solid #515151;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -6776,27 +6789,38 @@ button.close {
   margin-right: 5px;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .arrow {
+  display: inline-block;
+  height: 50px;
+  width: 60px;
   float: right;
-}
-.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .arrow:before {
-  content: '\e080';
+  background-image: url('../images/icon-arrow3.svg');
+  background-position: center;
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  transform: rotate(0deg);
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .dropdown-menu {
-  height: 69pt;
+  height: 52pt;
+}
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10.725pt;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label.navigation__menu__item__label--email,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label.navigation__menu__item__label--phone {
   display: inline;
   float: left;
-  font-size: 12px;
   vertical-align: middle;
-  width: 60%;
+  width: 50%;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label.navigation__menu__item__label--phone {
-  border-left: 1px solid #555;
+  border-left: 1px solid #515151;
   clear: right;
   text-align: center;
-  width: 40%;
+  width: 50%;
+}
+.navigation .navbar-header {
+  border-bottom: 0px solid #515151;
 }
 .navigation .navbar-header.flex {
   background-color: #fff;
@@ -6806,7 +6830,7 @@ button.close {
   border-radius: 0;
   border-width: 0;
   color: #fff;
-  font-size: 14px;
+  font-size: 16.5pt;
   height: 65.33333333px;
   margin: 0px;
 }
@@ -6848,7 +6872,7 @@ button.close {
   width: 98px;
 }
 .navigation .navigation__button.navigation__button--enza {
-  background-color: #333333;
+  background-color: #222222;
   color: #ffffff;
   height: 65.33333333px;
   order: 2;
@@ -6914,7 +6938,7 @@ button.close {
   float: left;
   height: 170px;
   max-width: 170px;
-  margin-left: 10px;
+  margin-left: 15px;
   width: 100%;
 }
 .itemslist .itemslist__item .itemslist__item__content {

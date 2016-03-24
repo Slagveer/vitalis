@@ -1,11 +1,17 @@
 .navigation {
   border-radius: 0;
   border-width: 0;
+  font-family: @font-family-crete;
+  font-size: @body;
+  line-height: @body-line-height;
   .navigation__menu {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-color: #555;
+    border-bottom: none;
+    &.in {
+      border-top: 1px solid @dark-grey;
+    }
     .nav {
       &.navbar-nav {
         margin-top: 0px;
@@ -19,31 +25,37 @@
         padding: 0px;
       }
       .navigation__menu__item__label {
-        color: #555;
-        padding: 20px 0px 20px 15px;
+        color: @dark-grey;
+        padding: 20px 0px 20px 25px;
       }
       &.navigation__menu__item--sub {
-        background-color: #ccc;
-        font-size: 12px;
+        background-color: @light-grey;
+        border-bottom: 1px solid @grey;
+        font-size: .65 * @body;
         padding-left: 30px;
         .navigation__menu__item__label {
-          color: #555;
+          color: @dark-grey;
         }
       }
       &.navigation__menu__item--country {
+        font-family: @font-family-open-sanse;
+        font-size: .65 * @body;
         &.open {
-          border-bottom: 1px solid #555;
+          border-bottom: 1px solid @dark-grey;
           .navigation__menu__item__label {
             .arrow {
+              right: -11px;
+              top: -32px;
+              transform: rotate(90deg);
               &:before {
-                content: '\e114';
+                //content: '\e114';
               }
             }
           }
         }
         .navigation__menu__item__label {
-          background-color: #333;
-          border: 1px solid #555;
+          background-color: @navigation-backgroundcolor;
+          border: 1px solid @dark-grey;
           border-left: none;
           border-right: none;
           border-top: none;
@@ -53,37 +65,48 @@
             margin-right: 5px;
           }
           .arrow {
+            display: inline-block;
+            height: 50px;
+            width: 60px;
             float: right;
+            background-image: url('../images/icon-arrow3.svg');
+            background-position:center;
+            background-size: 150px 150px;
+            background-repeat: no-repeat;
+            transform: rotate(0deg);
             &:before {
-              content: '\e080';
+              //content: '\e080';
             }
           }
         }
         .dropdown-menu {
-          height:3 * @navbar-margin-bottom;
+          height: 52pt;
+          //height:2 * @navbar-margin-bottom;
         }
       }
       &.navigation__menu__item--contact {
+        font-family: @font-family-open-sanse;
+        font-size: .65 * @body;
         .navigation__menu__item__label {
           &.navigation__menu__item__label--email,
           &.navigation__menu__item__label--phone {
             display: inline;
             float: left;
-            font-size: 12px;
             vertical-align: middle;
-            width: 60%;
+            width: 50%;
           }
           &.navigation__menu__item__label--phone {
-            border-left: 1px solid #555;
+            border-left: 1px solid @dark-grey;
             clear: right;
             text-align: center;
-            width: 40%;
+            width: 50%;
           }
         }
       }
     }
   }
   .navbar-header {
+    border-bottom: 0px solid @dark-grey;
     &.flex {
       background-color: #fff;
       display: flex;
