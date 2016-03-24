@@ -10,7 +10,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Enza zaden - Varietylist</title>
+  <title>Enza zaden - Filter</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -21,41 +21,19 @@
 </head>
 <body>
 
-<!-- VARIETYLIST::START -->
-<div class="container varietylist">
-  <div class="container">
+<!-- FILTER::START -->
+<div class="container filter">
+  <header>
     <div class="row">
-      <div class="col-xs-12">
-        <article>
-          <a class="varietylist__item" href="#" alt="">
-            <div class="varietylist__item__top">
-            <img class="varietylist__item__image" src="http://dummyimage.com/1000x800/ff0000/fff" title="">
-            <div class="varietylist__item__content">
-              <header>
-                <span class="varietylist__item__title" href="#" title="">
-                  Etude
-                </span>
-              </header>
-              <dl class="varietylist__item__list">
-                <dt class="varietylist__item__list__title">Crop</dt>
-                <dd class="varietylist__item__list__description">Tomato</dd>
-                <dt class="varietylist__item__list__title">Type</dt>
-                <dd class="varietylist__item__list__description">Cocktail</dd>
-              </dl>
-            </div>
-            </div>
-            <div class="varietylist__item__bottom">
-              <div class="varietylist__item__tags">
-                <span class="badge badge--variety">Rem ipsum dolor</span>
-                <span class="badge badge--variety">sit amet, consectetur</span>
-                <span class="badge badge--variety">adipiscing elit</span>
-                <span class="badge badge--variety">Quisque scelerisque</span>
-                <span class="badge badge--variety">vestibulum porttitor.</span>
-                <span class="badge badge--variety">Pellentesque magna magna</span>
-              </div>
-              <div class="varietylist__item__link">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+      <div class="col-xs-8 col-xs-offset-2">
+        <div class="filter__header">
+          <a href="#" title="" class="btn btn-default filter__header__button">
+            <span class="filter__header__button__text">
+              Show 331 varieties
+            </span>
+            <div class="filter__header__button__arrow">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
                 <g>
                   <g>
                     <g>
@@ -67,15 +45,40 @@
                   </g>
                 </g>
               </svg>
-              </div>
             </div>
           </a>
-        </article>
+        </div>
       </div>
     </div>
-  </div>
+  </header>
+  <section class="filter__selected">
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2">
+        <div class="filter__selected__text">
+          Filters
+        </div>
+        <a class="btn btn-default filter__selected__button" aria-label="Clear all">Clear all</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2">
+        <ul class="filter__selected__options">
+          <li>
+            <a href="" title="" class="btn btn-default filter__selected__options_item">
+              Beef Tomato
+            </a>
+          </li>
+          <li>
+            <a href="" title="" class="btn btn-default filter__selected__options_item">
+              Filtranto
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </div>
-<!-- VARIETYLIST::END -->
+<!-- FILTER::END -->
 
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade

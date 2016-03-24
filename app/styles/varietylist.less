@@ -6,12 +6,13 @@
     align-content: stretch;
     border: 1px solid @grey;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     margin-top: 15px;
-    padding: 15px 0px;
+    padding: 25px;
     height: 415px;
     &:hover {
       text-decoration: none;
+      background-color: lighten(@grey, 10%);
     }
     .varietylist__item__top {
       display: flex;
@@ -21,19 +22,20 @@
         float:left;
         height: 180px;
         max-width: 200px;
-        margin-left: 10px;
         width: 100%;
       }
       .varietylist__item__content {
         flex-grow: 5;
         height: 180px;
-        padding-left: 15px;position: relative;
+        padding-left: 15px;
+        position: relative;
         .varietylist__item__title {
           clear: right;
           color: @varietylist-color;
           display: inline;
           float: left;
           font-family: @font-family-crete;
+          font-size: 28px;
           line-height: @label-line-height;
           padding: 4px;
           text-align: left;
@@ -45,16 +47,13 @@
           }
         }
         .varietylist__item__list {
-          bottom: 0px;
           clear: left;
           float: left;
           font-family: @font-family-open-sanse;
-          font-size: @label;
+          font-size: 15pt;//@label;
           line-height: @label-line-height;
-          margin-bottom: 0px;
+          margin-top: 15px;
           margin-left: 5px;
-          margin-top: 0px;
-          position: absolute;
           .varietylist__item__list__title,
           .varietylist__item__list__description {
             float: left;
@@ -79,7 +78,6 @@
         font-size: @label;
         font-weight: bold;
         line-height: 1.2 * @label-line-height;
-        margin-left: 10px;
         position: relative;
         top: 0px;
         width: 90%;
@@ -88,26 +86,25 @@
             border-radius: 0px;
             background-color: lighten(@green, 43.5%);;
             color: @green;
-            margin: 2px 2px 2px 0;
+            margin: 3px 3px 3px 0;
+            padding: 6px;
           }
         }
       }
       .varietylist__item__link {
         align-self: flex-end;
-        border: 1px solid @green;
-        border-radius: 50%;
-        bottom: 10px;
+        bottom: 25px;
         color: @green;
         display: inline-block;
         flex-shrink: 0;
         font-size: @label;
-        height: 2 * @label;
+        height: 2.5 * @label;
         line-height: 1.8 * @label-line-height;
         position: absolute;
-        right: 25px;
+        right: 40px;
         text-align: center;
         vertical-align: middle;
-        width: 2 * @label;
+        width: 2.5 * @label;
         svg {
           path {
             fill: @green;
