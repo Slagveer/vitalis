@@ -1,0 +1,56 @@
+// Checkbox
+.enza-checkbox {
+  display: inline-block;
+  line-height: 1.25 * @label-line-height;
+  position: relative;
+  width: 40px;
+  .enza-checkbox__label {
+    background: #fff;
+    border:1px solid @grey;
+    cursor: pointer;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 25px;
+    .label {
+      color: @black;
+      font-size: @body;
+      font-weight: normal;
+      margin-left: 25px;
+    }
+    &:after {
+      background: transparent;
+      border: 2px solid @white;
+      border-right: none;
+      border-top: none;
+      content: '';
+      height: 10px;
+      left: 4px;
+      opacity: 1;
+      position: absolute;
+      top: 4px;
+      transform: rotate(-45deg);
+      width: 16px;
+    }
+    &:hover {
+      &::after {
+        opacity: 0.5;
+      }
+    }
+  }
+  .enza-checkbox__element {
+    &:checked {
+      &+ .enza-checkbox__label {
+        border:1px solid @green;
+        .label {
+          font-weight: bold;
+        }
+        &:after {
+          opacity: 1;
+          border-color: @green;
+        }
+      }
+    }
+  }
+}

@@ -7105,6 +7105,55 @@ button.close {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.enza-checkbox {
+  display: inline-block;
+  line-height: 16.5pt;
+  position: relative;
+  width: 40px;
+}
+.enza-checkbox .enza-checkbox__label {
+  background: #fff;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+  height: 25px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+.enza-checkbox .enza-checkbox__label .label {
+  color: #000000;
+  font-size: 16.5pt;
+  font-weight: normal;
+  margin-left: 25px;
+}
+.enza-checkbox .enza-checkbox__label:after {
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-right: none;
+  border-top: none;
+  content: '';
+  height: 10px;
+  left: 4px;
+  opacity: 1;
+  position: absolute;
+  top: 4px;
+  transform: rotate(-45deg);
+  width: 16px;
+}
+.enza-checkbox .enza-checkbox__label:hover::after {
+  opacity: 0.5;
+}
+.enza-checkbox .enza-checkbox__element:checked + .enza-checkbox__label {
+  border: 1px solid #aac426;
+}
+.enza-checkbox .enza-checkbox__element:checked + .enza-checkbox__label .label {
+  font-weight: bold;
+}
+.enza-checkbox .enza-checkbox__element:checked + .enza-checkbox__label:after {
+  opacity: 1;
+  border-color: #aac426;
+}
 .filter .filter__header {
   width: 100%;
   margin: 50px 0;
@@ -7116,9 +7165,14 @@ button.close {
   position: relative;
   width: 100%;
 }
+.filter .filter__header .filter__header__button:hover {
+  background-color: #ffffff;
+  border-color: #aac426;
+  color: #aac426;
+}
 .filter .filter__header .filter__header__button .filter__header__button__text {
   float: left;
-  font-size: 12.1pt;
+  font-size: 18.15pt;
   font-weight: bold;
   line-height: 70px;
   margin-left: 20px;
@@ -7134,22 +7188,99 @@ button.close {
 .filter .filter__header .filter__header__button .filter__header__button__arrow svg path {
   fill: #aac426;
 }
-.filter .filter__selected {
+.filter .filter__selected,
+.filter .filter__select {
   border-top: 1px solid #cccccc;
+  padding-bottom: 20px;
   padding-top: 10px;
 }
-.filter .filter__selected .filter__selected__text {
+.filter .filter__selected .filter__selected__text,
+.filter .filter__select .filter__selected__text,
+.filter .filter__selected .filter__select__text,
+.filter .filter__select .filter__select__text {
   clear: both;
   float: left;
   font-family: 'Crete Round', serif;
+  font-size: 23.1pt;
   margin-top: 40px;
   width: 50%;
 }
-.filter .filter__selected .filter__selected__button {
+.filter .filter__selected .filter__select__text,
+.filter .filter__select .filter__select__text {
+  width: 100%;
+}
+.filter .filter__selected .filter__selected__button,
+.filter .filter__select .filter__selected__button,
+.filter .filter__selected .filter__select__button,
+.filter .filter__select .filter__select__button {
   border-radius: 40px;
   font-size: 12.1pt;
+  font-weight: bold;
   float: right;
   margin-top: 40px;
+}
+.filter .filter__selected .filter__selected__button:hover,
+.filter .filter__select .filter__selected__button:hover,
+.filter .filter__selected .filter__select__button:hover,
+.filter .filter__select .filter__select__button:hover {
+  background-color: #ffffff;
+  border-color: #aac426;
+  color: #aac426;
+}
+.filter .filter__selected .filter__selected__button,
+.filter .filter__select .filter__selected__button {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.filter .filter__selected .filter__select__button,
+.filter .filter__select .filter__select__button {
+  float: left;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+.filter .filter__selected .filter__selected__options,
+.filter .filter__select .filter__selected__options,
+.filter .filter__selected .filter__select__options,
+.filter .filter__select .filter__select__options {
+  list-style: none;
+  margin-top: 40px;
+  padding-left: 0px;
+}
+.filter .filter__selected .filter__selected__options .filter__selected__options__item,
+.filter .filter__select .filter__selected__options .filter__selected__options__item,
+.filter .filter__selected .filter__select__options .filter__selected__options__item,
+.filter .filter__select .filter__select__options .filter__selected__options__item {
+  background-color: #f0f6d2;
+  border: 1px solid #aac426;
+  color: #aac426;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: left;
+  width: 100%;
+}
+.filter .filter__selected .filter__selected__options .filter__selected__options__item .filter__selected__options__item__icon,
+.filter .filter__select .filter__selected__options .filter__selected__options__item .filter__selected__options__item__icon,
+.filter .filter__selected .filter__select__options .filter__selected__options__item .filter__selected__options__item__icon,
+.filter .filter__select .filter__select__options .filter__selected__options__item .filter__selected__options__item__icon {
+  display: inline-block;
+  padding-right: 10px;
+}
+.filter .filter__selected .filter__selected__options .filter__selected__options__item .filter__selected__options__item__icon svg,
+.filter .filter__select .filter__selected__options .filter__selected__options__item .filter__selected__options__item__icon svg,
+.filter .filter__selected .filter__select__options .filter__selected__options__item .filter__selected__options__item__icon svg,
+.filter .filter__select .filter__select__options .filter__selected__options__item .filter__selected__options__item__icon svg {
+  width: 15px;
+  height: 15px;
+}
+.filter .filter__selected .filter__selected__options .filter__selected__options__item .filter__selected__options__item__icon svg path,
+.filter .filter__select .filter__selected__options .filter__selected__options__item .filter__selected__options__item__icon svg path,
+.filter .filter__selected .filter__select__options .filter__selected__options__item .filter__selected__options__item__icon svg path,
+.filter .filter__select .filter__select__options .filter__selected__options__item .filter__selected__options__item__icon svg path {
+  fill: #aac426;
+}
+.filter .filter__selected .filter__select__options .enza-checkbox,
+.filter .filter__select .filter__select__options .enza-checkbox {
+  margin-bottom: 20px;
 }
 #wrapper {
   padding-left: 0;

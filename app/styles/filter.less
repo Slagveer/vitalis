@@ -8,9 +8,14 @@
       padding: 0 0 0 30px;
       position: relative;
       width: 100%;
+      &:hover {
+        background-color: @white;
+        border-color: @green;
+        color: @green;
+      }
       .filter__header__button__text {
         float: left;
-        font-size: @label;
+        font-size: 1.5 * @label;
         font-weight: bold;
         line-height: 70px;
         margin-left: 20px;
@@ -30,22 +35,75 @@
       }
     }
   }
-  .filter__selected {
+  .filter__selected,
+  .filter__select {
     border-top: 1px solid @grey;
+    padding-bottom: 20px;
     padding-top: 10px;
-    .filter__selected__text {
+    .filter__selected__text,
+    .filter__select__text{
       clear:both;
       float: left;
       font-family: @font-family-crete;
+      font-size: @font-size-h3;
       margin-top: 40px;
       width: 50%;
     }
-    .filter__selected__button {
+    .filter__select__text {
+      width: 100%;
+    }
+    .filter__selected__button,
+    .filter__select__button {
       border-radius: 40px;
       font-size: @label;
+      font-weight: bold;
       float: right;
       margin-top: 40px;
+      &:hover {
+        background-color: @white;
+        border-color: @green;
+        color: @green;
+      }
+    }
+    .filter__selected__button {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .filter__select__button {
+      float: left;
+      margin-bottom: 40px;
+      margin-top: 0px;
+    }
+    .filter__selected__options,
+    .filter__select__options{
+      list-style: none;
+      margin-top: 40px;
+      padding-left: 0px;
+      .filter__selected__options__item {
+        background-color: lighten(@green, 43.5%);
+        border: 1px solid @green;
+        color: @green;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-align: left;
+        width: 100%;
+        .filter__selected__options__item__icon {
+          display: inline-block;
+          padding-right: 10px;
+          svg {
+            width: 15px;
+            height: 15px;
+            path {
+              fill: @green;
+            }
+          }
+        }
+      }
+    }
+    .filter__select__options {
+      .enza-checkbox {
+        margin-bottom: 20px;
+      }
     }
   }
 }
-

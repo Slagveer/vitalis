@@ -219,6 +219,21 @@ module.exports = function (grunt) {
         }]
       }
     },
+    browserSync: {
+      dev: {
+        bsFiles: {
+          src : [
+            'app/styles/*.css',
+            'app/components/*.html',
+            'app/*.html'
+          ]
+        },
+        options: {
+          watchTask: true,
+          server: './app'
+        }
+      }
+    },
     svgmin: {
       dist: {
         files: [{
@@ -338,6 +353,8 @@ module.exports = function (grunt) {
     'rev',
     'usemin'
   ]);
+
+  grunt.loadNpmTasks('grunt-browser-sync');
 
   grunt.registerTask('default', [
     'jshint',
