@@ -6836,15 +6836,19 @@ button.close {
 }
 .navigation .navigation__button.navigation__button--hamburger {
   background-color: #000;
+  background-image: url('../images/icon-cross.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
   height: 65.33333333px;
   order: 1;
   width: 98px;
 }
-.navigation .navigation__button.navigation__button--hamburger .menu:before {
-  content: "\e014";
-}
-.navigation .navigation__button.navigation__button--hamburger.collapsed .menu:before {
-  content: "\e236";
+.navigation .navigation__button.navigation__button--hamburger.collapsed {
+  background-image: url('../images/icon-cross.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
 }
 .navigation .navigation__button.navigation__button--logo {
   flex-shrink: 0;
