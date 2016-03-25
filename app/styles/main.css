@@ -6859,6 +6859,7 @@ button.close {
   width: 130.66666667px;
 }
 .navigation .navigation__button.navigation__button--logo .navigation__button__image {
+  max-width: 100px;
   padding: 0px;
   position: absolute;
   z-index: 1;
