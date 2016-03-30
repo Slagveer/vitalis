@@ -6731,13 +6731,20 @@ button.close {
   border-width: 0;
   font-family: 'Crete Round', serif;
   font-size: 16.5pt;
-  line-height: 38pt;
+  line-height: 20.9pt;
 }
 .navigation .navigation__menu {
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: none;
+}
+.navigation .navigation__menu.collapsing {
+  -webkit-transition: none;
+  transition: none;
+}
+.navigation .navigation__menu.navigation__menu--search.in {
+  border-top: none;
 }
 .navigation .navigation__menu.in {
   border-top: 1px solid #515151;
@@ -6747,6 +6754,8 @@ button.close {
 }
 .navigation .navigation__menu .navigation__menu__form {
   border-width: 0;
+  font-size: 16.5pt;
+  line-height: 20.9pt;
 }
 .navigation .navigation__menu .navigation__menu__item .dropdown-menu {
   padding: 0px;

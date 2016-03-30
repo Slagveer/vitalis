@@ -9,6 +9,15 @@
     border-left: none;
     border-right: none;
     border-bottom: none;
+    &.collapsing {
+      -webkit-transition: none;
+      transition: none;
+    }
+    &.navigation__menu--search {
+      &.in {
+        border-top: none;
+      }
+    }
     &.in {
       border-top: 1px solid @dark-grey;
     }
@@ -19,6 +28,8 @@
     }
     .navigation__menu__form {
       border-width: 0;
+      font-size: @body;
+      line-height: @body-line-height;
     }
     .navigation__menu__item {
       .dropdown-menu {
