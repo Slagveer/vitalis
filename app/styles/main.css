@@ -6948,28 +6948,135 @@ button.close {
   background-position: -160px -154px;
 }
 .teaserbox {
-  background: #000;
-  color: #fff;
-  height: 200px;
+  background-color: #fff;
+  color: #aac426;
+  display: block;
+  height: 500px;
+  max-height: 500px;
+  padding: 30px 30px 30px 30px;
   position: relative;
   overflow: hidden;
 }
-.teaserbox .teaserbox__title {
-  position: absolute;
-  left: 30px;
-  top: 100px;
+.teaserbox.teaserbox--icon {
+  background-color: #fff;
 }
-.teaserbox .teaserbox__button {
-  bottom: 20px;
-  right: 40px;
-  position: absolute;
+.teaserbox.teaserbox--icon .teaserbox__image {
+  margin-left: -15px;
+  margin-top: 15px;
+  max-width: 100px;
 }
-.teaserbox .teaserbox__image {
-  position: absolute;
-  top: 0;
+.teaserbox.teaserbox--news,
+.teaserbox.teaserbox--news--grey {
+  background-color: #000;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 45px;
+}
+.teaserbox.teaserbox--news .teaserbox__image,
+.teaserbox.teaserbox--news--grey .teaserbox__image {
   left: 0;
-  right: 0;
+  max-width: 100%;
+  min-height: 500px;
   bottom: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.teaserbox.teaserbox--news .teaserbox__link,
+.teaserbox.teaserbox--news--grey .teaserbox__link {
+  bottom: 20px;
+  right: 19px;
+}
+.teaserbox.teaserbox--news .teaserbox__description,
+.teaserbox.teaserbox--news--grey .teaserbox__description {
+  bottom: 100px;
+}
+.teaserbox.teaserbox--news .teaserbox__description .teaserbox__description__title,
+.teaserbox.teaserbox--news--grey .teaserbox__description .teaserbox__description__title {
+  color: #ffffff;
+}
+.teaserbox.teaserbox--news .teaserbox__description .teaserbox__description__label,
+.teaserbox.teaserbox--news--grey .teaserbox__description .teaserbox__description__label {
+  border-color: #ffffff;
+}
+.teaserbox.teaserbox--news .teaserbox__description .teaserbox__description__label .label-square,
+.teaserbox.teaserbox--news--grey .teaserbox__description .teaserbox__description__label .label-square {
+  color: #ffffff;
+}
+.teaserbox.teaserbox--news .teaserbox__link svg path,
+.teaserbox.teaserbox--news--grey .teaserbox__link svg path {
+  fill: #ffffff;
+}
+.teaserbox.teaserbox--news--grey .teaserbox__description .teaserbox__description__title {
+  color: #cccccc;
+}
+.teaserbox.teaserbox--news--grey .teaserbox__description .teaserbox__description__label {
+  border-color: #cccccc;
+}
+.teaserbox.teaserbox--news--grey .teaserbox__description .teaserbox__description__label .label-square {
+  color: #cccccc;
+}
+.teaserbox.teaserbox--news--grey .teaserbox__link svg path {
+  fill: #cccccc;
+}
+.teaserbox .teaserbox__description {
+  bottom: 50px;
+  position: absolute;
+  width: 100%;
+}
+.teaserbox .teaserbox__description .teaserbox__description__label {
+  border: 1px solid #aac426;
+  clear: right;
+  display: inline;
+  float: left;
+  line-height: 12pt;
+  margin-bottom: 15px;
+  padding: 4px;
+  text-align: left;
+}
+.teaserbox .teaserbox__description .teaserbox__description__label .label-square {
+  color: #aac426;
+  font-size: 11pt;
+  line-height: 12pt;
+  font-weight: bold;
+  padding: 0px;
+}
+.teaserbox .teaserbox__description .teaserbox__description__title {
+  color: #aac426;
+  clear: left;
+  font-family: 'Crete Round', serif;
+  font-size: 22.5pt;
+  float: left;
+  line-height: 28.5pt;
+  position: relative;
+}
+.teaserbox .teaserbox__description .teaserbox__description__date,
+.teaserbox .teaserbox__description .teaserbox__description__career,
+.teaserbox .teaserbox__description .teaserbox__description__location {
+  color: #aac426;
+  clear: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11pt;
+  float: left;
+  line-height: 12pt;
+  position: relative;
+}
+.teaserbox .teaserbox__link {
+  bottom: 15px;
+  color: #aac426;
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 11pt;
+  height: 27.5pt;
+  line-height: 21.6pt;
+  position: absolute;
+  right: 5px;
+  text-align: center;
+  vertical-align: middle;
+  width: 27.5pt;
+}
+.teaserbox .teaserbox__link svg path {
+  fill: #aac426;
 }
 .itemslist .itemslist__header {
   line-height: 100px;
@@ -7011,8 +7118,8 @@ button.close {
 .itemslist .itemslist__item .itemslist__item__content .itemslist__item__title .label-square {
   color: #515151;
   font-size: 11pt;
-  font-weight: bold;
   line-height: 12pt;
+  font-weight: bold;
   padding: 0px;
 }
 .itemslist .itemslist__item .itemslist__item__content .itemslist__item__description,
