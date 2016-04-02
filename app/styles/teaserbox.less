@@ -1,3 +1,27 @@
+// Mixin funcions
+// teaserbox-description::start
+.teaserbox-description(@color) {
+  .teaserbox__description {
+    .teaserbox__description__title {
+      color: @color;
+    }
+    .teaserbox__description__label {
+      border-color: @color;
+      .label-square {
+        color: @color;
+      }
+    }
+  }
+  .teaserbox__link {
+    svg {
+      path {
+        fill: @color;
+      }
+    }
+  }
+}
+// teaserbox-description::end
+
 .teaserbox {
   background-color: #fff;
   color: @green;
@@ -7,15 +31,125 @@
   padding: 30px 30px 30px 30px;
   position: relative;
   overflow: hidden;
+  &:hover {
+    .teaserbox__overlay {
+      opacity: .8;
+    }
+    .teaserbox__link__svg {
+      display: none !important;
+    }
+    .teaserbox__link__svg--over {
+      display: block !important;
+    }
+  }
+  .teaserbox__overlay {
+    background-color: @green;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 1;
+  }
   &.teaserbox--icon {
     background-color: #fff;
+    margin-left: -15px;
+    margin-right: -15px;
+    &:hover {
+      .teaserbox__image--event {
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+      .teaserbox__image--career {
+        svg {
+          path {
+            &.case {
+              stroke: @white;
+              fill: @green;
+            }
+            &.career-button {
+              fill: @white;
+            }
+            &.handle {
+              fill: @green;
+              stroke: @white;
+            }
+            &.cover {
+              fill: @green;
+              stroke: @white;
+            }
+          }
+        }
+      }
+    }
+    .teaserbox__description {
+      bottom: 59px;
+    }
     .teaserbox__image {
-      margin-left: -15px;
-      margin-top: 15px;
-      max-width: 100px;
+      margin-left: 4px;
+      margin-top: 3px;
+      max-width: 150px;
+      &.teaserbox__image--event {
+        margin-left: -10px;
+        max-width: 163px;
+      }
+      &.teaserbox__image--career {
+        path {
+          stroke-width: 3px;
+          &.handle {
+            display: block;
+          }
+        }
+      }
+    }
+    .teaserbox__link {
+      svg {
+        path {
+          fill: @green;
+        }
+        circle {
+          stroke: @green;
+          fill: @white;
+        }
+      }
+    }
+    &:hover {
+      background-color: @green;
+      .teaserbox__description {
+        .teaserbox__description__title,
+        .teaserbox__description__label,
+        .teaserbox__description__career,
+        .teaserbox__description__location,
+        .teaserbox__description__date
+        {
+          color: @white;
+        }
+        .teaserbox__description__label {
+          border-color: @white;
+          .label-square {
+            color: @white;
+          }
+        }
+      }
+      .teaserbox__link {
+        svg {
+          path {
+            fill: @green;
+          }
+          circle {
+            stroke: @white;
+            fill: @white;
+          }
+        }
+      }
     }
   }
   &.teaserbox--news,
+  &.teaserbox--story,
   &.teaserbox--news--grey {
     background-color: #000;
     margin-left:-15px;
@@ -23,7 +157,7 @@
     padding: 45px;
     .teaserbox__image {
       left: 0;
-      max-width: 100%;
+      width: 100%;
       min-height: 500px;
       bottom: 0;
       position: absolute;
@@ -31,93 +165,91 @@
       top: 0;
     }
     .teaserbox__link {
-      bottom: 20px;
-      right: 19px;
+      bottom: 29px;
+      right: 21px;
     }
     .teaserbox__description {
-      bottom: 100px;
-      .teaserbox__description__title {
-        color: @white;
-      }
-      .teaserbox__description__label {
-        border-color: @white;
-        .label-square {
-          color: @white;
-        }
-      }
+      bottom: 70px;
+      left: 63px;
+      padding-right: 80px;
     }
-    .teaserbox__link {
-      svg {
-        path {
-          fill: @white;
-        }
-      }
-    }
+    .teaserbox-description(@white);
   }
   &.teaserbox--news--grey {
-    .teaserbox__description {
-      .teaserbox__description__title {
-        color: @grey;
-      }
-      .teaserbox__description__label {
-        border-color: @grey;
-        .label-square {
-          color: @grey;
-        }
-      }
-    }
-    .teaserbox__link {
-      svg {
-        path {
-          fill: @grey;
-        }
-      }
-    }
+    .teaserbox-description(@dark-grey);
+  }
+  &.teaserbox--story {
+    .teaserbox-description(@white);
   }
   .teaserbox__description {
-    bottom: 50px;
+    bottom: 70px;
+    display: table;
+    left: 48px;
+    padding-right: 80px;
     position: absolute;
     width: 100%;
+    z-index: 2;
     .teaserbox__description__label {
       border: 1px solid @green;
       clear: right;
-      display: inline;
+      display: table-cell;
       float: left;
       line-height: @label-line-height;
       margin-bottom: 15px;
       padding: 4px;
+      vertical-align: bottom;
       text-align: left;
       .label-square {
         color: @green;
-        font-size: @label;
-        line-height: @label-line-height;
+        font-size: 20px;//@label;
+        line-height: 23px;//@label-line-height;
         font-weight: bold;
-        padding: 0px;
+        padding: 5px;
       }
     }
     .teaserbox__description__title {
       color: @green;
       clear: left;
+      display: table-cell;
       font-family: @font-family-crete;
-      font-size: 1.5 * @body;
+      font-size: 39.5px;//1.5 * @body;
       float: left;
-      line-height: 1.5 * @body-line-height;
+      line-height: 45.5px;//1.5 * @body-line-height;
+      margin-bottom: 13px;
       position: relative;
+      vertical-align: bottom;
     }
     .teaserbox__description__date,
     .teaserbox__description__career,
     .teaserbox__description__location {
       color: @green;
       clear: left;
+      display: table-cell;
       font-family: @font-family-open-sanse;
-      font-size: @label;
+      font-size: 17.8px;//@label;
       float: left;
-      line-height: @label-line-height;
+      line-height: 23px;//@label-line-height;
       position: relative;
+      vertical-align: bottom;
+    }
+  }
+  .teaserbox__quote {
+    color: @white;
+    font-family: @blockquote-font-size;
+    font-size: @blockquote-font-size;
+    left: 60px;
+    position: absolute;
+    top: 66px;
+    width: 96px;
+    z-index: 2;
+    svg {
+      path {
+        fill: @white;
+      }
     }
   }
   .teaserbox__link {
-    bottom: 15px;
+    bottom: 30px;
     color: @green;
     display: inline-block;
     flex-shrink: 0;
@@ -125,10 +257,17 @@
     height: 2.5 * @label;
     line-height: 1.8 * @label-line-height;
     position: absolute;
-    right: 5px;
+    right: 6px;
     text-align: center;
     vertical-align: middle;
-    width: 2.5 * @label;
+    width: 46px;//2.5 * @label;
+    z-index: 2;
+    .teaserbox__link__svg {
+      display: block;
+    }
+    .teaserbox__link__svg--over {
+      display: none;
+    }
     svg {
       path {
         fill: @green;

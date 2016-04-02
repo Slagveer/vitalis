@@ -10,6 +10,7 @@
     "mocha": "^2.4.5",
     "chai": "^3.5.0",
     "bootstrap": "^3.3.6",
-    "picturefill": "^3.0.2"
+    "picturefill": "^3.0.2",
+    "animate.css": "^3.5.1"
   }
 }

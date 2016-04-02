@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Crete+Round:400,400italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(../bower_components/animate.css/animate.css);
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -6957,15 +6958,98 @@ button.close {
   position: relative;
   overflow: hidden;
 }
+.teaserbox:hover .teaserbox__overlay {
+  opacity: .8;
+}
+.teaserbox:hover .teaserbox__link__svg {
+  display: none !important;
+}
+.teaserbox:hover .teaserbox__link__svg--over {
+  display: block !important;
+}
+.teaserbox .teaserbox__overlay {
+  background-color: #aac426;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  z-index: 1;
+}
 .teaserbox.teaserbox--icon {
   background-color: #fff;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.teaserbox.teaserbox--icon:hover .teaserbox__image--event svg path {
+  fill: #fff;
+}
+.teaserbox.teaserbox--icon:hover .teaserbox__image--career svg path.case {
+  stroke: #ffffff;
+  fill: #aac426;
+}
+.teaserbox.teaserbox--icon:hover .teaserbox__image--career svg path.career-button {
+  fill: #ffffff;
+}
+.teaserbox.teaserbox--icon:hover .teaserbox__image--career svg path.handle {
+  fill: #aac426;
+  stroke: #ffffff;
+}
+.teaserbox.teaserbox--icon:hover .teaserbox__image--career svg path.cover {
+  fill: #aac426;
+  stroke: #ffffff;
+}
+.teaserbox.teaserbox--icon .teaserbox__description {
+  bottom: 59px;
 }
 .teaserbox.teaserbox--icon .teaserbox__image {
-  margin-left: -15px;
-  margin-top: 15px;
-  max-width: 100px;
+  margin-left: 4px;
+  margin-top: 3px;
+  max-width: 150px;
+}
+.teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--event {
+  margin-left: -10px;
+  max-width: 163px;
+}
+.teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--career path {
+  stroke-width: 3px;
+}
+.teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--career path.handle {
+  display: block;
+}
+.teaserbox.teaserbox--icon .teaserbox__link svg path {
+  fill: #aac426;
+}
+.teaserbox.teaserbox--icon .teaserbox__link svg circle {
+  stroke: #aac426;
+  fill: #ffffff;
+}
+.teaserbox.teaserbox--icon:hover {
+  background-color: #aac426;
+}
+.teaserbox.teaserbox--icon:hover .teaserbox__description .teaserbox__description__title,
+.teaserbox.teaserbox--icon:hover .teaserbox__description .teaserbox__description__label,
+.teaserbox.teaserbox--icon:hover .teaserbox__description .teaserbox__description__career,
+.teaserbox.teaserbox--icon:hover .teaserbox__description .teaserbox__description__location,
+.teaserbox.teaserbox--icon:hover .teaserbox__description .teaserbox__description__date {
+  color: #ffffff;
+}
+.teaserbox.teaserbox--icon:hover .teaserbox__description .teaserbox__description__label {
+  border-color: #ffffff;
+}
+.teaserbox.teaserbox--icon:hover .teaserbox__description .teaserbox__description__label .label-square {
+  color: #ffffff;
+}
+.teaserbox.teaserbox--icon:hover .teaserbox__link svg path {
+  fill: #aac426;
+}
+.teaserbox.teaserbox--icon:hover .teaserbox__link svg circle {
+  stroke: #ffffff;
+  fill: #ffffff;
 }
 .teaserbox.teaserbox--news,
+.teaserbox.teaserbox--story,
 .teaserbox.teaserbox--news--grey {
   background-color: #000;
   margin-left: -15px;
@@ -6973,9 +7057,10 @@ button.close {
   padding: 45px;
 }
 .teaserbox.teaserbox--news .teaserbox__image,
+.teaserbox.teaserbox--story .teaserbox__image,
 .teaserbox.teaserbox--news--grey .teaserbox__image {
   left: 0;
-  max-width: 100%;
+  width: 100%;
   min-height: 500px;
   bottom: 0;
   position: absolute;
@@ -6983,86 +7068,129 @@ button.close {
   top: 0;
 }
 .teaserbox.teaserbox--news .teaserbox__link,
+.teaserbox.teaserbox--story .teaserbox__link,
 .teaserbox.teaserbox--news--grey .teaserbox__link {
-  bottom: 20px;
-  right: 19px;
+  bottom: 29px;
+  right: 21px;
 }
 .teaserbox.teaserbox--news .teaserbox__description,
+.teaserbox.teaserbox--story .teaserbox__description,
 .teaserbox.teaserbox--news--grey .teaserbox__description {
-  bottom: 100px;
+  bottom: 70px;
+  left: 63px;
+  padding-right: 80px;
 }
 .teaserbox.teaserbox--news .teaserbox__description .teaserbox__description__title,
+.teaserbox.teaserbox--story .teaserbox__description .teaserbox__description__title,
 .teaserbox.teaserbox--news--grey .teaserbox__description .teaserbox__description__title {
   color: #ffffff;
 }
 .teaserbox.teaserbox--news .teaserbox__description .teaserbox__description__label,
+.teaserbox.teaserbox--story .teaserbox__description .teaserbox__description__label,
 .teaserbox.teaserbox--news--grey .teaserbox__description .teaserbox__description__label {
   border-color: #ffffff;
 }
 .teaserbox.teaserbox--news .teaserbox__description .teaserbox__description__label .label-square,
+.teaserbox.teaserbox--story .teaserbox__description .teaserbox__description__label .label-square,
 .teaserbox.teaserbox--news--grey .teaserbox__description .teaserbox__description__label .label-square {
   color: #ffffff;
 }
 .teaserbox.teaserbox--news .teaserbox__link svg path,
+.teaserbox.teaserbox--story .teaserbox__link svg path,
 .teaserbox.teaserbox--news--grey .teaserbox__link svg path {
   fill: #ffffff;
 }
 .teaserbox.teaserbox--news--grey .teaserbox__description .teaserbox__description__title {
-  color: #cccccc;
+  color: #515151;
 }
 .teaserbox.teaserbox--news--grey .teaserbox__description .teaserbox__description__label {
-  border-color: #cccccc;
+  border-color: #515151;
 }
 .teaserbox.teaserbox--news--grey .teaserbox__description .teaserbox__description__label .label-square {
-  color: #cccccc;
+  color: #515151;
 }
 .teaserbox.teaserbox--news--grey .teaserbox__link svg path {
-  fill: #cccccc;
+  fill: #515151;
+}
+.teaserbox.teaserbox--story .teaserbox__description .teaserbox__description__title {
+  color: #ffffff;
+}
+.teaserbox.teaserbox--story .teaserbox__description .teaserbox__description__label {
+  border-color: #ffffff;
+}
+.teaserbox.teaserbox--story .teaserbox__description .teaserbox__description__label .label-square {
+  color: #ffffff;
+}
+.teaserbox.teaserbox--story .teaserbox__link svg path {
+  fill: #ffffff;
 }
 .teaserbox .teaserbox__description {
-  bottom: 50px;
+  bottom: 70px;
+  display: table;
+  left: 48px;
+  padding-right: 80px;
   position: absolute;
   width: 100%;
+  z-index: 2;
 }
 .teaserbox .teaserbox__description .teaserbox__description__label {
   border: 1px solid #aac426;
   clear: right;
-  display: inline;
+  display: table-cell;
   float: left;
   line-height: 12pt;
   margin-bottom: 15px;
   padding: 4px;
+  vertical-align: bottom;
   text-align: left;
 }
 .teaserbox .teaserbox__description .teaserbox__description__label .label-square {
   color: #aac426;
-  font-size: 11pt;
-  line-height: 12pt;
+  font-size: 20px;
+  line-height: 23px;
   font-weight: bold;
-  padding: 0px;
+  padding: 5px;
 }
 .teaserbox .teaserbox__description .teaserbox__description__title {
   color: #aac426;
   clear: left;
+  display: table-cell;
   font-family: 'Crete Round', serif;
-  font-size: 22.5pt;
+  font-size: 39.5px;
   float: left;
-  line-height: 28.5pt;
+  line-height: 45.5px;
+  margin-bottom: 13px;
   position: relative;
+  vertical-align: bottom;
 }
 .teaserbox .teaserbox__description .teaserbox__description__date,
 .teaserbox .teaserbox__description .teaserbox__description__career,
 .teaserbox .teaserbox__description .teaserbox__description__location {
   color: #aac426;
   clear: left;
+  display: table-cell;
   font-family: 'Open Sans', sans-serif;
-  font-size: 11pt;
+  font-size: 17.8px;
   float: left;
-  line-height: 12pt;
+  line-height: 23px;
   position: relative;
+  vertical-align: bottom;
+}
+.teaserbox .teaserbox__quote {
+  color: #ffffff;
+  font-family: 18.75pt;
+  font-size: 18.75pt;
+  left: 60px;
+  position: absolute;
+  top: 66px;
+  width: 96px;
+  z-index: 2;
+}
+.teaserbox .teaserbox__quote svg path {
+  fill: #ffffff;
 }
 .teaserbox .teaserbox__link {
-  bottom: 15px;
+  bottom: 30px;
   color: #aac426;
   display: inline-block;
   flex-shrink: 0;
@@ -7070,10 +7198,17 @@ button.close {
   height: 27.5pt;
   line-height: 21.6pt;
   position: absolute;
-  right: 5px;
+  right: 6px;
   text-align: center;
   vertical-align: middle;
-  width: 27.5pt;
+  width: 46px;
+  z-index: 2;
+}
+.teaserbox .teaserbox__link .teaserbox__link__svg {
+  display: block;
+}
+.teaserbox .teaserbox__link .teaserbox__link__svg--over {
+  display: none;
 }
 .teaserbox .teaserbox__link svg path {
   fill: #aac426;
