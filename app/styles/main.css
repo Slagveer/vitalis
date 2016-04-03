@@ -6731,7 +6731,7 @@ button.close {
   border-radius: 0;
   border-width: 0;
   font-family: 'Crete Round', serif;
-  font-size: 15pt;
+  font-size: 32px;
   line-height: 19pt;
 }
 .navigation .navigation__menu {
@@ -6766,7 +6766,7 @@ button.close {
 }
 .navigation .navigation__menu .navigation__menu__item .navigation__menu__item__label {
   color: #515151;
-  padding: 20px 0px 20px 25px;
+  padding: 38px 0px 38px 47px;
 }
 .navigation .navigation__menu .navigation__menu__item .navigation__menu__item__label:hover {
   color: #aac426;
@@ -6778,12 +6778,12 @@ button.close {
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--sub {
   background-color: #ededed;
   border-bottom: 1px solid #cccccc;
-  font-size: 12pt;
+  font-size: 28px;
   line-height: 15.2pt;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--sub .navigation__menu__item__label {
   color: #515151;
-  padding-left: 30px;
+  padding-left: 83px;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--sub .navigation__menu__item__label:hover {
   color: #aac426;
@@ -6795,13 +6795,13 @@ button.close {
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact {
   font-family: 'Open Sans', sans-serif;
-  font-size: 9.75pt;
+  font-size: 19px;
   line-height: 12.35pt;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country.open .navigation__menu__item__label .arrow,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact.open .navigation__menu__item__label .arrow {
-  right: -11px;
-  top: -32px;
+  right: 40px;
+  top: 25px;
   transform: rotate(90deg);
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label,
@@ -6831,14 +6831,18 @@ button.close {
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .arrow,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label .arrow {
   display: inline-block;
-  height: 48px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   float: right;
-  background-image: url('../images/icon-arrow3.svg');
-  background-position: center;
-  background-size: 150px 150px;
   background-repeat: no-repeat;
+  position: absolute;
+  right: 40px;
+  top: 25px;
   transform: rotate(0deg);
+}
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .arrow svg .circle,
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label .arrow svg .circle {
+  visibility: hidden;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .dropdown-menu,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .dropdown-menu {
@@ -6877,25 +6881,29 @@ button.close {
   border-radius: 0;
   border-width: 0;
   color: #fff;
-  font-size: 15pt;
-  height: 64px;
+  font-size: 32px;
+  height: 103px;
   margin: 0px;
 }
 .navigation .navigation__button.navigation__button--hamburger {
-  background-color: #000;
-  background-image: url('../images/icon-cross.svg');
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #222222;
   background-size: 15px 15px;
-  height: 64px;
+  height: 103px;
   order: 1;
-  width: 96px;
+  width: 288px;
 }
-.navigation .navigation__button.navigation__button--hamburger.collapsed {
-  background-image: url('../images/icon-cross.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 15px 15px;
+.navigation .navigation__button.navigation__button--hamburger .menu svg {
+  height: 27px;
+  width: 27px;
+}
+.navigation .navigation__button.navigation__button--hamburger .menu svg.hamburger {
+  display: none;
+}
+.navigation .navigation__button.navigation__button--hamburger.collapsed .menu svg.hamburger {
+  display: block;
+}
+.navigation .navigation__button.navigation__button--hamburger.collapsed .menu svg.cross {
+  display: none;
 }
 .navigation .navigation__button.navigation__button--logo {
   flex-shrink: 0;
@@ -6903,10 +6911,11 @@ button.close {
   padding: 0px 20px 0 0;
   right: 20px;
   top: 0px;
-  width: 128px;
+  width: 178px;
 }
 .navigation .navigation__button.navigation__button--logo .navigation__button__image {
-  max-width: 100px;
+  border: 1px solid #ffffff;
+  max-width: 150px;
   padding: 0px;
   position: absolute;
   z-index: 1;
@@ -6917,19 +6926,19 @@ button.close {
 .navigation .navigation__button.navigation__button--search {
   background-color: #fff;
   color: #333;
-  height: 64px;
+  height: 103px;
   margin: 0px;
   order: 3;
   position: relative;
-  width: 96px;
+  width: 298px;
 }
 .navigation .navigation__button.navigation__button--enza {
   background-color: #222222;
   color: #ffffff;
-  height: 64px;
+  height: 103px;
   order: 2;
   position: relative;
-  text-align: left;
+  text-align: center;
   width: 100%;
 }
 .navigation .flag {
