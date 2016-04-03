@@ -1,14 +1,17 @@
 @brand-primary: @black;
 
-
 .varietylist {
+  .article--list {
+    margin-left: -21px;
+    margin-right: -21px;
+  }
   .varietylist__item {
     align-content: stretch;
     border: 1px solid @grey;
     display: flex;
     flex-flow: column nowrap;
     margin-top: 15px;
-    padding: 25px;
+    padding: 50px;
     height: 415px;
     &:hover {
       text-decoration: none;
@@ -17,17 +20,18 @@
     .varietylist__item__top {
       display: flex;
       flex-flow: row nowrap;
+      min-height: 180px;
       .varietylist__item__image {
         border: 1px solid @grey;
         float:left;
         height: 180px;
-        max-width: 200px;
+        max-width: 205px;
         width: 100%;
       }
       .varietylist__item__content {
         flex-grow: 5;
         height: 180px;
-        padding-left: 15px;
+        padding-left: 28px;
         position: relative;
         .varietylist__item__title {
           clear: right;
@@ -69,7 +73,7 @@
     .varietylist__item__bottom {
       display: flex;
       flex-flow: row nowrap;
-      margin-top: 15px;
+      margin-top: 28px;
       .varietylist__item__tags {
         clear: left;
         color: @green;
@@ -82,12 +86,14 @@
         top: 0px;
         width: 90%;
         .badge {
+          font-size: 23px;
+          font-weight: bold;
           &.badge--variety {
             border-radius: 0px;
             background-color: lighten(@green, 43.5%);;
             color: @green;
             margin: 3px 3px 3px 0;
-            padding: 6px;
+            padding: 3px;
           }
         }
       }
@@ -98,13 +104,13 @@
         display: inline-block;
         flex-shrink: 0;
         font-size: @label;
-        height: 2.5 * @label;
+        height: 48px;//2.5 * @label;
         line-height: 1.8 * @label-line-height;
         position: absolute;
-        right: 40px;
+        right: 16px;
         text-align: center;
         vertical-align: middle;
-        width: 2.5 * @label;
+        width: 48px;//2.5 * @label;
         svg {
           path {
             fill: @green;
