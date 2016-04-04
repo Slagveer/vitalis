@@ -1,0 +1,171 @@
+.navigation {
+  border-radius: 0;
+  border-width: 0;
+  font-family: @font-family-crete;
+  font-size: 32px;//@body;
+  line-height: @body-line-height;
+  .footer__menu {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    &.footer__menu--search {
+      &.in {
+        border-top: none;
+      }
+    }
+    &.in {
+      border-top: 1px solid @dark-grey;
+    }
+    .nav {
+      &.navbar-nav {
+        margin-top: 0px;
+      }
+    }
+    .footer__menu__item {
+      .dropdown-menu {
+        padding: 0px;
+      }
+      &.start {
+        margin-top: -6px;
+      }
+      .footer__menu__item__label {
+        background-color: @footer-backgroundcolor;
+        border-bottom: 1px solid @grey;
+        color: @white;
+        padding: 38px 0px 38px 60px;
+        &.footer__menu__item__label--social {
+          display: flex;
+          .footer__menu__item__label--social__item {
+            padding-right: 35px;
+            &.twitter {
+              &:hover {
+                svg {
+                  path{
+                    fill: @white;
+                  }
+                  circle {
+                    fill-opacity: 1;
+                    fill: @twitter;
+                  }
+                }
+              }
+            }
+            &.facebook {
+              &:hover {
+                svg {
+                  path{
+                    fill: @white;
+                  }
+                  circle {
+                    fill-opacity: 1;
+                    fill: @facebook;
+                  }
+                }
+              }
+            }
+            &.youtube {
+              &:hover {
+                svg {
+                  path{
+                    fill: @white;
+                  }
+                  circle {
+                    fill-opacity: 1;
+                    fill: @youtube;
+                  }
+                }
+              }
+            }
+            svg {
+              width: 95px;
+            }
+            &:hover {
+              background-color: @navigation-backgroundcolor;
+            }
+          }
+          &:active {
+            background-color: @navigation-backgroundcolor;
+            fill: red;
+          }
+        }
+        &:hover {
+          color: @green;
+        }
+        &:active {
+          background-color: @green;
+          color: @white;
+        }
+        &.footer__menu__item__label--contact {
+          font-family: @font-family-open-sanse;
+          display: flex;
+          padding: 60px 60px 60px 60px;
+          .logo {
+            border: 1px solid @white;
+            min-width: 180px;
+            width: 100%;
+          }
+          .info {
+            font-size: 21px;
+            padding-left: 30px;
+            .country,
+            .copyright {
+              color: @dark-grey;
+            }
+            .country {
+              margin-bottom: 28px;
+            }
+            .phone {
+              margin-bottom: 28px;
+              &:hover {
+                color: @green;
+                svg {
+                  path {
+                    fill: @green;
+                  }
+                }
+              }
+              &:active {
+                background-color: @navigation-backgroundcolor;
+                color: @green;
+              }
+            }
+            .mail {
+              margin-bottom: 60px;
+              &:hover {
+                color: @green;
+                svg {
+                  path,
+                  polygon {
+                    fill: @green;
+                  }
+                }
+              }
+              &:active {
+                background-color: @navigation-backgroundcolor;
+                color: @green;
+              }
+            }
+            * {
+              clear: both;
+              display: inline-block;
+              .icon {
+                bottom: -12px;
+                display: inline-block;
+                position: relative;
+                width: 25px;
+              }
+            }
+          }
+          &:hover {
+            color: @white;
+          }
+          &:active {
+            background-color: @navigation-backgroundcolor;
+            color: @white;
+          }
+        }
+      }
+    }
+  }
+}

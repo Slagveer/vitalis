@@ -7207,7 +7207,7 @@ button.close {
   height: 27.5pt;
   line-height: 21.6pt;
   position: absolute;
-  right: 6px;
+  right: 21px;
   text-align: center;
   vertical-align: middle;
   width: 46px;
@@ -7416,7 +7416,7 @@ button.close {
   border-radius: 0px;
   background-color: #f0f6d2;
   color: #aac426;
-  margin: 3px 3px 3px 0;
+  margin: 3px 3px 3px 3px;
   padding: 3px;
 }
 .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__link {
@@ -7628,6 +7628,149 @@ button.close {
 .filter .filter__selected .filter__select__options .enza-checkbox,
 .filter .filter__select .filter__select__options .enza-checkbox {
   margin-bottom: 20px;
+}
+.navigation {
+  border-radius: 0;
+  border-width: 0;
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  line-height: 19pt;
+}
+.navigation .footer__menu {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+.navigation .footer__menu.footer__menu--search.in {
+  border-top: none;
+}
+.navigation .footer__menu.in {
+  border-top: 1px solid #515151;
+}
+.navigation .footer__menu .nav.navbar-nav {
+  margin-top: 0px;
+}
+.navigation .footer__menu .footer__menu__item .dropdown-menu {
+  padding: 0px;
+}
+.navigation .footer__menu .footer__menu__item.start {
+  margin-top: -6px;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label {
+  background-color: #222222;
+  border-bottom: 1px solid #cccccc;
+  color: #ffffff;
+  padding: 38px 0px 38px 60px;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social {
+  display: flex;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .footer__menu__item__label--social__item {
+  padding-right: 35px;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .footer__menu__item__label--social__item.twitter:hover svg path {
+  fill: #ffffff;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .footer__menu__item__label--social__item.twitter:hover svg circle {
+  fill-opacity: 1;
+  fill: #55acef;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .footer__menu__item__label--social__item.facebook:hover svg path {
+  fill: #ffffff;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .footer__menu__item__label--social__item.facebook:hover svg circle {
+  fill-opacity: 1;
+  fill: #3c599a;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .footer__menu__item__label--social__item.youtube:hover svg path {
+  fill: #ffffff;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .footer__menu__item__label--social__item.youtube:hover svg circle {
+  fill-opacity: 1;
+  fill: #e62d27;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .footer__menu__item__label--social__item svg {
+  width: 95px;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .footer__menu__item__label--social__item:hover {
+  background-color: #222222;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social:active {
+  background-color: #222222;
+  fill: red;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label:hover {
+  color: #aac426;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label:active {
+  background-color: #aac426;
+  color: #ffffff;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  padding: 60px 60px 60px 60px;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .logo {
+  border: 1px solid #ffffff;
+  min-width: 180px;
+  width: 100%;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info {
+  font-size: 21px;
+  padding-left: 30px;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .country,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .copyright {
+  color: #515151;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .country {
+  margin-bottom: 28px;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone {
+  margin-bottom: 28px;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone:hover {
+  color: #aac426;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone:hover svg path {
+  fill: #aac426;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone:active {
+  background-color: #222222;
+  color: #aac426;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail {
+  margin-bottom: 60px;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail:hover {
+  color: #aac426;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail:hover svg path,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail:hover svg polygon {
+  fill: #aac426;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail:active {
+  background-color: #222222;
+  color: #aac426;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info * {
+  clear: both;
+  display: inline-block;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info * .icon {
+  bottom: -12px;
+  display: inline-block;
+  position: relative;
+  width: 25px;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact:hover {
+  color: #ffffff;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact:active {
+  background-color: #222222;
+  color: #ffffff;
 }
 #wrapper {
   padding-left: 0;
