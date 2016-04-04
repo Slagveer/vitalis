@@ -1,3 +1,35 @@
+// Mixin funcions
+// footer-social-hover::start
+.social-hover(@name) {
+  svg {
+    path {
+      fill: @white;
+    }
+    circle {
+      fill-opacity: 1;
+      fill: @name;
+    }
+  }
+}
+// footer-social-hover::end
+// footer-icon::start
+.footer-icon() {
+  margin-bottom: 60px;
+  &:hover {
+    color: @green;
+    svg {
+      path,
+      polygon {
+        fill: @green;
+      }
+    }
+  }
+  &:active {
+    background-color: @navigation-backgroundcolor;
+    color: @green;
+  }
+}
+// footer-icon::end
 .navigation {
   border-radius: 0;
   border-width: 0;
@@ -40,41 +72,17 @@
             padding-right: 35px;
             &.twitter {
               &:hover {
-                svg {
-                  path{
-                    fill: @white;
-                  }
-                  circle {
-                    fill-opacity: 1;
-                    fill: @twitter;
-                  }
-                }
+                .social-hover(@twitter);
               }
             }
             &.facebook {
               &:hover {
-                svg {
-                  path{
-                    fill: @white;
-                  }
-                  circle {
-                    fill-opacity: 1;
-                    fill: @facebook;
-                  }
-                }
+                .social-hover(@facebook);
               }
             }
             &.youtube {
               &:hover {
-                svg {
-                  path{
-                    fill: @white;
-                  }
-                  circle {
-                    fill-opacity: 1;
-                    fill: @youtube;
-                  }
-                }
+                .social-hover(@youtube);
               }
             }
             svg {
@@ -116,35 +124,10 @@
               margin-bottom: 28px;
             }
             .phone {
-              margin-bottom: 28px;
-              &:hover {
-                color: @green;
-                svg {
-                  path {
-                    fill: @green;
-                  }
-                }
-              }
-              &:active {
-                background-color: @navigation-backgroundcolor;
-                color: @green;
-              }
+              .footer-icon();
             }
             .mail {
-              margin-bottom: 60px;
-              &:hover {
-                color: @green;
-                svg {
-                  path,
-                  polygon {
-                    fill: @green;
-                  }
-                }
-              }
-              &:active {
-                background-color: @navigation-backgroundcolor;
-                color: @green;
-              }
+              .footer-icon();
             }
             * {
               clear: both;

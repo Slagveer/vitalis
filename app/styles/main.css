@@ -7729,12 +7729,13 @@ button.close {
   margin-bottom: 28px;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone {
-  margin-bottom: 28px;
+  margin-bottom: 60px;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone:hover {
   color: #aac426;
 }
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone:hover svg path {
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone:hover svg path,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone:hover svg polygon {
   fill: #aac426;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone:active {
