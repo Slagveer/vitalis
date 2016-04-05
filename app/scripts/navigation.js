@@ -51,7 +51,7 @@
         if($search.data('active')) {
           $navigationSearch.collapse('show');
         }
-        setLogo(evt);
+        setLogo($(this));
       });
 
       function collapseAll() {
@@ -65,8 +65,8 @@
         });
       }
 
-      function setLogo(evt) {
-        if(/search/i.test($(evt.target)[0].className) || /search/i.test($(evt.target)[0].className.baseVal)) {
+      function setLogo($obj) {
+        if(/search/i.test($obj[0].className) || /search/i.test($obj[0].className.baseVal)) {
           $menu.data('active', false);
         } else {
           $search.data('active', false);
