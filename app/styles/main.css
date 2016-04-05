@@ -7773,6 +7773,86 @@ button.close {
   background-color: #222222;
   color: #ffffff;
 }
+.container--carousel .carousel .carousel-control,
+.container--carousel .carousel .carousel-indicators {
+  display: none;
+}
+.container--carousel .container--carousel__slides .container--carousel__slides__item .container--carousel__slides__item__image {
+  height: 594px;
+}
+.container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption {
+  bottom: 105px;
+}
+.container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button {
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  color: #ffffff;
+  font-family: 'Crete Round', serif;
+  font-size: 27px;
+  height: 81px;
+  max-width: 310px;
+  width: 100%;
+}
+.container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:hover,
+.container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:active {
+  border-color: #aac426;
+}
+.container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:hover .carousel-caption__button__text,
+.container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:active .carousel-caption__button__text {
+  color: #aac426;
+}
+.container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:hover .carousel-caption__button__arrow svg path.circle,
+.container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:active .carousel-caption__button__arrow svg path.circle,
+.container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:hover .carousel-caption__button__arrow svg .arrow,
+.container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:active .carousel-caption__button__arrow svg .arrow {
+  stroke: #aac426;
+  fill: #aac426;
+}
+.container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button .carousel-caption__button__text {
+  float: left;
+  display: inline-block;
+  line-height: 67px;
+  padding-left: 48px;
+}
+.container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button .carousel-caption__button__arrow {
+  float: right;
+  display: inline-block;
+  line-height: 91px;
+  padding-right: 26px;
+}
+.container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button .carousel-caption__button__arrow svg {
+  height: 47px;
+  width: 47px;
+}
+.container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button .carousel-caption__button__arrow svg path {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+.container--carousel .container--carousel__thumbnails {
+  display: flex;
+  flex-direction: row;
+}
+.container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item {
+  flex-grow: 1;
+  position: relative;
+}
+.container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__overlay {
+  position: absolute;
+  background-color: #aac426;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+.container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__image {
+  border: none;
+  height: 113px;
+  width: 100%;
+}
+.container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item:hover .item__overlay,
+.container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item:active .item__overlay {
+  opacity: .8;
+}
 #wrapper {
   padding-left: 0;
   -webkit-transition: all 0.5s ease;
