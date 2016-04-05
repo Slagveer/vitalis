@@ -226,7 +226,7 @@
         max-width: 150px;
         padding: 0px;
         position: absolute;
-        z-index: 1;
+        z-index: 0;
       }
       &.hide-logo {
         opacity: 0;
@@ -240,6 +240,10 @@
       order: 3;
       position: relative;
       width: 298px;//1.5 * (@navbar-height + @navbar-margin-bottom/2);
+      svg {
+        height: 27px;
+        width: 27px;
+      }
     }
     &.navigation__button--enza {
       background-color: @navigation-backgroundcolor;

@@ -200,7 +200,7 @@ module.exports = function (grunt) {
       }
     },
     useminPrepare: {
-      html: '<%= yeoman.app %>/index.html',
+      html: ['<%= yeoman.app %>/index.html','<%= yeoman.app %>/navigation.html'],
       options: {
         dest: '<%= yeoman.dist %>'
       }

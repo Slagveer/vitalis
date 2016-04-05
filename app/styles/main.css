@@ -6919,7 +6919,7 @@ button.close {
   max-width: 150px;
   padding: 0px;
   position: absolute;
-  z-index: 1;
+  z-index: 0;
 }
 .navigation .navigation__button.navigation__button--logo.hide-logo {
   opacity: 0;
@@ -6932,6 +6932,10 @@ button.close {
   order: 3;
   position: relative;
   width: 298px;
+}
+.navigation .navigation__button.navigation__button--search svg {
+  height: 27px;
+  width: 27px;
 }
 .navigation .navigation__button.navigation__button--enza {
   background-color: #222222;
