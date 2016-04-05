@@ -6733,6 +6733,7 @@ button.close {
   font-family: 'Crete Round', serif;
   font-size: 32px;
   line-height: 19pt;
+  margin-bottom: 0px;
 }
 .navigation .navigation__menu {
   border-top: none;
