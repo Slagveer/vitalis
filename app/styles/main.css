@@ -8224,6 +8224,10 @@ button.close {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.container .row .fullsize,
+.container-fluid .row .fullsize {
+  padding: 0px;
+}
 .variety-detail .variety-detail__image {
   width: 100%;
   max-height: 439px;
