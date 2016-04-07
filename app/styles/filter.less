@@ -38,15 +38,15 @@
   .filter__selected,
   .filter__select {
     border-top: 1px solid @grey;
-    padding-bottom: 20px;
+    padding-bottom: 47px;
     padding-top: 10px;
     .filter__selected__text,
     .filter__select__text{
       clear:both;
       float: left;
       font-family: @font-family-crete;
-      font-size: @font-size-h3;
-      margin-top: 40px;
+      font-size: 32px;//@font-size-h3;
+      margin-top: 54px;
       width: 50%;
     }
     .filter__select__text {
@@ -55,10 +55,13 @@
     .filter__selected__button,
     .filter__select__button {
       border-radius: 40px;
-      font-size: @label;
+      font-size: 25px;
       font-weight: bold;
       float: right;
-      margin-top: 40px;
+      height: 40px;
+      line-height: 52px;
+      margin-top: 58px;
+      width: 140px;
       &:hover {
         background-color: @white;
         border-color: @green;
@@ -71,19 +74,25 @@
     }
     .filter__select__button {
       float: left;
-      margin-bottom: 40px;
+      height: 69px;
+      margin-bottom: 30px;
       margin-top: 0px;
+      width: 250px;
     }
     .filter__selected__options,
     .filter__select__options{
       list-style: none;
+      margin-bottom: 10px;
       margin-top: 40px;
       padding-left: 0px;
       .filter__selected__options__item {
         background-color: lighten(@green, 43.5%);
         border: 1px solid @green;
         color: @green;
+        font-size: 25px;
         font-weight: bold;
+        height: 60px;
+        line-height: 42px;
         margin-bottom: 15px;
         text-align: left;
         width: 100%;
@@ -98,11 +107,6 @@
             }
           }
         }
-      }
-    }
-    .filter__select__options {
-      .enza-checkbox {
-        margin-bottom: 20px;
       }
     }
   }

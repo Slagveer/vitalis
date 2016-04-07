@@ -2,6 +2,7 @@
 .enza-checkbox {
   display: inline-block;
   line-height: 1.25 * @label-line-height;
+  margin-bottom: 43px;
   position: relative;
   width: 40px;
   .enza-checkbox__label {
@@ -15,9 +16,9 @@
     width: 25px;
     .label {
       color: @black;
-      font-size: @body;
-      font-weight: normal;
-      margin-left: 25px;
+      font-size: 25px;//@body;
+      font-weight: bold;
+      margin-left: 20px;
     }
     &:after {
       background: transparent;
@@ -42,7 +43,7 @@
   .enza-checkbox__element {
     &:checked {
       &+ .enza-checkbox__label {
-        border:1px solid @green;
+        border:2px solid @green;
         .label {
           font-weight: bold;
         }
