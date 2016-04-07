@@ -8232,6 +8232,21 @@ button.close {
   width: 100%;
   max-height: 439px;
 }
+.variety-detail .variety-detail__image-title {
+  bottom: 0px;
+  color: #ffffff;
+  font-family: 'Crete Round', serif;
+  font-size: 55px;
+  left: 0px;
+  line-height: 422px;
+  margin-left: 15%;
+  margin-right: 15%;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  top: 0px;
+  vertical-align: middle;
+}
 .variety-detail .variety-detail__header {
   display: flex;
   flex-flow: column;
@@ -8437,6 +8452,42 @@ button.close {
   margin-bottom: 0;
   margin-right: 0;
   width: 510px;
+}
+.crop-overview .crop-overview__image {
+  width: 100%;
+  max-height: 439px;
+}
+.crop-overview .crop-overview__image-title {
+  bottom: 0px;
+  color: #ffffff;
+  font-family: 'Crete Round', serif;
+  font-size: 55px;
+  left: 0px;
+  line-height: 422px;
+  margin-left: 15%;
+  margin-right: 15%;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  top: 0px;
+  vertical-align: middle;
+}
+.crop-overview .crop-overview__header {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 62px;
+}
+.crop-overview .crop-overview__header .crop-overview__title {
+  font-family: 'Crete Round', serif;
+  font-size: 64px;
+  padding-left: 40px;
+  padding-top: 55px;
+}
+.crop-overview .crop-overview__header .crop-overview__description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 27px;
+  padding-left: 40px;
+  padding-top: 30px;
 }
 .enza-checkbox {
   display: inline-block;
