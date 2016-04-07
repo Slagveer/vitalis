@@ -6953,14 +6953,764 @@ button.close {
   height: 11px;
   width: 16px;
 }
+.navigation .flag.flag-ad {
+  background-position: -16px 0;
+}
+.navigation .flag.flag-ae {
+  background-position: -32px 0;
+}
+.navigation .flag.flag-af {
+  background-position: -48px 0;
+}
+.navigation .flag.flag-ag {
+  background-position: -64px 0;
+}
+.navigation .flag.flag-ai {
+  background-position: -80px 0;
+}
+.navigation .flag.flag-al {
+  background-position: -96px 0;
+}
+.navigation .flag.flag-am {
+  background-position: -112px 0;
+}
+.navigation .flag.flag-an {
+  background-position: -128px 0;
+}
+.navigation .flag.flag-ao {
+  background-position: -144px 0;
+}
+.navigation .flag.flag-ar {
+  background-position: -160px 0;
+}
+.navigation .flag.flag-as {
+  background-position: -176px 0;
+}
+.navigation .flag.flag-at {
+  background-position: -192px 0;
+}
+.navigation .flag.flag-au {
+  background-position: -208px 0;
+}
+.navigation .flag.flag-aw {
+  background-position: -224px 0;
+}
+.navigation .flag.flag-az {
+  background-position: -240px 0;
+}
+.navigation .flag.flag-ba {
+  background-position: 0 -11px;
+}
+.navigation .flag.flag-bb {
+  background-position: -16px -11px;
+}
+.navigation .flag.flag-bd {
+  background-position: -32px -11px;
+}
+.navigation .flag.flag-be {
+  background-position: -48px -11px;
+}
+.navigation .flag.flag-bf {
+  background-position: -64px -11px;
+}
+.navigation .flag.flag-bg {
+  background-position: -80px -11px;
+}
+.navigation .flag.flag-bh {
+  background-position: -96px -11px;
+}
+.navigation .flag.flag-bi {
+  background-position: -112px -11px;
+}
+.navigation .flag.flag-bj {
+  background-position: -128px -11px;
+}
+.navigation .flag.flag-bm {
+  background-position: -144px -11px;
+}
+.navigation .flag.flag-bn {
+  background-position: -160px -11px;
+}
+.navigation .flag.flag-bo {
+  background-position: -176px -11px;
+}
+.navigation .flag.flag-br {
+  background-position: -192px -11px;
+}
+.navigation .flag.flag-bs {
+  background-position: -208px -11px;
+}
+.navigation .flag.flag-bt {
+  background-position: -224px -11px;
+}
+.navigation .flag.flag-bv {
+  background-position: -240px -11px;
+}
+.navigation .flag.flag-bw {
+  background-position: 0 -22px;
+}
+.navigation .flag.flag-by {
+  background-position: -16px -22px;
+}
+.navigation .flag.flag-bz {
+  background-position: -32px -22px;
+}
+.navigation .flag.flag-ca {
+  background-position: -48px -22px;
+}
+.navigation .flag.flag-catalonia {
+  background-position: -64px -22px;
+}
+.navigation .flag.flag-cd {
+  background-position: -80px -22px;
+}
+.navigation .flag.flag-cf {
+  background-position: -96px -22px;
+}
+.navigation .flag.flag-cg {
+  background-position: -112px -22px;
+}
+.navigation .flag.flag-ch {
+  background-position: -128px -22px;
+}
+.navigation .flag.flag-ci {
+  background-position: -144px -22px;
+}
+.navigation .flag.flag-ck {
+  background-position: -160px -22px;
+}
+.navigation .flag.flag-cl {
+  background-position: -176px -22px;
+}
+.navigation .flag.flag-cm {
+  background-position: -192px -22px;
+}
+.navigation .flag.flag-cn {
+  background-position: -208px -22px;
+}
+.navigation .flag.flag-co {
+  background-position: -224px -22px;
+}
+.navigation .flag.flag-cr {
+  background-position: -240px -22px;
+}
+.navigation .flag.flag-cu {
+  background-position: 0 -33px;
+}
+.navigation .flag.flag-cv {
+  background-position: -16px -33px;
+}
+.navigation .flag.flag-cw {
+  background-position: -32px -33px;
+}
+.navigation .flag.flag-cy {
+  background-position: -48px -33px;
+}
+.navigation .flag.flag-cz {
+  background-position: -64px -33px;
+}
+.navigation .flag.flag-de {
+  background-position: -80px -33px;
+}
+.navigation .flag.flag-dj {
+  background-position: -96px -33px;
+}
+.navigation .flag.flag-dk {
+  background-position: -112px -33px;
+}
+.navigation .flag.flag-dm {
+  background-position: -128px -33px;
+}
+.navigation .flag.flag-do {
+  background-position: -144px -33px;
+}
+.navigation .flag.flag-dz {
+  background-position: -160px -33px;
+}
+.navigation .flag.flag-ec {
+  background-position: -176px -33px;
+}
+.navigation .flag.flag-ee {
+  background-position: -192px -33px;
+}
+.navigation .flag.flag-eg {
+  background-position: -208px -33px;
+}
+.navigation .flag.flag-eh {
+  background-position: -224px -33px;
+}
+.navigation .flag.flag-england {
+  background-position: -240px -33px;
+}
+.navigation .flag.flag-er {
+  background-position: 0 -44px;
+}
+.navigation .flag.flag-es {
+  background-position: -16px -44px;
+}
+.navigation .flag.flag-et {
+  background-position: -32px -44px;
+}
+.navigation .flag.flag-eu {
+  background-position: -48px -44px;
+}
+.navigation .flag.flag-fi {
+  background-position: -64px -44px;
+}
+.navigation .flag.flag-fj {
+  background-position: -80px -44px;
+}
+.navigation .flag.flag-fk {
+  background-position: -96px -44px;
+}
+.navigation .flag.flag-fm {
+  background-position: -112px -44px;
+}
+.navigation .flag.flag-fo {
+  background-position: -128px -44px;
+}
+.navigation .flag.flag-fr {
+  background-position: -144px -44px;
+}
+.navigation .flag.flag-ga {
+  background-position: -160px -44px;
+}
 .navigation .flag.flag-gb {
   background-position: -176px -44px;
+}
+.navigation .flag.flag-gd {
+  background-position: -192px -44px;
+}
+.navigation .flag.flag-ge {
+  background-position: -208px -44px;
+}
+.navigation .flag.flag-gf {
+  background-position: -224px -44px;
+}
+.navigation .flag.flag-gg {
+  background-position: -240px -44px;
+}
+.navigation .flag.flag-gh {
+  background-position: 0 -55px;
+}
+.navigation .flag.flag-gi {
+  background-position: -16px -55px;
+}
+.navigation .flag.flag-gl {
+  background-position: -32px -55px;
+}
+.navigation .flag.flag-gm {
+  background-position: -48px -55px;
+}
+.navigation .flag.flag-gn {
+  background-position: -64px -55px;
+}
+.navigation .flag.flag-gp {
+  background-position: -80px -55px;
+}
+.navigation .flag.flag-gq {
+  background-position: -96px -55px;
+}
+.navigation .flag.flag-gr {
+  background-position: -112px -55px;
+}
+.navigation .flag.flag-gs {
+  background-position: -128px -55px;
+}
+.navigation .flag.flag-gt {
+  background-position: -144px -55px;
+}
+.navigation .flag.flag-gu {
+  background-position: -160px -55px;
+}
+.navigation .flag.flag-gw {
+  background-position: -176px -55px;
+}
+.navigation .flag.flag-gy {
+  background-position: -192px -55px;
+}
+.navigation .flag.flag-hk {
+  background-position: -208px -55px;
+}
+.navigation .flag.flag-hm {
+  background-position: -224px -55px;
+}
+.navigation .flag.flag-hn {
+  background-position: -240px -55px;
+}
+.navigation .flag.flag-hr {
+  background-position: 0 -66px;
+}
+.navigation .flag.flag-ht {
+  background-position: -16px -66px;
+}
+.navigation .flag.flag-hu {
+  background-position: -32px -66px;
+}
+.navigation .flag.flag-ic {
+  background-position: -48px -66px;
+}
+.navigation .flag.flag-id {
+  background-position: -64px -66px;
+}
+.navigation .flag.flag-ie {
+  background-position: -80px -66px;
+}
+.navigation .flag.flag-il {
+  background-position: -96px -66px;
+}
+.navigation .flag.flag-im {
+  background-position: -112px -66px;
+}
+.navigation .flag.flag-in {
+  background-position: -128px -66px;
+}
+.navigation .flag.flag-io {
+  background-position: -144px -66px;
+}
+.navigation .flag.flag-iq {
+  background-position: -160px -66px;
+}
+.navigation .flag.flag-ir {
+  background-position: -176px -66px;
+}
+.navigation .flag.flag-is {
+  background-position: -192px -66px;
+}
+.navigation .flag.flag-it {
+  background-position: -208px -66px;
+}
+.navigation .flag.flag-je {
+  background-position: -224px -66px;
+}
+.navigation .flag.flag-jm {
+  background-position: -240px -66px;
+}
+.navigation .flag.flag-jo {
+  background-position: 0 -77px;
+}
+.navigation .flag.flag-jp {
+  background-position: -16px -77px;
+}
+.navigation .flag.flag-ke {
+  background-position: -32px -77px;
+}
+.navigation .flag.flag-kg {
+  background-position: -48px -77px;
+}
+.navigation .flag.flag-kh {
+  background-position: -64px -77px;
+}
+.navigation .flag.flag-ki {
+  background-position: -80px -77px;
+}
+.navigation .flag.flag-km {
+  background-position: -96px -77px;
+}
+.navigation .flag.flag-kn {
+  background-position: -112px -77px;
+}
+.navigation .flag.flag-kp {
+  background-position: -128px -77px;
+}
+.navigation .flag.flag-kr {
+  background-position: -144px -77px;
+}
+.navigation .flag.flag-kurdistan {
+  background-position: -160px -77px;
+}
+.navigation .flag.flag-kw {
+  background-position: -176px -77px;
+}
+.navigation .flag.flag-ky {
+  background-position: -192px -77px;
+}
+.navigation .flag.flag-kz {
+  background-position: -208px -77px;
+}
+.navigation .flag.flag-la {
+  background-position: -224px -77px;
+}
+.navigation .flag.flag-lb {
+  background-position: -240px -77px;
+}
+.navigation .flag.flag-lc {
+  background-position: 0 -88px;
+}
+.navigation .flag.flag-li {
+  background-position: -16px -88px;
+}
+.navigation .flag.flag-lk {
+  background-position: -32px -88px;
+}
+.navigation .flag.flag-lr {
+  background-position: -48px -88px;
+}
+.navigation .flag.flag-ls {
+  background-position: -64px -88px;
+}
+.navigation .flag.flag-lt {
+  background-position: -80px -88px;
+}
+.navigation .flag.flag-lu {
+  background-position: -96px -88px;
+}
+.navigation .flag.flag-lv {
+  background-position: -112px -88px;
+}
+.navigation .flag.flag-ly {
+  background-position: -128px -88px;
+}
+.navigation .flag.flag-ma {
+  background-position: -144px -88px;
+}
+.navigation .flag.flag-mc {
+  background-position: -160px -88px;
+}
+.navigation .flag.flag-md {
+  background-position: -176px -88px;
+}
+.navigation .flag.flag-me {
+  background-position: -192px -88px;
+}
+.navigation .flag.flag-mg {
+  background-position: -208px -88px;
+}
+.navigation .flag.flag-mh {
+  background-position: -224px -88px;
+}
+.navigation .flag.flag-mk {
+  background-position: -240px -88px;
+}
+.navigation .flag.flag-ml {
+  background-position: 0 -99px;
+}
+.navigation .flag.flag-mm {
+  background-position: -16px -99px;
+}
+.navigation .flag.flag-mn {
+  background-position: -32px -99px;
+}
+.navigation .flag.flag-mo {
+  background-position: -48px -99px;
+}
+.navigation .flag.flag-mp {
+  background-position: -64px -99px;
+}
+.navigation .flag.flag-mq {
+  background-position: -80px -99px;
+}
+.navigation .flag.flag-mr {
+  background-position: -96px -99px;
+}
+.navigation .flag.flag-ms {
+  background-position: -112px -99px;
+}
+.navigation .flag.flag-mt {
+  background-position: -128px -99px;
+}
+.navigation .flag.flag-mu {
+  background-position: -144px -99px;
+}
+.navigation .flag.flag-mv {
+  background-position: -160px -99px;
+}
+.navigation .flag.flag-mw {
+  background-position: -176px -99px;
+}
+.navigation .flag.flag-mx {
+  background-position: -192px -99px;
+}
+.navigation .flag.flag-my {
+  background-position: -208px -99px;
+}
+.navigation .flag.flag-mz {
+  background-position: -224px -99px;
+}
+.navigation .flag.flag-na {
+  background-position: -240px -99px;
+}
+.navigation .flag.flag-nc {
+  background-position: 0 -110px;
+}
+.navigation .flag.flag-ne {
+  background-position: -16px -110px;
+}
+.navigation .flag.flag-nf {
+  background-position: -32px -110px;
+}
+.navigation .flag.flag-ng {
+  background-position: -48px -110px;
+}
+.navigation .flag.flag-ni {
+  background-position: -64px -110px;
 }
 .navigation .flag.flag-nl {
   background-position: -80px -110px;
 }
+.navigation .flag.flag-no {
+  background-position: -96px -110px;
+}
+.navigation .flag.flag-np {
+  background-position: -112px -110px;
+}
+.navigation .flag.flag-nr {
+  background-position: -128px -110px;
+}
+.navigation .flag.flag-nu {
+  background-position: -144px -110px;
+}
+.navigation .flag.flag-nz {
+  background-position: -160px -110px;
+}
+.navigation .flag.flag-om {
+  background-position: -176px -110px;
+}
+.navigation .flag.flag-pa {
+  background-position: -192px -110px;
+}
+.navigation .flag.flag-pe {
+  background-position: -208px -110px;
+}
+.navigation .flag.flag-pf {
+  background-position: -224px -110px;
+}
+.navigation .flag.flag-pg {
+  background-position: -240px -110px;
+}
+.navigation .flag.flag-ph {
+  background-position: 0 -121px;
+}
+.navigation .flag.flag-pk {
+  background-position: -16px -121px;
+}
+.navigation .flag.flag-pl {
+  background-position: -32px -121px;
+}
+.navigation .flag.flag-pm {
+  background-position: -48px -121px;
+}
+.navigation .flag.flag-pn {
+  background-position: -64px -121px;
+}
+.navigation .flag.flag-pr {
+  background-position: -80px -121px;
+}
+.navigation .flag.flag-ps {
+  background-position: -96px -121px;
+}
+.navigation .flag.flag-pt {
+  background-position: -112px -121px;
+}
+.navigation .flag.flag-pw {
+  background-position: -128px -121px;
+}
+.navigation .flag.flag-py {
+  background-position: -144px -121px;
+}
+.navigation .flag.flag-qa {
+  background-position: -160px -121px;
+}
+.navigation .flag.flag-re {
+  background-position: -176px -121px;
+}
+.navigation .flag.flag-ro {
+  background-position: -192px -121px;
+}
+.navigation .flag.flag-rs {
+  background-position: -208px -121px;
+}
+.navigation .flag.flag-ru {
+  background-position: -224px -121px;
+}
+.navigation .flag.flag-rw {
+  background-position: -240px -121px;
+}
+.navigation .flag.flag-sa {
+  background-position: 0 -132px;
+}
+.navigation .flag.flag-sb {
+  background-position: -16px -132px;
+}
+.navigation .flag.flag-sc {
+  background-position: -32px -132px;
+}
+.navigation .flag.flag-scotland {
+  background-position: -48px -132px;
+}
+.navigation .flag.flag-sd {
+  background-position: -64px -132px;
+}
+.navigation .flag.flag-se {
+  background-position: -80px -132px;
+}
+.navigation .flag.flag-sg {
+  background-position: -96px -132px;
+}
+.navigation .flag.flag-sh {
+  background-position: -112px -132px;
+}
+.navigation .flag.flag-si {
+  background-position: -128px -132px;
+}
+.navigation .flag.flag-sk {
+  background-position: -144px -132px;
+}
+.navigation .flag.flag-sl {
+  background-position: -160px -132px;
+}
+.navigation .flag.flag-sm {
+  background-position: -176px -132px;
+}
+.navigation .flag.flag-sn {
+  background-position: -192px -132px;
+}
+.navigation .flag.flag-so {
+  background-position: -208px -132px;
+}
+.navigation .flag.flag-somaliland {
+  background-position: -224px -132px;
+}
+.navigation .flag.flag-sr {
+  background-position: -240px -132px;
+}
+.navigation .flag.flag-ss {
+  background-position: 0 -143px;
+}
+.navigation .flag.flag-st {
+  background-position: -16px -143px;
+}
+.navigation .flag.flag-sv {
+  background-position: -32px -143px;
+}
+.navigation .flag.flag-sx {
+  background-position: -48px -143px;
+}
+.navigation .flag.flag-sy {
+  background-position: -64px -143px;
+}
+.navigation .flag.flag-sz {
+  background-position: -80px -143px;
+}
+.navigation .flag.flag-tc {
+  background-position: -96px -143px;
+}
+.navigation .flag.flag-td {
+  background-position: -112px -143px;
+}
+.navigation .flag.flag-tf {
+  background-position: -128px -143px;
+}
+.navigation .flag.flag-tg {
+  background-position: -144px -143px;
+}
+.navigation .flag.flag-th {
+  background-position: -160px -143px;
+}
+.navigation .flag.flag-tibet {
+  background-position: -176px -143px;
+}
+.navigation .flag.flag-tj {
+  background-position: -192px -143px;
+}
+.navigation .flag.flag-tk {
+  background-position: -208px -143px;
+}
+.navigation .flag.flag-tl {
+  background-position: -224px -143px;
+}
+.navigation .flag.flag-tm {
+  background-position: -240px -143px;
+}
+.navigation .flag.flag-tn {
+  background-position: 0 -154px;
+}
+.navigation .flag.flag-to {
+  background-position: -16px -154px;
+}
+.navigation .flag.flag-tr {
+  background-position: -32px -154px;
+}
+.navigation .flag.flag-tt {
+  background-position: -48px -154px;
+}
+.navigation .flag.flag-tv {
+  background-position: -64px -154px;
+}
+.navigation .flag.flag-tw {
+  background-position: -80px -154px;
+}
+.navigation .flag.flag-tz {
+  background-position: -96px -154px;
+}
+.navigation .flag.flag-ua {
+  background-position: -112px -154px;
+}
+.navigation .flag.flag-ug {
+  background-position: -128px -154px;
+}
+.navigation .flag.flag-um {
+  background-position: -144px -154px;
+}
 .navigation .flag.flag-us {
   background-position: -160px -154px;
+}
+.navigation .flag.flag-uy {
+  background-position: -176px -154px;
+}
+.navigation .flag.flag-uz {
+  background-position: -192px -154px;
+}
+.navigation .flag.flag-va {
+  background-position: -208px -154px;
+}
+.navigation .flag.flag-vc {
+  background-position: -224px -154px;
+}
+.navigation .flag.flag-ve {
+  background-position: -240px -154px;
+}
+.navigation .flag.flag-vg {
+  background-position: 0 -165px;
+}
+.navigation .flag.flag-vi {
+  background-position: -16px -165px;
+}
+.navigation .flag.flag-vn {
+  background-position: -32px -165px;
+}
+.navigation .flag.flag-vu {
+  background-position: -48px -165px;
+}
+.navigation .flag.flag-wales {
+  background-position: -64px -165px;
+}
+.navigation .flag.flag-wf {
+  background-position: -80px -165px;
+}
+.navigation .flag.flag-ws {
+  background-position: -96px -165px;
+}
+.navigation .flag.flag-xk {
+  background-position: -112px -165px;
+}
+.navigation .flag.flag-ye {
+  background-position: -128px -165px;
+}
+.navigation .flag.flag-yt {
+  background-position: -144px -165px;
+}
+.navigation .flag.flag-za {
+  background-position: -160px -165px;
+}
+.navigation .flag.flag-zanzibar {
+  background-position: -176px -165px;
+}
+.navigation .flag.flag-zm {
+  background-position: -192px -165px;
+}
+.navigation .flag.flag-zw {
+  background-position: -208px -165px;
 }
 .teaserbox {
   background-color: #fff;
@@ -6981,8 +7731,9 @@ button.close {
 .teaserbox:hover .teaserbox__link__svg--over {
   display: block !important;
 }
-.teaserbox .teaserbox__overlay {
-  background-color: #aac426;
+.teaserbox .teaserbox__overlay,
+.teaserbox .teaserbox__overlay-bottom {
+  background-color: #ffffff;
   bottom: 0;
   left: 0;
   position: absolute;
@@ -6990,6 +7741,12 @@ button.close {
   top: 0;
   opacity: 0;
   z-index: 1;
+}
+.teaserbox .teaserbox__overlay-bottom {
+  height: 150px;
+  opacity: 1;
+  top: inherit;
+  z-index: 2;
 }
 .teaserbox.teaserbox--icon {
   background-color: #fff;
@@ -7061,6 +7818,17 @@ button.close {
 .teaserbox.teaserbox--icon:hover .teaserbox__link svg circle {
   stroke: #ffffff;
   fill: #ffffff;
+}
+.teaserbox.teaserbox--variety-detail {
+  border: 1px solid #aac426;
+  height: 410px;
+  padding: 0px 30px 0px 0px;
+}
+.teaserbox.teaserbox--variety-detail .teaserbox__description .teaserbox__description__label {
+  display: none;
+}
+.teaserbox.teaserbox--variety-detail .teaserbox__description .teaserbox__description__title {
+  font-size: 34.5px;
 }
 .teaserbox.teaserbox--news,
 .teaserbox.teaserbox--story,
@@ -7227,9 +7995,8 @@ button.close {
 .teaserbox .teaserbox__link svg path {
   fill: #aac426;
 }
-.itemslist .article--list {
-  margin-left: -21px;
-  margin-right: -21px;
+.itemslist.itemslist--variety-detail {
+  padding-top: 50px;
 }
 .itemslist .itemslist__header {
   line-height: 80px;
@@ -7318,7 +8085,7 @@ button.close {
   height: 48px;
   line-height: 21.6pt;
   position: absolute;
-  right: 13px;
+  right: 28px;
   text-align: center;
   vertical-align: middle;
   width: 48px;
@@ -7456,6 +8223,216 @@ button.close {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.variety-detail .variety-detail__image {
+  width: 100%;
+  max-height: 439px;
+}
+.variety-detail .variety-detail__header {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 62px;
+}
+.variety-detail .variety-detail__header .variety-detail__title {
+  font-family: 'Crete Round', serif;
+  font-size: 64px;
+  padding-left: 40px;
+  padding-top: 55px;
+}
+.variety-detail .variety-detail__header .variety-detail__description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 27px;
+  padding-left: 40px;
+  padding-top: 30px;
+}
+.variety-detail .variety-detail__container {
+  font-size: 24px;
+  margin-bottom: 80px;
+}
+.variety-detail .variety-detail__container .variety-detail__image {
+  margin-bottom: 85px;
+  max-height: 346px;
+  padding-left: 44px;
+  padding-right: 44px;
+}
+.variety-detail .variety-detail__container .variety-detail__list {
+  padding-left: 40px;
+}
+.variety-detail .variety-detail__container .variety-detail__list .variety-detail__list__title {
+  font-weight: bold;
+}
+.variety-detail .variety-detail__container .variety-detail__list .variety-detail__list__description {
+  margin-bottom: 39px;
+}
+.variety-detail .variety-detail__brochures {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 66px;
+}
+.variety-detail .variety-detail__brochures .variety-detail__brochures__title {
+  font-family: 'Crete Round', serif;
+  font-size: 34px;
+  margin-bottom: 22px;
+  padding-left: 40px;
+}
+.variety-detail .variety-detail__brochures .variety-detail__brochures__links {
+  padding-left: 40px;
+  font-weight: bold;
+}
+.variety-detail .variety-detail__brochures .variety-detail__brochures__links .list-group .list-group-item {
+  border: none;
+  line-height: 50px;
+  padding: 10px 0;
+}
+.variety-detail .variety-detail__brochures .variety-detail__brochures__links .list-group .list-group-item:hover {
+  color: #aac426;
+}
+.variety-detail .variety-detail__brochures .variety-detail__brochures__links .list-group .list-group-item .size {
+  display: inline;
+  font-size: 25px;
+  font-weight: normal;
+}
+.variety-detail .variety-detail__information {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 34px;
+  padding-top: 62px;
+}
+.variety-detail .variety-detail__information .variety-detail__information__title {
+  font-family: 'Crete Round', serif;
+  font-size: 34px;
+  margin-bottom: 22px;
+  text-align: center;
+}
+.variety-detail .variety-detail__information .variety-detail__information__image {
+  text-align: center;
+  width: 100%;
+}
+.variety-detail .variety-detail__information .variety-detail__information__image .image {
+  border-radius: 50%;
+  height: 156px;
+  margin-bottom: 15px;
+  width: 156px;
+}
+.variety-detail .variety-detail__information .variety-detail__information__image .name {
+  font-size: 26px;
+  font-weight: bold;
+}
+.variety-detail .variety-detail__information .variety-detail__information__image .job {
+  font-size: 26px;
+  font-style: italic;
+}
+.variety-detail .variety-detail__information .variety-detail__information__image .mail {
+  color: #aac426;
+  font-size: 26px;
+  font-weight: bold;
+}
+.variety-detail .variety-detail__information .variety-detail__information__image .phone {
+  color: #aac426;
+  font-size: 26px;
+  font-weight: bold;
+}
+.variety-detail .variety-detail__social {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 74px;
+  padding-top: 62px;
+}
+.variety-detail .variety-detail__social .variety-detail__social__title {
+  font-family: 'Crete Round', serif;
+  font-size: 34px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.variety-detail .variety-detail__social .variety-detail__social__container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.variety-detail .variety-detail__social .variety-detail__social__container .youtube {
+  display: none;
+}
+.variety-detail .variety-detail__social .variety-detail__social__container .twitter,
+.variety-detail .variety-detail__social .variety-detail__social__container .facebook,
+.variety-detail .variety-detail__social .variety-detail__social__container .linkedin {
+  display: block;
+  padding-right: 32px;
+}
+.variety-detail .variety-detail__social .variety-detail__social__container .twitter svg,
+.variety-detail .variety-detail__social .variety-detail__social__container .facebook svg,
+.variety-detail .variety-detail__social .variety-detail__social__container .linkedin svg {
+  width: 95px;
+}
+.variety-detail .variety-detail__social .variety-detail__social__container .twitter svg path,
+.variety-detail .variety-detail__social .variety-detail__social__container .facebook svg path,
+.variety-detail .variety-detail__social .variety-detail__social__container .linkedin svg path,
+.variety-detail .variety-detail__social .variety-detail__social__container .twitter svg circle,
+.variety-detail .variety-detail__social .variety-detail__social__container .facebook svg circle,
+.variety-detail .variety-detail__social .variety-detail__social__container .linkedin svg circle {
+  fill: #515151;
+  stroke: #515151;
+}
+.variety-detail .variety-detail__social .variety-detail__social__container .twitter:hover svg path,
+.variety-detail .variety-detail__social .variety-detail__social__container .twitter:active svg path {
+  fill: #ffffff;
+}
+.variety-detail .variety-detail__social .variety-detail__social__container .twitter:hover svg circle,
+.variety-detail .variety-detail__social .variety-detail__social__container .twitter:active svg circle {
+  fill-opacity: 1;
+  fill: #55acef;
+}
+.variety-detail .variety-detail__social .variety-detail__social__container .facebook:hover svg path,
+.variety-detail .variety-detail__social .variety-detail__social__container .facebook:active svg path {
+  fill: #ffffff;
+}
+.variety-detail .variety-detail__social .variety-detail__social__container .facebook:hover svg circle,
+.variety-detail .variety-detail__social .variety-detail__social__container .facebook:active svg circle {
+  fill-opacity: 1;
+  fill: #3c599a;
+}
+.variety-detail .variety-detail__social .variety-detail__social__container .youtube:hover svg path,
+.variety-detail .variety-detail__social .variety-detail__social__container .youtube:active svg path {
+  fill: #ffffff;
+}
+.variety-detail .variety-detail__social .variety-detail__social__container .youtube:hover svg circle,
+.variety-detail .variety-detail__social .variety-detail__social__container .youtube:active svg circle {
+  fill-opacity: 1;
+  fill: #e62d27;
+}
+.variety-detail .variety-detail__social .variety-detail__social__container .linkedin:hover svg path,
+.variety-detail .variety-detail__social .variety-detail__social__container .linkedin:active svg path {
+  fill: #ffffff;
+}
+.variety-detail .variety-detail__social .variety-detail__social__container .linkedin:hover svg circle,
+.variety-detail .variety-detail__social .variety-detail__social__container .linkedin:active svg circle {
+  fill-opacity: 1;
+  fill: #007bb6;
+}
+.variety-detail .variety-detail__others {
+  padding-bottom: 74px;
+  padding-top: 80px;
+  text-align: center;
+}
+.variety-detail .variety-detail__others .variety-detail__others__title {
+  font-size: 41px;
+  margin-bottom: 39px;
+}
+.variety-detail .variety-detail__others .variety-detail__others__horizontal-list {
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+}
+.variety-detail .variety-detail__others .variety-detail__others__horizontal-list .list-group {
+  height: 600px;
+  overflow-x: scroll;
+  width: 100%;
+  white-space: nowrap;
+}
+.variety-detail .variety-detail__others .variety-detail__others__horizontal-list .list-group .list-group-item {
+  border: none;
+  display: inline-block;
+  height: 410px;
+  margin-bottom: 0;
+  margin-right: 0;
+  width: 510px;
 }
 .enza-checkbox {
   display: inline-block;
@@ -7695,6 +8672,13 @@ button.close {
   fill-opacity: 1;
   fill: #e62d27;
 }
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .footer__menu__item__label--social__item.linkedin:hover svg path {
+  fill: #ffffff;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .footer__menu__item__label--social__item.linkedin:hover svg circle {
+  fill-opacity: 1;
+  fill: #007bb6;
+}
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .footer__menu__item__label--social__item svg {
   width: 95px;
 }
@@ -7777,6 +8761,49 @@ button.close {
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact:active {
   background-color: #222222;
   color: #ffffff;
+}
+.container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .carousel-caption {
+  bottom: 87px;
+  left: 5%;
+  line-height: 53px;
+  right: 5%;
+}
+.container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__quote {
+  border: none;
+  font-family: 'Crete Round', serif;
+  font-size: 41px;
+}
+.container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__name,
+.container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__relation {
+  font-size: 27px;
+}
+.container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__name {
+  font-weight: bold;
+}
+.container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .container--carousel__slides__item__image {
+  height: 798px;
+}
+.container--carousel.container--carousel-variety .carousel .carousel-control {
+  display: none;
+}
+.container--carousel.container--carousel-variety .carousel .carousel-indicators {
+  display: block;
+}
+.container--carousel.container--carousel-variety .carousel .carousel-indicators li {
+  background: #ffffff;
+  border: none;
+  height: 20px;
+  margin: 0 0 0 15px;
+  width: 20px;
+}
+.container--carousel.container--carousel-variety .carousel .carousel-indicators li.active {
+  background-color: #aac426;
+  height: 20px;
+  margin: 0 0 0 15px;
+  width: 20px;
+}
+.container--carousel.container--carousel-variety .container--carousel__thumbnails {
+  display: none;
 }
 .container--carousel .carousel .carousel-control,
 .container--carousel .carousel .carousel-indicators {

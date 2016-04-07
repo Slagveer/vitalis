@@ -1,0 +1,197 @@
+@brand-primary: @black;
+.variety-detail {
+  .variety-detail__image {
+    width: 100%;
+    max-height: 439px;
+  }
+  .variety-detail__header {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 62px;
+    .variety-detail__title {
+      font-family: @font-family-crete;
+      font-size: 64px;
+      padding-left: 40px;
+      padding-top: 55px;
+    }
+    .variety-detail__description {
+      font-family: @font-family-open-sanse;
+      font-size: 27px;
+      padding-left: 40px;
+      padding-top: 30px;
+    }
+  }
+  .variety-detail__container {
+    font-size: 24px;
+    margin-bottom: 80px;
+    .variety-detail__image {
+      margin-bottom: 85px;
+      max-height: 346px;
+      padding-left: 44px;
+      padding-right: 44px;
+    }
+    .variety-detail__list {
+      padding-left: 40px;
+      .variety-detail__list__title {
+        font-weight: bold;
+      }
+      .variety-detail__list__description {
+        margin-bottom: 39px;
+      }
+    }
+  }
+  .variety-detail__brochures {
+    border-bottom: 1px solid @light-grey;
+    padding-bottom: 66px;
+    .variety-detail__brochures__title {
+      font-family: @font-family-crete;
+      font-size: 34px;
+      margin-bottom: 22px;
+      padding-left: 40px;
+    }
+    .variety-detail__brochures__links {
+      padding-left: 40px;
+      font-weight: bold;
+      .list-group {
+        .list-group-item {
+          border: none;
+          line-height: 50px;
+          padding: 10px 0;
+          &:hover {
+            color: @green;
+          }
+          .size {
+            display: inline;
+            font-size: 25px;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+  .variety-detail__information {
+    border-bottom: 1px solid @light-grey;
+    padding-bottom: 34px;
+    padding-top: 62px;
+    .variety-detail__information__title {
+      font-family: @font-family-crete;
+      font-size: 34px;
+      margin-bottom: 22px;
+      text-align: center;
+    }
+    .variety-detail__information__image {
+      text-align: center;
+      width: 100%;
+      .image {
+        border-radius: 50%;
+        height: 156px;
+        margin-bottom: 15px;
+        width: 156px;
+      }
+      .name {
+        font-size: 26px;
+        font-weight: bold;
+      }
+      .job {
+        font-size: 26px;
+        font-style: italic;
+      }
+      .mail {
+        color: @green;
+        font-size: 26px;
+        font-weight: bold;
+      }
+      .phone {
+        color: @green;
+        font-size: 26px;
+        font-weight: bold;
+      }
+    }
+  }
+  .variety-detail__social {
+    border-bottom: 1px solid @light-grey;
+    padding-bottom: 74px;
+    padding-top: 62px;
+    .variety-detail__social__title {
+      font-family: @font-family-crete;
+      font-size: 34px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .variety-detail__social__container {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      .youtube {
+        display: none;
+      }
+      .twitter,
+      .facebook,
+      .linkedin {
+        display: block;
+        padding-right: 32px;
+        svg {
+          width: 95px;
+          path,
+          circle {
+            fill: @dark-grey;
+            stroke: @dark-grey;
+          }
+        }
+      }
+      .twitter {
+        &:hover,
+        &:active {
+          .social-hover(@twitter);
+        }
+      }
+      .facebook {
+        &:hover,
+        &:active {
+          .social-hover(@facebook);
+        }
+      }
+      .youtube {
+        &:hover,
+        &:active {
+          .social-hover(@youtube);
+        }
+      }
+      .linkedin {
+        &:hover,
+        &:active {
+          .social-hover(@linkedin);
+        }
+      }
+    }
+  }
+  .variety-detail__others {
+    padding-bottom: 74px;
+    padding-top: 80px;
+    text-align: center;
+    .variety-detail__others__title {
+      font-size: 41px;
+      margin-bottom: 39px;
+    }
+    .variety-detail__others__horizontal-list {
+      height:500px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      width:100%;
+      .list-group {
+        height: 600px;
+        overflow-x: scroll;
+        width: 100%;
+        white-space: nowrap;
+        .list-group-item {
+          border: none;
+          display: inline-block;
+          height: 410px;
+          margin-bottom: 0;
+          margin-right: 0;
+          width: 510px;
+        }
+      }
+    }
+  }
+}

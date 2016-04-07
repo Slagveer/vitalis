@@ -42,8 +42,9 @@
       display: block !important;
     }
   }
-  .teaserbox__overlay {
-    background-color: @green;
+  .teaserbox__overlay,
+  .teaserbox__overlay-bottom {
+    background-color: @white;
     bottom: 0;
     left: 0;
     position: absolute;
@@ -51,6 +52,12 @@
     top: 0;
     opacity: 0;
     z-index: 1;
+  }
+  .teaserbox__overlay-bottom {
+    height: 150px;
+    opacity: 1;
+    top: inherit;
+    z-index: 2;
   }
   &.teaserbox--icon {
     background-color: #fff;
@@ -145,6 +152,19 @@
             fill: @white;
           }
         }
+      }
+    }
+  }
+  &.teaserbox--variety-detail {
+    border: 1px solid @green;
+    height: 410px;
+    padding: 0px 30px 0px 0px;
+    .teaserbox__description {
+      .teaserbox__description__label {
+        display: none;
+      }
+      .teaserbox__description__title {
+        font-size: 34.5px;
       }
     }
   }

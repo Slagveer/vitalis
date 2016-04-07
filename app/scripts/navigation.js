@@ -42,10 +42,10 @@
         if($menu.data('active')) {
           $navigationMenu.collapse('show');
         }
-        setLogo(evt);
+        setLogo($(this));
       });
       $search.data('active', false);
-      $search.on('click', function onClick(evt) {
+      $search.on('click', function onClick() {
         collapseAll();
         $search.data('active', !$search.data('active'));
         if($search.data('active')) {
