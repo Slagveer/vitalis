@@ -7733,7 +7733,7 @@ button.close {
 }
 .teaserbox .teaserbox__overlay,
 .teaserbox .teaserbox__overlay-bottom {
-  background-color: #ffffff;
+  background-color: #aac426;
   bottom: 0;
   left: 0;
   position: absolute;
@@ -7743,6 +7743,7 @@ button.close {
   z-index: 1;
 }
 .teaserbox .teaserbox__overlay-bottom {
+  background-color: #ffffff;
   height: 150px;
   opacity: 1;
   top: inherit;
@@ -7819,15 +7820,25 @@ button.close {
   stroke: #ffffff;
   fill: #ffffff;
 }
-.teaserbox.teaserbox--variety-detail {
+.teaserbox.teaserbox--crops-overview {
+  margin-bottom: 20px;
+}
+.teaserbox.teaserbox--variety-detail,
+.teaserbox.teaserbox--crops-overview {
   border: 1px solid #aac426;
   height: 410px;
   padding: 0px 30px 0px 0px;
 }
-.teaserbox.teaserbox--variety-detail .teaserbox__description .teaserbox__description__label {
+.teaserbox.teaserbox--variety-detail .teaserbox__image,
+.teaserbox.teaserbox--crops-overview .teaserbox__image {
+  height: 270px;
+}
+.teaserbox.teaserbox--variety-detail .teaserbox__description .teaserbox__description__label,
+.teaserbox.teaserbox--crops-overview .teaserbox__description .teaserbox__description__label {
   display: none;
 }
-.teaserbox.teaserbox--variety-detail .teaserbox__description .teaserbox__description__title {
+.teaserbox.teaserbox--variety-detail .teaserbox__description .teaserbox__description__title,
+.teaserbox.teaserbox--crops-overview .teaserbox__description .teaserbox__description__title {
   font-size: 34.5px;
 }
 .teaserbox.teaserbox--news,
@@ -7843,7 +7854,7 @@ button.close {
 .teaserbox.teaserbox--news--grey .teaserbox__image {
   left: 0;
   width: 100%;
-  min-height: 500px;
+  height: 500px;
   bottom: 0;
   position: absolute;
   right: 0;
@@ -7968,6 +7979,9 @@ button.close {
   width: 96px;
   z-index: 2;
 }
+.teaserbox .teaserbox__quote .teaserbox__overlay {
+  opacity: 0.8;
+}
 .teaserbox .teaserbox__quote svg path {
   fill: #ffffff;
 }
@@ -7992,7 +8006,8 @@ button.close {
 .teaserbox .teaserbox__link .teaserbox__link__svg--over {
   display: none;
 }
-.teaserbox .teaserbox__link svg path {
+.teaserbox .teaserbox__link svg path,
+.teaserbox .teaserbox__link svg circle {
   fill: #aac426;
 }
 .itemslist.itemslist--variety-detail {
@@ -8454,8 +8469,7 @@ button.close {
   width: 510px;
 }
 .crop-overview .crop-overview__image {
-  width: 100%;
-  max-height: 439px;
+  height: 439px;
 }
 .crop-overview .crop-overview__image-title {
   bottom: 0px;
