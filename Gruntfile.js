@@ -111,6 +111,7 @@ module.exports = function (grunt) {
             ,'<%= yeoman.app %>/components/varietydetailheader.html'
             ,'<%= yeoman.app %>/components/varietydetailpage.html'
             ,'<%= yeoman.app %>/components/cropoverviewpage.html'
+            ,'<%= yeoman.app %>/components/contentpage.html'
             ,'<%= yeoman.app %>/components/teaserbox.html'
             ,'<%= yeoman.app %>/components/filter.html'
             ,'<%= yeoman.app %>/components/footer.html'

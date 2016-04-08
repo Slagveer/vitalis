@@ -1,0 +1,101 @@
+.create-label(@color) {
+  border: 1px solid @color;
+  clear: right;
+  display: table-cell;
+  line-height: @label-line-height;
+  margin-bottom: 15px;
+  padding: 4px;
+  vertical-align: bottom;
+  text-align: left;
+  .label-square {
+    color: @color;
+    font-size: 20px;//@label;
+    line-height: 23px;//@label-line-height;
+    font-weight: bold;
+    padding: 5px;
+  }
+}
+
+.content {
+  .content__header {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 98px;
+    .content__header__title {
+      font-family: @font-family-crete;
+      font-size: 64px;
+      line-height: 72px;
+      padding-left: 40px;
+      padding-top: 13px;
+    }
+    .content__header__sub-title {
+      font-size: 24px;
+      margin-top: 2px;
+      margin-bottom: 0px;
+      padding-left: 40px;
+      .content__header__sub-title__date {
+        float:left;
+        margin-right: 20px;
+      }
+      .content__header__sub-title__label {
+        float: left;
+        .create-label(@dark-grey);
+      }
+    }
+  }
+  .content__image {
+    height: 710px;
+    width: 100%;
+  }
+  .content__image--small {
+    height: 408px;
+    padding-top: 50px;
+    width: 100%;
+  }
+  .content__image--extra-small {
+    height: 282px;
+    padding: 40px 0 50px 0;
+    width: 100%;
+  }
+  .content__image__caption {
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    padding-top: 15px;
+    padding-left: 40px;
+    .producer {
+      color: @grey;
+    }
+  }
+  .content__introduction {
+    padding-left: 40px;
+    padding-top: 60px;
+    .content__introduction__title,
+    .content__introduction__subtitle {
+      font-family: @font-family-crete;
+      font-size: 47px;
+      font-weight: bold;
+      padding-bottom: 16px;
+      &.quote {
+        border: none;
+        font-style: italic;
+        line-height: 56px;
+        padding-top: 58px;
+      }
+    }
+    .content__introduction__subtitle {
+      font-size: 40px;
+    }
+    .content__introduction__description {
+      font-family: @font-family-open-sanse;
+      font-size: 27px;
+      font-weight: bold;
+    }
+    .content__introduction__description {
+      &.normal {
+        font-weight: normal;
+        padding-top: 24px;
+      }
+    }
+  }
+}
