@@ -7841,6 +7841,12 @@ button.close {
 .teaserbox.teaserbox--crops-overview .teaserbox__description .teaserbox__description__title {
   font-size: 34.5px;
 }
+.teaserbox.teaserbox--variety-detail {
+  padding-right: 0px;
+}
+.teaserbox.teaserbox--variety-detail .teaserbox__image {
+  width: 100%;
+}
 .teaserbox.teaserbox--news,
 .teaserbox.teaserbox--story,
 .teaserbox.teaserbox--news--grey {
