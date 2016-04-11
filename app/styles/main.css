@@ -7820,25 +7820,25 @@ button.close {
   stroke: #ffffff;
   fill: #ffffff;
 }
-.teaserbox.teaserbox--crops-overview {
+.teaserbox.teaserbox--child-overview {
   margin-bottom: 20px;
 }
 .teaserbox.teaserbox--variety-detail,
-.teaserbox.teaserbox--crops-overview {
+.teaserbox.teaserbox--child-overview {
   border: 1px solid #aac426;
   height: 410px;
   padding: 0px 30px 0px 0px;
 }
 .teaserbox.teaserbox--variety-detail .teaserbox__image,
-.teaserbox.teaserbox--crops-overview .teaserbox__image {
+.teaserbox.teaserbox--child-overview .teaserbox__image {
   height: 270px;
 }
 .teaserbox.teaserbox--variety-detail .teaserbox__description .teaserbox__description__label,
-.teaserbox.teaserbox--crops-overview .teaserbox__description .teaserbox__description__label {
+.teaserbox.teaserbox--child-overview .teaserbox__description .teaserbox__description__label {
   display: none;
 }
 .teaserbox.teaserbox--variety-detail .teaserbox__description .teaserbox__description__title,
-.teaserbox.teaserbox--crops-overview .teaserbox__description .teaserbox__description__title {
+.teaserbox.teaserbox--child-overview .teaserbox__description .teaserbox__description__title {
   font-size: 34.5px;
 }
 .teaserbox.teaserbox--variety-detail {
