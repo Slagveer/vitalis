@@ -160,6 +160,7 @@
     margin-bottom: 20px;
   }
   &.teaserbox--variety-detail,
+  &.teaserbox--extra-content,
   &.teaserbox--child-overview {
     border: 1px solid @green;
     height: 410px;
@@ -173,6 +174,36 @@
       }
       .teaserbox__description__title {
         font-size: 34.5px;
+      }
+    }
+  }
+  &.teaserbox--extra-content {
+    border-color: @grey;
+    height: 690px;
+    max-height: 690px;
+    padding: 17px;
+    margin-bottom:27px;
+    .teaserbox__overlay {
+      z-index: 3;
+    }
+    .teaserbox__overlay-bottom {
+      height: 356px;
+    }
+    .teaserbox__image {
+      height: 315px;
+      width: 100%;
+    }
+    .teaserbox__description {
+      bottom: inherit;
+      color: @dark-grey;
+      left: 32px;
+      line-height: 31px;
+      top: 356px;
+      .teaserbox__description__title {
+        color: @dark-grey;
+        font-size: 27px;
+        line-height: 35px;
+        padding-bottom: 12px;
       }
     }
   }
