@@ -116,6 +116,7 @@ module.exports = function (grunt) {
             ,'<%= yeoman.app %>/components/filter.html'
             ,'<%= yeoman.app %>/components/footer.html'
             ,'<%= yeoman.app %>/components/carousel.html'
+            ,'<%= yeoman.app %>/components/loadmore.html'
             ,'<%= yeoman.app %>/components/extracotentlist.html'
             ,'<%= yeoman.app %>/components/itemslist.html'],
           options: {

@@ -9185,6 +9185,7 @@ button.close {
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item {
   flex-grow: 1;
+  max-width: 33.33333333%;
   position: relative;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__overlay {
@@ -9202,6 +9203,52 @@ button.close {
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item:hover .item__overlay,
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item:active .item__overlay {
   opacity: .8;
+}
+.loadmore .carousel-caption__button {
+  background: none;
+  border: 1px solid #515151;
+  border-radius: 50px;
+  color: #515151;
+  font-family: 'Crete Round', serif;
+  font-size: 27px;
+  height: 81px;
+  max-width: 310px;
+  width: 100%;
+}
+.loadmore .carousel-caption__button:hover,
+.loadmore .carousel-caption__button:active {
+  border-color: #aac426;
+}
+.loadmore .carousel-caption__button:hover .carousel-caption__button__text,
+.loadmore .carousel-caption__button:active .carousel-caption__button__text {
+  color: #aac426;
+}
+.loadmore .carousel-caption__button:hover .carousel-caption__button__arrow svg path.circle,
+.loadmore .carousel-caption__button:active .carousel-caption__button__arrow svg path.circle,
+.loadmore .carousel-caption__button:hover .carousel-caption__button__arrow svg .arrow,
+.loadmore .carousel-caption__button:active .carousel-caption__button__arrow svg .arrow {
+  stroke: #aac426;
+  fill: #aac426;
+}
+.loadmore .carousel-caption__button .carousel-caption__button__text {
+  float: left;
+  display: inline-block;
+  line-height: 67px;
+  padding-left: 48px;
+}
+.loadmore .carousel-caption__button .carousel-caption__button__arrow {
+  float: right;
+  display: inline-block;
+  line-height: 91px;
+  padding-right: 26px;
+}
+.loadmore .carousel-caption__button .carousel-caption__button__arrow svg {
+  height: 47px;
+  width: 47px;
+}
+.loadmore .carousel-caption__button .carousel-caption__button__arrow svg path {
+  fill: #515151;
+  stroke: #515151;
 }
 .extra-content {
   padding-top: 50px;

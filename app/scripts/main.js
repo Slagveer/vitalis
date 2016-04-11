@@ -11,7 +11,7 @@
       });
       if($carousel) {
         $carousel.carousel({
-          interval: 800000
+          interval: 8000
         });
         $carousel.swiperight(function () {
           $carousel.carousel('prev');

@@ -1,0 +1,49 @@
+.loadmore {
+  .carousel-caption__button {
+    background: none;
+    border: 1px solid @dark-grey;
+    border-radius: 50px;
+    color: @dark-grey;
+    font-family: @font-family-crete;
+    font-size: 27px;
+    height: 81px;
+    max-width: 310px;
+    width: 100%;
+    &:hover,
+    &:active {
+      border-color: @green;
+      .carousel-caption__button__text {
+        color: @green;
+      }
+      .carousel-caption__button__arrow {
+        svg {
+          path.circle,
+          .arrow {
+            stroke: @green;
+            fill: @green;
+          }
+        }
+      }
+    }
+    .carousel-caption__button__text {
+      float: left;
+      display: inline-block;
+      line-height: 67px;
+      padding-left: 48px;
+    }
+    .carousel-caption__button__arrow {
+      float: right;
+      display: inline-block;
+      line-height: 91px;
+      padding-right: 26px;
+      svg {
+        height: 47px;
+        width: 47px;
+        path {
+          fill: @dark-grey;
+          stroke: @dark-grey;
+        }
+      }
+    }
+  }
+}
