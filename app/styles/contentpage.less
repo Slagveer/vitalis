@@ -90,11 +90,97 @@
       font-family: @font-family-open-sanse;
       font-size: 27px;
       font-weight: bold;
-    }
-    .content__introduction__description {
-      &.normal {
+      &.content__introduction__description--normal {
         font-weight: normal;
         padding-top: 24px;
+      }
+    }
+    &.content__introduction--after-image {
+      padding-top: 8px;
+    }
+    &.content__introduction--bottom {
+      border-bottom: 1px solid @grey;
+      padding-bottom: 84px;
+      padding-top: 23px;
+    }
+    &.content__introduction--image {
+      margin-top: -23px;
+      padding-left: 0px;
+      position: relative;
+      .content__introduction--image__image {
+        height: 395px;
+        padding: 0 10px;
+        width: 100%;
+      }
+      .content__introduction--image__title {
+        border: none;
+        bottom: 0px;
+        color: @white;
+        font-family: @font-family-crete;
+        font-size: 47px;
+        font-style: italic;
+        left: 33px;
+        line-height: 61px;
+        position: absolute;
+        right: 0px;
+        top: 146px;
+      }
+    }
+    &.content__introduction--social {
+      border-bottom: 1px solid @light-grey;
+      padding-bottom: 74px;
+      padding-top: 62px;
+      .content__introduction--social__title {
+        font-family: @font-family-crete;
+        font-size: 34px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .content__introduction--social__container {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        .youtube {
+          display: none;
+        }
+        .twitter,
+        .facebook,
+        .linkedin {
+          display: block;
+          padding-right: 32px;
+          svg {
+            width: 95px;
+            path,
+            circle {
+              fill: @dark-grey;
+              stroke: @dark-grey;
+            }
+          }
+        }
+        .twitter {
+          &:hover,
+          &:active {
+            .social-hover(@twitter);
+          }
+        }
+        .facebook {
+          &:hover,
+          &:active {
+            .social-hover(@facebook);
+          }
+        }
+        .youtube {
+          &:hover,
+          &:active {
+            .social-hover(@youtube);
+          }
+        }
+        .linkedin {
+          &:hover,
+          &:active {
+            .social-hover(@linkedin);
+          }
+        }
       }
     }
   }

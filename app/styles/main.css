@@ -8013,6 +8013,9 @@ button.close {
 .itemslist.itemslist--variety-detail {
   padding-top: 50px;
 }
+.itemslist.itemslist--content {
+  padding-top: 67px;
+}
 .itemslist .itemslist__header {
   line-height: 80px;
   font-family: 'Crete Round', serif;
@@ -8593,9 +8596,115 @@ button.close {
   font-size: 27px;
   font-weight: bold;
 }
-.content .content__introduction .content__introduction__description.normal {
+.content .content__introduction .content__introduction__description.content__introduction__description--normal {
   font-weight: normal;
   padding-top: 24px;
+}
+.content .content__introduction.content__introduction--after-image {
+  padding-top: 8px;
+}
+.content .content__introduction.content__introduction--bottom {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 84px;
+  padding-top: 23px;
+}
+.content .content__introduction.content__introduction--image {
+  margin-top: -23px;
+  padding-left: 0px;
+  position: relative;
+}
+.content .content__introduction.content__introduction--image .content__introduction--image__image {
+  height: 395px;
+  padding: 0 10px;
+  width: 100%;
+}
+.content .content__introduction.content__introduction--image .content__introduction--image__title {
+  border: none;
+  bottom: 0px;
+  color: #ffffff;
+  font-family: 'Crete Round', serif;
+  font-size: 47px;
+  font-style: italic;
+  left: 33px;
+  line-height: 61px;
+  position: absolute;
+  right: 0px;
+  top: 146px;
+}
+.content .content__introduction.content__introduction--social {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 74px;
+  padding-top: 62px;
+}
+.content .content__introduction.content__introduction--social .content__introduction--social__title {
+  font-family: 'Crete Round', serif;
+  font-size: 34px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.content .content__introduction.content__introduction--social .content__introduction--social__container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.content .content__introduction.content__introduction--social .content__introduction--social__container .youtube {
+  display: none;
+}
+.content .content__introduction.content__introduction--social .content__introduction--social__container .twitter,
+.content .content__introduction.content__introduction--social .content__introduction--social__container .facebook,
+.content .content__introduction.content__introduction--social .content__introduction--social__container .linkedin {
+  display: block;
+  padding-right: 32px;
+}
+.content .content__introduction.content__introduction--social .content__introduction--social__container .twitter svg,
+.content .content__introduction.content__introduction--social .content__introduction--social__container .facebook svg,
+.content .content__introduction.content__introduction--social .content__introduction--social__container .linkedin svg {
+  width: 95px;
+}
+.content .content__introduction.content__introduction--social .content__introduction--social__container .twitter svg path,
+.content .content__introduction.content__introduction--social .content__introduction--social__container .facebook svg path,
+.content .content__introduction.content__introduction--social .content__introduction--social__container .linkedin svg path,
+.content .content__introduction.content__introduction--social .content__introduction--social__container .twitter svg circle,
+.content .content__introduction.content__introduction--social .content__introduction--social__container .facebook svg circle,
+.content .content__introduction.content__introduction--social .content__introduction--social__container .linkedin svg circle {
+  fill: #515151;
+  stroke: #515151;
+}
+.content .content__introduction.content__introduction--social .content__introduction--social__container .twitter:hover svg path,
+.content .content__introduction.content__introduction--social .content__introduction--social__container .twitter:active svg path {
+  fill: #ffffff;
+}
+.content .content__introduction.content__introduction--social .content__introduction--social__container .twitter:hover svg circle,
+.content .content__introduction.content__introduction--social .content__introduction--social__container .twitter:active svg circle {
+  fill-opacity: 1;
+  fill: #55acef;
+}
+.content .content__introduction.content__introduction--social .content__introduction--social__container .facebook:hover svg path,
+.content .content__introduction.content__introduction--social .content__introduction--social__container .facebook:active svg path {
+  fill: #ffffff;
+}
+.content .content__introduction.content__introduction--social .content__introduction--social__container .facebook:hover svg circle,
+.content .content__introduction.content__introduction--social .content__introduction--social__container .facebook:active svg circle {
+  fill-opacity: 1;
+  fill: #3c599a;
+}
+.content .content__introduction.content__introduction--social .content__introduction--social__container .youtube:hover svg path,
+.content .content__introduction.content__introduction--social .content__introduction--social__container .youtube:active svg path {
+  fill: #ffffff;
+}
+.content .content__introduction.content__introduction--social .content__introduction--social__container .youtube:hover svg circle,
+.content .content__introduction.content__introduction--social .content__introduction--social__container .youtube:active svg circle {
+  fill-opacity: 1;
+  fill: #e62d27;
+}
+.content .content__introduction.content__introduction--social .content__introduction--social__container .linkedin:hover svg path,
+.content .content__introduction.content__introduction--social .content__introduction--social__container .linkedin:active svg path {
+  fill: #ffffff;
+}
+.content .content__introduction.content__introduction--social .content__introduction--social__container .linkedin:hover svg circle,
+.content .content__introduction.content__introduction--social .content__introduction--social__container .linkedin:active svg circle {
+  fill-opacity: 1;
+  fill: #007bb6;
 }
 .enza-checkbox {
   display: inline-block;
