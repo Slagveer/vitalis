@@ -9266,6 +9266,39 @@ button.close {
     -webkit-transform: rotate(360deg);
   }
 }
+.targetaudience {
+  padding: 20px 0;
+  text-align: center;
+}
+.targetaudience .targetaudience__select {
+  background: url('../images/icon-backtotop-arrow.svg') no-repeat 454px 0px;
+  border: 1px solid #cccccc;
+  border-radius: 0px;
+  color: #515151;
+  font-family: 'Crete Round', serif;
+  font-size: 27px;
+  height: 70px;
+  padding: 0 30px;
+  position: relative;
+  width: 550px;
+  -webkit-appearance: none;
+}
+.targetaudience .targetaudience__select:hover {
+  color: #aac426;
+}
+.targetaudience .targetaudience__select .targetaudience__select__option {
+  color: #515151;
+  float: left;
+  display: inline-block;
+  line-height: 67px;
+  padding-left: 100px;
+}
+.targetaudience .targetaudience__select .targetaudience__select__option:checked {
+  color: #aac426;
+}
+.targetaudience .targetaudience__select .targetaudience__select__option:not(:checked) {
+  color: #515151;
+}
 .extra-content {
   padding-top: 50px;
 }

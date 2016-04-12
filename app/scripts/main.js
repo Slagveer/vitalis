@@ -4,7 +4,8 @@
   $(function() {
     $(function() {
       var $carousel = $('.carousel'),
-        $loadmore = $('.js-loadmore');
+        $loadmore = $('.js-loadmore'),
+        $targetAudienceForm = $('.js-submitform');
 
       $('body').navigation({
         animation: true,
@@ -23,6 +24,8 @@
       }
       if($loadmore) {
         $loadmore.loadmore();
+      }if($targetAudienceForm) {
+        $targetAudienceForm.targetaudience();
       }
     });
   });

@@ -1,0 +1,33 @@
+.targetaudience {
+  padding: 20px 0;
+  text-align: center;
+  .targetaudience__select {
+    background: url('../images/icon-backtotop-arrow.svg') no-repeat 454px 0px;
+    border: 1px solid @grey;
+    border-radius: 0px;
+    color: @dark-grey;
+    font-family: @font-family-crete;
+    font-size: 27px;
+    height: 70px;
+    padding: 0 30px;
+    position: relative;
+    width: 550px;
+    -webkit-appearance: none;
+    &:hover {
+      color: @green;
+    }
+    .targetaudience__select__option {
+      color: @dark-grey;
+      float: left;
+      display: inline-block;
+      line-height: 67px;
+      padding-left: 100px;
+      &:checked {
+        color: @green;
+      }
+      &:not(:checked) {
+        color: @dark-grey;
+      }
+    }
+  }
+}
