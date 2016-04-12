@@ -1,0 +1,22 @@
+{
+  "data": {
+    "teaserboxes": [
+      {
+        "id": 1,
+        "label": "Hello World!",
+        "image": "../images/dummy/home2.png",
+        "label": "NEWS",
+        "title": "Dutch Prime Minister:<br>Great things happen here",
+        "href": "#"
+      },
+      {
+        "id": 2,
+        "label": "Hello World!",
+        "image": "../images/dummy/home2.png",
+        "label": "NEWS",
+        "title": "Enza familiebedrijf van het jaar 2016",
+        "href": "#"
+      }
+    ]
+  }
+}

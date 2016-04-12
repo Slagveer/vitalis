@@ -3,7 +3,8 @@
 (function(){
   $(function() {
     $(function() {
-      var $carousel = $('.carousel');
+      var $carousel = $('.carousel'),
+        $loadmore = $('.js-loadmore');
 
       $('body').navigation({
         animation: true,
@@ -19,6 +20,9 @@
         $carousel.swipeleft(function () {
           $carousel.carousel('next');
         });
+      }
+      if($loadmore) {
+        $loadmore.loadmore();
       }
     });
   });

@@ -9217,6 +9217,7 @@ button.close {
   font-size: 27px;
   height: 81px;
   max-width: 310px;
+  position: relative;
   width: 100%;
 }
 .loadmore .carousel-caption__button:hover,
@@ -9227,10 +9228,8 @@ button.close {
 .loadmore .carousel-caption__button:active .carousel-caption__button__text {
   color: #aac426;
 }
-.loadmore .carousel-caption__button:hover .carousel-caption__button__arrow svg path.circle,
-.loadmore .carousel-caption__button:active .carousel-caption__button__arrow svg path.circle,
-.loadmore .carousel-caption__button:hover .carousel-caption__button__arrow svg .arrow,
-.loadmore .carousel-caption__button:active .carousel-caption__button__arrow svg .arrow {
+.loadmore .carousel-caption__button:hover .carousel-caption__button__arrow svg path,
+.loadmore .carousel-caption__button:active .carousel-caption__button__arrow svg path {
   stroke: #aac426;
   fill: #aac426;
 }
@@ -9238,13 +9237,18 @@ button.close {
   float: left;
   display: inline-block;
   line-height: 67px;
-  padding-left: 48px;
+  padding-left: 100px;
 }
 .loadmore .carousel-caption__button .carousel-caption__button__arrow {
-  float: right;
-  display: inline-block;
-  line-height: 91px;
-  padding-right: 26px;
+  left: 48px;
+  position: absolute;
+  display: flex;
+  top: 18px;
+  width: 47px;
+}
+.loadmore .carousel-caption__button .carousel-caption__button__arrow.loadmore {
+  top: 0px;
+  -webkit-animation: rotate .6s linear infinite;
 }
 .loadmore .carousel-caption__button .carousel-caption__button__arrow svg {
   height: 47px;
@@ -9253,6 +9257,14 @@ button.close {
 .loadmore .carousel-caption__button .carousel-caption__button__arrow svg path {
   fill: #515151;
   stroke: #515151;
+}
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
 .extra-content {
   padding-top: 50px;

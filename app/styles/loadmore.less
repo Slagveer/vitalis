@@ -10,6 +10,7 @@
     font-size: 27px;
     height: 81px;
     max-width: 310px;
+    position: relative;
     width: 100%;
     &:hover,
     &:active {
@@ -19,8 +20,7 @@
       }
       .carousel-caption__button__arrow {
         svg {
-          path.circle,
-          .arrow {
+          path {
             stroke: @green;
             fill: @green;
           }
@@ -31,13 +31,18 @@
       float: left;
       display: inline-block;
       line-height: 67px;
-      padding-left: 48px;
+      padding-left: 100px;
     }
     .carousel-caption__button__arrow {
-      float: right;
-      display: inline-block;
-      line-height: 91px;
-      padding-right: 26px;
+      left: 48px;
+      position: absolute;
+      display: flex;
+      top: 18px;
+      width: 47px;
+      &.loadmore {
+        top: 0px;
+        -webkit-animation: rotate .6s linear infinite;
+      }
       svg {
         height: 47px;
         width: 47px;
@@ -47,5 +52,14 @@
         }
       }
     }
+  }
+}
+
+@-webkit-keyframes rotate {
+  from{
+    -webkit-transform: rotate(0deg);
+  }
+  to{
+    -webkit-transform: rotate(360deg);
   }
 }
