@@ -9204,6 +9204,10 @@ button.close {
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item:active .item__overlay {
   opacity: .8;
 }
+.loadmore {
+  padding: 20px 0;
+  text-align: center;
+}
 .loadmore .carousel-caption__button {
   background: none;
   border: 1px solid #515151;
