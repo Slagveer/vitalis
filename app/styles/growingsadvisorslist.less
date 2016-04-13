@@ -1,0 +1,136 @@
+@brand-primary: @black;
+
+.growingsadvisorslist {
+  .article--list {
+    margin-left: -21px;
+    margin-right: -21px;
+  }
+  .growingsadvisorslist__item {
+    align-content: stretch;
+    border: 1px solid @grey;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 20px;
+    padding: 50px;
+    height: 440px;
+    &:hover {
+      text-decoration: none;
+      background-color: lighten(@grey, 10%);
+    }
+    .growingsadvisorslist__item__top {
+      display: flex;
+      flex-flow: row nowrap;
+      min-height: 180px;
+      .growingsadvisorslist__item__image {
+        border: 1px solid @grey;
+        float:left;
+        height: 180px;
+        max-width: 205px;
+        width: 100%;
+      }
+      .growingsadvisorslist__item__content {
+        flex-grow: 5;
+        height: 180px;
+        padding-left: 28px;
+        position: relative;
+        .growingsadvisorslist__item__title {
+          clear: right;
+          color: @growingsadvisorslist-color;
+          display: inline;
+          float: left;
+          font-family: @font-family-crete;
+          font-size: 28px;
+          line-height: @label-line-height;
+          padding: 4px;
+          text-align: left;
+          .label-square {
+            font-size: @label;
+            line-height: @label-line-height;
+            padding: 0px;
+          }
+        }
+        .growingsadvisorslist__item__list {
+          clear: left;
+          float: left;
+          font-family: @font-family-open-sanse;
+          font-size: 15pt;//@label;
+          line-height: @label-line-height;
+          margin-bottom: 15px;
+          margin-left: 5px;
+          margin-top: 15px;
+          .growingsadvisorslist__item__list__title,
+          .growingsadvisorslist__item__list__description {
+            display: inline-block;
+            float: left;
+            margin-left: 10px;
+            width: 175px;
+          }
+          .growingsadvisorslist__item__list__title {
+            clear: left;
+            margin-left: 0px;
+            width: 96px;
+          }
+          &.growingsadvisorslist__item__list--contact {
+            color: @green;
+            font-weight: bold;
+            margin-top: 0px;
+            .growingsadvisorslist__item__list__title {
+              width: 100%;
+              &.phone {
+                font-size: 26px;
+              }
+            }
+            .growingsadvisorslist__item__list__description {
+              clear: left;
+              margin-left: 0px;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .growingsadvisorslist__item__bottom {
+      display: flex;
+      flex-flow: row nowrap;
+      margin-top: 28px;
+      .growingsadvisorslist__item__link {
+        align-self: flex-end;
+        bottom: 25px;
+        color: @green;
+        display: inline-block;
+        flex-shrink: 0;
+        font-size: @label;
+        height: 48px;//2.5 * @label;
+        line-height: 1.8 * @label-line-height;
+        position: absolute;
+        right: 16px;
+        text-align: center;
+        vertical-align: middle;
+        width: 48px;//2.5 * @label;
+        svg {
+          path {
+            fill: @green;
+          }
+        }
+      }
+    }
+  }
+}
+
+@font-size: 26px;
+@line-height: 1.4;
+@lines-to-show: 2;
+
+.block-with-text {
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-width: 400px;
+  height: @font-size*@line-height*@lines-to-show; /* Fallback for non-webkit */
+  margin: 0 auto;
+  font-size: @font-size;
+  line-height: @line-height;
+  -webkit-line-clamp: @lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,131 @@
+@brand-primary: @black;
+
+.growingsbannerslist {
+  .article--list {
+    margin-left: -21px;
+    margin-right: -21px;
+  }
+  .growingsbannerslist__item {
+    align-content: stretch;
+    border: 1px solid @grey;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 20px;
+    padding: 0px;
+    height: 355px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      background-color: lighten(@grey, 10%);
+    }
+    .growingsbannerslist__item__top {
+      display: flex;
+      flex-flow: row nowrap;
+      min-height: 355px;
+      .growingsbannerslist__item__image {
+        border: 1px solid @grey;
+        float:left;
+        height: 355px;
+        max-width: 355px;
+        width: 100%;
+      }
+      .growingsbannerslist__item__content {
+        display: table;
+        flex-grow: 5;
+        height: 355px;
+        padding-left: 28px;
+        position: relative;
+        .growingsbannerslist__item__title {
+          color: @dark-grey;
+          display: table-cell;
+          font-family: @font-family-crete;
+          font-size: 38px;
+          font-weight: bold;
+          line-height: 43px;
+          text-align: left;
+          vertical-align: middle;
+          width: 100px;
+        }
+      }
+    }
+    .growingsbannerslist__item__bottom {
+      display: flex;
+      flex-flow: row nowrap;
+      margin-top: 28px;
+      .growingsbannerslist__item__link {
+        align-self: flex-end;
+        bottom: 25px;
+        color: @green;
+        display: inline-block;
+        flex-shrink: 0;
+        font-size: @label;
+        height: 48px;//2.5 * @label;
+        line-height: 1.8 * @label-line-height;
+        position: absolute;
+        right: 16px;
+        text-align: center;
+        vertical-align: middle;
+        width: 48px;//2.5 * @label;
+        svg {
+          path {
+            fill: @green;
+          }
+        }
+      }
+    }
+  }
+  .growingsbannerslist__paging {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    .growingsbannerslist__paging__link {
+      &.growingsbannerslist__paging__link--left,
+      &.growingsbannerslist__paging__link--right {
+        height: 48px;
+        width: 48px;
+        svg {
+          path {
+            fill: @green;
+          }
+        }
+        &.disabled {
+          svg {
+            path {
+              fill: @grey;
+            }
+          }
+        }
+      }
+      &.growingsbannerslist__paging__link--left {
+        transform: rotate(180deg);
+      }
+    }
+    .growingsbannerslist__paging__number {
+      color: @green;
+      font-family: @font-family-crete;
+      font-size: 28px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+}
+
+@font-size: 26px;
+@line-height: 1.4;
+@lines-to-show: 2;
+
+.block-with-text {
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-width: 400px;
+  height: @font-size*@line-height*@lines-to-show; /* Fallback for non-webkit */
+  margin: 0 auto;
+  font-size: @font-size;
+  line-height: @line-height;
+  -webkit-line-clamp: @lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
