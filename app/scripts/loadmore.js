@@ -28,11 +28,11 @@
         getTeasers();
       });
       $arrow = $(this.element).find('.js-arrow');
-      $teaserboxLocation = $('.js-teaserboxes');
+      $teaserboxLocation = $($loadmore.data('target'));
 
       function getTeasers(page) {
-        if($loadmore.data('href')) {
-          $.when(delayAsync(4000), $.get($loadmore.data('href')), $.ajax({url: $loadmore.data('href')}))
+        if($loadmore.data('service')) {
+          $.when(delayAsync(4000), $.get($loadmore.data('service')), $.ajax({url: $loadmore.data('service')}))
             .then(function(delayData, jsonData, ajaxJsonData) {
               var source,
                 template,
@@ -40,20 +40,19 @@
                 html;
 
               if(ajaxJsonData){
-                for(var i=0,l=ajaxJsonData[0].Data.Items.length;i<l;i++) {
-                  teaserbox = ajaxJsonData[0].Data.Items[i];
-                  teaserbox.StartDate = moment(teaserbox.StartDate).format('DD MMM YYYY').toUpperCase();
-                  teaserbox.EndDate = moment(teaserbox.EndDate).format('DD MMM YYYY').toUpperCase();
-                  teaserbox.TeaserType = (teaserbox.TeaserType)? teaserbox.TeaserType.toUpperCase() : '';
-                  teaserbox.Jobhours = (teaserbox.Jobhours)? teaserbox.Jobhours.toUpperCase() : '';
-                  teaserbox.Location = (teaserbox.Location)? teaserbox.Location.toUpperCase() : '';
-                  teaserbox.Country = (teaserbox.Country)? teaserbox.Country.toUpperCase() : '';
+                _.each(ajaxJsonData[0].Data.Items, function(teaserbox) {
+                  _.pick(teaserbox, function(value, key, object) {
+                    if(_.indexOf(['StartDate', 'EndDate'], key) > -1) {
+                      teaserbox[key] = moment(teaserbox[key]).format('DD MMM YYYY');
+                    }
+                    return false;
+                  });
                   $teaserboxTemplate = $('#teaserbox-template-' + teaserbox.TemplateName.toLowerCase());
                   source = $teaserboxTemplate.html(),
                   template = Handlebars.compile(source),
                   html = template(teaserbox);
                   $teaserboxLocation.append(html);
-                }
+                });
               }
               $arrow.removeClass('loadmore');
             }).fail(function(err) {

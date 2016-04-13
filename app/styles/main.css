@@ -7839,6 +7839,7 @@ button.close {
 .teaserbox.teaserbox--extra-content .teaserbox__description .teaserbox__description__label,
 .teaserbox.teaserbox--child-overview .teaserbox__description .teaserbox__description__label {
   display: none;
+  text-transform: uppercase;
 }
 .teaserbox.teaserbox--variety-detail .teaserbox__description .teaserbox__description__title,
 .teaserbox.teaserbox--extra-content .teaserbox__description .teaserbox__description__title,
@@ -7986,6 +7987,7 @@ button.close {
   line-height: 23px;
   font-weight: bold;
   padding: 5px;
+  text-transform: uppercase;
 }
 .teaserbox .teaserbox__description .teaserbox__description__title {
   color: #aac426;
@@ -8010,6 +8012,7 @@ button.close {
   float: left;
   line-height: 23px;
   position: relative;
+  text-transform: uppercase;
   vertical-align: bottom;
 }
 .teaserbox .teaserbox__quote {
