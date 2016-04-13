@@ -9267,6 +9267,7 @@ button.close {
   }
 }
 .targetaudience {
+  margin-bottom: 24px;
   padding: 20px 0;
   text-align: center;
 }
@@ -9298,6 +9299,111 @@ button.close {
 }
 .targetaudience .targetaudience__select .targetaudience__select__option:not(:checked) {
   color: #515151;
+}
+.vancancieslist.vancancieslist--content {
+  padding-top: 67px;
+}
+.vancancieslist .vancancieslist__header {
+  line-height: 80px;
+  font-family: 'Crete Round', serif;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 36px;
+  margin-top: 6px;
+  text-align: center;
+}
+.vancancieslist .vancancieslist__item {
+  border: 1px solid #cccccc;
+  display: block;
+  height: 172px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.vancancieslist .vancancieslist__item:hover,
+.vancancieslist .vancancieslist__item:active {
+  background-color: #e6e6e6;
+}
+.vancancieslist .vancancieslist__item .vancancieslist__item__content {
+  padding-left: 30px;
+}
+.vancancieslist .vancancieslist__item .vancancieslist__item__content .vancancieslist__item__title {
+  clear: right;
+  color: #aac426;
+  display: inline;
+  float: left;
+  font-family: 'Crete Round', serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 12pt;
+  margin-bottom: 4px;
+  margin-top: 56px;
+  padding-left: 16px;
+  text-align: left;
+}
+.vancancieslist .vancancieslist__item .vancancieslist__item__content .vancancieslist__item__description {
+  clear: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  padding-left: 16px;
+  padding-top: 10px;
+}
+.vancancieslist .vancancieslist__item .vancancieslist__item__link {
+  align-self: flex-end;
+  bottom: 52px;
+  color: #aac426;
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 11pt;
+  height: 48px;
+  line-height: 21.6pt;
+  position: absolute;
+  right: 32px;
+  text-align: center;
+  vertical-align: middle;
+  width: 48px;
+}
+.vancancieslist .vancancieslist__item .vancancieslist__item__link svg path {
+  fill: #aac426;
+}
+.container .row .fullsize,
+.container-fluid .row .fullsize {
+  padding: 0px;
+}
+.vacancy .vacancy__image {
+  width: 100%;
+  max-height: 439px;
+}
+.vacancy .vacancy__image-title {
+  bottom: 0px;
+  color: #ffffff;
+  font-family: 'Crete Round', serif;
+  font-size: 55px;
+  left: 0px;
+  line-height: 422px;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  top: 0px;
+  vertical-align: middle;
+}
+.vacancy .vacancy__header {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 62px;
+}
+.vacancy .vacancy__header .vacancy__title {
+  font-family: 'Crete Round', serif;
+  font-size: 64px;
+  padding-left: 40px;
+  padding-top: 55px;
+}
+.vacancy .vacancy__header .vacancy__description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 27px;
+  padding-left: 40px;
+  padding-top: 30px;
 }
 .extra-content {
   padding-top: 50px;

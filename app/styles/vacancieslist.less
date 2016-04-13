@@ -1,0 +1,75 @@
+@brand-primary: @black;
+@font-size: 0.8 * @body;
+@line-height: 1.4;
+@lines-to-show: 3;
+
+.vancancieslist {
+  &.vancancieslist--content {
+    padding-top: 67px;
+  }
+  .vancancieslist__header {
+    line-height: 80px;
+    font-family: @font-family-crete;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 36px;
+    margin-top: 6px;
+    text-align: center;
+  }
+  .vancancieslist__item {
+    border: 1px solid @grey;
+    display: block;
+    height: 172px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    &:hover,
+    &:active {
+      background-color: lighten(@grey, 10%);
+    }
+    .vancancieslist__item__content {
+      padding-left: 30px;
+      .vancancieslist__item__title {
+        clear: right;
+        color: @green;
+        display: inline;
+        float: left;
+        font-family: @font-family-crete;
+        font-size: 30px;
+        letter-spacing: 1px;
+        line-height: @label-line-height;
+        margin-bottom: 4px;
+        margin-top: 56px;
+        padding-left: 16px;
+        text-align: left;
+      }
+      .vancancieslist__item__description {
+        clear: left;
+        font-family: @font-family-open-sanse;
+        font-size: 24px;
+        padding-left: 16px;
+        padding-top: 10px;
+      }
+    }
+    .vancancieslist__item__link {
+      align-self: flex-end;
+      bottom: 52px;
+      color: @green;
+      display: inline-block;
+      flex-shrink: 0;
+      font-size: @label;
+      height: 48px;//2 * @label;
+      line-height: 1.8 * @label-line-height;
+      position: absolute;
+      right: 32px;
+      text-align: center;
+      vertical-align: middle;
+      width: 48px;//2 * @label;
+      svg {
+        path {
+          fill: @green;
+        }
+      }
+    }
+  }
+}
+
