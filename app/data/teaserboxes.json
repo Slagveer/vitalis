@@ -1,22 +1,221 @@
+
+
 {
-  "data": {
-    "teaserboxes": [
+  "Data": {
+    "ComponentData": {
+      "Id": "865b5b65-347d-4fb3-b05b-12066147cba4",
+      "ComponentImage": null,
+      "ComponentSubTitle": "",
+      "ComponentText": "",
+      "ComponentTitle": "",
+      "DataSet": {
+        "__interceptors": [
+          {}
+        ],
+        "Query": "",
+        "SitecoreQuery": "/sitecore/content/EnzaZaden/EnzaZaden Global/Home/NewsAndInnovation/*",
+        "Static": [],
+        "Folder": ""
+      },
+      "Max": 100,
+      "Size": 5,
+      "From": 0,
+      "Link": null,
+      "LinkText": ""
+    },
+    "DataSourceId": "865B5B65347D4FB3B05B12066147CBA4",
+    "TotalCount": 5,
+    "Items": [
       {
-        "id": 1,
-        "label": "Hello World!",
-        "image": "../images/dummy/home2.png",
-        "label": "NEWS",
-        "title": "Dutch Prime Minister:<br>Great things happen here",
-        "href": "#"
+        "Id": "adf27402-2ffc-4c14-8f4a-b82b3abba0ae",
+        "TeaserImageSmall": {
+          "Alt": "Blackberry",
+          "Border": "",
+          "Class": "",
+          "Height": 952,
+          "HSpace": 0,
+          "Src": "/-/media/System/Simulator Backgrounds/Blackberry.ashx",
+          "VSpace": 0,
+          "Width": 558,
+          "MediaId": "65ae88a6-be9b-4022-9bff-49e66e3dc6d3",
+          "Title": "",
+          "Language": {
+            "Name": "en"
+          }
+        },
+        "TeaserImageMedium": {
+          "Alt": "",
+          "Border": "",
+          "Class": "",
+          "Height": 0,
+          "HSpace": 0,
+          "Src": null,
+          "VSpace": 0,
+          "Width": 0,
+          "MediaId": "5231e32e-667f-45d0-9481-571886d38597",
+          "Title": null,
+          "Language": {
+            "Name": "en"
+          }
+        },
+        "TeaserImageLarge": null,
+        "TeaserType": "News",
+        "TeaserTitle": "Enza Zaden verkozen tot familiebedrijf van het jaar",
+        "ListTitle": "",
+        "ListSubTitle": "",
+        "ListAbstract": "",
+        "ListImage": null,
+        "TemplateName": "News"
       },
       {
-        "id": 2,
-        "label": "Hello World!",
-        "image": "../images/dummy/home2.png",
-        "label": "NEWS",
-        "title": "Enza familiebedrijf van het jaar 2016",
-        "href": "#"
+        "Id": "af82cf10-0510-4e96-b0d3-4b5116c3431a",
+        "TeaserImageSmall": {
+          "Alt": "",
+          "Border": "",
+          "Class": "",
+          "Height": 0,
+          "HSpace": 0,
+          "Src": null,
+          "VSpace": 0,
+          "Width": 0,
+          "MediaId": "834d2f10-93b7-4495-accf-ed55855d0b01",
+          "Title": null,
+          "Language": {
+            "Name": "en"
+          }
+        },
+        "TeaserImageMedium": {
+          "Alt": "",
+          "Border": "",
+          "Class": "",
+          "Height": 0,
+          "HSpace": 0,
+          "Src": null,
+          "VSpace": 0,
+          "Width": 0,
+          "MediaId": "5231e32e-667f-45d0-9481-571886d38597",
+          "Title": null,
+          "Language": {
+            "Name": "en"
+          }
+        },
+        "TeaserImageLarge": null,
+        "TeaserType": "News",
+        "TeaserTitle": "Enza Zaden verkozen tot familiebedrijf van het jaar",
+        "ListTitle": "",
+        "ListSubTitle": "",
+        "ListAbstract": "",
+        "ListImage": null,
+        "TemplateName": "News",
+        "Url": "/en/NewsAndInnovation/Enza Zaden verkozen tot familiebedrijf van het jaar"
+      },
+      {
+        "Id": "342702c4-e650-4274-9047-8a3959c3315e",
+        "TeaserImageSmall": {
+          "Alt": "Feature Phone",
+          "Border": "",
+          "Class": "",
+          "Height": 833,
+          "HSpace": 0,
+          "Src": "/-/media/System/Simulator Backgrounds/Feature Phone.ashx",
+          "VSpace": 0,
+          "Width": 351,
+          "MediaId": "e6ba438d-b112-4bef-ae3c-4f0c046868d6",
+          "Title": "",
+          "Language": {
+            "Name": "en"
+          }
+        },
+        "TeaserImageMedium": {
+          "Alt": "",
+          "Border": "",
+          "Class": "",
+          "Height": 0,
+          "HSpace": 0,
+          "Src": null,
+          "VSpace": 0,
+          "Width": 0,
+          "MediaId": "fda60b57-581b-40a2-9317-dea2589587ba",
+          "Title": null,
+          "Language": {
+            "Name": "en"
+          }
+        },
+        "TeaserImageLarge": null,
+        "TeaserType": "Expert Story",
+        "TeaserTitle": "This anothjer Title",
+        "ListTitle": "",
+        "ListSubTitle": "",
+        "ListAbstract": "",
+        "ListImage": null,
+        "TemplateName": "Story",
+        "Url": "/en/NewsAndInnovation/Enza Zaden verkozen tot familiebedrijf van het jaar"
+      },
+      {
+        "Jobhours": "FullTime",
+        "Country": "Nederland",
+        "Location": "Amsterdam",
+        "Id": "2b020b56-9228-4604-8132-26a2092a9df1",
+        "TeaserImageSmall": {
+          "Alt": "HD TV",
+          "Border": "",
+          "Class": "",
+          "Height": 1556,
+          "HSpace": 0,
+          "Src": "/-/media/System/Simulator Backgrounds/HD TV.ashx",
+          "VSpace": 0,
+          "Width": 2276,
+          "MediaId": "de305e7d-d74b-4abb-bea0-4a3a9d0137ef",
+          "Title": "",
+          "Language": {
+            "Name": "en"
+          }
+        },
+        "TeaserImageMedium": null,
+        "TeaserImageLarge": null,
+        "TeaserType": "Careers",
+        "TeaserTitle": "Een baantje",
+        "ListTitle": "",
+        "ListSubTitle": "",
+        "ListAbstract": "",
+        "ListImage": null,
+        "TemplateName": "Vacancy",
+        "Url": "/en/NewsAndInnovation/Enza Zaden verkozen tot familiebedrijf van het jaar"
+      },
+      {
+        "StartDate": "2016-04-13T02:00:00",
+        "EndDate": "2016-04-20T05:00:00",
+        "Location": "Amsterdam",
+        "Id": "dcd85848-04ae-4efc-b28d-dfa9d4112d30",
+        "TeaserImageSmall": {
+          "Alt": "Android Tablet",
+          "Border": "",
+          "Class": "",
+          "Height": 1441,
+          "HSpace": 0,
+          "Src": "/-/media/System/Simulator Backgrounds/Android Tablet.ashx",
+          "VSpace": 0,
+          "Width": 970,
+          "MediaId": "b8415fe4-1f43-488e-8ea9-aef1337ef914",
+          "Title": "",
+          "Language": {
+            "Name": "en"
+          }
+        },
+        "TeaserImageMedium": null,
+        "TeaserImageLarge": null,
+        "TeaserType": "Events",
+        "TeaserTitle": "Evenement",
+        "ListTitle": "",
+        "ListSubTitle": "",
+        "ListAbstract": "",
+        "ListImage": null,
+        "TemplateName": "Event",
+        "Url": "/en/NewsAndInnovation/Enza Zaden verkozen tot familiebedrijf van het jaar"
       }
     ]
-  }
+  },
+  "Variant": null,
+  "Modifiers": null,
+  "Json": null
 }

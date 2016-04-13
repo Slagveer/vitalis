@@ -7917,6 +7917,7 @@ button.close {
 .teaserbox.teaserbox--story .teaserbox__description .teaserbox__description__title,
 .teaserbox.teaserbox--news--grey .teaserbox__description .teaserbox__description__title {
   color: #ffffff;
+  font-style: normal;
 }
 .teaserbox.teaserbox--news .teaserbox__description .teaserbox__description__label,
 .teaserbox.teaserbox--story .teaserbox__description .teaserbox__description__label,
@@ -7935,6 +7936,7 @@ button.close {
 }
 .teaserbox.teaserbox--news--grey .teaserbox__description .teaserbox__description__title {
   color: #515151;
+  font-style: normal;
 }
 .teaserbox.teaserbox--news--grey .teaserbox__description .teaserbox__description__label {
   border-color: #515151;
@@ -7947,6 +7949,7 @@ button.close {
 }
 .teaserbox.teaserbox--story .teaserbox__description .teaserbox__description__title {
   color: #ffffff;
+  font-style: italic;
 }
 .teaserbox.teaserbox--story .teaserbox__description .teaserbox__description__label {
   border-color: #ffffff;

@@ -1,9 +1,10 @@
 // Mixin funcions
 // teaserbox-description::start
-.teaserbox-description(@color) {
+.teaserbox-description(@color, @style) {
   .teaserbox__description {
     .teaserbox__description__title {
       color: @color;
+      font-style: @style;
     }
     .teaserbox__description__label {
       border-color: @color;
@@ -238,13 +239,13 @@
       left: 63px;
       padding-right: 80px;
     }
-    .teaserbox-description(@white);
+    .teaserbox-description(@white, normal);
   }
   &.teaserbox--news--grey {
-    .teaserbox-description(@dark-grey);
+    .teaserbox-description(@dark-grey, normal);
   }
   &.teaserbox--story {
-    .teaserbox-description(@white);
+    .teaserbox-description(@white, italic);
   }
   .teaserbox__description {
     bottom: 70px;
