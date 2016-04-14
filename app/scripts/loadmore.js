@@ -38,7 +38,7 @@
           $.when(delayAsync(0), $.ajax({
               url: $loadmore.data('service'),
               data: {"Filter": { "Max":"100", "From":"0", "Size": "5"}},
-              type: "POST"
+              //type: "POST"
             }))
             .then(function(delayData, ajaxJsonData) {
               var source,
@@ -46,8 +46,8 @@
                 teaserbox,
                 html;
 
-              page = page + 5; console.info(page);
-              if(page >= 100) {
+              $loadmore.data('amount-teaserboxes', page + $loadmore.data('step'));
+              if(page >= $loadmore.data('max')) {
                 disabled = true;
                 $loadmore.addClass('disabled');
               }
