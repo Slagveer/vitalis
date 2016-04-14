@@ -9,7 +9,8 @@
     $loadmore,
     $arrow,
     $teaserboxTemplate,
-    $teaserboxLocation;
+    $teaserboxLocation,
+    disabled = false;
 
   function Plugin ( element, options ) {
     this.element = element;
@@ -24,8 +25,10 @@
       $loadmore = $(this.element);
       $loadmore.on('click', function onClick(evt) {
         evt.preventDefault();
-        $arrow.addClass('loadmore');
-        getTeasers();
+        if(!disabled) {
+          $arrow.addClass('loadmore');
+          getTeasers($loadmore.data('amount-teaserboxes'));
+        }
       });
       $arrow = $(this.element).find('.js-arrow');
       $teaserboxLocation = $($loadmore.data('target'));
@@ -43,6 +46,11 @@
                 teaserbox,
                 html;
 
+              page = page + 5; console.info(page);
+              if(page >= 100) {
+                disabled = true;
+                $loadmore.addClass('disabled');
+              }
               if(ajaxJsonData){
                 _.each(ajaxJsonData[0].Data.Items, function(teaserbox) {
                   _.pick(teaserbox, function(value, key, object) {
