@@ -9326,10 +9326,14 @@ button.close {
 .targetaudience .targetaudience__select .targetaudience__select__option:not(:checked) {
   color: #515151;
 }
-.vancancieslist.vancancieslist--content {
+.vacancieslist:last-child {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.vacancieslist.vacancieslist--content {
   padding-top: 67px;
 }
-.vancancieslist .vancancieslist__header {
+.vacancieslist .vacancieslist__header {
   line-height: 80px;
   font-family: 'Crete Round', serif;
   font-size: 42px;
@@ -9338,21 +9342,21 @@ button.close {
   margin-top: 6px;
   text-align: center;
 }
-.vancancieslist .vancancieslist__item {
+.vacancieslist .vacancieslist__item {
   border: 1px solid #cccccc;
   display: block;
   height: 172px;
   margin-bottom: 30px;
   text-decoration: none;
 }
-.vancancieslist .vancancieslist__item:hover,
-.vancancieslist .vancancieslist__item:active {
+.vacancieslist .vacancieslist__item:hover,
+.vacancieslist .vacancieslist__item:active {
   background-color: #e6e6e6;
 }
-.vancancieslist .vancancieslist__item .vancancieslist__item__content {
+.vacancieslist .vacancieslist__item .vacancieslist__item__content {
   padding-left: 30px;
 }
-.vancancieslist .vancancieslist__item .vancancieslist__item__content .vancancieslist__item__title {
+.vacancieslist .vacancieslist__item .vacancieslist__item__content .vacancieslist__item__title {
   clear: right;
   color: #aac426;
   display: inline;
@@ -9366,14 +9370,14 @@ button.close {
   padding-left: 16px;
   text-align: left;
 }
-.vancancieslist .vancancieslist__item .vancancieslist__item__content .vancancieslist__item__description {
+.vacancieslist .vacancieslist__item .vacancieslist__item__content .vacancieslist__item__description {
   clear: left;
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   padding-left: 16px;
   padding-top: 10px;
 }
-.vancancieslist .vancancieslist__item .vancancieslist__item__link {
+.vacancieslist .vacancieslist__item .vacancieslist__item__link {
   align-self: flex-end;
   bottom: 52px;
   color: #aac426;
@@ -9388,8 +9392,49 @@ button.close {
   vertical-align: middle;
   width: 48px;
 }
-.vancancieslist .vancancieslist__item .vancancieslist__item__link svg path {
+.vacancieslist .vacancieslist__view-all {
+  display: inline-block;
+  height: 70px;
+  position: relative;
+  text-align: right;
+  text-decoration: none;
+  width: 100%;
+}
+.vacancieslist .vacancieslist__view-all:hover,
+.vacancieslist .vacancieslist__view-all:active {
+  color: #aac426;
+}
+.vacancieslist .vacancieslist__view-all:hover .vacancieslist__view-all__link svg path,
+.vacancieslist .vacancieslist__view-all:active .vacancieslist__view-all__link svg path,
+.vacancieslist .vacancieslist__view-all:hover .vacancieslist__view-all__link svg circle,
+.vacancieslist .vacancieslist__view-all:active .vacancieslist__view-all__link svg circle {
+  fill: #515151;
+  stroke: #515151;
+}
+.vacancieslist .vacancieslist__view-all .vacancieslist__view-all__title {
+  font-family: 'Crete Round', serif;
+  line-height: 70px;
+  padding-right: 80px;
+}
+.vacancieslist .vacancieslist__view-all .vacancieslist__view-all__link {
+  bottom: 19px;
+  color: #aac426;
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 11pt;
+  height: 27.5pt;
+  line-height: 21.6pt;
+  position: absolute;
+  right: 21px;
+  text-align: center;
+  vertical-align: middle;
+  width: 46px;
+  z-index: 2;
+}
+.vacancieslist .vacancieslist__view-all .vacancieslist__view-all__link svg path,
+.vacancieslist .vacancieslist__view-all .vacancieslist__view-all__link svg circle {
   fill: #aac426;
+  stroke: #aac426;
 }
 .container .row .fullsize,
 .container-fluid .row .fullsize {
