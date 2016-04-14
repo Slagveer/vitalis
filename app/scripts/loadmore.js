@@ -37,8 +37,8 @@
         if($loadmore.data('service')) {
           $.when(delayAsync(0), $.ajax({
               url: $loadmore.data('service'),
-              data: {"Filter": { "Max":"100", "From":"0", "Size": "5"}},
-              //type: "POST"
+              data: {"Filter": { "Max":"100", "From":$loadmore.data('amount-teaserboxes'), "Size": $loadmore.data('step')}},
+              type: "POST"
             }))
             .then(function(delayData, ajaxJsonData) {
               var source,
