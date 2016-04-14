@@ -9724,6 +9724,112 @@ button.close {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.searchresultlist:last-child {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.searchresultlist.searchresultlist--content {
+  padding-top: 67px;
+}
+.searchresultlist .searchresultlist__input .searchresultlist__form {
+  border-width: 0;
+  font-size: 27px;
+  line-height: 19pt;
+}
+.searchresultlist .searchresultlist__header {
+  line-height: 80px;
+  font-family: 'Crete Round', serif;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 36px;
+  margin-top: 6px;
+  text-align: left;
+}
+.searchresultlist .searchresultlist__item {
+  border: 1px solid #cccccc;
+  display: block;
+  height: 172px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.searchresultlist .searchresultlist__item:hover,
+.searchresultlist .searchresultlist__item:active {
+  background-color: #e6e6e6;
+}
+.searchresultlist .searchresultlist__item .searchresultlist__item__content {
+  padding-left: 30px;
+}
+.searchresultlist .searchresultlist__item .searchresultlist__item__content .searchresultlist__item__title {
+  clear: right;
+  color: #aac426;
+  display: inline;
+  float: left;
+  font-family: 'Crete Round', serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 12pt;
+  margin-bottom: 4px;
+  margin-top: 56px;
+  padding-left: 16px;
+  text-align: left;
+}
+.searchresultlist .searchresultlist__item .searchresultlist__item__content .searchresultlist__item__description {
+  clear: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  padding-left: 16px;
+  padding-top: 10px;
+}
+.searchresultlist .searchresultlist__item .searchresultlist__item__link {
+  align-self: flex-end;
+  bottom: 52px;
+  color: #aac426;
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 11pt;
+  height: 48px;
+  line-height: 21.6pt;
+  position: absolute;
+  right: 32px;
+  text-align: center;
+  vertical-align: middle;
+  width: 48px;
+}
+.searchresultlist .searchresultlist__item .searchresultlist__item__link svg path,
+.searchresultlist .searchresultlist__item .searchresultlist__item__link svg circle {
+  fill: #aac426;
+  stroke: #aac426;
+}
+.searchresultlist .searchresultlist__paging {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.searchresultlist .searchresultlist__paging .searchresultlist__paging__link.searchresultlist__paging__link--left,
+.searchresultlist .searchresultlist__paging .searchresultlist__paging__link.searchresultlist__paging__link--right {
+  height: 48px;
+  width: 48px;
+}
+.searchresultlist .searchresultlist__paging .searchresultlist__paging__link.searchresultlist__paging__link--left svg path,
+.searchresultlist .searchresultlist__paging .searchresultlist__paging__link.searchresultlist__paging__link--right svg path {
+  fill: #aac426;
+}
+.searchresultlist .searchresultlist__paging .searchresultlist__paging__link.searchresultlist__paging__link--left.disabled svg path,
+.searchresultlist .searchresultlist__paging .searchresultlist__paging__link.searchresultlist__paging__link--right.disabled svg path {
+  fill: #cccccc;
+}
+.searchresultlist .searchresultlist__paging .searchresultlist__paging__link.searchresultlist__paging__link--left {
+  transform: rotate(180deg);
+}
+.searchresultlist .searchresultlist__paging .searchresultlist__paging__number {
+  color: #aac426;
+  font-family: 'Crete Round', serif;
+  font-size: 28px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
 .container .row .fullsize,
 .container-fluid .row .fullsize {
   padding: 0px;
