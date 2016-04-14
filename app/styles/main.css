@@ -8606,7 +8606,7 @@ button.close {
 }
 .content .content__image--extra-small {
   height: 282px;
-  margin-bottom: -73px;
+  margin-bottom: -38px;
   padding: 18px 0 71px 0;
   width: 100%;
 }
@@ -8614,7 +8614,7 @@ button.close {
   font-style: italic;
   font-size: 16px;
   letter-spacing: 0.8px;
-  margin-bottom: 42px;
+  margin-bottom: 57px;
   padding-top: 15px;
   padding-left: 40px;
 }
@@ -8644,6 +8644,7 @@ button.close {
 }
 .content .content__introduction .content__introduction__subtitle {
   font-size: 40px;
+  padding-bottom: 2px;
 }
 .content .content__introduction .content__introduction__description,
 .content .content__introduction .content__introduction__description--bold,
@@ -8676,7 +8677,7 @@ button.close {
 }
 .content .content__introduction.content__introduction--image .content__introduction--image__image {
   height: 395px;
-  margin-bottom: -11px;
+  margin-bottom: 48px;
   margin-top: 60px;
   padding: 0 10px;
   width: 100%;
@@ -8696,8 +8697,10 @@ button.close {
 }
 .content .content__introduction.content__introduction--social {
   border-bottom: 1px solid #ededed;
+  border-top: 1px solid #ededed;
+  margin-top: 83px;
   padding-bottom: 74px;
-  padding-top: 62px;
+  padding-top: 65px;
 }
 .content .content__introduction.content__introduction--social .content__introduction--social__title {
   font-family: 'Crete Round', serif;

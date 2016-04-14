@@ -32,12 +32,12 @@
 
       function getTeasers(page) {
         if($loadmore.data('service')) {
-          $.when(delayAsync(0), $.ajax($loadmore.data('service')), $.ajax({
+          $.when(delayAsync(0), $.ajax({
               url: $loadmore.data('service'),
               data: {"Filter": { "Max":"100", "From":"0", "Size": "5"}},
               type: "POST"
             }))
-            .then(function(delayData, jsonData, ajaxJsonData) {
+            .then(function(delayData, ajaxJsonData) {
               var source,
                 template,
                 teaserbox,
