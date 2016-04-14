@@ -32,7 +32,7 @@
 
       function getTeasers(page) {
         if($loadmore.data('service')) {
-          $.when(delayAsync(0), $.get($loadmore.data('service')), $.ajax({
+          $.when(delayAsync(0), $.ajax($loadmore.data('service')), $.ajax({
               url: $loadmore.data('service'),
               data: {"Filter": { "Max":"100", "From":"0", "Size": "5"}},
               type: "POST"
