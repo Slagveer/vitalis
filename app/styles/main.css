@@ -8560,6 +8560,7 @@ button.close {
 .content .content__header .content__header__title {
   font-family: 'Crete Round', serif;
   font-size: 64px;
+  letter-spacing: 4px;
   line-height: 72px;
   padding-left: 40px;
   padding-top: 13px;
@@ -8594,22 +8595,26 @@ button.close {
 }
 .content .content__image {
   height: 710px;
+  margin-bottom: 60px;
+  padding-bottom: 0px;
   width: 100%;
 }
 .content .content__image--small {
-  height: 408px;
-  padding-top: 50px;
+  height: 412px;
+  padding-top: 55px;
   width: 100%;
 }
 .content .content__image--extra-small {
   height: 282px;
-  padding: 40px 0 50px 0;
+  margin-bottom: -73px;
+  padding: 18px 0 71px 0;
   width: 100%;
 }
 .content .content__image__caption {
   font-style: italic;
   font-size: 16px;
   letter-spacing: 0.8px;
+  margin-bottom: 42px;
   padding-top: 15px;
   padding-left: 40px;
 }
@@ -8618,7 +8623,6 @@ button.close {
 }
 .content .content__introduction {
   padding-left: 40px;
-  padding-top: 60px;
 }
 .content .content__introduction .content__introduction__title,
 .content .content__introduction .content__introduction__subtitle {
@@ -8631,20 +8635,31 @@ button.close {
 .content .content__introduction .content__introduction__subtitle.quote {
   border: none;
   font-style: italic;
-  line-height: 56px;
-  padding-top: 58px;
+  line-height: 60px;
+  margin-bottom: 63px;
+  padding-top: 45px;
+}
+.content .content__introduction .content__introduction__title {
+  padding-bottom: 0px;
 }
 .content .content__introduction .content__introduction__subtitle {
   font-size: 40px;
 }
-.content .content__introduction .content__introduction__description {
+.content .content__introduction .content__introduction__description,
+.content .content__introduction .content__introduction__description--bold,
+.content .content__introduction .content__introduction__description--normal {
   font-family: 'Open Sans', sans-serif;
   font-size: 27px;
-  font-weight: bold;
-}
-.content .content__introduction .content__introduction__description.content__introduction__description--normal {
   font-weight: normal;
   padding-top: 24px;
+}
+.content .content__introduction .content__introduction__description--normal {
+  padding-top: 0px;
+}
+.content .content__introduction .content__introduction__description--bold {
+  font-weight: bold;
+  margin-bottom: 37px;
+  padding-top: 16px;
 }
 .content .content__introduction.content__introduction--after-image {
   padding-top: 8px;
@@ -8661,6 +8676,8 @@ button.close {
 }
 .content .content__introduction.content__introduction--image .content__introduction--image__image {
   height: 395px;
+  margin-bottom: -11px;
+  margin-top: 60px;
   padding: 0 10px;
   width: 100%;
 }

@@ -24,6 +24,7 @@
     .content__header__title {
       font-family: @font-family-crete;
       font-size: 64px;
+      letter-spacing: 4px;
       line-height: 72px;
       padding-left: 40px;
       padding-top: 13px;
@@ -45,22 +46,26 @@
   }
   .content__image {
     height: 710px;
+    margin-bottom: 60px;
+    padding-bottom: 0px;
     width: 100%;
   }
   .content__image--small {
-    height: 408px;
-    padding-top: 50px;
+    height: 412px;
+    padding-top: 55px;
     width: 100%;
   }
   .content__image--extra-small {
     height: 282px;
-    padding: 40px 0 50px 0;
+    margin-bottom: -73px;
+    padding: 18px 0 71px 0;
     width: 100%;
   }
   .content__image__caption {
     font-style: italic;
     font-size: 16px;
     letter-spacing: 0.8px;
+    margin-bottom: 42px;
     padding-top: 15px;
     padding-left: 40px;
     .producer {
@@ -69,7 +74,6 @@
   }
   .content__introduction {
     padding-left: 40px;
-    padding-top: 60px;
     .content__introduction__title,
     .content__introduction__subtitle {
       font-family: @font-family-crete;
@@ -79,21 +83,32 @@
       &.quote {
         border: none;
         font-style: italic;
-        line-height: 56px;
-        padding-top: 58px;
+        line-height: 60px;
+        margin-bottom: 63px;
+        padding-top: 45px;
       }
+    }
+    .content__introduction__title {
+      padding-bottom: 0px;
     }
     .content__introduction__subtitle {
       font-size: 40px;
     }
-    .content__introduction__description {
+    .content__introduction__description,
+    .content__introduction__description--bold,
+    .content__introduction__description--normal {
       font-family: @font-family-open-sanse;
       font-size: 27px;
+      font-weight: normal;
+      padding-top: 24px;
+  }
+    .content__introduction__description--normal {
+      padding-top: 0px;
+    }
+    .content__introduction__description--bold {
       font-weight: bold;
-      &.content__introduction__description--normal {
-        font-weight: normal;
-        padding-top: 24px;
-      }
+      margin-bottom: 37px;
+      padding-top: 16px;
     }
     &.content__introduction--after-image {
       padding-top: 8px;
@@ -109,6 +124,8 @@
       position: relative;
       .content__introduction--image__image {
         height: 395px;
+        margin-bottom: -11px;
+        margin-top: 60px;
         padding: 0 10px;
         width: 100%;
       }
