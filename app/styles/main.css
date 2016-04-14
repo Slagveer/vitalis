@@ -9392,6 +9392,11 @@ button.close {
   vertical-align: middle;
   width: 48px;
 }
+.vacancieslist .vacancieslist__item .vacancieslist__item__link svg path,
+.vacancieslist .vacancieslist__item .vacancieslist__item__link svg circle {
+  fill: #aac426;
+  stroke: #aac426;
+}
 .vacancieslist .vacancieslist__view-all {
   display: inline-block;
   height: 70px;
