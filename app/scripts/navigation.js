@@ -11,6 +11,7 @@
     $navigation,
     $navigationMenu,
     $navigationSearch,
+    $backdrop,
     $logo;
 
   function Plugin ( element, options ) {
@@ -29,12 +30,17 @@
       $navigation = $(this.element).find('.js-navigation');
       $navigationMenu = $(this.element).find('.js-navigation-menu');
       $navigationSearch = $(this.element).find('.js-navigation-search');
+      $backdrop = $('.js-backdrop');
 
       $navigationMenu.on('show.bs.collapse hide.bs.collapse', disableButtons);
       $navigationMenu.on('shown.bs.collapse hidden.bs.collapse',enableButtons);
       $navigationSearch.on('show.bs.collapse hide.bs.collapse', disableButtons);
       $navigationSearch.on('shown.bs.collapse hidden.bs.collapse',enableButtons);
 
+      $backdrop.on('click', function onClick(evt) {
+        $navigationMenu.collapse('hide');
+        $navigationSearch.collapse('hide');
+      });
       $menu.data('active', false);
       $menu.on('click', function onClick(evt) {
         collapseAll();

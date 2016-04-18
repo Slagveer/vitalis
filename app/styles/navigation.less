@@ -1,3 +1,10 @@
+@media (min-width: 641px) and (max-width: 1536px) {
+  .navigation {
+    &.navbar {
+      position: static;
+    }
+  }
+}
 .navigation {
   border-radius: 0;
   border-width: 0;
@@ -5,6 +12,15 @@
   font-size: 32px;//@body;
   line-height: @body-line-height;
   margin-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  +.container:first-of-type,
+  +.container-fluid:first-of-type {
+    padding-top: 100px;
+  }
+  .modal-backdrop {
+    margin-left: 640px;
+  }
   .navigation__menu {
     border-top: none;
     border-left: none;
@@ -28,11 +44,14 @@
       }
     }
     .navigation__menu__form {
+      background-color: @light-grey;
       border-width: 0;
       font-size: @body;
       line-height: @body-line-height;
+      margin-top: 0px;
     }
     .navigation__menu__item {
+      background-color: @white;
       .dropdown-menu {
         padding: 0px;
       }
@@ -145,6 +164,7 @@
           &.navigation__menu__item__label--phone {
             display: inline-block;
             float: left;
+            white-space: nowrap;
             width: 50%;
           }
           &.navigation__menu__item__label--phone {
@@ -252,6 +272,7 @@
       order: 2;
       position: relative;
       text-align: center;
+      white-space: nowrap;
       width: 100%;
     }
   }
@@ -1022,12 +1043,60 @@
       background-position: -208px -165px
     }
   }
-  @media (max-width: 1024px) {
-    .navbar-header {
-      float: none;
-      .navigation__button {
-        &.navbar-brand {
-          margin-left: 0px;
+  @media (min-width: 641px) and (max-width: 1536px) {
+    +.container:first-of-type,
+    +.container-fluid:first-of-type {
+      padding-top: 0px;
+    }
+    .container-fluid {
+      padding-left: 0px;
+      padding-right: 0px;
+      .navbar-header {
+        float: none;
+        &.flex {
+          display: block;
+        }
+        .navigation__button {
+          max-width: 129px;
+          &.navbar-brand {
+            margin-left: 0px;
+          }
+          &.navigation__button--logo {
+            float: right;
+            min-width: 203px;
+            opacity: 1;
+            .navigation__button__image {
+              max-width: 175px;
+            }
+          }
+          &.navigation__button--hamburger {
+            float: left;
+          }
+          &.navigation__button--enza {
+            float: left;
+            min-width:245px;
+          }
+        }
+      }
+      .navigation__menu {
+        max-width: 640px;
+        //position: absolute;
+        .modal-backdrop {
+          opacity: .8;
+        }
+        .navigation__menu__form {
+          padding-bottom: 15px;
+          padding-top: 15px;
+        }
+        .navigation__menu__item {
+          .navigation__menu__item__label {
+            &.navigation__menu__item__label--email {
+              width: 378px;
+            }
+            &.navigation__menu__item__label--phone {
+              width: 262px;
+            }
+          }
         }
       }
     }
@@ -1063,4 +1132,18 @@
       display:block !important;
     }
   }
+}
+@keyframes navigationfadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.8;
+  }
+}
+
+.navigationfadeIn {
+  -webkit-animation-name: navigationfadeIn;
+  animation-name: navigationfadeIn;
 }
