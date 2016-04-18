@@ -106,26 +106,7 @@ module.exports = function (grunt) {
       app: {
         files: [{
           src: ['<%= yeoman.app %>/index.html'
-            ,'<%= yeoman.app %>/components/navigation.html'
-            ,'<%= yeoman.app %>/components/varietylist.html'
-            ,'<%= yeoman.app %>/components/varietydetailheader.html'
-            ,'<%= yeoman.app %>/components/varietydetailpage.html'
-            ,'<%= yeoman.app %>/components/cropoverviewpage.html'
-            ,'<%= yeoman.app %>/components/contentpage.html'
-            ,'<%= yeoman.app %>/components/teaserbox.html'
-            ,'<%= yeoman.app %>/components/*.html'
-            ,'<%= yeoman.app %>/components/filter.html'
-            ,'<%= yeoman.app %>/components/footer.html'
-            ,'<%= yeoman.app %>/components/carousel.html'
-            ,'<%= yeoman.app %>/components/loadmore.html'
-            ,'<%= yeoman.app %>/components/targetaudience.html'
-            ,'<%= yeoman.app %>/components/vacancieslist.html'
-            //NOT READY YET! ,'<%= yeoman.app %>/components/growingsadvisorslist.html'
-            //NOT READY YET! ,'<%= yeoman.app %>/components/growingsbannerslist.html'
-            ,'<%= yeoman.app %>/components/growingsadvisorspage.html'
-            ,'<%= yeoman.app %>/components/vacancypage.html'
-            ,'<%= yeoman.app %>/components/extracotentlist.html'
-            ,'<%= yeoman.app %>/components/itemslist.html'],
+            ,'<%= yeoman.app %>/components/*.html'],
           options: {
             removeFiles: true,
             templatesFn: {
@@ -214,7 +195,7 @@ module.exports = function (grunt) {
       }
     },
     useminPrepare: {
-      html: ['<%= yeoman.app %>/index.html','<%= yeoman.app %>/navigation.html'],
+      html: ['<%= yeoman.app %>/index.html'],
       options: {
         dest: '<%= yeoman.dist %>'
       }
