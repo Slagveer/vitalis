@@ -6727,9 +6727,161 @@ button.close {
     display: none !important;
   }
 }
-@media (min-width: 641px) and (max-width: 1536px) {
+@media (min-width: 641px) and (max-width: 2048px) {
   .navigation.navbar {
     position: static;
+  }
+}
+@media (min-width: 2049px) {
+  .navigation {
+    font-size: 18px !important;
+  }
+  .navigation .container-fluid {
+    position: relative;
+    width: 1170px;
+  }
+  .navigation .container-fluid .navigation__menu {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .navigation .container-fluid .navigation__menu.navigation__menu--search {
+    display: none !important;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item {
+    border-left: 1px solid #cccccc;
+    height: 70px;
+    width: 180px;
+    text-align: center;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.open .dropdown-menu {
+    padding: 5px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.open .dropdown-menu .dropdown-menu__form {
+    width: 300px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--sub {
+    display: none;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu--search {
+    display: none;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country {
+    border: none;
+    font-size: 12px;
+    height: 41px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country.open .navigation__menu__item__label .arrow {
+    right: 8px;
+    top: -6px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label {
+    line-height: 37px;
+    padding: 0px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .flag {
+    left: 36px;
+    position: absolute;
+    top: 14px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .arrow {
+    right: -5px;
+    top: 8px;
+    width: 24px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--logo {
+    border: none;
+    display: block;
+    font-family: 'Crete Round', serif;
+    height: 41px;
+    text-align: left;
+    width: 157px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--logo .navigation__menu__item__label {
+    font-size: 20px;
+    line-height: 37px;
+    padding: 0 0 0 20px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact {
+    border: none;
+    font-size: 14px;
+    height: 41px;
+    padding: 0px;
+    width: 832px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label {
+    border: none;
+    height: 41px;
+    line-height: 37px;
+    padding: 0px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label.navigation__menu__item__label--email {
+    padding-left: 260px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label.navigation__menu__item__label--phone {
+    padding-left: 60px;
+    text-align: left;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label .contact-icon {
+    display: inline-block;
+    height: 50px;
+    position: relative;
+    top: 12px;
+    width: 22px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label:hover .contact-icon svg path,
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label:hover .contact-icon svg polygon {
+    fill: #aac426;
+    stroke: #aac426;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact + .navigation__menu__item {
+    clear: left;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .navigation__menu__item__label {
+    border: none;
+    height: 70px;
+    line-height: 17px;
+    padding: 0px 0px 0px 0px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item:last-child {
+    display: block;
+    height: 70px;
+    width: 104px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item:last-child .navigation__menu__item__label {
+    height: 70px;
+    padding: 0px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item:last-child:hover svg path {
+    fill: #aac426;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item:last-child .menu {
+    right: 17px;
+    top: 25px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item:last-child .menu svg {
+    width: 20px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item {
+    height: 70px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .navigation__menu__item__label {
+    height: 70px;
+    padding: 20px 40px 0 40px;
+  }
+  .navigation .container-fluid .navigation__menu .modal-backdrop {
+    display: none;
+  }
+  .navigation .container-fluid .navbar-header {
+    position: absolute;
+    right: 0px;
+  }
+  .navigation .container-fluid .navbar-header .navigation__button.navbar-brand {
+    opacity: 1 !important;
+  }
+  .navigation .container-fluid .navbar-header .navigation__button.navigation__button--logo .navigation__button__image {
+    max-width: 120px;
+    top: 39px;
+    right: 227px;
   }
 }
 .navigation {
@@ -6795,6 +6947,9 @@ button.close {
   background-color: #aac426;
   color: #ffffff;
 }
+.navigation .navigation__menu .navigation__menu__item .navigation__menu__item__label .contact-icon {
+  display: none;
+}
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--sub {
   background-color: #ededed;
   border-bottom: 1px solid #cccccc;
@@ -6813,18 +6968,21 @@ button.close {
   color: #ffffff;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country,
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--logo,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact {
   font-family: 'Open Sans', sans-serif;
   font-size: 19px;
   line-height: 12.35pt;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country.open .navigation__menu__item__label .arrow,
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--logo.open .navigation__menu__item__label .arrow,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact.open .navigation__menu__item__label .arrow {
   right: 40px;
   top: 25px;
   transform: rotate(90deg);
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label,
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--logo .navigation__menu__item__label,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label {
   background-color: #222222;
   border: 1px solid #515151;
@@ -6835,20 +6993,24 @@ button.close {
   padding-right: 20px;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label:hover,
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--logo .navigation__menu__item__label:hover,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label:hover {
   background-color: #222222;
   color: #aac426;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label:active,
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--logo .navigation__menu__item__label:active,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label:active {
   background-color: #aac426;
   color: #ffffff;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .flag,
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--logo .navigation__menu__item__label .flag,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label .flag {
   margin-right: 5px;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .arrow,
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--logo .navigation__menu__item__label .arrow,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label .arrow {
   display: inline-block;
   height: 50px;
@@ -6861,12 +7023,17 @@ button.close {
   transform: rotate(0deg);
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .arrow svg .circle,
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--logo .navigation__menu__item__label .arrow svg .circle,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label .arrow svg .circle {
   visibility: hidden;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .dropdown-menu,
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--logo .dropdown-menu,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .dropdown-menu {
   height: 100%;
+}
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--logo {
+  display: none;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact {
   display: inline-block;
@@ -6890,6 +7057,9 @@ button.close {
   border-left: 1px solid #515151;
   text-align: center;
   width: 50%;
+}
+.navigation .navigation__menu .navigation__menu__item:last-child {
+  display: none;
 }
 .navigation .navbar-header {
   border-bottom: 0px solid #515151;
@@ -7733,7 +7903,7 @@ button.close {
 .navigation .flag.flag-zw {
   background-position: -208px -165px;
 }
-@media (min-width: 641px) and (max-width: 1536px) {
+@media (min-width: 641px) and (max-width: 2049px) {
   .navigation + .container:first-of-type,
   .navigation + .container-fluid:first-of-type {
     padding-top: 0px;
