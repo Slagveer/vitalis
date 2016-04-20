@@ -6748,6 +6748,7 @@ button.close {
     display: none !important;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item {
+    background-color: transparent;
     border-left: 1px solid #cccccc;
     height: 70px;
     width: 180px;
