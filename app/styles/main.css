@@ -9638,6 +9638,29 @@ button.close {
 .targetaudience .targetaudience__select .targetaudience__select__option:not(:checked) {
   color: #515151;
 }
+@media (min-width: 641px) and (max-width: 2048px) {
+  .vacancieslist .vacancieslist__header {
+    padding-left: 133px !important;
+    padding-top: 40px !important;
+    text-align: left !important;
+  }
+  .vacancieslist .article--list {
+    padding-top: 73px;
+  }
+  .vacancieslist .article--list .vacancieslist__item {
+    margin-bottom: 48px;
+    max-width: 732px;
+    height: 213px;
+  }
+  .vacancieslist .article--list .vacancieslist__item .vacancieslist__item__content {
+    padding-left: 106px;
+    padding-top: 30px;
+  }
+  .vacancieslist .article--list .vacancieslist__view-all {
+    font-size: 27px !important;
+    right: 136px;
+  }
+}
 .vacancieslist:last-child {
   margin-bottom: 30px;
   margin-top: 30px;
@@ -9765,7 +9788,7 @@ button.close {
   }
   .vacancy .vacancy__header .vacancy__description {
     padding-left: 0px !important;
-    padding-top: 40px !important;
+    padding-top: 116px !important;
     text-align: left;
   }
 }
@@ -9780,7 +9803,7 @@ button.close {
   }
   .vacancy .vacancy__header .vacancy__description {
     padding-left: 0px !important;
-    padding-top: 40px !important;
+    padding-top: 116px !important;
     text-align: left;
   }
 }
@@ -10158,6 +10181,11 @@ button.close {
 .searchresultlist .searchresultlist__paging .searchresultlist__paging__link.searchresultlist__paging__link--left svg path,
 .searchresultlist .searchresultlist__paging .searchresultlist__paging__link.searchresultlist__paging__link--right svg path {
   fill: #aac426;
+}
+.searchresultlist .searchresultlist__paging .searchresultlist__paging__link.searchresultlist__paging__link--left.disabled,
+.searchresultlist .searchresultlist__paging .searchresultlist__paging__link.searchresultlist__paging__link--right.disabled {
+  pointer-events: none;
+  cursor: default;
 }
 .searchresultlist .searchresultlist__paging .searchresultlist__paging__link.searchresultlist__paging__link--left.disabled svg path,
 .searchresultlist .searchresultlist__paging .searchresultlist__paging__link.searchresultlist__paging__link--right.disabled svg path {

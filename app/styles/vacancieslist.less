@@ -3,6 +3,41 @@
 @line-height: 1.4;
 @lines-to-show: 3;
 
+// TABLET::START
+@media (min-width: @tablet_min) and (max-width: @tablet_max) {
+  .vacancieslist {
+    .vacancieslist__header {
+      padding-left: 133px !important;
+      padding-top: 40px !important;
+      text-align: left !important;
+    }
+    .article--list {
+      padding-top: 73px;
+      .vacancieslist__item {
+        margin-bottom: 48px;
+        max-width: 732px;
+        height: 213px;
+        .vacancieslist__item__content {
+          padding-left: 106px;
+          padding-top: 30px;
+        }
+      }
+      .vacancieslist__view-all {
+        font-size: 27px !important;
+        right: 136px;
+      }
+    }
+  }
+}
+// TABLET::END
+
+// DESKTOP::START
+@media (min-width: @desktop_min) {
+
+}
+// DESKTOP::END
+
+// MOBILE::START
 .vacancieslist {
   &:last-child {
     margin-bottom: 30px;
@@ -127,4 +162,4 @@
     }
   }
 }
-
+// MOBILE::END
