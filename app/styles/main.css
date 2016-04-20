@@ -6753,11 +6753,30 @@ button.close {
     width: 180px;
     text-align: center;
   }
-  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.open .dropdown-menu {
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.open .dropdown-menu.desktop {
     padding: 5px;
   }
-  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.open .dropdown-menu .dropdown-menu__form {
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.open .dropdown-menu.desktop .dropdown-menu__form {
     width: 300px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu {
+    border: none;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu .navigation__menu__item {
+    width: 100%;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu .navigation__menu__item.navigation__menu__item--country {
+    height: 41px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label {
+    height: 41px;
+    text-align: left;
+    padding-left: 53px;
+    padding-right: 53px;
+    position: relative;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .flag {
+    left: 34px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--sub {
     display: none;
@@ -6768,6 +6787,9 @@ button.close {
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country {
     border: none;
     font-size: 12px;
+    height: 41px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label {
     height: 41px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country.open .navigation__menu__item__label .arrow {
@@ -6803,7 +6825,7 @@ button.close {
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact {
     border: none;
-    font-size: 14px;
+    font-size: 12px;
     height: 41px;
     padding: 0px;
     width: 832px;
@@ -6815,7 +6837,7 @@ button.close {
     padding: 0px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label.navigation__menu__item__label--email {
-    padding-left: 260px;
+    padding-left: 190px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label.navigation__menu__item__label--phone {
     padding-left: 60px;
@@ -6825,8 +6847,8 @@ button.close {
     display: inline-block;
     height: 50px;
     position: relative;
-    top: 12px;
-    width: 22px;
+    top: 11px;
+    width: 21px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label:hover .contact-icon svg path,
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label:hover .contact-icon svg polygon {
@@ -6845,7 +6867,7 @@ button.close {
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item:last-child {
     display: block;
     height: 70px;
-    width: 104px;
+    width: 102px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item:last-child .navigation__menu__item__label {
     height: 70px;
@@ -6879,6 +6901,7 @@ button.close {
     opacity: 1 !important;
   }
   .navigation .container-fluid .navbar-header .navigation__button.navigation__button--logo .navigation__button__image {
+    border: none;
     max-width: 120px;
     top: 39px;
     right: 227px;
