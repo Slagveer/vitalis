@@ -1,11 +1,15 @@
-@media (min-width: 641px) and (max-width: 2048px) {
+// TABLET::START
+@media (min-width: @tablet_min) and (max-width: @tablet_max) {
   .navigation {
     &.navbar {
       position: static;
     }
   }
 }
-@media (min-width: 2049px) {
+// TABLET::END
+
+// DESKTOP::START
+@media (min-width: @desktop_min) {
   .navigation {
     font-size: 18px !important;
     .container-fluid {
@@ -205,6 +209,9 @@
     }
   }
 }
+// DESKTOP::END
+
+// MOBILE::START
 .navigation {
   border-radius: 0;
   border-width: 0;
@@ -1346,6 +1353,10 @@
     }
   }
 }
+// MOBILE::END
+
+// ANIMATIONS::START
+
 @keyframes navigationfadeIn {
   from {
     opacity: 0;
@@ -1360,3 +1371,5 @@
   -webkit-animation-name: navigationfadeIn;
   animation-name: navigationfadeIn;
 }
+
+// ANIMATIONS::END

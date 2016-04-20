@@ -9659,6 +9659,7 @@ button.close {
   display: block;
   height: 172px;
   margin-bottom: 30px;
+  position: relative;
   text-decoration: none;
 }
 .vacancieslist .vacancieslist__item:hover,
@@ -9691,7 +9692,7 @@ button.close {
 }
 .vacancieslist .vacancieslist__item .vacancieslist__item__link {
   align-self: flex-end;
-  bottom: 52px;
+  bottom: 20px;
   color: #aac426;
   display: inline-block;
   flex-shrink: 0;
@@ -9699,7 +9700,7 @@ button.close {
   height: 48px;
   line-height: 21.6pt;
   position: absolute;
-  right: 32px;
+  right: 19px;
   text-align: center;
   vertical-align: middle;
   width: 48px;
@@ -9752,6 +9753,36 @@ button.close {
 .vacancieslist .vacancieslist__view-all .vacancieslist__view-all__link svg circle {
   fill: #aac426;
   stroke: #aac426;
+}
+@media (min-width: 641px) and (max-width: 2048px) {
+  .vacancy .vacancy__image {
+    max-height: 402px !important;
+  }
+  .vacancy .vacancy__header .vacancy__title {
+    padding-left: 124px !important;
+    padding-top: 94px !important;
+    text-align: left;
+  }
+  .vacancy .vacancy__header .vacancy__description {
+    padding-left: 0px !important;
+    padding-top: 40px !important;
+    text-align: left;
+  }
+}
+@media (min-width: 2049px) {
+  .vacancy .vacancy__image {
+    max-height: 402px !important;
+  }
+  .vacancy .vacancy__header .vacancy__title {
+    padding-left: 124px !important;
+    padding-top: 94px !important;
+    text-align: left;
+  }
+  .vacancy .vacancy__header .vacancy__description {
+    padding-left: 0px !important;
+    padding-top: 40px !important;
+    text-align: left;
+  }
 }
 .container .row .fullsize,
 .container-fluid .row .fullsize {

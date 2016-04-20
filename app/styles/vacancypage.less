@@ -1,5 +1,50 @@
 @brand-primary: @black;
 
+// TABLET::START
+@media (min-width: @tablet_min) and (max-width: @tablet_max) {
+  .vacancy {
+    .vacancy__image {
+      max-height:402px !important;
+    }
+    .vacancy__header {
+      .vacancy__title {
+        padding-left: 124px !important;
+        padding-top: 94px !important;
+        text-align: left;
+      }
+      .vacancy__description {
+        padding-left: 0px !important;
+        padding-top: 40px !important;
+        text-align: left;
+      }
+    }
+  }
+}
+// TABLET::END
+
+// DESKTOP::START
+@media (min-width: @desktop_min) {
+  .vacancy {
+    .vacancy__image {
+      max-height:402px !important;
+    }
+    .vacancy__header {
+      .vacancy__title {
+        padding-left: 124px !important;
+        padding-top: 94px !important;
+        text-align: left;
+      }
+      .vacancy__description {
+        padding-left: 0px !important;
+        padding-top: 40px !important;
+        text-align: left;
+      }
+    }
+  }
+}
+// DESKTOP::END
+
+// MOBILE:START
 .container,
 .container-fluid {
   .row {
@@ -47,3 +92,4 @@
     }
   }
 }
+// MOBILE:END
