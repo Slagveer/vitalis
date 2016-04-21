@@ -20,9 +20,9 @@
   background-color: #fff;
   color: @green;
   display: block;
-  height: 500px;
-  max-height: 500px;
-  padding: 30px 30px 30px 30px;
+  height: 500px/2;
+  max-height: 500px/2;
+  padding: 30px/2 30px/2 30px/2 30px/2;
   position: relative;
   overflow: hidden;
   &:hover {
@@ -67,8 +67,8 @@
   }
   &.teaserbox--icon {
     background-color: #fff;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: -15px/2;
+    margin-right: -15px/2;
     &:hover {
       .teaserbox__image--event {
         svg {
@@ -100,7 +100,7 @@
       }
     }
     .teaserbox__description {
-      bottom: 59px;
+      bottom: 59px/2;
     }
     .teaserbox__link {
       svg {
@@ -119,12 +119,12 @@
       }
     }
     .teaserbox__image {
-      margin-left: 4px;
-      margin-top: 3px;
-      max-width: 150px;
+      margin-left: 4px/2;
+      margin-top: 3px/2;
+      max-width: 150px/2;
       &.teaserbox__image--event {
-        margin-left: -10px;
-        max-width: 163px;
+        margin-left: -10px/2;
+        max-width: 163px/2;
       }
       &.teaserbox__image--career {
         path {
@@ -156,16 +156,16 @@
     }
   }
   &.teaserbox--child-overview {
-    margin-bottom: 20px;
+    margin-bottom: 20px/2;
   }
   &.teaserbox--variety-detail,
   &.teaserbox--extra-content,
   &.teaserbox--child-overview {
     border: 1px solid @green;
-    height: 410px;
-    padding: 0px 30px 0px 0px;
+    height: 410px/2;
+    padding: 0px 30px/2 0px 0px;
     .teaserbox__image {
-      height: 270px;
+      height: 270px/2;
     }
     .teaserbox__description {
       .teaserbox__description__label {
@@ -173,37 +173,37 @@
         text-transform: uppercase;
       }
       .teaserbox__description__title {
-        font-size: 34.5px;
+        font-size: 34.5px/2;
       }
     }
   }
   &.teaserbox--extra-content {
     border-color: @grey;
-    height: 690px;
-    max-height: 690px;
-    padding: 17px;
-    margin-bottom:27px;
+    height: 690px/2;
+    max-height: 690px/2;
+    padding: 17px/2;
+    margin-bottom:27px/2;
     .teaserbox__overlay {
       z-index: 3;
     }
     .teaserbox__overlay-bottom {
-      height: 356px;
+      height: 356px/2;
     }
     .teaserbox__image {
-      height: 315px;
+      height: 315px/2;
       width: 100%;
     }
     .teaserbox__description {
       bottom: inherit;
       color: @dark-grey;
-      left: 32px;
-      line-height: 31px;
-      top: 356px;
+      left: 32px/2;
+      line-height: 31px/2;
+      top: 356px/2;
       .teaserbox__description__title {
         color: @dark-grey;
-        font-size: 27px;
-        line-height: 35px;
-        padding-bottom: 12px;
+        font-size: 27px/2;
+        line-height: 35px/2;
+        padding-bottom: 12px/2;
       }
     }
   }
@@ -215,8 +215,8 @@
   }
   &.teaserbox--news--grey {
     .teaserbox__link {
-      bottom: 29px;
-      right: 21px;
+      bottom: 29px/2;
+      right: 21px/2;
       svg {
         .circle {
           fill: @white;
@@ -234,8 +234,8 @@
     }
     &:hover {
       .teaserbox__link {
-        bottom: 29px;
-        right: 21px;
+        bottom: 29px/2;
+        right: 21px/2;
         svg {
           .circle {
             fill: @white;
@@ -257,26 +257,26 @@
   &.teaserbox--story,
   &.teaserbox--news--grey {
     background-color: #000;
-    margin-left:-15px;
-    margin-right: -15px;
-    padding: 45px;
+    margin-left:-15px/2;
+    margin-right: -15px/2;
+    padding: 45px/2;
     .teaserbox__image {
       left: 0;
       width: 100%;
-      height: 500px;
+      height: 500px/2;
       bottom: 0;
       position: absolute;
       right: 0;
       top: 0;
     }
     .teaserbox__link {
-      bottom: 29px;
-      right: 21px;
+      bottom: 29px/2;
+      right: 21px/2;
     }
     .teaserbox__description {
-      bottom: 70px;
-      left: 63px;
-      padding-right: 80px;
+      bottom: 70px/2;
+      left: 63px/2;
+      padding-right: 80px/2;
     }
     .teaserbox-description(@white, normal);
   }
@@ -287,10 +287,10 @@
     .teaserbox-description(@white, italic);
   }
   .teaserbox__description {
-    bottom: 70px;
+    bottom: 70px/2;
     display: table;
-    left: 48px;
-    padding-right: 80px;
+    left: 48px/2;
+    padding-right: 80px/2;
     position: absolute;
     width: 100%;
     z-index: 2;
@@ -299,17 +299,17 @@
       clear: right;
       display: table-cell;
       float: left;
-      line-height: @label-line-height;
-      margin-bottom: 15px;
-      padding: 4px;
+      line-height: @label-line-height/2;
+      margin-bottom: 15px/2;
+      padding: 4px/2;
       vertical-align: bottom;
       text-align: left;
       .label-square {
         color: @green;
-        font-size: 20px;//@label;
-        line-height: 23px;//@label-line-height;
+        font-size: 20px/2;//@label;
+        line-height: 23px/2;//@label-line-height;
         font-weight: bold;
-        padding: 5px;
+        padding: 5px/2;
         text-transform: uppercase;
       }
     }
@@ -318,10 +318,10 @@
       clear: left;
       display: table-cell;
       font-family: @font-family-crete;
-      font-size: 39.5px;//1.5 * @body;
+      font-size: 39.5px/2;//1.5 * @body;
       float: left;
-      line-height: 45.5px;//1.5 * @body-line-height;
-      margin-bottom: 13px;
+      line-height: 45.5px/2;//1.5 * @body-line-height;
+      margin-bottom: 13px/2;
       position: relative;
       vertical-align: bottom;
     }
@@ -332,9 +332,9 @@
       clear: left;
       display: table-cell;
       font-family: @font-family-open-sanse;
-      font-size: 17.8px;//@label;
+      font-size: 17.8px/2;//@label;
       float: left;
-      line-height: 23px;//@label-line-height;
+      line-height: 23px/2;//@label-line-height;
       position: relative;
       text-transform: uppercase;
       vertical-align: bottom;
@@ -344,10 +344,10 @@
     color: @white;
     font-family: @blockquote-font-size;
     font-size: @blockquote-font-size;
-    left: 60px;
+    left: 60px/2;
     position: absolute;
-    top: 66px;
-    width: 96px;
+    top: 66px/2;
+    width: 96px/2;
     z-index: 2;
     .teaserbox__overlay {
       opacity: 0.8;
@@ -359,18 +359,18 @@
     }
   }
   .teaserbox__link {
-    bottom: 30px;
+    bottom: 30px/2;
     color: @green;
     display: inline-block;
     flex-shrink: 0;
     font-size: @label;
-    height: 2.5 * @label;
-    line-height: 1.8 * @label-line-height;
+    height: 2.5 * @label/2;
+    line-height: 1.8 * @label-line-height/2;
     position: absolute;
-    right: 21px;
+    right: 21px/2;
     text-align: center;
     vertical-align: middle;
-    width: 46px;//2.5 * @label;
+    width: 46px/2;//2.5 * @label;
     z-index: 2;
     .teaserbox__link__svg {
       display: block;
