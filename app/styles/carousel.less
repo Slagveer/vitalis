@@ -1,4 +1,33 @@
-// Mixin funcions
+// TABLET::START
+@media (min-width: @tablet_min) and (max-width: @tablet_max) {
+  .item__image__text {
+    display: block !important;
+  }
+}
+// TABLET::END
+
+// DESKTOP::START
+@media (min-width: @desktop_min) {
+  .container--carousel {
+    .carousel {
+      .container--carousel__slides__item__image {
+        height: 434px !important;
+      }
+      .thumbnail-controls {
+        position: absolute;
+        bottom: 0px !important;
+        width: 100%;
+        .container {
+          width: 1170px !important;
+          .item__image__text {
+            display: block !important;
+          }
+        }
+      }
+    }
+  }
+}
+// DESKTOP::END
 
 .container--carousel {
   //margin-left: -15px;
@@ -55,6 +84,21 @@
     }
   }
   .carousel {
+    .thumbnail-controls {
+      position: absolute;
+      bottom: -113px;
+      width: 100%;
+      .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+        .item__image__text {
+          display: none;
+        }
+      }
+    }
     .carousel-control,
     .carousel-indicators {
       display: none;
@@ -67,6 +111,14 @@
       }
       .carousel-caption {
         bottom: 105px;
+        .carousel-caption__text {
+          font-family: @font-family-crete;
+          font-size: 90px;
+          position: absolute;
+          text-align: center;
+          top: -208px;
+          width: 100%
+        }
         .carousel-caption__button {
           background: none;
           border: 1px solid @white;
@@ -134,6 +186,16 @@
       .item__image {
         border: none;
         height: 113px;
+        width: 100%;
+      }
+      .item__image__text {
+        color: @white;
+        font-family: @font-family-crete;
+        font-size: 30px;
+        height: 100%;
+        line-height: 120px;
+        position: absolute;
+        text-align: center;
         width: 100%;
       }
       &:hover,

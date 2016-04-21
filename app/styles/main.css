@@ -9418,6 +9418,27 @@ button.close {
   background-color: #222222;
   color: #ffffff;
 }
+@media (min-width: 641px) and (max-width: 2048px) {
+  .item__image__text {
+    display: block !important;
+  }
+}
+@media (min-width: 2049px) {
+  .container--carousel .carousel .container--carousel__slides__item__image {
+    height: 434px !important;
+  }
+  .container--carousel .carousel .thumbnail-controls {
+    position: absolute;
+    bottom: 0px !important;
+    width: 100%;
+  }
+  .container--carousel .carousel .thumbnail-controls .container {
+    width: 1170px !important;
+  }
+  .container--carousel .carousel .thumbnail-controls .container .item__image__text {
+    display: block !important;
+  }
+}
 .container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .carousel-caption {
   bottom: 87px;
   left: 5%;
@@ -9461,6 +9482,21 @@ button.close {
 .container--carousel.container--carousel-variety .container--carousel__thumbnails {
   display: none;
 }
+.container--carousel .carousel .thumbnail-controls {
+  position: absolute;
+  bottom: -113px;
+  width: 100%;
+}
+.container--carousel .carousel .thumbnail-controls .container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+}
+.container--carousel .carousel .thumbnail-controls .container .item__image__text {
+  display: none;
+}
 .container--carousel .carousel .carousel-control,
 .container--carousel .carousel .carousel-indicators {
   display: none;
@@ -9470,6 +9506,14 @@ button.close {
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption {
   bottom: 105px;
+}
+.container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__text {
+  font-family: 'Crete Round', serif;
+  font-size: 90px;
+  position: absolute;
+  text-align: center;
+  top: -208px;
+  width: 100%;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button {
   background: none;
@@ -9536,6 +9580,16 @@ button.close {
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__image {
   border: none;
   height: 113px;
+  width: 100%;
+}
+.container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__image__text {
+  color: #ffffff;
+  font-family: 'Crete Round', serif;
+  font-size: 30px;
+  height: 100%;
+  line-height: 120px;
+  position: absolute;
+  text-align: center;
   width: 100%;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item:hover .item__overlay,
