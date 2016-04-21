@@ -3,6 +3,16 @@
   .navigation {
     &.navbar {
       position: static;
+      .dropdown-menu {
+          position: static;
+          width: 100%;
+          border: none;
+          .navigation__menu__item {display:none;
+            &.navigation__menu__item--country {
+              display: block !important;
+            }
+          }
+      }
     }
   }
 }
@@ -264,6 +274,9 @@
       background-color: @white;
       .dropdown-menu {
         padding: 0px;
+        .navigation__menu__item {
+          display: block;
+        }
       }
       &.start {
         margin-top: -6px;
