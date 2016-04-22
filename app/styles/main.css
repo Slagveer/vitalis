@@ -6727,7 +6727,7 @@ button.close {
     display: none !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .navigation.navbar {
     position: static;
   }
@@ -8038,8 +8038,12 @@ button.close {
   -webkit-animation-name: navigationfadeIn;
   animation-name: navigationfadeIn;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .fullsize .teaserbox.teaserbox--icon {
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container .row .fullsize {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .container .row .fullsize .teaserbox.teaserbox--icon {
     margin-left: -15.5px;
     margin-right: -14.5px;
   }
@@ -8660,10 +8664,6 @@ button.close {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.container .row .fullsize,
-.container-fluid .row .fullsize {
-  padding: 0px;
 }
 .variety-detail .variety-detail__image {
   width: 100%;
@@ -9479,7 +9479,7 @@ button.close {
   background-color: #222222;
   color: #ffffff;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .item__image__text {
     display: block !important;
   }
@@ -9753,7 +9753,7 @@ button.close {
 .targetaudience .targetaudience__select .targetaudience__select__option:not(:checked) {
   color: #515151;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .vacancieslist .vacancieslist__header {
     padding-left: 133px !important;
     padding-top: 40px !important;
@@ -9892,7 +9892,7 @@ button.close {
   fill: #aac426;
   stroke: #aac426;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .vacancy .vacancy__image {
     max-height: 402px !important;
   }
@@ -9921,10 +9921,6 @@ button.close {
     padding-top: 116px !important;
     text-align: left;
   }
-}
-.container .row .fullsize,
-.container-fluid .row .fullsize {
-  padding: 0px;
 }
 .vacancy .vacancy__image {
   width: 100%;
