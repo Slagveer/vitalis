@@ -11,11 +11,11 @@
   .container--carousel {
     .carousel {
       .container--carousel__slides__item__image {
-        height: 434px !important;
+        height: 434px * @retina-factor !important;
       }
       .thumbnail-controls {
         position: absolute;
-        bottom: 0px !important;
+        bottom: 0px * @retina-factor !important;
         width: 100%;
         .container {
           width: 1170px !important;
@@ -36,25 +36,25 @@
     .container--carousel__slides {
       .container--carousel__slides__item {
         .carousel-caption {
-          bottom: 87px;
+          bottom: 87px * @retina-factor;
           left: 5%;
-          line-height: 53px;
+          line-height: 53px * @retina-factor;
           right: 5%;
           .carousel-caption__quote {
             border: none;
             font-family: @font-family-crete;
-            font-size: 41px;
+            font-size: 41px * @retina-factor;
           }
           .carousel-caption__name,
           .carousel-caption__relation {
-            font-size: 27px;
+            font-size: 27px * @retina-factor;
           }
           .carousel-caption__name {
             font-weight: bold;
           }
         }
         .container--carousel__slides__item__image {
-          height: 798px;
+          height: 798px * @retina-factor;
         }
       }
     }
@@ -67,14 +67,14 @@
         li {
           background: @white;
           border: none;
-          height: 20px;
-          margin: 0 0 0 15px;
-          width: 20px;
+          height: 20px * @retina-factor;
+          margin: 0 0 0 15px * @retina-factor;
+          width: 20px * @retina-factor;
           &.active {
             background-color: @green;
-            height: 20px;
-            margin: 0 0 0 15px;
-            width: 20px;
+            height: 20px * @retina-factor;
+            margin: 0 0 0 15px * @retina-factor;
+            width: 20px * @retina-factor;
           }
         }
       }
@@ -86,7 +86,7 @@
   .carousel {
     .thumbnail-controls {
       position: absolute;
-      bottom: -113px;
+      bottom: -113px * @retina-factor;
       width: 100%;
       .container {
         margin-right: auto;
@@ -107,16 +107,16 @@
   .container--carousel__slides {
     .container--carousel__slides__item {
       .container--carousel__slides__item__image {
-        height: 594px;
+        height: 594px * @retina-factor;
       }
       .carousel-caption {
-        bottom: 105px;
+        bottom: 105px * @retina-factor;
         .carousel-caption__text {
           font-family: @font-family-crete;
-          font-size: 90px;
+          font-size: 90px * @retina-factor;
           position: absolute;
           text-align: center;
-          top: -208px;
+          top: -150px * @retina-factor;
           width: 100%
         }
         .carousel-caption__button {
@@ -125,9 +125,9 @@
           border-radius: 50px;
           color: @white;
           font-family: @font-family-crete;
-          font-size: 27px;
-          height: 81px;
-          max-width: 310px;
+          font-size: 27px * @retina-factor;
+          height: 81px * @retina-factor;
+          max-width: 310px * @retina-factor;
           width: 100%;
           &:hover,
           &:active {
@@ -148,17 +148,17 @@
           .carousel-caption__button__text {
             float: left;
             display: inline-block;
-            line-height: 67px;
-            padding-left: 48px;
+            line-height: 67px * @retina-factor;
+            padding-left: 48px * @retina-factor;
           }
           .carousel-caption__button__arrow {
             float: right;
             display: inline-block;
-            line-height: 91px;
-            padding-right: 26px;
+            line-height: 91px * @retina-factor;
+            padding-right: 26px * @retina-factor;
             svg {
-              height: 47px;
-              width: 47px;
+              height: 47px * @retina-factor;
+              width: 47px * @retina-factor;
               path {
                 fill: @white;
                 stroke: @white;
@@ -185,15 +185,15 @@
       }
       .item__image {
         border: none;
-        height: 113px;
+        height: 113px * @retina-factor;
         width: 100%;
       }
       .item__image__text {
         color: @white;
         font-family: @font-family-crete;
-        font-size: 30px;
+        font-size: 30px * @retina-factor;
         height: 100%;
-        line-height: 120px;
+        line-height: 120px * @retina-factor;
         position: absolute;
         text-align: center;
         width: 100%;

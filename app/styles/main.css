@@ -9489,7 +9489,7 @@ button.close {
 }
 @media (min-width: 1200px) {
   .container--carousel .carousel .container--carousel__slides__item__image {
-    height: 434px !important;
+    height: 217px !important;
   }
   .container--carousel .carousel .thumbnail-controls {
     position: absolute;
@@ -9504,25 +9504,25 @@ button.close {
   }
 }
 .container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .carousel-caption {
-  bottom: 87px;
+  bottom: 43.5px;
   left: 5%;
-  line-height: 53px;
+  line-height: 26.5px;
   right: 5%;
 }
 .container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__quote {
   border: none;
   font-family: 'Crete Round', serif;
-  font-size: 41px;
+  font-size: 20.5px;
 }
 .container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__name,
 .container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__relation {
-  font-size: 27px;
+  font-size: 13.5px;
 }
 .container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__name {
   font-weight: bold;
 }
 .container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .container--carousel__slides__item__image {
-  height: 798px;
+  height: 399px;
 }
 .container--carousel.container--carousel-variety .carousel .carousel-control {
   display: none;
@@ -9533,22 +9533,22 @@ button.close {
 .container--carousel.container--carousel-variety .carousel .carousel-indicators li {
   background: #ffffff;
   border: none;
-  height: 20px;
-  margin: 0 0 0 15px;
-  width: 20px;
+  height: 10px;
+  margin: 0 0 0 7.5px;
+  width: 10px;
 }
 .container--carousel.container--carousel-variety .carousel .carousel-indicators li.active {
   background-color: #aac426;
-  height: 20px;
-  margin: 0 0 0 15px;
-  width: 20px;
+  height: 10px;
+  margin: 0 0 0 7.5px;
+  width: 10px;
 }
 .container--carousel.container--carousel-variety .container--carousel__thumbnails {
   display: none;
 }
 .container--carousel .carousel .thumbnail-controls {
   position: absolute;
-  bottom: -113px;
+  bottom: -56.5px;
   width: 100%;
 }
 .container--carousel .carousel .thumbnail-controls .container {
@@ -9566,17 +9566,17 @@ button.close {
   display: none;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .container--carousel__slides__item__image {
-  height: 594px;
+  height: 297px;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption {
-  bottom: 105px;
+  bottom: 52.5px;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__text {
   font-family: 'Crete Round', serif;
-  font-size: 90px;
+  font-size: 45px;
   position: absolute;
   text-align: center;
-  top: -208px;
+  top: -75px;
   width: 100%;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button {
@@ -9585,9 +9585,9 @@ button.close {
   border-radius: 50px;
   color: #ffffff;
   font-family: 'Crete Round', serif;
-  font-size: 27px;
-  height: 81px;
-  max-width: 310px;
+  font-size: 13.5px;
+  height: 40.5px;
+  max-width: 155px;
   width: 100%;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:hover,
@@ -9608,18 +9608,18 @@ button.close {
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button .carousel-caption__button__text {
   float: left;
   display: inline-block;
-  line-height: 67px;
-  padding-left: 48px;
+  line-height: 33.5px;
+  padding-left: 24px;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button .carousel-caption__button__arrow {
   float: right;
   display: inline-block;
-  line-height: 91px;
-  padding-right: 26px;
+  line-height: 45.5px;
+  padding-right: 13px;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button .carousel-caption__button__arrow svg {
-  height: 47px;
-  width: 47px;
+  height: 23.5px;
+  width: 23.5px;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button .carousel-caption__button__arrow svg path {
   fill: #ffffff;
@@ -9643,15 +9643,15 @@ button.close {
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__image {
   border: none;
-  height: 113px;
+  height: 56.5px;
   width: 100%;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__image__text {
   color: #ffffff;
   font-family: 'Crete Round', serif;
-  font-size: 30px;
+  font-size: 15px;
   height: 100%;
-  line-height: 120px;
+  line-height: 60px;
   position: absolute;
   text-align: center;
   width: 100%;
