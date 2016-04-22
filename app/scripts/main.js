@@ -27,6 +27,10 @@
       }if($targetAudienceForm) {
         $targetAudienceForm.targetaudience();
       }
+      $('.hirsc').hisrc({
+        useTransparentGif: true,
+        speedTestUri: '../bower_components/hisrc/50K.jpg'
+      });
     });
   });
 }());

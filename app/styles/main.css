@@ -8038,13 +8038,19 @@ button.close {
   -webkit-animation-name: navigationfadeIn;
   animation-name: navigationfadeIn;
 }
+@media (min-width: 2049px) {
+  .fullsize {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
 .teaserbox {
   background-color: #fff;
   color: #aac426;
   display: block;
-  height: 250px;
-  max-height: 250px;
-  padding: 15px 15px 15px 15px;
+  height: 500px;
+  max-height: 500px;
+  padding: 30px 30px 30px 30px;
   position: relative;
   overflow: hidden;
 }
@@ -8086,8 +8092,12 @@ button.close {
 }
 .teaserbox.teaserbox--icon {
   background-color: #fff;
-  margin-left: -7.5px;
-  margin-right: -7.5px;
+  margin-left: 17px;
+  margin-right: -15px;
+}
+.teaserbox.teaserbox--icon .teaserbox__description {
+  bottom: 62px;
+  left: 45px;
 }
 .teaserbox.teaserbox--icon:hover .teaserbox__image--event svg path {
   fill: #fff;
@@ -8107,9 +8117,6 @@ button.close {
   fill: #aac426;
   stroke: #ffffff;
 }
-.teaserbox.teaserbox--icon .teaserbox__description {
-  bottom: 29.5px;
-}
 .teaserbox.teaserbox--icon .teaserbox__link svg .circle {
   fill: #ffffff;
   stroke: #ffffff;
@@ -8123,13 +8130,13 @@ button.close {
   fill: #aac426;
 }
 .teaserbox.teaserbox--icon .teaserbox__image {
-  margin-left: 2px;
-  margin-top: 1.5px;
-  max-width: 75px;
+  margin-left: 4px;
+  margin-top: 3px;
+  max-width: 150px;
 }
 .teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--event {
-  margin-left: -5px;
-  max-width: 81.5px;
+  margin-left: -15px;
+  max-width: 163px;
 }
 .teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--career path {
   stroke-width: 3px;
@@ -8154,19 +8161,19 @@ button.close {
   color: #ffffff;
 }
 .teaserbox.teaserbox--child-overview {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .teaserbox.teaserbox--variety-detail,
 .teaserbox.teaserbox--extra-content,
 .teaserbox.teaserbox--child-overview {
   border: 1px solid #aac426;
-  height: 205px;
-  padding: 0px 15px 0px 0px;
+  height: 410px;
+  padding: 0px 30px 0px 0px;
 }
 .teaserbox.teaserbox--variety-detail .teaserbox__image,
 .teaserbox.teaserbox--extra-content .teaserbox__image,
 .teaserbox.teaserbox--child-overview .teaserbox__image {
-  height: 135px;
+  height: 270px;
 }
 .teaserbox.teaserbox--variety-detail .teaserbox__description .teaserbox__description__label,
 .teaserbox.teaserbox--extra-content .teaserbox__description .teaserbox__description__label,
@@ -8177,47 +8184,47 @@ button.close {
 .teaserbox.teaserbox--variety-detail .teaserbox__description .teaserbox__description__title,
 .teaserbox.teaserbox--extra-content .teaserbox__description .teaserbox__description__title,
 .teaserbox.teaserbox--child-overview .teaserbox__description .teaserbox__description__title {
-  font-size: 17.25px;
+  font-size: 34.5px;
 }
 .teaserbox.teaserbox--extra-content {
   border-color: #cccccc;
-  height: 345px;
-  max-height: 345px;
-  padding: 8.5px;
-  margin-bottom: 13.5px;
+  height: 690px;
+  max-height: 690px;
+  padding: 17px;
+  margin-bottom: 27px;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__overlay {
   z-index: 3;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__overlay-bottom {
-  height: 178px;
+  height: 356px;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__image {
-  height: 157.5px;
+  height: 315px;
   width: 100%;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__description {
   bottom: inherit;
   color: #515151;
-  left: 16px;
-  line-height: 15.5px;
-  top: 178px;
+  left: 32px;
+  line-height: 31px;
+  top: 356px;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__description .teaserbox__description__title {
   color: #515151;
-  font-size: 13.5px;
-  line-height: 17.5px;
-  padding-bottom: 6px;
+  font-size: 27px;
+  line-height: 35px;
+  padding-bottom: 12px;
+}
+.teaserbox.teaserbox--extra-content .teaserbox__link {
+  bottom: 20px;
+  right: 20px;
 }
 .teaserbox.teaserbox--variety-detail {
   padding-right: 0px;
 }
 .teaserbox.teaserbox--variety-detail .teaserbox__image {
   width: 100%;
-}
-.teaserbox.teaserbox--news--grey .teaserbox__link {
-  bottom: 14.5px;
-  right: 10.5px;
 }
 .teaserbox.teaserbox--news--grey .teaserbox__link svg .circle {
   fill: #ffffff;
@@ -8230,10 +8237,6 @@ button.close {
 }
 .teaserbox.teaserbox--news--grey .teaserbox__link svg .arrow {
   fill: #515151;
-}
-.teaserbox.teaserbox--news--grey:hover .teaserbox__link {
-  bottom: 14.5px;
-  right: 10.5px;
 }
 .teaserbox.teaserbox--news--grey:hover .teaserbox__link svg .circle {
   fill: #ffffff;
@@ -8251,33 +8254,25 @@ button.close {
 .teaserbox.teaserbox--story,
 .teaserbox.teaserbox--news--grey {
   background-color: #000;
-  margin-left: -7.5px;
-  margin-right: -7.5px;
-  padding: 22.5px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 45px;
 }
 .teaserbox.teaserbox--news .teaserbox__image,
 .teaserbox.teaserbox--story .teaserbox__image,
 .teaserbox.teaserbox--news--grey .teaserbox__image {
   left: 0;
   width: 100%;
-  height: 250px;
+  height: 500px;
   bottom: 0;
   position: absolute;
   right: 0;
   top: 0;
 }
-.teaserbox.teaserbox--news .teaserbox__link,
-.teaserbox.teaserbox--story .teaserbox__link,
-.teaserbox.teaserbox--news--grey .teaserbox__link {
-  bottom: 14.5px;
-  right: 10.5px;
-}
 .teaserbox.teaserbox--news .teaserbox__description,
 .teaserbox.teaserbox--story .teaserbox__description,
 .teaserbox.teaserbox--news--grey .teaserbox__description {
-  bottom: 35px;
-  left: 31.5px;
-  padding-right: 40px;
+  padding-right: 80px;
 }
 .teaserbox.teaserbox--news .teaserbox__description .teaserbox__description__title,
 .teaserbox.teaserbox--story .teaserbox__description .teaserbox__description__title,
@@ -8316,10 +8311,10 @@ button.close {
   color: #ffffff;
 }
 .teaserbox .teaserbox__description {
-  bottom: 35px;
+  bottom: 78px;
   display: table;
-  left: 24px;
-  padding-right: 40px;
+  left: 78px;
+  padding-right: 80px;
   position: absolute;
   width: 100%;
   z-index: 2;
@@ -8329,18 +8324,18 @@ button.close {
   clear: right;
   display: table-cell;
   float: left;
-  line-height: 6pt;
-  margin-bottom: 7.5px;
-  padding: 2px;
+  line-height: 12pt;
+  margin-bottom: 15px;
+  padding: 4px;
   vertical-align: bottom;
   text-align: left;
 }
 .teaserbox .teaserbox__description .teaserbox__description__label .label-square {
   color: #aac426;
-  font-size: 10px;
-  line-height: 11.5px;
+  font-size: 20px;
+  line-height: 23px;
   font-weight: bold;
-  padding: 2.5px;
+  padding: 5px;
   text-transform: uppercase;
 }
 .teaserbox .teaserbox__description .teaserbox__description__title {
@@ -8348,10 +8343,10 @@ button.close {
   clear: left;
   display: table-cell;
   font-family: 'Crete Round', serif;
-  font-size: 19.75px;
+  font-size: 39.5px;
   float: left;
-  line-height: 22.75px;
-  margin-bottom: 6.5px;
+  line-height: 45.5px;
+  margin-bottom: 13px;
   position: relative;
   vertical-align: bottom;
 }
@@ -8362,9 +8357,9 @@ button.close {
   clear: left;
   display: table-cell;
   font-family: 'Open Sans', sans-serif;
-  font-size: 8.9px;
+  font-size: 17.8px;
   float: left;
-  line-height: 11.5px;
+  line-height: 23px;
   position: relative;
   text-transform: uppercase;
   vertical-align: bottom;
@@ -8373,10 +8368,10 @@ button.close {
   color: #ffffff;
   font-family: 18.75pt;
   font-size: 18.75pt;
-  left: 30px;
+  left: 75px;
   position: absolute;
-  top: 33px;
-  width: 48px;
+  top: 60px;
+  width: 96px;
   z-index: 2;
 }
 .teaserbox .teaserbox__quote .teaserbox__overlay {
@@ -8386,18 +8381,16 @@ button.close {
   fill: #ffffff;
 }
 .teaserbox .teaserbox__link {
-  bottom: 15px;
+  bottom: 20px;
   color: #aac426;
   display: inline-block;
   flex-shrink: 0;
-  font-size: 11pt;
-  height: 13.75pt;
-  line-height: 10.8pt;
+  height: 47px;
   position: absolute;
-  right: 10.5px;
+  right: 35px;
   text-align: center;
   vertical-align: middle;
-  width: 23px;
+  width: 47px;
   z-index: 2;
 }
 .teaserbox .teaserbox__link .teaserbox__link__svg {
