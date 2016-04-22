@@ -6727,7 +6727,7 @@ button.close {
     display: none !important;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .navigation.navbar {
     position: static;
   }
@@ -6743,7 +6743,7 @@ button.close {
     display: block !important;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .navigation {
     font-size: 18px !important;
   }
@@ -8038,13 +8038,13 @@ button.close {
   -webkit-animation-name: navigationfadeIn;
   animation-name: navigationfadeIn;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .fullsize .teaserbox.teaserbox--icon {
     margin-left: -15.5px;
     margin-right: -14.5px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .fullsize {
     padding-left: 15px !important;
     padding-right: 15px !important;
@@ -9479,12 +9479,12 @@ button.close {
   background-color: #222222;
   color: #ffffff;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .item__image__text {
     display: block !important;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .container--carousel .carousel .container--carousel__slides__item__image {
     height: 434px !important;
   }
@@ -9753,7 +9753,7 @@ button.close {
 .targetaudience .targetaudience__select .targetaudience__select__option:not(:checked) {
   color: #515151;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .vacancieslist .vacancieslist__header {
     padding-left: 133px !important;
     padding-top: 40px !important;
@@ -9892,7 +9892,7 @@ button.close {
   fill: #aac426;
   stroke: #aac426;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .vacancy .vacancy__image {
     max-height: 402px !important;
   }
@@ -9907,7 +9907,7 @@ button.close {
     text-align: left;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .vacancy .vacancy__image {
     max-height: 402px !important;
   }
