@@ -8149,11 +8149,14 @@ button.close {
   max-width: 75px;
 }
 .teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--event {
-  margin-left: -7.5px;
+  margin-left: -11.5px;
   max-width: 81.5px;
 }
+.teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--career {
+  margin-left: -3px;
+}
 .teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--career path {
-  stroke-width: 1.5px;
+  stroke-width: 3px;
 }
 .teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--career path.handle {
   display: block;
