@@ -6727,7 +6727,7 @@ button.close {
     display: none !important;
   }
 }
-@media (min-width: 641px) and (max-width: 2048px) {
+@media (min-width: 321px) and (max-width: 1048px) {
   .navigation.navbar {
     position: static;
   }
@@ -6743,7 +6743,7 @@ button.close {
     display: block !important;
   }
 }
-@media (min-width: 2049px) {
+@media (min-width: 1049px) {
   .navigation {
     font-size: 18px !important;
   }
@@ -8038,7 +8038,7 @@ button.close {
   -webkit-animation-name: navigationfadeIn;
   animation-name: navigationfadeIn;
 }
-@media (min-width: 2049px) {
+@media (min-width: 1049px) {
   .fullsize {
     padding-left: 15px !important;
     padding-right: 15px !important;
@@ -8048,9 +8048,9 @@ button.close {
   background-color: #fff;
   color: #aac426;
   display: block;
-  height: 500px;
-  max-height: 500px;
-  padding: 30px 30px 30px 30px;
+  height: 250px;
+  max-height: 250px;
+  padding: 15px 15px 15px 15px;
   position: relative;
   overflow: hidden;
 }
@@ -8085,19 +8085,19 @@ button.close {
 }
 .teaserbox .teaserbox__overlay-bottom {
   background-color: #ffffff;
-  height: 150px;
+  height: 75px;
   opacity: 1;
   top: inherit;
   z-index: 2;
 }
 .teaserbox.teaserbox--icon {
   background-color: #fff;
-  margin-left: 17px;
-  margin-right: -15px;
+  margin-left: 8.5px;
+  margin-right: -7.5px;
 }
 .teaserbox.teaserbox--icon .teaserbox__description {
-  bottom: 62px;
-  left: 45px;
+  bottom: 31px;
+  left: 22.5px;
 }
 .teaserbox.teaserbox--icon:hover .teaserbox__image--event svg path {
   fill: #fff;
@@ -8130,16 +8130,16 @@ button.close {
   fill: #aac426;
 }
 .teaserbox.teaserbox--icon .teaserbox__image {
-  margin-left: 4px;
-  margin-top: 3px;
-  max-width: 150px;
+  margin-left: 2px;
+  margin-top: 1.5px;
+  max-width: 75px;
 }
 .teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--event {
-  margin-left: -15px;
-  max-width: 163px;
+  margin-left: -7.5px;
+  max-width: 81.5px;
 }
 .teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--career path {
-  stroke-width: 3px;
+  stroke-width: 1.5px;
 }
 .teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--career path.handle {
   display: block;
@@ -8161,19 +8161,19 @@ button.close {
   color: #ffffff;
 }
 .teaserbox.teaserbox--child-overview {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .teaserbox.teaserbox--variety-detail,
 .teaserbox.teaserbox--extra-content,
 .teaserbox.teaserbox--child-overview {
   border: 1px solid #aac426;
-  height: 410px;
-  padding: 0px 30px 0px 0px;
+  height: 205px;
+  padding: 0px 15px 0px 0px;
 }
 .teaserbox.teaserbox--variety-detail .teaserbox__image,
 .teaserbox.teaserbox--extra-content .teaserbox__image,
 .teaserbox.teaserbox--child-overview .teaserbox__image {
-  height: 270px;
+  height: 135px;
 }
 .teaserbox.teaserbox--variety-detail .teaserbox__description .teaserbox__description__label,
 .teaserbox.teaserbox--extra-content .teaserbox__description .teaserbox__description__label,
@@ -8184,41 +8184,41 @@ button.close {
 .teaserbox.teaserbox--variety-detail .teaserbox__description .teaserbox__description__title,
 .teaserbox.teaserbox--extra-content .teaserbox__description .teaserbox__description__title,
 .teaserbox.teaserbox--child-overview .teaserbox__description .teaserbox__description__title {
-  font-size: 34.5px;
+  font-size: 17.25px;
 }
 .teaserbox.teaserbox--extra-content {
   border-color: #cccccc;
-  height: 690px;
-  max-height: 690px;
-  padding: 17px;
-  margin-bottom: 27px;
+  height: 345px;
+  max-height: 345px;
+  padding: 8.5px;
+  margin-bottom: 13.5px;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__overlay {
   z-index: 3;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__overlay-bottom {
-  height: 356px;
+  height: 178px;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__image {
-  height: 315px;
+  height: 157.5px;
   width: 100%;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__description {
   bottom: inherit;
   color: #515151;
-  left: 32px;
-  line-height: 31px;
-  top: 356px;
+  left: 16px;
+  line-height: 15.5px;
+  top: 178px;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__description .teaserbox__description__title {
   color: #515151;
-  font-size: 27px;
-  line-height: 35px;
-  padding-bottom: 12px;
+  font-size: 13.5px;
+  line-height: 17.5px;
+  padding-bottom: 6px;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__link {
-  bottom: 20px;
-  right: 20px;
+  bottom: 10px;
+  right: 10px;
 }
 .teaserbox.teaserbox--variety-detail {
   padding-right: 0px;
@@ -8256,14 +8256,14 @@ button.close {
   background-color: #000;
   margin-left: -15px;
   margin-right: -15px;
-  padding: 45px;
+  padding: 22.5px;
 }
 .teaserbox.teaserbox--news .teaserbox__image,
 .teaserbox.teaserbox--story .teaserbox__image,
 .teaserbox.teaserbox--news--grey .teaserbox__image {
   left: 0;
   width: 100%;
-  height: 500px;
+  height: 250px;
   bottom: 0;
   position: absolute;
   right: 0;
@@ -8272,7 +8272,7 @@ button.close {
 .teaserbox.teaserbox--news .teaserbox__description,
 .teaserbox.teaserbox--story .teaserbox__description,
 .teaserbox.teaserbox--news--grey .teaserbox__description {
-  padding-right: 80px;
+  padding-right: 40px;
 }
 .teaserbox.teaserbox--news .teaserbox__description .teaserbox__description__title,
 .teaserbox.teaserbox--story .teaserbox__description .teaserbox__description__title,
@@ -8311,10 +8311,10 @@ button.close {
   color: #ffffff;
 }
 .teaserbox .teaserbox__description {
-  bottom: 78px;
+  bottom: 39px;
   display: table;
-  left: 78px;
-  padding-right: 80px;
+  left: 39px;
+  padding-right: 40px;
   position: absolute;
   width: 100%;
   z-index: 2;
@@ -8325,17 +8325,17 @@ button.close {
   display: table-cell;
   float: left;
   line-height: 12pt;
-  margin-bottom: 15px;
-  padding: 4px;
+  margin-bottom: 7.5px;
+  padding: 2px;
   vertical-align: bottom;
   text-align: left;
 }
 .teaserbox .teaserbox__description .teaserbox__description__label .label-square {
   color: #aac426;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 10px;
+  line-height: 11.5px;
   font-weight: bold;
-  padding: 5px;
+  padding: 2.5px;
   text-transform: uppercase;
 }
 .teaserbox .teaserbox__description .teaserbox__description__title {
@@ -8343,10 +8343,10 @@ button.close {
   clear: left;
   display: table-cell;
   font-family: 'Crete Round', serif;
-  font-size: 39.5px;
+  font-size: 19.75px;
   float: left;
-  line-height: 45.5px;
-  margin-bottom: 13px;
+  line-height: 22.75px;
+  margin-bottom: 6.5px;
   position: relative;
   vertical-align: bottom;
 }
@@ -8357,9 +8357,9 @@ button.close {
   clear: left;
   display: table-cell;
   font-family: 'Open Sans', sans-serif;
-  font-size: 17.8px;
+  font-size: 8.9px;
   float: left;
-  line-height: 23px;
+  line-height: 11.5px;
   position: relative;
   text-transform: uppercase;
   vertical-align: bottom;
@@ -8368,10 +8368,10 @@ button.close {
   color: #ffffff;
   font-family: 18.75pt;
   font-size: 18.75pt;
-  left: 75px;
+  left: 37.5px;
   position: absolute;
-  top: 60px;
-  width: 96px;
+  top: 30px;
+  width: 48px;
   z-index: 2;
 }
 .teaserbox .teaserbox__quote .teaserbox__overlay {
@@ -8381,16 +8381,16 @@ button.close {
   fill: #ffffff;
 }
 .teaserbox .teaserbox__link {
-  bottom: 20px;
+  bottom: 10px;
   color: #aac426;
   display: inline-block;
   flex-shrink: 0;
-  height: 47px;
+  height: 23.5px;
   position: absolute;
-  right: 35px;
+  right: 17.5px;
   text-align: center;
   vertical-align: middle;
-  width: 47px;
+  width: 23.5px;
   z-index: 2;
 }
 .teaserbox .teaserbox__link .teaserbox__link__svg {
@@ -9459,12 +9459,12 @@ button.close {
   background-color: #222222;
   color: #ffffff;
 }
-@media (min-width: 641px) and (max-width: 2048px) {
+@media (min-width: 321px) and (max-width: 1048px) {
   .item__image__text {
     display: block !important;
   }
 }
-@media (min-width: 2049px) {
+@media (min-width: 1049px) {
   .container--carousel .carousel .container--carousel__slides__item__image {
     height: 434px !important;
   }
@@ -9733,7 +9733,7 @@ button.close {
 .targetaudience .targetaudience__select .targetaudience__select__option:not(:checked) {
   color: #515151;
 }
-@media (min-width: 641px) and (max-width: 2048px) {
+@media (min-width: 321px) and (max-width: 1048px) {
   .vacancieslist .vacancieslist__header {
     padding-left: 133px !important;
     padding-top: 40px !important;
@@ -9872,7 +9872,7 @@ button.close {
   fill: #aac426;
   stroke: #aac426;
 }
-@media (min-width: 641px) and (max-width: 2048px) {
+@media (min-width: 321px) and (max-width: 1048px) {
   .vacancy .vacancy__image {
     max-height: 402px !important;
   }
@@ -9887,7 +9887,7 @@ button.close {
     text-align: left;
   }
 }
-@media (min-width: 2049px) {
+@media (min-width: 1049px) {
   .vacancy .vacancy__image {
     max-height: 402px !important;
   }

@@ -38,9 +38,9 @@
   background-color: #fff;
   color: @green;
   display: block;
-  height: 500px;
-  max-height: 500px;
-  padding: 30px 30px 30px 30px;
+  height: 500px * @retina-factor;
+  max-height: 500px * @retina-factor;
+  padding: 30px * @retina-factor 30px * @retina-factor 30px * @retina-factor 30px * @retina-factor;
   position: relative;
   overflow: hidden;
   &:hover {
@@ -78,18 +78,18 @@
   }
   .teaserbox__overlay-bottom {
     background-color: @white;
-    height: 150px;
+    height: 150px * @retina-factor;
     opacity: 1;
     top: inherit;
     z-index: 2;
   }
   &.teaserbox--icon {
     background-color: #fff;
-    margin-left: 17px;
-    margin-right: -15px;
+    margin-left: 17px * @retina-factor;
+    margin-right: -15px * @retina-factor;
     .teaserbox__description {
-      bottom: 62px;
-      left: 45px;
+      bottom: 62px * @retina-factor;
+      left: 45px * @retina-factor;
     }
     &:hover {
       .teaserbox__image--event {
@@ -141,16 +141,16 @@
       }
     }
     .teaserbox__image {
-      margin-left: 4px;
-      margin-top: 3px;
-      max-width: 150px;
+      margin-left: 4px * @retina-factor;
+      margin-top: 3px * @retina-factor;
+      max-width: 150px * @retina-factor;
       &.teaserbox__image--event {
-        margin-left: -15px;
-        max-width: 163px;
+        margin-left: -15px * @retina-factor;
+        max-width: 163px * @retina-factor;
       }
       &.teaserbox__image--career {
         path {
-          stroke-width: 3px;
+          stroke-width: 3px * @retina-factor;
           &.handle {
             display: block;
           }
@@ -178,16 +178,16 @@
     }
   }
   &.teaserbox--child-overview {
-    margin-bottom: 20px;
+    margin-bottom: 20px * @retina-factor;
   }
   &.teaserbox--variety-detail,
   &.teaserbox--extra-content,
   &.teaserbox--child-overview {
     border: 1px solid @green;
-    height: 410px;
-    padding: 0px 30px 0px 0px;
+    height: 410px * @retina-factor;
+    padding: 0px * @retina-factor 30px * @retina-factor 0px * @retina-factor 0px * @retina-factor;
     .teaserbox__image {
-      height: 270px;
+      height: 270px * @retina-factor;
     }
     .teaserbox__description {
       .teaserbox__description__label {
@@ -195,46 +195,46 @@
         text-transform: uppercase;
       }
       .teaserbox__description__title {
-        font-size: 34.5px;
+        font-size: 34.5px * @retina-factor;
       }
     }
   }
   &.teaserbox--extra-content {
     border-color: @grey;
-    height: 690px;
-    max-height: 690px;
-    padding: 17px;
-    margin-bottom:27px;
+    height: 690px * @retina-factor;
+    max-height: 690px * @retina-factor;
+    padding: 17px * @retina-factor;
+    margin-bottom:27px * @retina-factor;
     .teaserbox__overlay {
       z-index: 3;
     }
     .teaserbox__overlay-bottom {
-      height: 356px;
+      height: 356px * @retina-factor;
     }
     .teaserbox__image {
-      height: 315px;
+      height: 315px * @retina-factor;
       width: 100%;
     }
     .teaserbox__description {
       bottom: inherit;
       color: @dark-grey;
-      left: 32px;
-      line-height: 31px;
-      top: 356px;
+      left: 32px * @retina-factor;
+      line-height: 31px * @retina-factor;
+      top: 356px * @retina-factor;
       .teaserbox__description__title {
         color: @dark-grey;
-        font-size: 27px;
-        line-height: 35px;
-        padding-bottom: 12px;
+        font-size: 27px * @retina-factor;
+        line-height: 35px * @retina-factor;
+        padding-bottom: 12px * @retina-factor;
       }
     }
     .teaserbox__link {
-      bottom: 20px;
-      right: 20px;
+      bottom: 20px * @retina-factor;
+      right: 20px * @retina-factor;
     }
   }
   &.teaserbox--variety-detail {
-    padding-right: 0px;
+    padding-right: 0px * @retina-factor;
     .teaserbox__image {
       width: 100%;
     }
@@ -285,11 +285,11 @@
     background-color: #000;
     margin-left:-15px;
     margin-right: -15px;
-    padding: 45px;
+    padding: 45px * @retina-factor;
     .teaserbox__image {
       left: 0;
       width: 100%;
-      height: 500px;
+      height: 500px * @retina-factor;
       bottom: 0;
       position: absolute;
       right: 0;
@@ -302,7 +302,7 @@
     .teaserbox__description {
       //bottom: 70px;
       //left: 63px;
-      padding-right: 80px;
+      padding-right: 80px * @retina-factor;
     }
     .teaserbox-description(@white, normal);
   }
@@ -313,10 +313,10 @@
     .teaserbox-description(@white, italic);
   }
   .teaserbox__description {
-    bottom: 78px;
+    bottom: 78px * @retina-factor;
     display: table;
-    left: 78px;
-    padding-right: 80px;
+    left: 78px * @retina-factor;
+    padding-right: 80px * @retina-factor;
     position: absolute;
     width: 100%;
     z-index: 2;
@@ -326,16 +326,16 @@
       display: table-cell;
       float: left;
       line-height: @label-line-height;
-      margin-bottom: 15px;
-      padding: 4px;
+      margin-bottom: 15px * @retina-factor;
+      padding: 4px * @retina-factor;
       vertical-align: bottom;
       text-align: left;
       .label-square {
         color: @green;
-        font-size: 20px;//@label;
-        line-height: 23px;//@label-line-height;
+        font-size: 20px * @retina-factor;//@label;
+        line-height: 23px * @retina-factor;//@label-line-height;
         font-weight: bold;
-        padding: 5px;
+        padding: 5px * @retina-factor;
         text-transform: uppercase;
       }
     }
@@ -344,10 +344,10 @@
       clear: left;
       display: table-cell;
       font-family: @font-family-crete;
-      font-size: 39.5px;//1.5 * @body;
+      font-size: 39.5px * @retina-factor;//1.5 * @body;
       float: left;
-      line-height: 45.5px;//1.5 * @body-line-height;
-      margin-bottom: 13px;
+      line-height: 45.5px * @retina-factor;//1.5 * @body-line-height;
+      margin-bottom: 13px * @retina-factor;
       position: relative;
       vertical-align: bottom;
     }
@@ -358,9 +358,9 @@
       clear: left;
       display: table-cell;
       font-family: @font-family-open-sanse;
-      font-size: 17.8px;//@label;
+      font-size: 17.8px * @retina-factor;//@label;
       float: left;
-      line-height: 23px;//@label-line-height;
+      line-height: 23px * @retina-factor;//@label-line-height;
       position: relative;
       text-transform: uppercase;
       vertical-align: bottom;
@@ -370,10 +370,10 @@
     color: @white;
     font-family: @blockquote-font-size;
     font-size: @blockquote-font-size;
-    left: 75px;
+    left: 75px * @retina-factor;
     position: absolute;
-    top: 60px;
-    width: 96px;
+    top: 60px * @retina-factor;
+    width: 96px * @retina-factor;
     z-index: 2;
     .teaserbox__overlay {
       opacity: 0.8;
@@ -385,18 +385,18 @@
     }
   }
   .teaserbox__link {
-    bottom: 20px;
+    bottom: 20px * @retina-factor;
     color: @green;
     display: inline-block;
     flex-shrink: 0;
     //font-size: @label;
-    height: 47px; //2.5 * @label;
+    height: 47px * @retina-factor; //2.5 * @label;
     //line-height: 1.8 * @label-line-height;
     position: absolute;
-    right: 35px;
+    right: 35px * @retina-factor;
     text-align: center;
     vertical-align: middle;
-    width: 47px;//2.5 * @label;
+    width: 47px * @retina-factor;//2.5 * @label;
     z-index: 2;
     .teaserbox__link__svg {
       display: block;
