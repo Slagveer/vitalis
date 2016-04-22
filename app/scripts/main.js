@@ -1,5 +1,6 @@
 'use strict';
 
+$.hisrc.speedTest();
 (function(){
   $(function() {
     $(function() {
@@ -28,7 +29,7 @@
         $targetAudienceForm.targetaudience();
       }
       $('.hirsc').hisrc({
-        useTransparentGif: true,
+        useTransparentGif: false,
         speedTestUri: '../bower_components/hisrc/50K.jpg'
       });
     });
