@@ -185,9 +185,11 @@
   &.teaserbox--child-overview {
     border: 1px solid @green;
     height: 410px * @retina-factor;
-    padding: 0px * @retina-factor 30px * @retina-factor 0px * @retina-factor 0px * @retina-factor;
+    padding: 0px * @retina-factor 0px * @retina-factor 0px * @retina-factor 0px * @retina-factor;
+    width: 100%;
     .teaserbox__image {
       height: 270px * @retina-factor;
+      width: 100%;
     }
     .teaserbox__description {
       .teaserbox__description__label {
@@ -196,6 +198,14 @@
       }
       .teaserbox__description__title {
         font-size: 34.5px * @retina-factor;
+      }
+    }
+    .teaserbox__link {
+      svg {
+        path,
+        circle {
+          fill: @green;
+        }
       }
     }
   }

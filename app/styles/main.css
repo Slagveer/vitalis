@@ -8168,12 +8168,14 @@ button.close {
 .teaserbox.teaserbox--child-overview {
   border: 1px solid #aac426;
   height: 205px;
-  padding: 0px 15px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
 }
 .teaserbox.teaserbox--variety-detail .teaserbox__image,
 .teaserbox.teaserbox--extra-content .teaserbox__image,
 .teaserbox.teaserbox--child-overview .teaserbox__image {
   height: 135px;
+  width: 100%;
 }
 .teaserbox.teaserbox--variety-detail .teaserbox__description .teaserbox__description__label,
 .teaserbox.teaserbox--extra-content .teaserbox__description .teaserbox__description__label,
@@ -8185,6 +8187,14 @@ button.close {
 .teaserbox.teaserbox--extra-content .teaserbox__description .teaserbox__description__title,
 .teaserbox.teaserbox--child-overview .teaserbox__description .teaserbox__description__title {
   font-size: 17.25px;
+}
+.teaserbox.teaserbox--variety-detail .teaserbox__link svg path,
+.teaserbox.teaserbox--extra-content .teaserbox__link svg path,
+.teaserbox.teaserbox--child-overview .teaserbox__link svg path,
+.teaserbox.teaserbox--variety-detail .teaserbox__link svg circle,
+.teaserbox.teaserbox--extra-content .teaserbox__link svg circle,
+.teaserbox.teaserbox--child-overview .teaserbox__link svg circle {
+  fill: #aac426;
 }
 .teaserbox.teaserbox--extra-content {
   border-color: #cccccc;
