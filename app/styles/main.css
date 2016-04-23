@@ -9576,7 +9576,7 @@ button.close {
   font-size: 45px;
   position: absolute;
   text-align: center;
-  top: -75px;
+  top: -125px;
   width: 100%;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button {
