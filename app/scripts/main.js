@@ -14,7 +14,7 @@ $.hisrc.speedTest();
       });
       if($carousel) {
         $carousel.carousel({
-          interval: 8000
+          interval: 8000000
         });
         $carousel.swiperight(function () {
           $carousel.carousel('prev');

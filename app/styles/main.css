@@ -9489,7 +9489,7 @@ button.close {
 }
 @media (min-width: 1200px) {
   .container--carousel .carousel .container--carousel__slides__item__image {
-    height: 217px !important;
+    height: 305px !important;
   }
   .container--carousel .carousel .thumbnail-controls {
     position: absolute;
@@ -9608,7 +9608,7 @@ button.close {
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button .carousel-caption__button__text {
   float: left;
   display: inline-block;
-  line-height: 33.5px;
+  line-height: 26.5px;
   padding-left: 24px;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button .carousel-caption__button__arrow {
