@@ -9565,7 +9565,7 @@ button.close {
 }
 .container--carousel .carousel .carousel-control,
 .container--carousel .carousel .carousel-indicators {
-  display: block;
+  display: none;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .container--carousel__slides__item__image {
   height: 297px;
@@ -9635,6 +9635,9 @@ button.close {
   flex-grow: 1;
   max-width: 33.33333333%;
   position: relative;
+}
+.container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item.active .item__overlay {
+  opacity: .8;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__overlay {
   position: absolute;

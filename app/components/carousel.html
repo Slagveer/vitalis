@@ -25,7 +25,7 @@
 <div class="container-fluid container--carousel">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fullsize">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <div id="carousel-example-generic" class="carousel slide js-carousel" data-ride="carousel">
         <!-- CAROUSEL-INDICATORS::START -->
         <ol class="carousel-indicators">
           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -35,7 +35,7 @@
         <!-- CAROUSEL-INDICATORS::END -->
         <!-- CAROUSEL-SLIDES::START -->
         <div class="carousel-inner container--carousel__slides" role="listbox">
-          <div class="item active container--carousel__slides__item">
+          <div class="item active container--carousel__slides__item" data-slide-number="0">
             <img class="container--carousel__slides__item__image" src="http://loremflickr.com/2640/305/news?random=1" data-1x="http://loremflickr.com/5280/610/news?random=1" data-2x="http://loremflickr.com/15060/1220/news?random=1" alt="Slide 1">
             <div class="carousel-caption">
               <div class="carousel-caption__text">Hello World!</div>
@@ -61,7 +61,7 @@
               </a>
             </div>
           </div>
-          <div class="item container--carousel__slides__item">
+          <div class="item container--carousel__slides__item" data-slide-number="1">
             <img class="container--carousel__slides__item__image" src="http://loremflickr.com/2640/305/news?random=2" data-1x="http://loremflickr.com/2640/1000/news?random=2" data-2x="http://loremflickr.com/2640/2000/news?random=2" alt="Slide 2">
             <div class="carousel-caption">
               <div class="carousel-caption__text">Hello World!</div>
@@ -87,7 +87,7 @@
               </a>
             </div>
           </div>
-          <div class="item container--carousel__slides__item">
+          <div class="item container--carousel__slides__item" data-slide-number="2">
             <img class="container--carousel__slides__item__image" src="http://loremflickr.com/2640/305/news?random=3" data-1x="http://loremflickr.com/2640/1000/news?random=3" data-2x="http://loremflickr.com/2640/2000/news?random=3" alt="Slide 3">
             <div class="carousel-caption">
               <div class="carousel-caption__text">Hello World!</div>
@@ -131,17 +131,17 @@
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fullsize">
                 <div class="container--carousel__thumbnails">
-                  <div class="container--carousel__thumbnails__item" data-target="#carousel-example-generic" data-slide-to="0">
+                  <div class="container--carousel__thumbnails__item js-thumbnail-item" data-target="#carousel-example-generic" data-slide-to="0">
                     <div class="item__overlay">&nbsp;</div>
                     <div class="item__image__text">Hello World!</div>
                     <img class="item__image hirsc" src="http://loremflickr.com/320/57/news?random=1" data-1x="http://loremflickr.com/640/500/news?random=1" data-2x="http://loremflickr.com/1280/228/news?random=1"  alt="Slide 1">
                   </div>
-                  <div class="container--carousel__thumbnails__item" data-target="#carousel-example-generic" data-slide-to="1">
+                  <div class="container--carousel__thumbnails__item js-thumbnail-item" data-target="#carousel-example-generic" data-slide-to="1">
                     <div class="item__overlay">&nbsp;</div>
                     <div class="item__image__text">Hello World!</div>
                     <img class="item__image hirsc" src="http://loremflickr.com/320/57/news?random=2" data-1x="http://loremflickr.com/640/114/news?random=2" data-2x="http://loremflickr.com/1280/228/news?random=2" alt="Slide 2">
                   </div>
-                  <div class="container--carousel__thumbnails__item" data-target="#carousel-example-generic" data-slide-to="2">
+                  <div class="container--carousel__thumbnails__item js-thumbnail-item" data-target="#carousel-example-generic" data-slide-to="2">
                     <div class="item__overlay">&nbsp;</div>
                     <div class="item__image__text">Hello World!</div>
                     <img class="item__image hirsc" src="http://loremflickr.com/320/57/news?random=3" data-1x="http://loremflickr.com/640/114/news?random=3" data-2x="http://loremflickr.com/1280/228/news?random=3" alt="Slide 3">
@@ -181,7 +181,6 @@
   ga('send', 'pageview');
 </script>
 
-
 <!-- build:js scripts/main.js -->
 <script src="../bower_components/jquery/jquery.js"></script>
 <script src="../bower_components/hisrc/hisrc.js"></script>
@@ -209,4 +208,8 @@
 <script src="../bower_components/bootstrap/js/carousel.js"></script>
 <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
 <script src="../bower_components/bootstrap/js/collapse.js"></script>
-<script src="../bower_components/boot
+<script src="../bower_components/bootstrap/js/tab.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

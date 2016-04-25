@@ -1,20 +1,11 @@
 'use strict';
 
-$.hisrc.speedTest();
 (function(){
   $(function() {
     $(function() {
-      var $carousel = $('.carousel'),
+      var $carousel = $('.js-carousel'),
         $loadmore = $('.js-loadmore'),
         $targetAudienceForm = $('.js-submitform');
-
-      // Disable bounce effect on tablets
-      $(document).bind(
-        'touchmove',
-        function(e) {
-          e.preventDefault();
-        }
-      );
 
       $('body').navigation({
         animation: true,
@@ -30,6 +21,13 @@ $.hisrc.speedTest();
         $carousel.swipeleft(function () {
           $carousel.carousel('next');
         });
+        $carousel.on('slid.bs.carousel', function slideIt(e){
+          var slide = $('.item.active').data('slide-number');
+
+          $('.js-thumbnail-item').removeClass('active');
+          $($('.js-thumbnail-item')[slide]).addClass('active');
+        });
+
       }
       if($loadmore) {
         $loadmore.loadmore();
@@ -38,7 +36,7 @@ $.hisrc.speedTest();
       }
       $('.hirsc').hisrc({
         useTransparentGif: false,
-        speedTestUri: '../bower_components/hisrc/50K.jpg'
+        speedTestUri: 'bower_components/hisrc/50K.jpg'
       });
     });
   });

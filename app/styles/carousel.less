@@ -109,7 +109,7 @@
     }
     .carousel-control,
     .carousel-indicators {
-      display: block;
+      display: none;
     }
   }
   .container--carousel__slides {
@@ -184,6 +184,11 @@
       flex-grow: 1;
       max-width: 100/3%;
       position: relative;
+      &.active {
+        .item__overlay {
+          opacity: .8;
+        }
+      }
       .item__overlay {
         position: absolute;
         background-color: @green;
