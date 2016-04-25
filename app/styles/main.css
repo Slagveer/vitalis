@@ -9416,6 +9416,13 @@ button.close {
   font-size: 16px;
   line-height: 19pt;
 }
+.navigation.footer {
+  position: static;
+}
+.navigation.footer .container .row .fullsize {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .navigation .footer__menu {
   border-top: none;
   border-left: none;
@@ -9606,6 +9613,7 @@ button.close {
 }
 .navigation .footer__sub-menu {
   background-color: #222222;
+  border-bottom: 0.5px solid #ffffff;
   display: none;
   height: 100%;
   position: absolute;
