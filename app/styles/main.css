@@ -9331,11 +9331,89 @@ button.close {
 .filter .filter__select .filter__select__options .filter__selected__options__item .filter__selected__options__item__icon svg path {
   fill: #aac426;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .navigation.footer .container-fluid .row .fullsize,
+  .navigation.footer .container .row .fullsize {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .navigation.footer .container-fluid .row .fullsize .footer__menu,
+  .navigation.footer .container .row .fullsize .footer__menu {
+    float: left;
+    width: 100%;
+  }
+  .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item:last-child,
+  .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item:last-child {
+    display: none;
+  }
+  .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label,
+  .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label {
+    line-height: 15px;
+  }
+  .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info,
+  .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info {
+    padding-top: 10px;
+  }
+  .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country,
+  .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country,
+  .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone,
+  .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone,
+  .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail,
+  .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail {
+    clear: none;
+    font-size: 9px;
+    line-height: 30px;
+    padding-right: 30px;
+  }
+  .navigation.footer .container-fluid .row .fullsize .footer__sub-menu,
+  .navigation.footer .container .row .fullsize .footer__sub-menu {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .navigation.footer .container-fluid .row .fullsize,
+  .navigation.footer .container .row .fullsize {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .navigation.footer .container-fluid .row .fullsize .footer__menu,
+  .navigation.footer .container .row .fullsize .footer__menu {
+    float: left;
+    width: 100%;
+  }
+  .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item:last-child,
+  .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item:last-child {
+    display: none;
+  }
+  .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label,
+  .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label {
+    line-height: 15px;
+  }
+  .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info,
+  .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info {
+    padding-top: 10px;
+  }
+  .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country,
+  .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country,
+  .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone,
+  .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone,
+  .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail,
+  .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail {
+    clear: none;
+    font-size: 9px;
+    line-height: 30px;
+    padding-right: 30px;
+  }
+  .navigation.footer .container-fluid .row .fullsize .footer__sub-menu,
+  .navigation.footer .container .row .fullsize .footer__sub-menu {
+    display: block;
+  }
+}
 .navigation {
   border-radius: 0;
   border-width: 0;
   font-family: 'Crete Round', serif;
-  font-size: 32px;
+  font-size: 16px;
   line-height: 19pt;
 }
 .navigation .footer__menu {
@@ -9357,19 +9435,19 @@ button.close {
   padding: 0px;
 }
 .navigation .footer__menu .footer__menu__item.start {
-  margin-top: -6px;
+  margin-top: -3px;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label {
   background-color: #222222;
   border-bottom: 1px solid #cccccc;
   color: #ffffff;
-  padding: 38px 0px 38px 60px;
+  padding: 19px 0px 19px 30px;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social {
   display: flex;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .footer__menu__item__label--social__item {
-  padding-right: 35px;
+  padding-right: 17.5px;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .footer__menu__item__label--social__item.twitter:hover svg path {
   fill: #ffffff;
@@ -9400,7 +9478,7 @@ button.close {
   fill: #007bb6;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .footer__menu__item__label--social__item svg {
-  width: 95px;
+  width: 47.5px;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .footer__menu__item__label--social__item:hover {
   background-color: #222222;
@@ -9416,71 +9494,119 @@ button.close {
   background-color: #aac426;
   color: #ffffff;
 }
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact {
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social {
   font-family: 'Open Sans', sans-serif;
   display: flex;
-  padding: 60px 60px 60px 60px;
+  padding: 30px 30px 30px 30px;
 }
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .logo {
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .logo,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .logo {
   border: 1px solid #ffffff;
-  min-width: 180px;
+  min-width: 90px;
   width: 100%;
 }
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info {
-  font-size: 21px;
-  padding-left: 30px;
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info {
+  font-size: 10.5px;
+  padding-left: 15px;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .country,
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .copyright {
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .copyright,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .copyright {
+  clear: left;
   color: #515151;
+  float: left;
 }
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .country {
-  margin-bottom: 28px;
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .country,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country {
+  margin-bottom: 14px;
 }
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone {
-  margin-bottom: 60px;
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone {
+  clear: left;
+  float: left;
+  margin-bottom: 30px;
 }
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone:hover {
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone:hover,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone:hover {
   color: #aac426;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone:hover svg path,
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone:hover svg polygon {
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone:hover svg path,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone:hover svg polygon,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone:hover svg polygon {
   fill: #aac426;
 }
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone:active {
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone:active,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone:active {
   background-color: #222222;
   color: #aac426;
 }
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail {
-  margin-bottom: 60px;
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail {
+  clear: left;
+  float: left;
+  margin-bottom: 30px;
 }
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail:hover {
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail:hover,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail:hover {
   color: #aac426;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail:hover svg path,
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail:hover svg polygon {
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail:hover svg path,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail:hover svg polygon,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail:hover svg polygon {
   fill: #aac426;
 }
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail:active {
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail:active,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail:active {
   background-color: #222222;
   color: #aac426;
 }
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info * {
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info *,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info * {
   clear: both;
   display: inline-block;
 }
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info * .icon {
-  bottom: -12px;
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info * .icon,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info * .icon {
+  bottom: -6px;
   display: inline-block;
   position: relative;
-  width: 25px;
+  width: 12.5px;
 }
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact:hover {
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact:hover,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social:hover {
   color: #ffffff;
 }
-.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact:active {
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact:active,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social:active {
   background-color: #222222;
   color: #ffffff;
+}
+.navigation .footer__sub-menu {
+  background-color: #222222;
+  display: none;
+  height: 100%;
+  position: absolute;
+  padding: 30px 15px 0px 0px;
+  right: 0px;
+  text-align: center;
+  top: 0px;
+  width: 122px;
+}
+.navigation .footer__sub-menu .logo {
+  border: 1px solid #fff;
+  margin-left: 20px;
+  max-width: 153px;
+}
+.navigation .footer__sub-menu .copyright {
+  color: #515151;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 8px;
+  padding-left: 30;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .item__image__text {

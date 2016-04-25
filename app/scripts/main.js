@@ -36,7 +36,7 @@
       }
       $('.hirsc').hisrc({
         useTransparentGif: false,
-        speedTestUri: 'bower_components/hisrc/50K.jpg'
+        speedTestUri: './bower_components/hisrc/50K.jpg'
       });
     });
   });

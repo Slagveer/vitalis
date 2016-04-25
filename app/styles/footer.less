@@ -1,3 +1,96 @@
+// TABLET::START
+@media (min-width: @tablet_min) and (max-width: @tablet_max) {
+  .navigation {
+    &.footer {
+      .container-fluid,
+      .container {
+        .row {
+          .fullsize {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            .footer__menu {
+              float: left;
+              width: 100%;
+              .footer__menu__item {
+                &:last-child {
+                  display: none;
+                }
+                .footer__menu__item__label {
+                  line-height: 30px * @retina-factor;
+                  &.footer__menu__item__label--social {
+                    .info {
+                      padding-top: 10px;
+                      .country,
+                      .phone,
+                      .mail {
+                        clear: none;
+                        font-size: 18px * @retina-factor;
+                        line-height:60px * @retina-factor;
+                        padding-right: 60px * @retina-factor;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .footer__sub-menu {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// TABLET::END
+
+// DESKTOP::START
+@media (min-width: @desktop_min) {
+  .navigation {
+    &.footer {
+      .container-fluid,
+      .container {
+        .row {
+          .fullsize {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            .footer__menu {
+              float: left;
+              width: 100%;
+              .footer__menu__item {
+                &:last-child {
+                  display: none;
+                }
+                .footer__menu__item__label {
+                  line-height: 30px * @retina-factor;
+                  &.footer__menu__item__label--social {
+                    .info {
+                      padding-top: 10px;
+                      .country,
+                      .phone,
+                      .mail {
+                        clear: none;
+                        font-size: 18px * @retina-factor;
+                        line-height:60px * @retina-factor;
+                        padding-right: 60px * @retina-factor;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .footer__sub-menu {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// DESKTOP::END
+
+// MOBILE::START
 // Mixin funcions
 // footer-social-hover::start
 .social-hover(@name) {
@@ -14,7 +107,9 @@
 // footer-social-hover::end
 // footer-icon::start
 .footer-icon() {
-  margin-bottom: 60px;
+  clear: left;
+  float: left;
+  margin-bottom: 60px * @retina-factor;
   &:hover {
     color: @green;
     svg {
@@ -30,11 +125,12 @@
   }
 }
 // footer-icon::end
+
 .navigation {
   border-radius: 0;
   border-width: 0;
   font-family: @font-family-crete;
-  font-size: 32px;//@body;
+  font-size: 32px * @retina-factor;//@body;
   line-height: @body-line-height;
   .footer__menu {
     border-top: none;
@@ -59,17 +155,17 @@
         padding: 0px;
       }
       &.start {
-        margin-top: -6px;
+        margin-top: -6px * @retina-factor;
       }
       .footer__menu__item__label {
         background-color: @footer-backgroundcolor;
         border-bottom: 1px solid @grey;
         color: @white;
-        padding: 38px 0px 38px 60px;
+        padding: 38px * @retina-factor 0px 38px * @retina-factor 60px * @retina-factor;
         &.footer__menu__item__label--social {
           display: flex;
           .footer__menu__item__label--social__item {
-            padding-right: 35px;
+            padding-right: 35px * @retina-factor;
             &.twitter {
               &:hover {
                 .social-hover(@twitter);
@@ -91,7 +187,7 @@
               }
             }
             svg {
-              width: 95px;
+              width: 95px * @retina-factor;
             }
             &:hover {
               background-color: @navigation-backgroundcolor;
@@ -109,24 +205,27 @@
           background-color: @green;
           color: @white;
         }
-        &.footer__menu__item__label--contact {
+        &.footer__menu__item__label--contact,
+        &.footer__menu__item__label--social {
           font-family: @font-family-open-sanse;
           display: flex;
-          padding: 60px 60px 60px 60px;
+          padding: 60px * @retina-factor 60px * @retina-factor 60px * @retina-factor 60px * @retina-factor;
           .logo {
             border: 1px solid @white;
-            min-width: 180px;
+            min-width: 180px * @retina-factor;
             width: 100%;
           }
           .info {
-            font-size: 21px;
-            padding-left: 30px;
+            font-size: 21px * @retina-factor;
+            padding-left: 30px * @retina-factor;
             .country,
             .copyright {
+              clear: left;
               color: @dark-grey;
+              float: left;
             }
             .country {
-              margin-bottom: 28px;
+              margin-bottom: 28px * @retina-factor;
             }
             .phone {
               .footer-icon();
@@ -138,10 +237,10 @@
               clear: both;
               display: inline-block;
               .icon {
-                bottom: -12px;
+                bottom: -12px * @retina-factor;
                 display: inline-block;
                 position: relative;
-                width: 25px;
+                width: 25px * @retina-factor;
               }
             }
           }
@@ -156,4 +255,26 @@
       }
     }
   }
-}
+  .footer__sub-menu {
+    background-color: @navigation-backgroundcolor;
+    display: none;
+    height: 100%;
+    position: absolute;
+    padding: 60px * @retina-factor 30px * @retina-factor 0px 0px;
+    right: 0px;
+    text-align: center;
+    top: 0px;
+    width: 244px * @retina-factor;
+    .logo {
+      border: 1px solid #fff;
+      margin-left: 40px * @retina-factor;
+      max-width: 306px * @retina-factor;
+    }
+    .copyright {
+      color: @dark-grey;
+      font-family: @font-family-open-sanse;
+      font-size: 16px * @retina-factor;
+      padding-left: 60 * @retina-factor;
+    }
+  }}
+// MOBILE::END
