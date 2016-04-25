@@ -10578,13 +10578,13 @@ button.close {
 }
 .person-contact .person-contact__information {
   border-bottom: 1px solid #ededed;
-  padding-bottom: 34px;
-  padding-top: 62px;
+  padding-bottom: 17px;
+  padding-top: 31px;
 }
 .person-contact .person-contact__information .person-contact__information__title {
   font-family: 'Crete Round', serif;
-  font-size: 34px;
-  margin-bottom: 22px;
+  font-size: 17px;
+  margin-bottom: 11px;
   text-align: center;
 }
 .person-contact .person-contact__information .person-contact__information__image {
@@ -10593,26 +10593,26 @@ button.close {
 }
 .person-contact .person-contact__information .person-contact__information__image .image {
   border-radius: 50%;
-  height: 156px;
-  margin-bottom: 15px;
-  width: 156px;
+  height: 78px;
+  margin-bottom: 7.5px;
+  width: 78px;
 }
 .person-contact .person-contact__information .person-contact__information__image .name {
-  font-size: 26px;
+  font-size: 13px;
   font-weight: bold;
 }
 .person-contact .person-contact__information .person-contact__information__image .job {
-  font-size: 26px;
+  font-size: 13px;
   font-style: italic;
 }
 .person-contact .person-contact__information .person-contact__information__image .mail {
   color: #aac426;
-  font-size: 26px;
+  font-size: 13px;
   font-weight: bold;
 }
 .person-contact .person-contact__information .person-contact__information__image .phone {
   color: #aac426;
-  font-size: 26px;
+  font-size: 13px;
   font-weight: bold;
 }
 .extra-content {
