@@ -9565,7 +9565,7 @@ button.close {
 }
 .container--carousel .carousel .carousel-control,
 .container--carousel .carousel .carousel-indicators {
-  display: none;
+  display: block;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .container--carousel__slides__item__image {
   height: 297px;
