@@ -9552,7 +9552,7 @@ button.close {
 }
 .container--carousel .carousel .thumbnail-controls {
   position: absolute;
-  bottom: -56.5px;
+  bottom: -56px;
   width: 100%;
 }
 .container--carousel .carousel .thumbnail-controls .container {
