@@ -108,6 +108,13 @@
 // footer-icon::start
 .footer-icon() {
   clear: left;
+  *[href] {
+    color: @white;
+    text-decoration: none;
+    &:hover {
+      color: @green;
+    }
+  }
   float: left;
   margin-bottom: 60px * @retina-factor;
   &:hover {

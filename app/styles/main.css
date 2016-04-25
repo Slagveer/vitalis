@@ -9529,6 +9529,15 @@ button.close {
   float: left;
   margin-bottom: 30px;
 }
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone *[href],
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone *[href] {
+  color: #ffffff;
+  text-decoration: none;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone *[href]:hover,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone *[href]:hover {
+  color: #aac426;
+}
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone:hover,
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone:hover {
   color: #aac426;
@@ -9549,6 +9558,15 @@ button.close {
   clear: left;
   float: left;
   margin-bottom: 30px;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail *[href],
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail *[href] {
+  color: #ffffff;
+  text-decoration: none;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail *[href]:hover,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail *[href]:hover {
+  color: #aac426;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail:hover,
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail:hover {
