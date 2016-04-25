@@ -8,13 +8,21 @@ $.hisrc.speedTest();
         $loadmore = $('.js-loadmore'),
         $targetAudienceForm = $('.js-submitform');
 
+      // Disable bounce effect on tablets
+      $(document).bind(
+        'touchmove',
+        function(e) {
+          e.preventDefault();
+        }
+      );
+
       $('body').navigation({
         animation: true,
         pause: 'hover'
       });
       if($carousel) {
         $carousel.carousel({
-          interval: 8000000
+          interval: 8000
         });
         $carousel.swiperight(function () {
           $carousel.carousel('prev');
