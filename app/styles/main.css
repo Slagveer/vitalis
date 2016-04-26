@@ -8478,6 +8478,9 @@ button.close {
   padding: 9.5px 0px;
   height: 106px;
 }
+.itemslist .itemslist__item:hover {
+  background-color: #ededed;
+}
 .itemslist .itemslist__item.first {
   margin-top: 0px;
 }
