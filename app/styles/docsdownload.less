@@ -1,0 +1,35 @@
+@brand-primary: @black;
+
+.docsdownload {
+  .docsdownload__brochures {
+    border-bottom: 1px solid @light-grey;
+    padding-bottom: 66px * @retina-factor;
+    .docsdownload__brochures__title {
+      font-family: @font-family-crete;
+      font-size: 34px * @retina-factor;
+      margin-bottom: 22px * @retina-factor;
+      padding-left: 40px * @retina-factor;
+    }
+    .docsdownload__brochures__links {
+      padding-left: 40px * @retina-factor;
+      font-weight: bold;
+      .list-group {
+        .list-group-item {
+          border: none;
+          font-size: 25px * @retina-factor;
+          line-height: 50px * @retina-factor;
+          padding: 10px * @retina-factor 0;
+          &:hover {
+            color: @green;
+            background-color: @white;
+          }
+          .size {
+            display: inline;
+            font-size: 25px * @retina-factor;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}

@@ -10728,6 +10728,35 @@ button.close {
   margin-left: 10px;
   vertical-align: middle;
 }
+.docsdownload .docsdownload__brochures {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 33px;
+}
+.docsdownload .docsdownload__brochures .docsdownload__brochures__title {
+  font-family: 'Crete Round', serif;
+  font-size: 17px;
+  margin-bottom: 11px;
+  padding-left: 20px;
+}
+.docsdownload .docsdownload__brochures .docsdownload__brochures__links {
+  padding-left: 20px;
+  font-weight: bold;
+}
+.docsdownload .docsdownload__brochures .docsdownload__brochures__links .list-group .list-group-item {
+  border: none;
+  font-size: 12.5px;
+  line-height: 25px;
+  padding: 5px 0;
+}
+.docsdownload .docsdownload__brochures .docsdownload__brochures__links .list-group .list-group-item:hover {
+  color: #aac426;
+  background-color: #ffffff;
+}
+.docsdownload .docsdownload__brochures .docsdownload__brochures__links .list-group .list-group-item .size {
+  display: inline;
+  font-size: 12.5px;
+  font-weight: normal;
+}
 .extra-content {
   padding-top: 50px;
 }
