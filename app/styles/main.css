@@ -10615,6 +10615,30 @@ button.close {
   font-size: 13px;
   font-weight: bold;
 }
+.numberresults .numberresults__header {
+  width: 100%;
+  margin: 0;
+}
+.numberresults .numberresults__header .numberresults__header__container {
+  height: 35px;
+  border-radius: 25px;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+.numberresults .numberresults__header .numberresults__header__container:hover {
+  background-color: #ffffff;
+  border-color: #aac426;
+  color: #aac426;
+}
+.numberresults .numberresults__header .numberresults__header__container .numberresults__header__container__text {
+  float: left;
+  font-size: 8.25pt;
+  font-weight: bold;
+  line-height: 35px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
 .extra-content {
   padding-top: 50px;
 }

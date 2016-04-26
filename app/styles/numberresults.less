@@ -1,0 +1,26 @@
+.numberresults {
+  .numberresults__header {
+    width: 100%;
+    margin: 0;
+    .numberresults__header__container {
+      height: 70px * @retina-factor;
+      border-radius: 50px * @retina-factor;
+      padding: 0;
+      position: relative;
+      width: 100%;
+      &:hover {
+        background-color: @white;
+        border-color: @green;
+        color: @green;
+      }
+      .numberresults__header__container__text {
+        float: left;
+        font-size: 1.5 * @label * @retina-factor;
+        font-weight: bold;
+        line-height: 70px * @retina-factor;
+        margin-left: 20px * @retina-factor;
+        vertical-align: middle;
+      }
+    }
+  }
+}
