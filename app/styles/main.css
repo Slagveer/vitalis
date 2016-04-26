@@ -9638,12 +9638,99 @@ button.close {
   .item__image__text {
     display: block !important;
   }
-  .carousel .thumbnail-controls .container {
+  .container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .container .carousel.carousel--detail .carousel-control {
+    display: block !important;
+  }
+  .container .carousel.carousel--detail .carousel-control .glyphicon {
+    position: absolute;
+    top: 46%;
+    width: 30px;
+  }
+  .container .carousel.carousel--detail .carousel-control .glyphicon.left {
+    left: 15px;
+    transform: rotate(180deg);
+  }
+  .container .carousel.carousel--detail .carousel-control .glyphicon.right {
+    right: 15px;
+  }
+  .container .carousel.carousel--detail .carousel-control .glyphicon svg .border {
+    fill: #ffffff;
+  }
+  .container .carousel.carousel--detail .carousel-control .glyphicon svg .circle {
+    fill: #ffffff;
+  }
+  .container .carousel.carousel--detail .carousel-indicators {
+    bottom: 4px;
+  }
+  .container .carousel.carousel--detail .carousel-caption {
+    bottom: 95.5px !important;
+    left: 50% !important;
+    text-align: left;
+    width: 100%;
+  }
+  .container .carousel.carousel--detail .carousel-caption .carousel-caption__quote {
+    margin: 0px;
+    padding: 0px !important;
+    text-align: left;
+    width: 40%;
+  }
+  .container .carousel.carousel--detail .carousel-caption .carousel-caption__name,
+  .container .carousel.carousel--detail .carousel-caption .carousel-caption__relation {
+    text-align: left;
+  }
+  .container .carousel .thumbnail-controls .container {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
 }
 @media (min-width: 1200px) {
+  .carousel.carousel--detail .carousel-control {
+    display: block !important;
+  }
+  .carousel.carousel--detail .carousel-control .glyphicon {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+  }
+  .carousel.carousel--detail .carousel-control .glyphicon.left {
+    left: 15px;
+    transform: rotate(180deg);
+  }
+  .carousel.carousel--detail .carousel-control .glyphicon.right {
+    right: 15px;
+  }
+  .carousel.carousel--detail .carousel-control .glyphicon svg .border {
+    fill: #ffffff;
+  }
+  .carousel.carousel--detail .carousel-control .glyphicon svg .circle {
+    fill: #ffffff;
+  }
+  .carousel.carousel--detail .carousel-indicators {
+    bottom: 4px;
+  }
+  .carousel.carousel--detail .carousel-caption {
+    bottom: 80.5px !important;
+    left: 50% !important;
+    text-align: left;
+    width: 100%;
+  }
+  .carousel.carousel--detail .carousel-caption .carousel-caption__quote {
+    padding-left: 0px;
+    text-align: left;
+    width: 40%;
+  }
+  .carousel.carousel--detail .carousel-caption .carousel-caption__name,
+  .carousel.carousel--detail .carousel-caption .carousel-caption__relation {
+    text-align: left;
+  }
+  .carousel .thumbnail-controls .container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
   .container--carousel .carousel .container--carousel__slides__item__image {
     height: 305px !important;
   }
@@ -9652,54 +9739,56 @@ button.close {
     bottom: 0px !important;
     width: 100%;
   }
-  .container--carousel .carousel .thumbnail-controls .container {
+  .container--carousel .carousel .thumbnail-controls .container,
+  .container--carousel .carousel .thumbnail-controls .container-fluid {
     width: 1170px !important;
   }
-  .container--carousel .carousel .thumbnail-controls .container .item__image__text {
+  .container--carousel .carousel .thumbnail-controls .container .item__image__text,
+  .container--carousel .carousel .thumbnail-controls .container-fluid .item__image__text {
     display: block !important;
   }
 }
-.container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .carousel-caption {
+.container--carousel.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .carousel-caption {
   bottom: 43.5px;
   left: 5%;
   line-height: 26.5px;
   right: 5%;
 }
-.container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__quote {
+.container--carousel.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__quote {
   border: none;
   font-family: 'Crete Round', serif;
   font-size: 20.5px;
 }
-.container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__name,
-.container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__relation {
+.container--carousel.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__name,
+.container--carousel.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__relation {
   font-size: 13.5px;
 }
-.container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__name {
+.container--carousel.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__name {
   font-weight: bold;
 }
-.container--carousel.container--carousel-variety .container--carousel__slides .container--carousel__slides__item .container--carousel__slides__item__image {
-  height: 399px;
+.container--carousel.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .container--carousel__slides__item__image {
+  height: 375px;
 }
-.container--carousel.container--carousel-variety .carousel .carousel-control {
+.container--carousel.container--carousel-detail .carousel .carousel-control {
   display: none;
 }
-.container--carousel.container--carousel-variety .carousel .carousel-indicators {
+.container--carousel.container--carousel-detail .carousel .carousel-indicators {
   display: block;
 }
-.container--carousel.container--carousel-variety .carousel .carousel-indicators li {
+.container--carousel.container--carousel-detail .carousel .carousel-indicators li {
   background: #ffffff;
   border: none;
   height: 10px;
   margin: 0 0 0 7.5px;
   width: 10px;
 }
-.container--carousel.container--carousel-variety .carousel .carousel-indicators li.active {
+.container--carousel.container--carousel-detail .carousel .carousel-indicators li.active {
   background-color: #aac426;
   height: 10px;
   margin: 0 0 0 7.5px;
   width: 10px;
 }
-.container--carousel.container--carousel-variety .container--carousel__thumbnails {
+.container--carousel.container--carousel-detail .container--carousel__thumbnails {
   display: none;
 }
 .container--carousel .carousel .thumbnail-controls {
