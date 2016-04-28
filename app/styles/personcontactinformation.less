@@ -1,13 +1,73 @@
 @brand-primary: @black;
 // TABLET::START
 @media (min-width: @tablet_min) and (max-width: @tablet_max) {
-
+  .person-contact {
+    border-bottom: 1px solid @grey;
+    .person-contact__information {
+      border: none !important;
+      padding-left: 144px * @retina-factor;
+      padding-top: 32px * @retina-factor !important;
+      padding-bottom:-30px !important;
+      .person-contact__information__title {
+        text-align: left !important;
+      }
+      .image {
+        float: left;
+      }
+      .name,
+      .job,
+      .mail,
+      .phone {
+        margin-left: 182px * @retina-factor !important;
+        text-align: left;
+        padding-bottom: 0px * @retina-factor !important;
+      }
+      .name {
+        padding-top: 16px * @retina-factor !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px;
+      }
+      .mail {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
 }
 // TABLET::END
 
 // DESKTOP::START
 @media (min-width: @desktop_min) {
-
+  .person-contact {
+    border-bottom: 1px solid @grey;
+    .person-contact__information {
+      border: none !important;
+      padding-left: 144px * @retina-factor;
+      padding-top: 32px * @retina-factor !important;
+      padding-bottom:-30px !important;
+      .person-contact__information__title {
+        text-align: left !important;
+      }
+      .image {
+        float: left;
+      }
+      .name,
+      .job,
+      .mail,
+      .phone {
+        margin-left: 182px * @retina-factor !important;
+        text-align: left;
+        padding-bottom: 0px * @retina-factor !important;
+      }
+      .name {
+        padding-top: 16px * @retina-factor !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px;
+      }
+      .mail {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
 }
 // DESKTOP::END
 

@@ -8691,6 +8691,26 @@ button.close {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .variety-detail .fullsize {
+    margin-bottom: 2%;
+    margin-top: 2%;
+    min-height: 94%;
+  }
+  .variety-detail .fullsize .variety-detail__social {
+    border: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .variety-detail .fullsize {
+    margin-bottom: 2%;
+    margin-top: 2%;
+    min-height: 94%;
+  }
+  .variety-detail .fullsize .variety-detail__social {
+    border: none !important;
+  }
+}
 .variety-detail .variety-detail__image {
   width: 100%;
   max-height: 439px;
@@ -8775,13 +8795,13 @@ button.close {
 }
 .variety-detail .variety-detail__information {
   border-bottom: 1px solid #ededed;
-  padding-bottom: 34px;
-  padding-top: 62px;
+  padding-bottom: 17px;
+  padding-top: 31px;
 }
 .variety-detail .variety-detail__information .variety-detail__information__title {
   font-family: 'Crete Round', serif;
-  font-size: 34px;
-  margin-bottom: 22px;
+  font-size: 17px;
+  margin-bottom: 11px;
   text-align: center;
 }
 .variety-detail .variety-detail__information .variety-detail__information__image {
@@ -8790,37 +8810,37 @@ button.close {
 }
 .variety-detail .variety-detail__information .variety-detail__information__image .image {
   border-radius: 50%;
-  height: 156px;
-  margin-bottom: 15px;
-  width: 156px;
+  height: 78px;
+  margin-bottom: 7.5px;
+  width: 78px;
 }
 .variety-detail .variety-detail__information .variety-detail__information__image .name {
-  font-size: 26px;
+  font-size: 13px;
   font-weight: bold;
 }
 .variety-detail .variety-detail__information .variety-detail__information__image .job {
-  font-size: 26px;
+  font-size: 13px;
   font-style: italic;
 }
 .variety-detail .variety-detail__information .variety-detail__information__image .mail {
   color: #aac426;
-  font-size: 26px;
+  font-size: 13px;
   font-weight: bold;
 }
 .variety-detail .variety-detail__information .variety-detail__information__image .phone {
   color: #aac426;
-  font-size: 26px;
+  font-size: 13px;
   font-weight: bold;
 }
 .variety-detail .variety-detail__social {
   border-bottom: 1px solid #ededed;
-  padding-bottom: 74px;
-  padding-top: 62px;
+  padding-bottom: 37px;
+  padding-top: 31px;
 }
 .variety-detail .variety-detail__social .variety-detail__social__title {
   font-family: 'Crete Round', serif;
-  font-size: 34px;
-  margin-bottom: 30px;
+  font-size: 17px;
+  margin-bottom: 15px;
   text-align: center;
 }
 .variety-detail .variety-detail__social .variety-detail__social__container {
@@ -8835,12 +8855,12 @@ button.close {
 .variety-detail .variety-detail__social .variety-detail__social__container .facebook,
 .variety-detail .variety-detail__social .variety-detail__social__container .linkedin {
   display: block;
-  padding-right: 32px;
+  padding-right: 16px;
 }
 .variety-detail .variety-detail__social .variety-detail__social__container .twitter svg,
 .variety-detail .variety-detail__social .variety-detail__social__container .facebook svg,
 .variety-detail .variety-detail__social .variety-detail__social__container .linkedin svg {
-  width: 95px;
+  width: 47.5px;
 }
 .variety-detail .variety-detail__social .variety-detail__social__container .twitter svg path,
 .variety-detail .variety-detail__social .variety-detail__social__container .facebook svg path,
@@ -8877,6 +8897,9 @@ button.close {
 .variety-detail .variety-detail__social .variety-detail__social__container .youtube:active svg circle {
   fill-opacity: 1;
   fill: #e62d27;
+}
+.variety-detail .variety-detail__social .variety-detail__social__container .linkedin {
+  padding-right: 0px;
 }
 .variety-detail .variety-detail__social .variety-detail__social__container .linkedin:hover svg path,
 .variety-detail .variety-detail__social .variety-detail__social__container .linkedin:active svg path {
@@ -10696,6 +10719,72 @@ button.close {
   font-size: 27px;
   padding-left: 40px;
   padding-top: 30px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .person-contact {
+    border-bottom: 1px solid #cccccc;
+  }
+  .person-contact .person-contact__information {
+    border: none !important;
+    padding-left: 72px;
+    padding-top: 16px !important;
+    padding-bottom: -30px !important;
+  }
+  .person-contact .person-contact__information .person-contact__information__title {
+    text-align: left !important;
+  }
+  .person-contact .person-contact__information .image {
+    float: left;
+  }
+  .person-contact .person-contact__information .name,
+  .person-contact .person-contact__information .job,
+  .person-contact .person-contact__information .mail,
+  .person-contact .person-contact__information .phone {
+    margin-left: 91px !important;
+    text-align: left;
+    padding-bottom: 0px !important;
+  }
+  .person-contact .person-contact__information .name {
+    padding-top: 8px !important;
+    padding-bottom: 0px !important;
+    margin-bottom: 0px;
+  }
+  .person-contact .person-contact__information .mail {
+    margin-bottom: 0px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .person-contact {
+    border-bottom: 1px solid #cccccc;
+  }
+  .person-contact .person-contact__information {
+    border: none !important;
+    padding-left: 72px;
+    padding-top: 16px !important;
+    padding-bottom: -30px !important;
+  }
+  .person-contact .person-contact__information .person-contact__information__title {
+    text-align: left !important;
+  }
+  .person-contact .person-contact__information .image {
+    float: left;
+  }
+  .person-contact .person-contact__information .name,
+  .person-contact .person-contact__information .job,
+  .person-contact .person-contact__information .mail,
+  .person-contact .person-contact__information .phone {
+    margin-left: 91px !important;
+    text-align: left;
+    padding-bottom: 0px !important;
+  }
+  .person-contact .person-contact__information .name {
+    padding-top: 8px !important;
+    padding-bottom: 0px !important;
+    margin-bottom: 0px;
+  }
+  .person-contact .person-contact__information .mail {
+    margin-bottom: 0px !important;
+  }
 }
 .person-contact .person-contact__information {
   border-bottom: 1px solid #ededed;
