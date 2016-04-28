@@ -8976,12 +8976,14 @@ button.close {
 }
 .content .content__header .content__header__sub-title .content__header__sub-title__label {
   float: left;
+  margin-bottom: 15px;
+  padding: 4px;
   border: 1px solid #515151;
   clear: right;
   display: table-cell;
   line-height: 12pt;
-  margin-bottom: 15px;
-  padding: 4px;
+  margin-bottom: 7.5px;
+  padding: 2px;
   vertical-align: bottom;
   text-align: left;
 }
@@ -8991,6 +8993,13 @@ button.close {
   line-height: 23px;
   font-weight: bold;
   padding: 5px;
+}
+.content .content__header .content__header__sub-title .content__header__sub-title__label .label-square {
+  color: #515151;
+  font-size: 10px;
+  line-height: 11.5px;
+  font-weight: bold;
+  padding: 2.5px;
 }
 .content .content__image {
   height: 710px;
@@ -10779,6 +10788,31 @@ button.close {
   display: inline;
   font-size: 12.5px;
   font-weight: normal;
+}
+.content .content__paragraaf {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.content .content__paragraaf .content__paragraaf__title {
+  font-family: 'Crete Round', serif;
+  font-size: 23.5px;
+  font-weight: bold;
+  margin-bottom: 3px;
+  padding-bottom: 0px;
+}
+.content .content__paragraaf .content__paragraaf__description--bold,
+.content .content__paragraaf .content__paragraaf__description--normal {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13.5px;
+  font-weight: normal;
+  margin-bottom: 18.5px;
+  padding-top: 12px;
+}
+.content .content__paragraaf .content__paragraaf__description--normal {
+  font-weight: normal;
+}
+.content .content__paragraaf .content__paragraaf__description--bold {
+  font-weight: bold;
 }
 .extra-content {
   padding-top: 50px;
