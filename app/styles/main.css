@@ -10826,6 +10826,38 @@ button.close {
   margin-top: 6px;
   text-align: center;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .sortby .numberresults {
+    float: left;
+  }
+  .sortby .numberresults .numberresults__header .numberresults__header__container__text {
+    margin-left: 80px !important;
+  }
+  .sortby .numberresults .numberresults__header .numberresults__header__container__text.sort {
+    float: left !important;
+    margin-left: 193px !important;
+  }
+  .sortby .sortby__select {
+    margin-left: 10px !important;
+    max-width: 168px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .sortby .numberresults {
+    float: left;
+  }
+  .sortby .numberresults .numberresults__header .numberresults__header__container__text {
+    margin-left: 80px !important;
+  }
+  .sortby .numberresults .numberresults__header .numberresults__header__container__text.sort {
+    float: left !important;
+    margin-left: 193px !important;
+  }
+  .sortby .sortby__select {
+    margin-left: 10px !important;
+    max-width: 168px !important;
+  }
+}
 .sortby {
   margin-bottom: 12px;
   padding: 10px 0;

@@ -1,3 +1,52 @@
+// TABLET::START
+@media (min-width: @tablet_min) and (max-width: @tablet_max) {
+  .sortby {
+    .numberresults {
+      float: left;
+      .numberresults__header {
+        .numberresults__header__container__text {
+          &.sort {
+            float: left !important;
+            //margin-left: -120px * @retina-factor !important;
+            margin-left: 386px * @retina-factor !important;
+          }
+          margin-left: 160px * @retina-factor !important;
+        }
+      }
+    }
+    .sortby__select {
+      margin-left: 20px * @retina-factor !important;
+      max-width: 336px * @retina-factor !important;
+    }
+  }
+}
+// TABLET::END
+
+// DESKTOP::START
+@media (min-width: @desktop_min) {
+  .sortby {
+    .numberresults {
+      float: left;
+      .numberresults__header {
+        .numberresults__header__container__text {
+          &.sort {
+            float: left !important;
+            //margin-left: -120px * @retina-factor !important;
+            margin-left: 386px * @retina-factor !important;
+          }
+          margin-left: 160px * @retina-factor !important;
+        }
+      }
+    }
+    .sortby__select {
+      margin-left: 20px * @retina-factor !important;
+      max-width: 336px * @retina-factor !important;
+    }
+  }
+}
+// DESKTOP::END
+
+// MOBILE::START
 .sortby {
   margin-bottom: 24px * @retina-factor;
   padding: 20px * @retina-factor 0;
@@ -63,3 +112,4 @@
     }
   }
 }
+// MOBILE::END

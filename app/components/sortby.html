@@ -24,7 +24,7 @@
 <!-- SORTBY::START -->
 <div class="container sortby">
   <div class="row">
-    <div class="col-xs-4 col-sm-4 numberresults">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 numberresults">
       <div class="numberresults__header">
         <div class="numberresults__header__container">
             <span class="numberresults__header__container__text">
@@ -33,7 +33,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-8 col-sm-8 numberresults">
+    <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4 numberresults visible-xs">
       <div class="numberresults__header">
         <div class="numberresults__header__container">
             <span class="numberresults__header__container__text sort">
@@ -42,26 +42,32 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-4 col-sm-4">
+    <div class="col-xs-4 col-sm-4 visible-xs">
       <span class="sortby__label">Filter</span>
     </div>
-    <div class="col-xs-8 col-sm-8"></div>
-    <div class="col-xs-8 col-sm-8">
-      <div class="">
-        <form action="#" class="js-submitform">
-          <select name="sortby" class="sortby__select js-sortby">
-            <option class="sortby__select__option">
-              Variety name 1
-            </option>
-            <option class="sortby__select__option">
-              Variety name 2
-            </option>
-            <option class="sortby__select__option" selected>
-              Variety name 3
-            </option>
-          </select>
-        </form>
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+      <div class="numberresults visible-sm visible-md visible-lg">
+        <div class="numberresults__header">
+          <div class="numberresults__header__container">
+              <span class="numberresults__header__container__text sort">
+                Sort by
+              </span>
+          </div>
+        </div>
       </div>
+      <form action="#" class="js-submitform">
+        <select name="sortby" class="sortby__select js-sortby">
+          <option class="sortby__select__option">
+            Variety name 1
+          </option>
+          <option class="sortby__select__option">
+            Variety name 2
+          </option>
+          <option class="sortby__select__option" selected>
+            Variety name 3
+          </option>
+        </select>
+      </form>
     </div>
   </div>
 </div>
