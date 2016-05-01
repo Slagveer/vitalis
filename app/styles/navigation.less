@@ -1,6 +1,93 @@
 // TABLET::START
 @media (min-width: @tablet_min) and (max-width: @tablet_max) {
   .navigation {
+    +.container:first-of-type,
+    +.container-fluid:first-of-type {
+      padding-top: 0px;
+    }
+    .container-fluid {
+      padding-left: 0px;
+      padding-right: 0px;
+      .navbar-header {
+        float: none;
+        &.flex {
+          display: block;
+        }
+        .navigation__button {
+          max-width: 129px;
+          &.navbar-brand {
+            margin-left: 0px;
+          }
+          &.navigation__button--logo {
+            float: right;
+            min-width: 203px;
+            opacity: 1;
+            .navigation__button__image {
+              max-width: 175px;
+            }
+          }
+          &.navigation__button--hamburger {
+            float: left;
+          }
+          &.navigation__button--enza {
+            float: left;
+            min-width:245px;
+          }
+        }
+      }
+      .navigation__menu {
+        max-width: 640px;
+        //position: absolute;
+        .modal-backdrop {
+          opacity: .8;
+        }
+        .navigation__menu__form {
+          padding-bottom: 15px;
+          padding-top: 15px;
+        }
+        .navigation__menu__item {
+          .navigation__menu__item__label {
+            &.navigation__menu__item__label--email {
+              width: 378px;
+            }
+            &.navigation__menu__item__label--phone {
+              width: 262px;
+            }
+          }
+        }
+      }
+    }
+    .navbar-left,.navbar-right {
+      float: none !important;
+    }
+    .navbar-toggle {
+      display: block;
+    }
+    .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+      display: none!important;
+    }
+    .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+      float: none;
+    }
+    .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .collapse.in{
+      display:block !important;
+    }
     &.navbar {
       position: static;
       .dropdown-menu {
@@ -1277,93 +1364,7 @@
     }
   }
   @media (min-width: 641px) and (max-width: 2049px) {
-    +.container:first-of-type,
-    +.container-fluid:first-of-type {
-      padding-top: 0px;
-    }
-    .container-fluid {
-      padding-left: 0px;
-      padding-right: 0px;
-      .navbar-header {
-        float: none;
-        &.flex {
-          display: block;
-        }
-        .navigation__button {
-          max-width: 129px;
-          &.navbar-brand {
-            margin-left: 0px;
-          }
-          &.navigation__button--logo {
-            float: right;
-            min-width: 203px;
-            opacity: 1;
-            .navigation__button__image {
-              max-width: 175px;
-            }
-          }
-          &.navigation__button--hamburger {
-            float: left;
-          }
-          &.navigation__button--enza {
-            float: left;
-            min-width:245px;
-          }
-        }
-      }
-      .navigation__menu {
-        max-width: 640px;
-        //position: absolute;
-        .modal-backdrop {
-          opacity: .8;
-        }
-        .navigation__menu__form {
-          padding-bottom: 15px;
-          padding-top: 15px;
-        }
-        .navigation__menu__item {
-          .navigation__menu__item__label {
-            &.navigation__menu__item__label--email {
-              width: 378px;
-            }
-            &.navigation__menu__item__label--phone {
-              width: 262px;
-            }
-          }
-        }
-      }
-    }
-    .navbar-left,.navbar-right {
-      float: none !important;
-    }
-    .navbar-toggle {
-      display: block;
-    }
-    .navbar-collapse {
-      border-top: 1px solid transparent;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-fixed-top {
-      top: 0;
-      border-width: 0 0 1px;
-    }
-    .navbar-collapse.collapse {
-      display: none!important;
-    }
-    .navbar-nav {
-      float: none!important;
-      margin-top: 7.5px;
-    }
-    .navbar-nav>li {
-      float: none;
-    }
-    .navbar-nav>li>a {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-    .collapse.in{
-      display:block !important;
-    }
+
   }
 }
 // MOBILE::END

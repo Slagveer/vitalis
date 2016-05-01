@@ -6728,6 +6728,89 @@ button.close {
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+  .navigation + .container:first-of-type,
+  .navigation + .container-fluid:first-of-type {
+    padding-top: 0px;
+  }
+  .navigation .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .navigation .container-fluid .navbar-header {
+    float: none;
+  }
+  .navigation .container-fluid .navbar-header.flex {
+    display: block;
+  }
+  .navigation .container-fluid .navbar-header .navigation__button {
+    max-width: 129px;
+  }
+  .navigation .container-fluid .navbar-header .navigation__button.navbar-brand {
+    margin-left: 0px;
+  }
+  .navigation .container-fluid .navbar-header .navigation__button.navigation__button--logo {
+    float: right;
+    min-width: 203px;
+    opacity: 1;
+  }
+  .navigation .container-fluid .navbar-header .navigation__button.navigation__button--logo .navigation__button__image {
+    max-width: 175px;
+  }
+  .navigation .container-fluid .navbar-header .navigation__button.navigation__button--hamburger {
+    float: left;
+  }
+  .navigation .container-fluid .navbar-header .navigation__button.navigation__button--enza {
+    float: left;
+    min-width: 245px;
+  }
+  .navigation .container-fluid .navigation__menu {
+    max-width: 640px;
+  }
+  .navigation .container-fluid .navigation__menu .modal-backdrop {
+    opacity: .8;
+  }
+  .navigation .container-fluid .navigation__menu .navigation__menu__form {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .navigation .container-fluid .navigation__menu .navigation__menu__item .navigation__menu__item__label.navigation__menu__item__label--email {
+    width: 378px;
+  }
+  .navigation .container-fluid .navigation__menu .navigation__menu__item .navigation__menu__item__label.navigation__menu__item__label--phone {
+    width: 262px;
+  }
+  .navigation .navbar-left,
+  .navigation .navbar-right {
+    float: none !important;
+  }
+  .navigation .navbar-toggle {
+    display: block;
+  }
+  .navigation .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navigation .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navigation .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navigation .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navigation .navbar-nav > li {
+    float: none;
+  }
+  .navigation .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navigation .collapse.in {
+    display: block !important;
+  }
   .navigation.navbar {
     position: static;
   }
@@ -7940,91 +8023,6 @@ button.close {
 }
 .navigation .flag.flag-zw {
   background-position: -208px -165px;
-}
-@media (min-width: 641px) and (max-width: 2049px) {
-  .navigation + .container:first-of-type,
-  .navigation + .container-fluid:first-of-type {
-    padding-top: 0px;
-  }
-  .navigation .container-fluid {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .navigation .container-fluid .navbar-header {
-    float: none;
-  }
-  .navigation .container-fluid .navbar-header.flex {
-    display: block;
-  }
-  .navigation .container-fluid .navbar-header .navigation__button {
-    max-width: 129px;
-  }
-  .navigation .container-fluid .navbar-header .navigation__button.navbar-brand {
-    margin-left: 0px;
-  }
-  .navigation .container-fluid .navbar-header .navigation__button.navigation__button--logo {
-    float: right;
-    min-width: 203px;
-    opacity: 1;
-  }
-  .navigation .container-fluid .navbar-header .navigation__button.navigation__button--logo .navigation__button__image {
-    max-width: 175px;
-  }
-  .navigation .container-fluid .navbar-header .navigation__button.navigation__button--hamburger {
-    float: left;
-  }
-  .navigation .container-fluid .navbar-header .navigation__button.navigation__button--enza {
-    float: left;
-    min-width: 245px;
-  }
-  .navigation .container-fluid .navigation__menu {
-    max-width: 640px;
-  }
-  .navigation .container-fluid .navigation__menu .modal-backdrop {
-    opacity: .8;
-  }
-  .navigation .container-fluid .navigation__menu .navigation__menu__form {
-    padding-bottom: 15px;
-    padding-top: 15px;
-  }
-  .navigation .container-fluid .navigation__menu .navigation__menu__item .navigation__menu__item__label.navigation__menu__item__label--email {
-    width: 378px;
-  }
-  .navigation .container-fluid .navigation__menu .navigation__menu__item .navigation__menu__item__label.navigation__menu__item__label--phone {
-    width: 262px;
-  }
-  .navigation .navbar-left,
-  .navigation .navbar-right {
-    float: none !important;
-  }
-  .navigation .navbar-toggle {
-    display: block;
-  }
-  .navigation .navbar-collapse {
-    border-top: 1px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  }
-  .navigation .navbar-fixed-top {
-    top: 0;
-    border-width: 0 0 1px;
-  }
-  .navigation .navbar-collapse.collapse {
-    display: none!important;
-  }
-  .navigation .navbar-nav {
-    float: none!important;
-    margin-top: 7.5px;
-  }
-  .navigation .navbar-nav > li {
-    float: none;
-  }
-  .navigation .navbar-nav > li > a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .navigation .collapse.in {
-    display: block !important;
-  }
 }
 @keyframes navigationfadeIn {
   from {
