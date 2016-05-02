@@ -1590,7 +1590,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 960px;
   }
 }
 .container-fluid {
@@ -6730,7 +6730,7 @@ button.close {
 @media (min-width: 768px) and (max-width: 1199px) {
   .navigation + .container:first-of-type,
   .navigation + .container-fluid:first-of-type {
-    padding-top: 0px;
+    padding-top: 0px !important;
   }
   .navigation .container-fluid {
     padding-left: 0px;
@@ -6755,6 +6755,7 @@ button.close {
   }
   .navigation .container-fluid .navbar-header .navigation__button.navigation__button--logo .navigation__button__image {
     max-width: 175px;
+    z-index: 1 !important;
   }
   .navigation .container-fluid .navbar-header .navigation__button.navigation__button--hamburger {
     float: left;
@@ -6800,6 +6801,8 @@ button.close {
   .navigation .navbar-nav {
     float: none!important;
     margin-top: 7.5px;
+    position: relative;
+    z-index: 1;
   }
   .navigation .navbar-nav > li {
     float: none;
@@ -6819,20 +6822,18 @@ button.close {
     width: 100%;
     border: none;
   }
-  .navigation.navbar .dropdown-menu .navigation__menu__item {
-    display: none;
-  }
   .navigation.navbar .dropdown-menu .navigation__menu__item.navigation__menu__item--country {
     display: block !important;
   }
 }
 @media (min-width: 1200px) {
   .navigation {
+    background: url('../images/navigation.fw.png') repeat-x 0 -19px;
     font-size: 18px !important;
   }
   .navigation .container-fluid {
     position: relative;
-    width: 1170px;
+    width: 960px;
   }
   .navigation .container-fluid .navigation__menu {
     margin-left: -15px;
@@ -6848,14 +6849,35 @@ button.close {
     width: 180px;
     text-align: center;
   }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.open .navigation__menu__item__label .menu .search-glass {
+    display: none;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.open .navigation__menu__item__label .menu .search-cross {
+    display: inline !important;
+  }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.open .dropdown-menu.desktop {
     padding: 5px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.open .dropdown-menu.desktop .dropdown-menu__form {
     width: 300px;
   }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.open .dropdown-menu.desktop .dropdown-menu__form .form-control {
+    border-right: none;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.open .dropdown-menu.desktop .dropdown-menu__form .btn {
+    border-left: none;
+  }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu {
     border: none;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu.desktop {
+    box-shadow: none;
+    position: relative;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu.desktop .dropdown-menu__search {
+    position: absolute;
+    right: 58px;
+    top: -75px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu .navigation__menu__item {
     width: 100%;
@@ -6923,7 +6945,11 @@ button.close {
     font-size: 12px;
     height: 41px;
     padding: 0px;
-    width: 832px;
+    width: 623px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item {
+    background-color: #ffffff;
+    height: 60px !important;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label {
     border: none;
@@ -6933,10 +6959,13 @@ button.close {
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label.navigation__menu__item__label--email {
     padding-left: 190px;
+    text-align: right;
+    width: 70%;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label.navigation__menu__item__label--phone {
     padding-left: 60px;
     text-align: left;
+    width: 30%;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label .contact-icon {
     display: inline-block;
@@ -6958,6 +6987,9 @@ button.close {
     height: 70px;
     line-height: 17px;
     padding: 0px 0px 0px 0px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .navigation__menu__item__label .search-cross {
+    display: none !important;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item:last-child {
     display: block;
@@ -6999,7 +7031,7 @@ button.close {
     border: none;
     max-width: 120px;
     top: 39px;
-    right: 227px;
+    right: 18px;
   }
 }
 .navigation {
