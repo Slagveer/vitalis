@@ -33,15 +33,15 @@
 .variety-detail {
   .variety-detail__image {
     width: 100%;
-    max-height: 439px;
+    height: 439px * @retina-factor;
   }
   .variety-detail__image-title {
     bottom: 0px;
     color: @white;
     font-family: @font-family-crete;
-    font-size: 55px;
+    font-size: 55px * @retina-factor;
     left: 0px;
-    line-height: 422px;
+    line-height: 422px * @retina-factor;
     margin-left: 15%;
     margin-right: 15%;
     position: absolute;
@@ -53,62 +53,65 @@
   .variety-detail__header {
     display: flex;
     flex-flow: column;
-    margin-bottom: 62px;
+    margin-bottom: -16px * @retina-factor;
     .variety-detail__title {
       font-family: @font-family-crete;
-      font-size: 64px;
-      padding-left: 40px;
-      padding-top: 55px;
+      font-size: 64px * @retina-factor;
+      padding-left: 26px * @retina-factor;
+      padding-top: 55px * @retina-factor;
     }
     .variety-detail__description {
       font-family: @font-family-open-sanse;
-      font-size: 27px;
-      padding-left: 40px;
-      padding-top: 30px;
+      font-size: 27px * @retina-factor;
+      padding-left: 26px * @retina-factor;
+      padding-top: 30px * @retina-factor;
     }
   }
   .variety-detail__container {
-    font-size: 24px;
-    margin-bottom: 80px;
+    font-size: 24px * @retina-factor;
+    margin-bottom: 0px * @retina-factor;
     .variety-detail__image {
-      margin-bottom: 85px;
-      max-height: 346px;
-      padding-left: 44px;
-      padding-right: 44px;
+      margin-bottom: 85px * @retina-factor;
+      height: 408px * @retina-factor;
+      padding-left: 44px * @retina-factor;
+      padding-right: 44px * @retina-factor;
+      padding-top: 60px * @retina-factor;
     }
     .variety-detail__list {
-      padding-left: 40px;
+      padding-left: 28px * @retina-factor;
       .variety-detail__list__title {
         font-weight: bold;
       }
       .variety-detail__list__description {
-        margin-bottom: 39px;
+        margin-bottom: 39px * @retina-factor;
       }
     }
   }
   .variety-detail__brochures {
     border-bottom: 1px solid @light-grey;
-    padding-bottom: 66px;
+    padding-bottom: 66px * @retina-factor;
+    padding-top: 20px * @retina-factor;
     .variety-detail__brochures__title {
       font-family: @font-family-crete;
-      font-size: 34px;
-      margin-bottom: 22px;
-      padding-left: 40px;
+      font-size: 34px * @retina-factor;
+      margin-bottom: 22px * @retina-factor;
+      padding-left: 28px * @retina-factor;
     }
     .variety-detail__brochures__links {
-      padding-left: 40px;
+      padding-left: 28px * @retina-factor;
       font-weight: bold;
       .list-group {
         .list-group-item {
           border: none;
-          line-height: 50px;
-          padding: 10px 0;
+          font-size: 30px * @retina-factor;
+          line-height: 50px * @retina-factor;
+          padding: 10px * @retina-factor 0;
           &:hover {
             color: @green;
           }
           .size {
             display: inline;
-            font-size: 25px;
+            font-size: 25px * @retina-factor;
             font-weight: normal;
           }
         }
@@ -213,30 +216,30 @@
     }
   }
   .variety-detail__others {
-    padding-bottom: 74px;
-    padding-top: 80px;
+    padding-bottom: 74px * @retina-factor;
+    padding-top: 80px * @retina-factor;
     text-align: center;
     .variety-detail__others__title {
-      font-size: 41px;
-      margin-bottom: 39px;
+      font-size: 41px * @retina-factor;
+      margin-bottom: 39px * @retina-factor;
     }
     .variety-detail__others__horizontal-list {
-      height:500px;
+      height:500px * @retina-factor;
       overflow-x: hidden;
       overflow-y: hidden;
       width:100%;
       .list-group {
-        height: 600px;
+        height: 600px * @retina-factor;
         overflow-x: scroll;
         width: 100%;
         white-space: nowrap;
         .list-group-item {
           border: none;
           display: inline-block;
-          height: 410px;
+          height: 410px * @retina-factor;
           margin-bottom: 0;
           margin-right: 0;
-          width: 510px;
+          width: 510px * @retina-factor;
         }
       }
     }
