@@ -8974,15 +8974,15 @@ button.close {
   width: 510px;
 }
 .crop-overview .crop-overview__image {
-  height: 439px;
+  height: 219.5px;
 }
 .crop-overview .crop-overview__image-title {
   bottom: 0px;
   color: #ffffff;
   font-family: 'Crete Round', serif;
-  font-size: 55px;
+  font-size: 27.5px;
   left: 0px;
-  line-height: 422px;
+  line-height: 211px;
   margin-left: 15%;
   margin-right: 15%;
   position: absolute;
@@ -8994,19 +8994,19 @@ button.close {
 .crop-overview .crop-overview__header {
   display: flex;
   flex-flow: column;
-  margin-bottom: 62px;
+  margin-bottom: 31px;
 }
 .crop-overview .crop-overview__header .crop-overview__title {
   font-family: 'Crete Round', serif;
-  font-size: 64px;
-  padding-left: 40px;
-  padding-top: 55px;
+  font-size: 32px;
+  padding-left: 20px;
+  padding-top: 27.5px;
 }
 .crop-overview .crop-overview__header .crop-overview__description {
   font-family: 'Open Sans', sans-serif;
-  font-size: 27px;
-  padding-left: 40px;
-  padding-top: 30px;
+  font-size: 13.5px;
+  padding-left: 20px;
+  padding-top: 15px;
 }
 .content .content__header {
   display: flex;
