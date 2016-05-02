@@ -3,6 +3,27 @@
 @line-height: 1.4;
 @lines-to-show: 3;
 
+// TABLET::START
+@media (min-width: @tablet_min) and (max-width: @tablet_max) {
+  .searchresultlist__input {
+    .searchresultlist__form {
+      padding-left: 0px;
+    }
+  }
+}
+// TABLET::END
+
+// DESKTOP::START
+@media (min-width: @desktop_min) {
+  .searchresultlist__input {
+    .searchresultlist__form {
+      padding-left: 0px;
+    }
+  }
+}
+// DESKTOP::END
+
+// MOBILE::START
 .searchresultlist {
   &:last-child {
     margin-bottom: 30px * @retina-factor;
@@ -126,4 +147,4 @@
     }
   }
 }
-
+// MOBILE::END
