@@ -158,12 +158,13 @@
             .dropdown-menu {
               border: none;
               &.desktop {
+                background: none;
                 box-shadow: none;
                 position: relative;
                 .dropdown-menu__search {
                   position: absolute;
                   right: 58px;
-                  top: -75px;
+                  top: -60px;
                 }
               }
               .navigation__menu__item {
@@ -242,6 +243,9 @@
               ~ .navigation__menu__item {
                 background-color: @white;
                 height: 60px !important;
+                .navigation__menu__item__label {
+                  height: 60px !important;
+                }
               }
               .navigation__menu__item__label {
                 border: none;
