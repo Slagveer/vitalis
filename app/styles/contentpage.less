@@ -1,18 +1,45 @@
+// TABLET::START
+@media (min-width: @tablet_min) and (max-width: @tablet_max) {
+  .content__introduction__title {
+    &.quote {
+      left: -300px;
+      position: absolute;
+      top: 50%;
+      width: 54%;
+    }
+  }
+}
+// TABLET::END
+
+// DESKTOP::START
+@media (min-width: @desktop_min) {
+  .content__introduction__title {
+    &.quote {
+      left: -300px;
+      position: absolute;
+      top: 50%;
+      width: 54%;
+    }
+  }
+}
+// DESKTOP::END
+
+// MOBILE:START
 .create-label(@color) {
   border: 1px solid @color;
   clear: right;
   display: table-cell;
-  line-height: @label-line-height;
-  margin-bottom: 15px;
-  padding: 4px;
+  line-height: @label-line-height * @retina-factor;
+  margin-bottom: 15px * @retina-factor;
+  padding: 4px * @retina-factor;
   vertical-align: bottom;
   text-align: left;
   .label-square {
     color: @color;
-    font-size: 20px;//@label;
-    line-height: 23px;//@label-line-height;
+    font-size: 20px * @retina-factor;//@label;
+    line-height: 23px * @retina-factor;//@label-line-height;
     font-weight: bold;
-    padding: 5px;
+    padding: 5px * @retina-factor;
   }
 }
 
@@ -20,23 +47,23 @@
   .content__header {
     display: flex;
     flex-flow: column;
-    margin-bottom: 98px;
+    margin-bottom: 98px * @retina-factor;
     .content__header__title {
       font-family: @font-family-crete;
-      font-size: 64px;
-      letter-spacing: 4px;
-      line-height: 72px;
-      padding-left: 40px;
-      padding-top: 13px;
+      font-size: 64px * @retina-factor;
+      letter-spacing: 4px * @retina-factor;
+      line-height: 72px * @retina-factor;
+      padding-left: 40px * @retina-factor;
+      padding-top: 13px * @retina-factor;
     }
     .content__header__sub-title {
-      font-size: 24px;
-      margin-top: 2px;
-      margin-bottom: 0px;
-      padding-left: 40px;
+      font-size: 24px * @retina-factor;
+      margin-top: 2px * @retina-factor;
+      margin-bottom: 0px * @retina-factor;
+      padding-left: 40px * @retina-factor;
       .content__header__sub-title__date {
         float:left;
-        margin-right: 20px;
+        margin-right: 20px * @retina-factor;
       }
       .content__header__sub-title__label {
         float: left;
@@ -45,89 +72,89 @@
     }
   }
   .content__image {
-    height: 710px;
-    margin-bottom: 60px;
+    height: 710px * @retina-factor;
+    margin-bottom: 60px * @retina-factor;
     padding-bottom: 0px;
     width: 100%;
   }
   .content__image--small {
-    height: 412px;
-    padding-top: 55px;
+    height: 412px * @retina-factor;
+    padding-top: 55px * @retina-factor;
     width: 100%;
   }
   .content__image--extra-small {
-    height: 282px;
-    margin-bottom: -38px;
-    padding: 18px 0 71px 0;
+    height: 282px * @retina-factor;
+    margin-bottom: -38px * @retina-factor;
+    padding: 18px * @retina-factor 0 71px * @retina-factor 0;
     width: 100%;
   }
   .content__image__caption {
     font-style: italic;
-    font-size: 16px;
+    font-size: 16px * @retina-factor;
     letter-spacing: 0.8px;
-    margin-bottom: 57px;
-    padding-top: 15px;
-    padding-left: 40px;
+    margin-bottom: 57px * @retina-factor;
+    padding-top: 15px * @retina-factor;
+    padding-left: 40px * @retina-factor;
     .producer {
       color: @grey;
     }
   }
   .content__introduction {
-    padding-left: 40px;
+    padding-left: 40px * @retina-factor;
     .content__introduction__title,
     .content__introduction__subtitle {
       font-family: @font-family-crete;
-      font-size: 47px;
+      font-size: 47px * @retina-factor;
       font-weight: bold;
-      padding-bottom: 16px;
+      padding-bottom: 16px * @retina-factor;
       &.quote {
         border: none;
         font-style: italic;
-        line-height: 60px;
-        margin-bottom: 63px;
-        padding-top: 45px;
+        line-height: 60px * @retina-factor;
+        margin-bottom: 63px * @retina-factor;
+        padding-top: 45px * @retina-factor;
       }
     }
     .content__introduction__title {
       padding-bottom: 0px;
     }
     .content__introduction__subtitle {
-      font-size: 40px;
-      padding-bottom: 2px;
+      font-size: 40px * @retina-factor;
+      padding-bottom: 2px * @retina-factor;
     }
     .content__introduction__description,
     .content__introduction__description--bold,
     .content__introduction__description--normal {
       font-family: @font-family-open-sanse;
-      font-size: 27px;
+      font-size: 27px * @retina-factor;
       font-weight: normal;
-      padding-top: 24px;
+      padding-top: 24px * @retina-factor;
   }
     .content__introduction__description--normal {
       padding-top: 0px;
     }
     .content__introduction__description--bold {
       font-weight: bold;
-      margin-bottom: 37px;
-      padding-top: 16px;
+      margin-bottom: 37px * @retina-factor;
+      padding-top: 16px * @retina-factor;
     }
     &.content__introduction--after-image {
-      padding-top: 8px;
+      padding-top: 8px * @retina-factor;
     }
     &.content__introduction--bottom {
       border-bottom: 1px solid @grey;
-      padding-bottom: 84px;
-      padding-top: 23px;
+      padding-bottom: 84px * @retina-factor;
+      padding-top: 23px * @retina-factor;
     }
     &.content__introduction--image {
-      margin-top: -23px;
+      margin-top: -23px * @retina-factor;
       padding-left: 0px;
       position: relative;
       .content__introduction--image__image {
-        height: 395px;
-        margin-bottom: 48px;
-        margin-top: 60px;
-        padding: 0 10px;
+        height: 395px * @retina-factor;
+        margin-bottom: 48px * @retina-factor;
+        margin-top: 60px * @retina-factor;
+        padding: 0 10px * @retina-factor;
         width: 100%;
       }
       .content__introduction--image__title {
@@ -135,13 +162,13 @@
         bottom: 0px;
         color: @white;
         font-family: @font-family-crete;
-        font-size: 47px;
+        font-size: 47px * @retina-factor;
         font-style: italic;
-        left: 33px;
-        line-height: 61px;
+        left: 33px * @retina-factor;
+        line-height: 61px * @retina-factor;
         position: absolute;
         right: 0px;
-        top: 146px;
+        top: 146px * @retina-factor;
       }
     }
     &.content__introduction--social {
@@ -205,3 +232,4 @@
     }
   }
 }
+// MOBILE:END
