@@ -7,24 +7,24 @@
 @media (min-width: @tablet_min) and (max-width: @tablet_max) {
   .vacancieslist {
     .vacancieslist__header {
-      padding-left: 133px !important;
-      padding-top: 40px !important;
+      padding-left: 133px * @retina-factor !important;
+      padding-top: 40px * @retina-factor !important;
       text-align: left !important;
     }
     .article--list {
-      padding-top: 73px;
+      padding-top: 73px * @retina-factor;
       .vacancieslist__item {
-        margin-bottom: 48px;
-        max-width: 732px;
-        height: 213px;
+        margin-bottom: 48px * @retina-factor;
+        max-width: 95%;//732px * @retina-factor;
+        height: 213px * @retina-factor;
         .vacancieslist__item__content {
-          padding-left: 106px;
-          padding-top: 30px;
+          padding-left: 106px * @retina-factor;
+          padding-top: 30px * @retina-factor;
         }
       }
       .vacancieslist__view-all {
-        font-size: 27px !important;
-        right: 136px;
+        font-size: 27px * @retina-factor !important;
+        right: 136px * @retina-factor;
       }
     }
   }
@@ -33,33 +33,55 @@
 
 // DESKTOP::START
 @media (min-width: @desktop_min) {
-
+  .vacancieslist {
+    .vacancieslist__header {
+      padding-left: 133px * @retina-factor !important;
+      padding-top: 40px * @retina-factor !important;
+      text-align: left !important;
+    }
+    .article--list {
+      padding-top: 73px * @retina-factor;
+      .vacancieslist__item {
+        margin-bottom: 48px * @retina-factor;
+        max-width: 95%;//732px * @retina-factor;
+        height: 213px * @retina-factor;
+        .vacancieslist__item__content {
+          padding-left: 106px * @retina-factor;
+          padding-top: 30px * @retina-factor;
+        }
+      }
+      .vacancieslist__view-all {
+        font-size: 27px * @retina-factor !important;
+        right: 136px * @retina-factor;
+      }
+    }
+  }
 }
 // DESKTOP::END
 
 // MOBILE::START
 .vacancieslist {
   &:last-child {
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 30px * @retina-factor;
+    margin-top: 30px * @retina-factor;
   }
   &.vacancieslist--content {
-    padding-top: 67px;
+    padding-top: 67px * @retina-factor;
   }
   .vacancieslist__header {
-    line-height: 80px;
+    line-height: 80px * @retina-factor;
     font-family: @font-family-crete;
-    font-size: 42px;
+    font-size: 42px * @retina-factor;
     font-weight: bold;
-    margin-bottom: 36px;
-    margin-top: 6px;
+    margin-bottom: 36px * @retina-factor;
+    margin-top: 6px * @retina-factor;
     text-align: center;
   }
   .vacancieslist__item {
     border: 1px solid @grey;
     display: block;
-    height: 172px;
-    margin-bottom: 30px;
+    height: 172px * @retina-factor;
+    margin-bottom: 30px * @retina-factor;
     position: relative;
     text-decoration: none;
     &:hover,
@@ -67,43 +89,43 @@
       background-color: lighten(@grey, 10%);
     }
     .vacancieslist__item__content {
-      padding-left: 30px;
+      padding-left: 30px * @retina-factor;
       .vacancieslist__item__title {
         clear: right;
         color: @green;
         display: inline;
         float: left;
         font-family: @font-family-crete;
-        font-size: 30px;
+        font-size: 30px * @retina-factor;
         letter-spacing: 1px;
-        line-height: @label-line-height;
-        margin-bottom: 4px;
-        margin-top: 56px;
-        padding-left: 16px;
+        line-height: @label-line-height * @retina-factor;
+        margin-bottom: 4px * @retina-factor;
+        margin-top: 56px * @retina-factor;
+        padding-left: 16px * @retina-factor;
         text-align: left;
       }
       .vacancieslist__item__description {
         clear: left;
         font-family: @font-family-open-sanse;
-        font-size: 24px;
-        padding-left: 16px;
-        padding-top: 10px;
+        font-size: 24px * @retina-factor;
+        padding-left: 16px * @retina-factor;
+        padding-top: 10px * @retina-factor;
       }
     }
     .vacancieslist__item__link {
       align-self: flex-end;
-      bottom: 20px;
+      bottom: 20px * @retina-factor;
       color: @green;
       display: inline-block;
       flex-shrink: 0;
       font-size: @label;
-      height: 48px;//2 * @label;
-      line-height: 1.8 * @label-line-height;
+      height: 48px * @retina-factor;//2 * @label;
+      line-height: 1.8 * @label-line-height * @retina-factor;
       position: absolute;
-      right: 19px;
+      right: 19px * @retina-factor;
       text-align: center;
       vertical-align: middle;
-      width: 48px;//2 * @label;
+      width: 48px * @retina-factor;//2 * @label;
       svg {
         path,
         circle {
@@ -115,7 +137,7 @@
   }
   .vacancieslist__view-all {
     display: inline-block;
-    height: 70px;
+    height: 70px * @retina-factor;
     position: relative;
     text-align: right;
     text-decoration: none;
@@ -135,22 +157,22 @@
     }
     .vacancieslist__view-all__title {
       font-family: @font-family-crete;
-      line-height: 70px;
-      padding-right: 80px;
+      line-height: 70px * @retina-factor;
+      padding-right: 80px * @retina-factor;
     }
     .vacancieslist__view-all__link {
-      bottom: 19px;
+      bottom: 19px * @retina-factor;
       color: #aac426;
       display: inline-block;
       flex-shrink: 0;
-      font-size: 11pt;
-      height: 27.5pt;
-      line-height: 21.6pt;
+      font-size: 11pt * @retina-factor;
+      height: 27.5pt * @retina-factor;
+      line-height: 21.6pt * @retina-factor;
       position: absolute;
-      right: 21px;
+      right: 21px * @retina-factor;
       text-align: center;
       vertical-align: middle;
-      width: 46px;
+      width: 46px * @retina-factor;
       z-index: 2;
       svg {
         path,

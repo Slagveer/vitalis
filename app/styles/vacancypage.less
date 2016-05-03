@@ -2,19 +2,25 @@
 
 // TABLET::START
 @media (min-width: @tablet_min) and (max-width: @tablet_max) {
+  .row {
+    &.row__list {
+      padding-bottom: 15px !important;
+      padding-top: 15px !important;
+    }
+  }
   .vacancy {
     .vacancy__image {
-      max-height:402px !important;
+      max-height:402px * @retina-factor !important;
     }
     .vacancy__header {
       .vacancy__title {
-        padding-left: 124px !important;
-        padding-top: 94px !important;
+        padding-left: 124px * @retina-factor !important;
+        padding-top: 94px * @retina-factor !important;
         text-align: left;
       }
       .vacancy__description {
         padding-left: 0px !important;
-        padding-top: 116px !important;
+        padding-top: 116px * @retina-factor !important;
         text-align: left;
       }
     }
@@ -24,19 +30,25 @@
 
 // DESKTOP::START
 @media (min-width: @desktop_min) {
+  .row {
+    &.row__list {
+      padding-bottom: 15px !important;
+      padding-top: 15px !important;
+    }
+  }
   .vacancy {
     .vacancy__image {
-      max-height:402px !important;
+      max-height:402px * @retina-factor !important;
     }
     .vacancy__header {
       .vacancy__title {
-        padding-left: 124px !important;
-        padding-top: 94px !important;
+        padding-left: 124px * @retina-factor !important;
+        padding-top: 94px * @retina-factor !important;
         text-align: left;
       }
       .vacancy__description {
         padding-left: 0px !important;
-        padding-top: 116px !important;
+        padding-top: 116px * @retina-factor !important;
         text-align: left;
       }
     }
@@ -48,15 +60,15 @@
 .vacancy {
   .vacancy__image {
     width: 100%;
-    max-height: 439px;
+    max-height: 439px * @retina-factor;
   }
   .vacancy__image-title {
     bottom: 0px;
     color: @white;
     font-family: @font-family-crete;
-    font-size: 55px;
+    font-size: 55px * @retina-factor;
     left: 0px;
-    line-height: 422px;
+    line-height: 422px * @retina-factor;
     margin-left: 0%;
     margin-right: 0%;
     position: absolute;
@@ -68,18 +80,18 @@
   .vacancy__header {
     display: flex;
     flex-flow: column;
-    margin-bottom: 62px;
+    margin-bottom: 62px * @retina-factor;
     .vacancy__title {
       font-family: @font-family-crete;
-      font-size: 64px;
-      padding-left: 40px;
-      padding-top: 55px;
+      font-size: 64px * @retina-factor;
+      padding-left: 40px * @retina-factor;
+      padding-top: 55px * @retina-factor;
     }
     .vacancy__description {
       font-family: @font-family-open-sanse;
-      font-size: 27px;
-      padding-left: 40px;
-      padding-top: 30px;
+      font-size: 27px * @retina-factor;
+      padding-left: 40px * @retina-factor;
+      padding-top: 30px * @retina-factor;
     }
   }
 }
