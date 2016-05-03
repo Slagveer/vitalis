@@ -9093,6 +9093,18 @@ button.close {
     top: 50%;
     width: 54%;
   }
+  .container.content .row:nth-child(2) .content__paragraaf {
+    padding-right: 15px !important;
+  }
+  .container.content .row:nth-child(2) .content__paragraaf .content__paragraaf__title:first-of-type {
+    background-color: white;
+    margin-bottom: -71px;
+    margin-left: -50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    position: relative;
+    top: -100px;
+  }
 }
 @media (min-width: 1200px) {
   .content__introduction__title.quote {
