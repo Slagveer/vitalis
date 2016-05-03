@@ -11206,6 +11206,9 @@ button.close {
 .sortby .numberresults .numberresults__header .numberresults__header__container .numberresults__header__container__text.sort {
   margin-left: 20px;
 }
+.map {
+  height: 100%;
+}
 @media (min-width: 768px) and (max-width: 1199px) {
   .container,
   .container-fluid {

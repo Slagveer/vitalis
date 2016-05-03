@@ -38,6 +38,15 @@
         useTransparentGif: false,
         speedTestUri: './bower_components/hisrc/50K.jpg'
       });
+      GoogleMapsLoader.KEY = 'AIzaSyA9i6uziMYIQk9ZyHd4sG0Vw-gRIVP39C4	';
+      GoogleMapsLoader.LIBRARIES = ['geometry', 'places'];
+      GoogleMapsLoader.load(function(google) {
+        new google.maps.Map($('.js-maps')[0],{
+          center: {lat: -34.397, lng: 150.644},
+          scrollwheel: false,
+          zoom: 8
+        });
+      });
     });
   });
 }());
