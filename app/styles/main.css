@@ -8726,13 +8726,49 @@ button.close {
   text-overflow: ellipsis;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .variety-detail .fullsize {
-    margin-bottom: 2%;
-    margin-top: 2%;
-    min-height: 94%;
-  }
   .variety-detail .fullsize .variety-detail__social {
-    border: none !important;
+    border-bottom: none !important;
+  }
+  .variety-detail .variety-detail__header {
+    padding-left: 55px !important;
+    padding-top: 71px !important;
+  }
+  .variety-detail .variety-detail__header .variety-detail__description {
+    padding-left: 0px !important;
+  }
+  .variety-detail .variety-detail__header .variety-detail__title {
+    padding-left: 0px !important;
+    padding-top: 0px !important;
+    text-align: left;
+  }
+  .variety-detail .variety-detail__container .variety-detail__image {
+    height: 190px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .variety-detail .variety-detail__list {
+    padding-left: 55px !important;
+  }
+  .variety-detail .variety-detail__list .variety-detail__list__title,
+  .variety-detail .variety-detail__list .variety-detail__list__description {
+    float: left;
+    margin-bottom: 0px !important;
+  }
+  .variety-detail .variety-detail__list .variety-detail__list__description {
+    padding-left: 102px !important;
+  }
+  .variety-detail .variety-detail__list .variety-detail__list__title {
+    clear: left;
+  }
+  .variety-detail .variety-detail__brochures {
+    padding-left: 55px !important;
+  }
+  .variety-detail .variety-detail__brochures .variety-detail__brochures__title {
+    padding-left: 0px !important;
+    padding-top: 23px !important;
+  }
+  .variety-detail .variety-detail__brochures .variety-detail__brochures__links {
+    padding-left: 0px !important;
   }
 }
 @media (min-width: 1200px) {
@@ -8802,7 +8838,6 @@ button.close {
   margin-bottom: 19.5px;
 }
 .variety-detail .variety-detail__brochures {
-  border-bottom: 1px solid #ededed;
   padding-bottom: 33px;
   padding-top: 10px;
 }
@@ -8871,6 +8906,7 @@ button.close {
 }
 .variety-detail .variety-detail__social {
   border-bottom: 1px solid #ededed;
+  border-top: 1px solid #ededed;
   padding-bottom: 37px;
   padding-top: 31px;
 }
@@ -10773,10 +10809,11 @@ button.close {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .person-contact {
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #ededed;
   }
   .person-contact .person-contact__information {
-    border: none !important;
+    border-bottom: 0px solid #ededed !important;
+    border-top: 1px solid #ededed;
     padding-left: 72px;
     padding-top: 16px !important;
     padding-bottom: -30px !important;

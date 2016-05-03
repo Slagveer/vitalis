@@ -2,9 +2,10 @@
 // TABLET::START
 @media (min-width: @tablet_min) and (max-width: @tablet_max) {
   .person-contact {
-    border-bottom: 1px solid @grey;
+    border-bottom: 1px solid @light-grey;
     .person-contact__information {
-      border: none !important;
+      border-bottom: 0px solid @light-grey !important;
+      border-top: 1px solid @light-grey;
       padding-left: 144px * @retina-factor;
       padding-top: 32px * @retina-factor !important;
       padding-bottom:-30px !important;
