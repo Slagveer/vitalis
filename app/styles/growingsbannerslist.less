@@ -2,17 +2,17 @@
 
 .growingsbannerslist {
   .article--list {
-    margin-left: -21px;
-    margin-right: -21px;
+    margin-left: -21px * @retina-factor;
+    margin-right: -21px * @retina-factor;
   }
   .growingsbannerslist__item {
     align-content: stretch;
     border: 1px solid @grey;
     display: flex;
     flex-flow: column nowrap;
-    margin-top: 20px;
+    margin-top: 20px * @retina-factor;
     padding: 0px;
-    height: 355px;
+    height: 355px * @retina-factor;
     text-decoration: none;
     &:hover {
       text-decoration: none;
@@ -21,30 +21,30 @@
     .growingsbannerslist__item__top {
       display: flex;
       flex-flow: row nowrap;
-      min-height: 355px;
+      min-height: 355px * @retina-factor;
       .growingsbannerslist__item__image {
-        border: 1px solid @grey;
+        border: 1px solid @light-grey;
         float:left;
-        height: 355px;
-        max-width: 355px;
+        height: 355px * @retina-factor;
+        max-width: 355px * @retina-factor;
         width: 100%;
       }
       .growingsbannerslist__item__content {
         display: table;
         flex-grow: 5;
-        height: 355px;
-        padding-left: 28px;
+        height: 355px * @retina-factor;
+        padding-left: 28px * @retina-factor;
         position: relative;
         .growingsbannerslist__item__title {
           color: @dark-grey;
           display: table-cell;
           font-family: @font-family-crete;
-          font-size: 38px;
+          font-size: 38px * @retina-factor;
           font-weight: bold;
-          line-height: 43px;
+          line-height: 43px * @retina-factor;
           text-align: left;
           vertical-align: middle;
-          width: 100px;
+          width: 100px * @retina-factor;
         }
       }
     }
@@ -78,13 +78,13 @@
     display: flex;
     flex-flow: row;
     justify-content: center;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    margin-bottom: 15px * @retina-factor;
+    margin-top: 15px * @retina-factor;
     .growingsbannerslist__paging__link {
       &.growingsbannerslist__paging__link--left,
       &.growingsbannerslist__paging__link--right {
-        height: 48px;
-        width: 48px;
+        height: 48px * @retina-factor;
+        width: 48px * @retina-factor;
         svg {
           path {
             fill: @green;
@@ -105,9 +105,9 @@
     .growingsbannerslist__paging__number {
       color: @green;
       font-family: @font-family-crete;
-      font-size: 28px;
-      margin-left: 15px;
-      margin-right: 15px;
+      font-size: 28px * @retina-factor;
+      margin-left: 15px * @retina-factor;
+      margin-right: 15px * @retina-factor;
     }
   }
 }
@@ -119,7 +119,7 @@
 .block-with-text {
   display: block; /* Fallback for non-webkit */
   display: -webkit-box;
-  max-width: 400px;
+  max-width: 400px * @retina-factor;
   height: @font-size*@line-height*@lines-to-show; /* Fallback for non-webkit */
   margin: 0 auto;
   font-size: @font-size;
