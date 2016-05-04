@@ -20,9 +20,10 @@
 
   $.extend( Plugin.prototype, {
     init: function() {
+      var me =  this;
+
       $filter = $(this.element);
       $filterGroups = $filter.find('.js-filter-group');
-
       _.each($filterGroups, function renderGroups(group) {
         var $filterButton;
 
@@ -35,7 +36,7 @@
           $checkboxes.show();
         });
         _.each($checkboxes, function(checkbox, index) {
-          if(index < 5) {
+          if(index < me.settings.maxCheckboxes) {
             $(checkbox).show();
           }
         });
