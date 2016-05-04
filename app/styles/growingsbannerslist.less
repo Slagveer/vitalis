@@ -1,5 +1,17 @@
 @brand-primary: @black;
+// TABLET::START
+@media (min-width: @tablet_min) and (max-width: @tablet_max) {
 
+}
+// TABLET::END
+
+// DESKTOP::START
+@media (min-width: @desktop_min) {
+
+}
+// DESKTOP::END
+
+// MOBILE::START
 .growingsbannerslist {
   .article--list {
     margin-left: -21px * @retina-factor;
@@ -35,6 +47,7 @@
         height: 355px * @retina-factor;
         padding-left: 28px * @retina-factor;
         position: relative;
+        width: 50%;
         .growingsbannerslist__item__title {
           color: @dark-grey;
           display: table-cell;
@@ -62,7 +75,7 @@
         height: 48px * @retina-factor;//2.5 * @label;
         line-height: 1.8 * @label-line-height * @retina-factor;
         position: absolute;
-        right: 16px * @retina-factor;
+        right: 32px * @retina-factor;
         text-align: center;
         vertical-align: middle;
         width: 48px * @retina-factor;//2.5 * @label;
@@ -129,3 +142,4 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+// MOBILE::END

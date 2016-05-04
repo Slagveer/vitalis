@@ -6877,7 +6877,7 @@ button.close {
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu.desktop .dropdown-menu__search {
     position: absolute;
-    right: 58px;
+    right: 18px;
     top: -60px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu .navigation__menu__item {
@@ -7089,6 +7089,9 @@ button.close {
 }
 .navigation .navigation__menu .navigation__menu__item .dropdown-menu .navigation__menu__item {
   display: block;
+}
+.navigation .navigation__menu .navigation__menu__item .dropdown-menu .form-control {
+  font-size: 16px;
 }
 .navigation .navigation__menu .navigation__menu__item.start {
   margin-top: -6px;
@@ -9847,7 +9850,7 @@ button.close {
   .item__image__text {
     display: block !important;
   }
-  .container {
+  .container.container__carousel {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
@@ -10551,7 +10554,7 @@ button.close {
   height: 24px;
   line-height: 10.8pt;
   position: absolute;
-  right: 8px;
+  right: 16px;
   text-align: center;
   vertical-align: middle;
   width: 24px;
@@ -10610,6 +10613,7 @@ button.close {
   height: 177.5px;
   padding-left: 14px;
   position: relative;
+  width: 50%;
 }
 .growingsbannerslist .growingsbannerslist__item .growingsbannerslist__item__top .growingsbannerslist__item__content .growingsbannerslist__item__title {
   color: #515151;
@@ -10637,7 +10641,7 @@ button.close {
   height: 24px;
   line-height: 10.8pt;
   position: absolute;
-  right: 8px;
+  right: 16px;
   text-align: center;
   vertical-align: middle;
   width: 24px;
