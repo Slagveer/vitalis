@@ -1,24 +1,24 @@
 // Checkbox
 .enza-checkbox {
   display: inline-block;
-  line-height: 1.25 * @label-line-height;
-  margin-bottom: 43px;
+  line-height: 12px * @retina-factor;
+  margin-bottom: 43px * @retina-factor;
   position: relative;
-  width: 40px;
+  width: 40px * @retina-factor;
   .enza-checkbox__label {
     background: #fff;
     border:1px solid @grey;
     cursor: pointer;
-    height: 25px;
+    height: 25px * @retina-factor;
     left: 0;
     position: absolute;
     top: 0;
-    width: 25px;
+    width: 25px * @retina-factor;
     .label {
       color: @black;
-      font-size: 25px;//@body;
+      font-size: 25px * @retina-factor;//@body;
       font-weight: bold;
-      margin-left: 20px;
+      margin-left: 20px * @retina-factor;
     }
     &:after {
       background: transparent;
@@ -26,13 +26,13 @@
       border-right: none;
       border-top: none;
       content: '';
-      height: 10px;
-      left: 4px;
+      height: 10px * @retina-factor;
+      left: 4px * @retina-factor;
       opacity: 1;
       position: absolute;
-      top: 4px;
+      top: 4px * @retina-factor;
       transform: rotate(-45deg);
-      width: 16px;
+      width: 16px * @retina-factor;
     }
     &:hover {
       &::after {
@@ -41,9 +41,10 @@
     }
   }
   .enza-checkbox__element {
+    margin: 0 0 0;
     &:checked {
       &+ .enza-checkbox__label {
-        border:2px solid @green;
+        border:1px solid @green;
         .label {
           font-weight: bold;
         }
