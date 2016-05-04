@@ -10185,6 +10185,10 @@ button.close {
   padding: 10px 0;
   text-align: center;
 }
+.targetaudience .targetaudience__label {
+  font-family: 'Crete Round', serif;
+  font-size: 16px;
+}
 .targetaudience .targetaudience__select {
   background: url('../images/icon-backtotop-arrow.svg') no-repeat 227px 0px;
   border: 1px solid #cccccc;
