@@ -8595,17 +8595,17 @@ button.close {
   fill: #aac426;
 }
 .varietylist .article--list {
-  margin-left: -21px;
-  margin-right: -21px;
+  margin-left: -10.5px;
+  margin-right: -10.5px;
 }
 .varietylist .varietylist__item {
   align-content: stretch;
   border: 1px solid #cccccc;
   display: flex;
   flex-flow: column nowrap;
-  margin-top: 15px;
-  padding: 50px;
-  height: 415px;
+  margin-top: 7.5px;
+  padding: 25px;
+  height: 207.5px;
 }
 .varietylist .varietylist__item:hover {
   text-decoration: none;
@@ -8614,19 +8614,19 @@ button.close {
 .varietylist .varietylist__item .varietylist__item__top {
   display: flex;
   flex-flow: row nowrap;
-  min-height: 180px;
+  min-height: 90px;
 }
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__image {
   border: 1px solid #cccccc;
   float: left;
-  height: 180px;
-  max-width: 205px;
+  height: 90px;
+  max-width: 102.5px;
   width: 100%;
 }
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content {
   flex-grow: 5;
-  height: 180px;
-  padding-left: 28px;
+  height: 90px;
+  padding-left: 14px;
   position: relative;
 }
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__title {
@@ -8635,30 +8635,30 @@ button.close {
   display: inline;
   float: left;
   font-family: 'Crete Round', serif;
-  font-size: 28px;
-  line-height: 12pt;
-  padding: 4px;
+  font-size: 14px;
+  line-height: 6pt;
+  padding: 2px;
   text-align: left;
 }
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__title .label-square {
   font-size: 11pt;
   font-weight: bold;
-  line-height: 12pt;
+  line-height: 6pt;
   padding: 0px;
 }
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list {
   clear: left;
   float: left;
   font-family: 'Open Sans', sans-serif;
-  font-size: 15pt;
-  line-height: 12pt;
-  margin-top: 15px;
-  margin-left: 5px;
+  font-size: 7.5pt;
+  line-height: 6pt;
+  margin-top: 7.5px;
+  margin-left: 2.5px;
 }
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list .varietylist__item__list__title,
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list .varietylist__item__list__description {
   float: left;
-  margin-left: 50px;
+  margin-left: 25px;
 }
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list .varietylist__item__list__title {
   clear: left;
@@ -8667,45 +8667,45 @@ button.close {
 .varietylist .varietylist__item .varietylist__item__bottom {
   display: flex;
   flex-flow: row nowrap;
-  margin-top: 28px;
+  margin-top: 14px;
 }
 .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__tags {
   clear: left;
   color: #aac426;
   float: left;
   font-family: 'Open Sans', sans-serif;
-  font-size: 11pt;
+  font-size: 5.5pt;
   font-weight: bold;
-  line-height: 14.4pt;
+  line-height: 7.2pt;
   position: relative;
   top: 0px;
   width: 90%;
 }
 .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__tags .badge {
-  font-size: 23px;
+  font-size: 11.5px;
   font-weight: bold;
 }
 .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__tags .badge.badge--variety {
   border-radius: 0px;
   background-color: #f0f6d2;
   color: #aac426;
-  margin: 3px 3px 3px 3px;
-  padding: 3px;
+  margin: 1.5px;
+  padding: 1.5px;
 }
 .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__link {
   align-self: flex-end;
-  bottom: 25px;
+  bottom: 12.5px;
   color: #aac426;
   display: inline-block;
   flex-shrink: 0;
-  font-size: 11pt;
-  height: 48px;
-  line-height: 21.6pt;
+  font-size: 5.5pt;
+  height: 24px;
+  line-height: 10.8pt;
   position: absolute;
   right: 16px;
   text-align: center;
   vertical-align: middle;
-  width: 48px;
+  width: 24px;
 }
 .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__link svg path {
   fill: #aac426;
@@ -8714,12 +8714,12 @@ button.close {
   display: block;
   /* Fallback for non-webkit */
   display: -webkit-box;
-  max-width: 400px;
-  height: 50.4pt;
+  max-width: 200px;
+  height: 25.2pt;
   /* Fallback for non-webkit */
   margin: 0 auto;
-  font-size: 12pt;
-  line-height: 1.4;
+  font-size: 6pt;
+  line-height: 0.7;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -11206,8 +11206,46 @@ button.close {
 .sortby .numberresults .numberresults__header .numberresults__header__container .numberresults__header__container__text.sort {
   margin-left: 20px;
 }
+.googlemaps {
+  margin-bottom: 12px;
+  padding: 10px 0;
+  text-align: left;
+}
+.googlemaps .googlemaps__label {
+  font-family: 'Crete Round', serif;
+  font-size: 16px;
+}
+.googlemaps .googlemaps__select {
+  background: url('../images/icon-backtotop-arrow.svg') no-repeat 227px 0px;
+  border: 1px solid #cccccc;
+  border-radius: 0px;
+  color: #515151;
+  font-family: 'Crete Round', serif;
+  font-size: 13.5px;
+  height: 35px;
+  padding: 0 15px;
+  position: relative;
+  width: 275px;
+  -webkit-appearance: none;
+}
+.googlemaps .googlemaps__select:hover {
+  color: #aac426;
+}
+.googlemaps .googlemaps__select .googlemaps__select__option {
+  color: #515151;
+  float: left;
+  display: inline-block;
+  line-height: 33.5px;
+  padding-left: 50px;
+}
+.googlemaps .googlemaps__select .googlemaps__select__option:checked {
+  color: #aac426;
+}
+.googlemaps .googlemaps__select .googlemaps__select__option:not(:checked) {
+  color: #515151;
+}
 .map {
-  height: 100%;
+  height: 355px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .container,

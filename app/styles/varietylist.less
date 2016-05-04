@@ -2,17 +2,17 @@
 
 .varietylist {
   .article--list {
-    margin-left: -21px;
-    margin-right: -21px;
+    margin-left: -21px * @retina-factor;
+    margin-right: -21px * @retina-factor;
   }
   .varietylist__item {
     align-content: stretch;
     border: 1px solid @grey;
     display: flex;
     flex-flow: column nowrap;
-    margin-top: 15px;
-    padding: 50px;
-    height: 415px;
+    margin-top: 15px * @retina-factor;
+    padding: 50px * @retina-factor;
+    height: 415px * @retina-factor;
     &:hover {
       text-decoration: none;
       background-color: lighten(@grey, 10%);
@@ -20,18 +20,18 @@
     .varietylist__item__top {
       display: flex;
       flex-flow: row nowrap;
-      min-height: 180px;
+      min-height: 180px * @retina-factor;
       .varietylist__item__image {
         border: 1px solid @grey;
         float:left;
-        height: 180px;
-        max-width: 205px;
+        height: 180px * @retina-factor;
+        max-width: 205px * @retina-factor;
         width: 100%;
       }
       .varietylist__item__content {
         flex-grow: 5;
-        height: 180px;
-        padding-left: 28px;
+        height: 180px * @retina-factor;
+        padding-left: 28px * @retina-factor;
         position: relative;
         .varietylist__item__title {
           clear: right;
@@ -39,14 +39,14 @@
           display: inline;
           float: left;
           font-family: @font-family-crete;
-          font-size: 28px;
-          line-height: @label-line-height;
-          padding: 4px;
+          font-size: 28px * @retina-factor;
+          line-height: @label-line-height * @retina-factor;
+          padding: 4px * @retina-factor;
           text-align: left;
           .label-square {
             font-size: @label;
             font-weight: bold;
-            line-height: @label-line-height;
+            line-height: @label-line-height * @retina-factor;
             padding: 0px;
           }
         }
@@ -54,14 +54,14 @@
           clear: left;
           float: left;
           font-family: @font-family-open-sanse;
-          font-size: 15pt;//@label;
-          line-height: @label-line-height;
-          margin-top: 15px;
-          margin-left: 5px;
+          font-size: 15pt * @retina-factor;//@label;
+          line-height: @label-line-height * @retina-factor;
+          margin-top: 15px * @retina-factor;
+          margin-left: 5px * @retina-factor;
           .varietylist__item__list__title,
           .varietylist__item__list__description {
             float: left;
-            margin-left: 50px;
+            margin-left: 50px * @retina-factor;
           }
           .varietylist__item__list__title {
             clear: left;
@@ -73,44 +73,44 @@
     .varietylist__item__bottom {
       display: flex;
       flex-flow: row nowrap;
-      margin-top: 28px;
+      margin-top: 28px * @retina-factor;
       .varietylist__item__tags {
         clear: left;
         color: @green;
         float: left;
         font-family: @font-family-open-sanse;
-        font-size: @label;
+        font-size: @label * @retina-factor;
         font-weight: bold;
-        line-height: 1.2 * @label-line-height;
+        line-height: 1.2 * @label-line-height * @retina-factor;
         position: relative;
         top: 0px;
         width: 90%;
         .badge {
-          font-size: 23px;
+          font-size: 23px * @retina-factor;
           font-weight: bold;
           &.badge--variety {
             border-radius: 0px;
             background-color: lighten(@green, 43.5%);;
             color: @green;
-            margin: 3px 3px 3px 3px;
-            padding: 3px;
+            margin: 3px * @retina-factor;
+            padding: 3px * @retina-factor;
           }
         }
       }
       .varietylist__item__link {
         align-self: flex-end;
-        bottom: 25px;
+        bottom: 25px * @retina-factor;
         color: @green;
         display: inline-block;
         flex-shrink: 0;
-        font-size: @label;
-        height: 48px;//2.5 * @label;
-        line-height: 1.8 * @label-line-height;
+        font-size: @label * @retina-factor;
+        height: 48px * @retina-factor;//2.5 * @label;
+        line-height: 1.8 * @label-line-height * @retina-factor;
         position: absolute;
-        right: 16px;
+        right: 32px * @retina-factor;
         text-align: center;
         vertical-align: middle;
-        width: 48px;//2.5 * @label;
+        width: 48px * @retina-factor;//2.5 * @label;
         svg {
           path {
             fill: @green;
@@ -128,11 +128,11 @@
 .block-with-text {
   display: block; /* Fallback for non-webkit */
   display: -webkit-box;
-  max-width: 400px;
-  height: @font-size*@line-height*@lines-to-show; /* Fallback for non-webkit */
+  max-width: 400px * @retina-factor;
+  height: @font-size*@line-height * @lines-to-show * @retina-factor; /* Fallback for non-webkit */
   margin: 0 auto;
-  font-size: @font-size;
-  line-height: @line-height;
+  font-size: @font-size * @retina-factor;
+  line-height: @line-height * @retina-factor;
   -webkit-line-clamp: @lines-to-show;
   -webkit-box-orient: vertical;
   overflow: hidden;

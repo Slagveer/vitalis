@@ -10,7 +10,7 @@ var ENZA = ENZA || {};
     // private properties
     var array_string = '[object Array]';
     var log = function() {
-      console.log(array_string)
+      //console.log(array_string)
     };
     // end var
     // revealing public API
