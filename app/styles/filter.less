@@ -30,7 +30,32 @@
 
 // DESKTOP::START
 @media (min-width: @desktop_min) {
-
+  .container {
+    &.filter {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      .filter__selected {
+        margin-bottom: 60px * @retina-factor !important;
+        margin-top: 18px * @retina-factor !important;
+        padding-bottom: 0px * @retina-factor !important;
+        .filter__selected__text {
+          padding-left: 3.5px * @retina-factor;
+        }
+      }
+      .filter__select {
+        margin-bottom: 60px * @retina-factor !important;
+        margin-top: -20px * @retina-factor !important;
+        padding-bottom: 0px * @retina-factor !important;
+        padding-left: 24px * @retina-factor;
+        .filter__select__button {
+          margin-left: -22px * @retina-factor !important;
+          margin-top: 18px * @retina-factor !important;
+        }
+      }
+    }
+  }
 }
 // DESKTOP::END
 

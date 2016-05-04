@@ -8608,6 +8608,17 @@ button.close {
     right: 50px !important;
   }
 }
+@media (min-width: 1200px) {
+  .varietylist .varietylist__item {
+    height: 186px !important;
+    margin-left: 37px !important;
+    margin-right: 37px !important;
+    padding: 19px !important;
+  }
+  .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__link {
+    right: 50px !important;
+  }
+}
 .varietylist .article--list {
   margin-left: -10.5px;
   margin-right: -10.5px;
@@ -9434,6 +9445,32 @@ button.close {
     margin-right: -9px;
     padding-left: 38px;
     padding-right: 0px;
+  }
+  .container.filter .filter__selected {
+    margin-bottom: 30px !important;
+    margin-top: 9px !important;
+    padding-bottom: 0px !important;
+  }
+  .container.filter .filter__selected .filter__selected__text {
+    padding-left: 1.75px;
+  }
+  .container.filter .filter__select {
+    margin-bottom: 30px !important;
+    margin-top: -10px !important;
+    padding-bottom: 0px !important;
+    padding-left: 12px;
+  }
+  .container.filter .filter__select .filter__select__button {
+    margin-left: -11px !important;
+    margin-top: 9px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container.filter {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .container.filter .filter__selected {
     margin-bottom: 30px !important;
