@@ -1,5 +1,30 @@
 @brand-primary: @black;
 
+// TABLET::START
+@media (min-width: @tablet_min) and (max-width: @tablet_max) {
+  .varietylist {
+    .varietylist__item {
+      height: 372px * @retina-factor !important;
+      margin-left: 74px * @retina-factor !important;
+      margin-right: 74px * @retina-factor !important;
+      padding: 38px * @retina-factor !important;
+      .varietylist__item__bottom {
+        .varietylist__item__link {
+          right: 50px !important;
+        }
+      }
+    }
+  }
+}
+// TABLET::END
+
+// DESKTOP::START
+@media (min-width: @desktop_min) {
+
+}
+// DESKTOP::END
+
+// MOBILE::START
 .varietylist {
   .article--list {
     margin-left: -21px * @retina-factor;
@@ -138,3 +163,4 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+// MOBILE::END

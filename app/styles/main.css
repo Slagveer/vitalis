@@ -8597,6 +8597,17 @@ button.close {
 .itemslist .itemslist__item .itemslist__item__link svg path {
   fill: #aac426;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .varietylist .varietylist__item {
+    height: 186px !important;
+    margin-left: 37px !important;
+    margin-right: 37px !important;
+    padding: 19px !important;
+  }
+  .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__link {
+    right: 50px !important;
+  }
+}
 .varietylist .article--list {
   margin-left: -10.5px;
   margin-right: -10.5px;
@@ -9360,6 +9371,11 @@ button.close {
   fill-opacity: 1;
   fill: #007bb6;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .enza-checkbox {
+    margin-bottom: 10.5px !important;
+  }
+}
 .enza-checkbox {
   display: inline-block;
   line-height: 6px;
@@ -9413,6 +9429,31 @@ button.close {
   opacity: 1;
   border-color: #aac426;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container.filter {
+    margin-right: -9px;
+    padding-left: 38px;
+    padding-right: 0px;
+  }
+  .container.filter .filter__selected {
+    margin-bottom: 30px !important;
+    margin-top: 9px !important;
+    padding-bottom: 0px !important;
+  }
+  .container.filter .filter__selected .filter__selected__text {
+    padding-left: 1.75px;
+  }
+  .container.filter .filter__select {
+    margin-bottom: 30px !important;
+    margin-top: -10px !important;
+    padding-bottom: 0px !important;
+    padding-left: 12px;
+  }
+  .container.filter .filter__select .filter__select__button {
+    margin-left: -11px !important;
+    margin-top: 9px !important;
+  }
+}
 .filter .filter__header {
   width: 100%;
   margin: 25px 0;
@@ -9449,7 +9490,7 @@ button.close {
 }
 .filter .filter__selected,
 .filter .filter__select {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ededed;
   padding-bottom: 23.5px;
   padding-top: 5px;
 }
