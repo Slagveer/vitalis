@@ -9388,7 +9388,7 @@ button.close {
   }
 }
 .enza-checkbox {
-  display: inline-block;
+  display: none;
   line-height: 6px;
   margin-bottom: 21.5px;
   position: relative;
@@ -9471,6 +9471,7 @@ button.close {
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    width: 100% !important;
   }
   .container.filter .filter__selected {
     margin-bottom: 30px !important;
@@ -9489,6 +9490,13 @@ button.close {
   .container.filter .filter__select .filter__select__button {
     margin-left: -11px !important;
     margin-top: 9px !important;
+  }
+  .container.varietylist {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100% !important;
   }
 }
 .filter .filter__header {

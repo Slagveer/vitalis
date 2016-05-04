@@ -5,7 +5,8 @@
     $(function() {
       var $carousel = $('.js-carousel'),
         $loadmore = $('.js-loadmore'),
-        $targetAudienceForm = $('.js-submitform');
+        $targetAudienceForm = $('.js-submitform'),
+        $filter = $('.js-filter');
 
       $('body').navigation({
         animation: true,
@@ -27,12 +28,17 @@
           $('.js-thumbnail-item').removeClass('active');
           $($('.js-thumbnail-item')[slide]).addClass('active');
         });
-
       }
       if($loadmore) {
         $loadmore.loadmore();
-      }if($targetAudienceForm) {
+      }
+      if($targetAudienceForm) {
         $targetAudienceForm.targetaudience();
+      }
+      if($filter) {
+        $filter.filter({
+          maxCheckboxes: 5
+        });
       }
       $('.hirsc').hisrc({
         useTransparentGif: false,
