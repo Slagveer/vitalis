@@ -10448,17 +10448,17 @@ button.close {
   padding-top: 15px;
 }
 .growingsadvisorslist .article--list {
-  margin-left: -21px;
-  margin-right: -21px;
+  margin-left: -10.5px;
+  margin-right: -10.5px;
 }
 .growingsadvisorslist .growingsadvisorslist__item {
   align-content: stretch;
   border: 1px solid #cccccc;
   display: flex;
   flex-flow: column nowrap;
-  margin-top: 20px;
-  padding: 50px;
-  height: 440px;
+  margin-top: 10px;
+  padding: 25px;
+  height: 220px;
 }
 .growingsadvisorslist .growingsadvisorslist__item:hover {
   text-decoration: none;
@@ -10467,19 +10467,19 @@ button.close {
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__top {
   display: flex;
   flex-flow: row nowrap;
-  min-height: 180px;
+  min-height: 90px;
 }
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__top .growingsadvisorslist__item__image {
   border: 1px solid #cccccc;
   float: left;
-  height: 180px;
-  max-width: 205px;
+  height: 90px;
+  max-width: 102.5px;
   width: 100%;
 }
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__top .growingsadvisorslist__item__content {
   flex-grow: 5;
-  height: 180px;
-  padding-left: 28px;
+  height: 90px;
+  padding-left: 14px;
   position: relative;
 }
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__top .growingsadvisorslist__item__content .growingsadvisorslist__item__title {
@@ -10488,37 +10488,37 @@ button.close {
   display: inline;
   float: left;
   font-family: 'Crete Round', serif;
-  font-size: 28px;
+  font-size: 14px;
   line-height: 12pt;
-  padding: 4px;
+  padding: 2px;
   text-align: left;
 }
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__top .growingsadvisorslist__item__content .growingsadvisorslist__item__title .label-square {
-  font-size: 11pt;
-  line-height: 12pt;
+  font-size: 5.5pt;
+  line-height: 6pt;
   padding: 0px;
 }
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__top .growingsadvisorslist__item__content .growingsadvisorslist__item__list {
   clear: left;
   float: left;
   font-family: 'Open Sans', sans-serif;
-  font-size: 15pt;
-  line-height: 12pt;
-  margin-bottom: 15px;
-  margin-left: 5px;
-  margin-top: 15px;
+  font-size: 7.5pt;
+  line-height: 6pt;
+  margin-bottom: 7.5px;
+  margin-left: 2.5px;
+  margin-top: 7.5px;
 }
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__top .growingsadvisorslist__item__content .growingsadvisorslist__item__list .growingsadvisorslist__item__list__title,
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__top .growingsadvisorslist__item__content .growingsadvisorslist__item__list .growingsadvisorslist__item__list__description {
   display: inline-block;
   float: left;
-  margin-left: 10px;
-  width: 175px;
+  margin-left: 5px;
+  width: 87.5px;
 }
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__top .growingsadvisorslist__item__content .growingsadvisorslist__item__list .growingsadvisorslist__item__list__title {
   clear: left;
   margin-left: 0px;
-  width: 96px;
+  width: 48px;
 }
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__top .growingsadvisorslist__item__content .growingsadvisorslist__item__list.growingsadvisorslist__item__list--contact {
   color: #aac426;
@@ -10529,7 +10529,7 @@ button.close {
   width: 100%;
 }
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__top .growingsadvisorslist__item__content .growingsadvisorslist__item__list.growingsadvisorslist__item__list--contact .growingsadvisorslist__item__list__title.phone {
-  font-size: 26px;
+  font-size: 13px;
 }
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__top .growingsadvisorslist__item__content .growingsadvisorslist__item__list.growingsadvisorslist__item__list--contact .growingsadvisorslist__item__list__description {
   clear: left;
@@ -10539,22 +10539,22 @@ button.close {
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__bottom {
   display: flex;
   flex-flow: row nowrap;
-  margin-top: 28px;
+  margin-top: 14px;
 }
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__bottom .growingsadvisorslist__item__link {
   align-self: flex-end;
-  bottom: 25px;
+  bottom: 12.5px;
   color: #aac426;
   display: inline-block;
   flex-shrink: 0;
   font-size: 11pt;
-  height: 48px;
-  line-height: 21.6pt;
+  height: 24px;
+  line-height: 10.8pt;
   position: absolute;
-  right: 16px;
+  right: 8px;
   text-align: center;
   vertical-align: middle;
-  width: 48px;
+  width: 24px;
 }
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__bottom .growingsadvisorslist__item__link svg path {
   fill: #aac426;
@@ -10563,12 +10563,12 @@ button.close {
   display: block;
   /* Fallback for non-webkit */
   display: -webkit-box;
-  max-width: 400px;
-  height: 50.4pt;
+  max-width: 200px;
+  height: 25.2pt;
   /* Fallback for non-webkit */
   margin: 0 auto;
   font-size: 12pt;
-  line-height: 1.4;
+  line-height: 0.7;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -10625,22 +10625,22 @@ button.close {
 .growingsbannerslist .growingsbannerslist__item .growingsbannerslist__item__bottom {
   display: flex;
   flex-flow: row nowrap;
-  margin-top: 28px;
+  margin-top: 14px;
 }
 .growingsbannerslist .growingsbannerslist__item .growingsbannerslist__item__bottom .growingsbannerslist__item__link {
   align-self: flex-end;
-  bottom: 25px;
+  bottom: 12.5px;
   color: #aac426;
   display: inline-block;
   flex-shrink: 0;
-  font-size: 11pt;
-  height: 48px;
-  line-height: 21.6pt;
+  font-size: 5.5pt;
+  height: 24px;
+  line-height: 10.8pt;
   position: absolute;
-  right: 16px;
+  right: 8px;
   text-align: center;
   vertical-align: middle;
-  width: 48px;
+  width: 24px;
 }
 .growingsbannerslist .growingsbannerslist__item .growingsbannerslist__item__bottom .growingsbannerslist__item__link svg path {
   fill: #aac426;
@@ -10683,8 +10683,8 @@ button.close {
   height: 50.4pt;
   /* Fallback for non-webkit */
   margin: 0 auto;
-  font-size: 12pt;
-  line-height: 1.4;
+  font-size: 6pt;
+  line-height: 0.7;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -10884,15 +10884,15 @@ button.close {
 }
 .growings-advisors .growings-advisors__image {
   width: 100%;
-  max-height: 439px;
+  max-height: 219.5px;
 }
 .growings-advisors .growings-advisors__image-title {
   bottom: 0px;
   color: #ffffff;
   font-family: 'Crete Round', serif;
-  font-size: 55px;
+  font-size: 27.5px;
   left: 0px;
-  line-height: 422px;
+  line-height: 211px;
   margin-left: 0%;
   margin-right: 0%;
   position: absolute;
@@ -10904,19 +10904,19 @@ button.close {
 .growings-advisors .growings-advisors__header {
   display: flex;
   flex-flow: column;
-  margin-bottom: 62px;
+  margin-bottom: 31px;
 }
 .growings-advisors .growings-advisors__header .growings-advisors__title {
   font-family: 'Crete Round', serif;
-  font-size: 64px;
-  padding-left: 40px;
-  padding-top: 55px;
+  font-size: 32px;
+  padding-left: 20px;
+  padding-top: 27.5px;
 }
 .growings-advisors .growings-advisors__header .growings-advisors__description {
   font-family: 'Open Sans', sans-serif;
-  font-size: 27px;
-  padding-left: 40px;
-  padding-top: 30px;
+  font-size: 13.5px;
+  padding-left: 20px;
+  padding-top: 15px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .person-contact {

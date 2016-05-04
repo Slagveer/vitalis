@@ -51,21 +51,21 @@
     .growingsbannerslist__item__bottom {
       display: flex;
       flex-flow: row nowrap;
-      margin-top: 28px;
+      margin-top: 28px * @retina-factor;
       .growingsbannerslist__item__link {
         align-self: flex-end;
-        bottom: 25px;
+        bottom: 25px * @retina-factor;
         color: @green;
         display: inline-block;
         flex-shrink: 0;
-        font-size: @label;
-        height: 48px;//2.5 * @label;
-        line-height: 1.8 * @label-line-height;
+        font-size: @label * @retina-factor;
+        height: 48px * @retina-factor;//2.5 * @label;
+        line-height: 1.8 * @label-line-height * @retina-factor;
         position: absolute;
-        right: 16px;
+        right: 16px * @retina-factor;
         text-align: center;
         vertical-align: middle;
-        width: 48px;//2.5 * @label;
+        width: 48px * @retina-factor;//2.5 * @label;
         svg {
           path {
             fill: @green;
@@ -122,8 +122,8 @@
   max-width: 400px * @retina-factor;
   height: @font-size*@line-height*@lines-to-show; /* Fallback for non-webkit */
   margin: 0 auto;
-  font-size: @font-size;
-  line-height: @line-height;
+  font-size: @font-size * @retina-factor;
+  line-height: @line-height * @retina-factor;
   -webkit-line-clamp: @lines-to-show;
   -webkit-box-orient: vertical;
   overflow: hidden;
