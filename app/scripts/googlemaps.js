@@ -10,6 +10,8 @@
     $countrySelectorTemplate,
     $country,
     marker,
+    markers,
+    geocoder,
     countries,
     countriesUnique,
     countriesJSON,
@@ -36,9 +38,10 @@
           scrollwheel: true,
           zoom: 8
         });
+        geocoder = new google.maps.Geocoder();
         countries = $country.data('offices');
         countriesJSON = JSON.parse(countries);
-        countriesUnique = _.uniq(_.pluck(countriesJSON.countries, 'Land')); console.log(countriesUnique);
+        countriesUnique = _.uniq(_.pluck(countriesJSON.countries, 'Land'));
         _.each(countriesJSON.countries, function readCountries(country) {
           var source,
             template,
@@ -55,16 +58,41 @@
         $country.on('change', function onChange(evt) {
           evt.preventDefault();
           selectedCountry = evt.target.value;
-          console.info(countries[selectedCountry]);
           map.setCenter(new google.maps.LatLng(countries[selectedCountry][0],countries[selectedCountry][1]));
-        });
-
-        marker = new google.maps.Marker({
-          position: {lat: -34.397, lng: 150.644},
-          map: map,
-          title: 'Hello World!'
+          removeOffices();
+          addOffices(selectedCountry);
         });
       });
+
+      function addOffices(country) {
+        var offices = _.where(countriesJSON.countries, {"Code": country.toUpperCase()});
+        console.log(offices, country, countriesJSON);
+        if (geocoder) {
+          geocoder.geocode({
+            'address': offices[0]['Adresregel 1']
+          }, function(results, status) {
+            console.log(status, results);
+            map.setCenter(results[0].geometry.location);
+          });
+        }
+        marker = new google.maps.Marker({
+          position: {
+            lat: -34.397,
+            lng: 150.644
+          },
+          map: map,
+          title: country
+        });
+        // for (var i = 0; i < markers.length; i++) {
+        //   markers[i].setMap(map);
+        // }
+      }
+
+      function removeOffices() {
+        // for (var i = 0; i < markers.length; i++) {
+        //   markers[i].setMap(map);
+        // }
+      }
     }
   } );
 
