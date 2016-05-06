@@ -8646,7 +8646,7 @@ button.close {
     font-size: 12px;
     font-weight: bold;
   }
-  .varietylist.varietylist--office .varietylist__item .varietylist__item__bottom {
+  .varietylist.varietylist--office .varietylist__item .varietylist__item__bottom .varietylist__item__tags {
     display: none;
   }
   .varietylist .varietylist__item {
