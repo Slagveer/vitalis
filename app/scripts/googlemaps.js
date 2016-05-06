@@ -9,6 +9,7 @@
     $map,
     $countrySelectorTemplate,
     $country,
+    $offices,
     marker,
     markers = [],
     officeMarkers = [],
@@ -80,6 +81,7 @@
     init: function() {
       $map = $(this.element);
       $country = $('.js-country-selector');
+      $offices = $('.js-offices');
       GoogleMapsLoader.KEY = 'AIzaSyA9i6uziMYIQk9ZyHd4sG0Vw-gRIVP39C4	';
       GoogleMapsLoader.LIBRARIES = ['geometry', 'places'];
       GoogleMapsLoader.load(function googleLoaded(google) {
@@ -127,13 +129,17 @@
           selectedCountry = evt.target.value;
           map.setCenter(new google.maps.LatLng(countries[selectedCountry][0],countries[selectedCountry][1]));
           addOffices(selectedCountry);
+          addOfficesList(selectedCountry);
         });
         addOffices();
+        addOfficesList();
       });
 
       function addOffices(country) {
+        var offices;
+
         country = (_.isUndefined(country)) ? $country[0].value : country;
-        var offices = _.where(countriesJSON.countries, {"Code": country.toUpperCase()});
+        offices = _.where(countriesJSON.countries, {"Code": country.toUpperCase()});
 
         if(geocoder) {
           _.each(offices, function getOfficeAddress(office) {
@@ -174,6 +180,29 @@
                 }
               });
             }
+          });
+        }
+      }
+
+      function addOfficesList(country) {
+        var offices;
+
+        country = (_.isUndefined(country)) ? $country[0].value : country;
+        offices = _.where(countriesJSON.countries, {
+          "Code": country.toUpperCase()
+        });
+        if($offices) {
+          $offices.empty();
+          _.each(offices, function readOffice(office) {
+            var source,
+              template,
+              html;
+
+            $countrySelectorTemplate = $('#googlemaps-office-template');
+            source = $countrySelectorTemplate.html(),
+            template = Handlebars.compile(source),
+            html = template(office);
+            $offices.append(html);
           });
         }
       }

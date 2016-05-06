@@ -3,6 +3,26 @@
 // TABLET::START
 @media (min-width: @tablet_min) and (max-width: @tablet_max) {
   .varietylist {
+    &.varietylist--office {
+      padding-top: 40px;
+      .varietylist__item {
+        height: 372px * @retina-factor !important;
+        margin-left: 74px * @retina-factor !important;
+        margin-right: 74px * @retina-factor !important;
+        padding: 38px * @retina-factor !important;
+        .varietylist__item__list__description {
+          margin-left: 0px !important;
+          &.phone {
+            color: @green;
+            font-size: 12px;
+            font-weight: bold;
+          }
+        }
+        .varietylist__item__bottom {
+          display: none;
+        }
+      }
+    }
     .varietylist__item {
       height: 372px * @retina-factor !important;
       margin-left: 74px * @retina-factor !important;
@@ -21,6 +41,26 @@
 // DESKTOP::START
 @media (min-width: @desktop_min) {
   .varietylist {
+    &.varietylist--office {
+      padding-top: 40px;
+      .varietylist__item {
+        height: 372px * @retina-factor !important;
+        margin-left: 74px * @retina-factor !important;
+        margin-right: 74px * @retina-factor !important;
+        padding: 38px * @retina-factor !important;
+        .varietylist__item__list__description {
+          margin-left: 0px !important;
+          &.phone {
+            color: @green;
+            font-size: 12px;
+            font-weight: bold;
+          }
+        }
+        .varietylist__item__bottom {
+          display: none;
+        }
+      }
+    }
     .varietylist__item {
       height: 372px * @retina-factor !important;
       margin-left: 74px * @retina-factor !important;

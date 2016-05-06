@@ -8598,6 +8598,26 @@ button.close {
   fill: #aac426;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+  .varietylist.varietylist--office {
+    padding-top: 40px;
+  }
+  .varietylist.varietylist--office .varietylist__item {
+    height: 186px !important;
+    margin-left: 37px !important;
+    margin-right: 37px !important;
+    padding: 19px !important;
+  }
+  .varietylist.varietylist--office .varietylist__item .varietylist__item__list__description {
+    margin-left: 0px !important;
+  }
+  .varietylist.varietylist--office .varietylist__item .varietylist__item__list__description.phone {
+    color: #aac426;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .varietylist.varietylist--office .varietylist__item .varietylist__item__bottom {
+    display: none;
+  }
   .varietylist .varietylist__item {
     height: 186px !important;
     margin-left: 37px !important;
@@ -8609,6 +8629,26 @@ button.close {
   }
 }
 @media (min-width: 1200px) {
+  .varietylist.varietylist--office {
+    padding-top: 40px;
+  }
+  .varietylist.varietylist--office .varietylist__item {
+    height: 186px !important;
+    margin-left: 37px !important;
+    margin-right: 37px !important;
+    padding: 19px !important;
+  }
+  .varietylist.varietylist--office .varietylist__item .varietylist__item__list__description {
+    margin-left: 0px !important;
+  }
+  .varietylist.varietylist--office .varietylist__item .varietylist__item__list__description.phone {
+    color: #aac426;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .varietylist.varietylist--office .varietylist__item .varietylist__item__bottom {
+    display: none;
+  }
   .varietylist .varietylist__item {
     height: 186px !important;
     margin-left: 37px !important;
@@ -11364,6 +11404,20 @@ button.close {
 .googlemaps-map .googlemaps-map__phone,
 .googlemaps-map .googlemaps-map__mail {
   color: #aac426;
+}
+.googlemaps-map .googlemaps-map__icon {
+  float: left;
+  max-width: 40px;
+}
+.googlemaps-map .googlemaps-map__icon:nth-of-type(2) {
+  margin-left: 10px;
+  max-width: 50px;
+}
+.googlemaps-map .googlemaps-map__label {
+  float: left;
+  font-size: 14px;
+  line-height: 40px;
+  padding-left: 10px;
 }
 /* white background and box outline */
 .gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div {
