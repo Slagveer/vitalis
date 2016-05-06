@@ -610,7 +610,8 @@
     "Primair telefoonnummer": "001 831 623 4644",
     "Aanvullende telefoonnummers": null,
     "Website": "http://www.enzazaden.us",
-    "Primaire categorie": "Zaadleverancier"
+    "Primaire categorie": "Zaadleverancier",
+    "Code": "US"
   },
   {
     "Winkelcode": "EnzaZadenUS4",
@@ -658,6 +659,21 @@
             <option class="googlemaps__select__option" value="gb">
               Verenigd Koningkrijk
             </option>
+            <option class="googlemaps__select__option" value="br">
+              Brazilie
+            </option>
+            <option class="googlemaps__select__option" value="es">
+              Spanje
+            </option>
+            <option class="googlemaps__select__option" value="it">
+              Italie
+            </option>
+            <option class="googlemaps__select__option" value="ch">
+              China
+            </option>
+            <option class="googlemaps__select__option" value="mx">
+              Mexico
+            </option>
           </select>
         </form>
       </div>
@@ -674,15 +690,22 @@
   </div>
 </div>
 <!-- GOOGLEMAPS::END -->
-<!-- TEASERBOX-TEMPLATES::START -->
-<!-- TEASERBOX-NEWS::START -->
+<!-- GOOGLEMAPS-TEMPLATES::START -->
+<!-- GOOGLEMAPS-SELECTOR::START -->
 <script id="googlemaps-selector-template" type="text/x-handlebars-template">
   <option class="googlemaps__select__option" value="{{ Land }}">
     {{ Land }}
   </option>
 </script>
-<!-- TEASERBOX-NEWS::END -->
-<!-- TEASERBOX-TEMPLATES::END -->
+<!-- GOOGLEMAPS-SELECTOR::END -->
+<!-- GOOGLEMAPS-INFO::START -->
+<script id="googlemaps-info-template" type="text/x-handlebars-template">
+  <div class="googlemaps">
+    <h3 class="googlemaps__title">XXXXXX {{ Bedrijfsnaam }}</h3>
+  </div>
+</script>
+<!-- GOOGLEMAPS-INFO::END -->
+<!-- GOOGLEMAPS-TEMPLATES::END -->
 
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade

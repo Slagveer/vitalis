@@ -10,13 +10,16 @@
     $countrySelectorTemplate,
     $country,
     marker,
-    markers,
+    markers = [],
+    officeMarkers = [],
     geocoder,
     countries,
     countriesUnique,
     countriesJSON,
     selectedCountry,
-    map;
+    map,
+    forklift,
+    building;
 
   function Plugin ( element, options ) {
     this.element = element;
@@ -38,6 +41,18 @@
           scrollwheel: true,
           zoom: 8
         });
+        forklift = {
+          url: '../images/forklifttruck.png',
+          size: new google.maps.Size(40, 64),
+          origin: new google.maps.Point(0, 0),
+          anchor: new google.maps.Point(20, 64)
+        }
+        building = {
+          url: '../images/officebuilding.png',
+          size: new google.maps.Size(40, 64),
+          origin: new google.maps.Point(0, 0),
+          anchor: new google.maps.Point(20, 64)
+        };
         geocoder = new google.maps.Geocoder();
         countries = $country.data('offices');
         countriesJSON = JSON.parse(countries);
@@ -59,39 +74,53 @@
           evt.preventDefault();
           selectedCountry = evt.target.value;
           map.setCenter(new google.maps.LatLng(countries[selectedCountry][0],countries[selectedCountry][1]));
-          removeOffices();
           addOffices(selectedCountry);
         });
+        addOffices();
       });
 
       function addOffices(country) {
+        country = (_.isUndefined(country)) ? $country[0].value : country;
         var offices = _.where(countriesJSON.countries, {"Code": country.toUpperCase()});
-        console.log(offices, country, countriesJSON);
-        if (geocoder) {
-          geocoder.geocode({
-            'address': offices[0]['Adresregel 1']
-          }, function(results, status) {
-            console.log(status, results);
-            map.setCenter(results[0].geometry.location);
+
+        if(geocoder) {
+          _.each(offices, function getOfficeAddress(office) {
+            if(_.where(markers, office).length === 0) {
+              markers.push(office);
+              geocoder.geocode({
+                //'address': office['Adresregel 1']
+                'address': office['Postcode'] + ',' + office['Plaats'] + ',' + office['Land']
+              }, function (results, status) {
+                var $infoTemplate = $('#googlemaps-info-template'),
+                  source,
+                  html,
+                  template,
+                  infowindow;
+
+                source = $infoTemplate.html(),
+                template = Handlebars.compile(source),
+                html = template(office);
+                infowindow = new google.maps.InfoWindow({
+                  content: html,
+                  size: new google.maps.Size(150, 50)
+                });
+                if (!_.isUndefined(results[0])) {
+                  map.setCenter(results[0].geometry.location);
+                  marker = new google.maps.Marker({
+                    position: results[0].geometry.location,
+                    icon: (office['Type'] === 'Commercial') ? building : forklift,
+                    map: map,
+                    title: country
+                  });
+                  officeMarkers.push(marker);
+                  google.maps.event.addListener(_.last(officeMarkers), 'click', function() {
+                    infowindow.open(map, this);
+                  });
+                }
+              });
+            }
           });
         }
-        marker = new google.maps.Marker({
-          position: {
-            lat: -34.397,
-            lng: 150.644
-          },
-          map: map,
-          title: country
-        });
-        // for (var i = 0; i < markers.length; i++) {
-        //   markers[i].setMap(map);
-        // }
-      }
-
-      function removeOffices() {
-        // for (var i = 0; i < markers.length; i++) {
-        //   markers[i].setMap(map);
-        // }
       }
     }
   } );
