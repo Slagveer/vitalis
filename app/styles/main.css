@@ -11348,6 +11348,46 @@ button.close {
 .map {
   height: 355px;
 }
+.googlemaps-map {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+}
+.googlemaps-map .googlemaps-map__title {
+  color: #aac426;
+  font-weight: bold;
+}
+.googlemaps-map .googlemaps-map__address {
+  color: #515151;
+}
+.googlemaps-map .googlemaps-map__phone,
+.googlemaps-map .googlemaps-map__mail {
+  color: #aac426;
+}
+/* white background and box outline */
+.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div {
+  /* we have to use !important because we are overwritng inline styles */
+  background-color: transparent !important;
+  box-shadow: none !important;
+  width: auto !important;
+  height: auto !important;
+}
+/* arrow colour */
+.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div > div > div {
+  background-color: #ffffff !important;
+}
+/* close button */
+.gm-style > div:first-child > div + div > div:last-child > div > div:last-child {
+  margin-right: 25px;
+  margin-top: 25px;
+}
+/* image icon inside close button */
+/* positioning of infowindow */
+.gm-style-iw {
+  top: 22px !important;
+  left: 22px !important;
+}
 @media (min-width: 768px) and (max-width: 1199px) {
   .container,
   .container-fluid {

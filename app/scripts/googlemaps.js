@@ -29,6 +29,53 @@
     this.init();
   }
 
+  Plugin.CUSTOMMAP = [
+    {
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "water",
+      "stylers": [
+        {
+          "visibility": "on"
+        },
+        {
+          "color": "#2f343b"
+        }
+      ]
+    },
+    {
+      "featureType": "landscape",
+      "stylers": [
+        {
+          "visibility": "on"
+        },
+        {
+          "color": "#82C032"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative",
+      "elementType": "geometry.stroke",
+      "stylers": [
+        {
+          "visibility": "on"
+        },
+        {
+          "color": "#2f343b"
+        },
+        {
+          "weight": 1
+        }
+      ]
+    }
+  ];
+
   $.extend( Plugin.prototype, {
     init: function() {
       $map = $(this.element);
@@ -36,11 +83,16 @@
       GoogleMapsLoader.KEY = 'AIzaSyA9i6uziMYIQk9ZyHd4sG0Vw-gRIVP39C4	';
       GoogleMapsLoader.LIBRARIES = ['geometry', 'places'];
       GoogleMapsLoader.load(function googleLoaded(google) {
+        var enzaMapType = new google.maps.StyledMapType(Plugin.CUSTOMMAP, {
+          name: 'Enza Style'
+        });
         map = new google.maps.Map($map[0],{
           center: {lat: -34.397, lng: 150.644},
           scrollwheel: true,
-          zoom: 8
+          zoom: 4
         });
+        map.mapTypes.set('enza', enzaMapType);
+        map.setMapTypeId('enza');
         forklift = {
           url: '../images/forklifttruck.png',
           size: new google.maps.Size(40, 64),
@@ -85,6 +137,9 @@
 
         if(geocoder) {
           _.each(offices, function getOfficeAddress(office) {
+            _.extend(office, {
+              "TypeName": (office['Type'] === 'Commercial') ? 'Distrubitor' : 'Office'
+            });
             if(_.where(markers, office).length === 0) {
               markers.push(office);
               geocoder.geocode({
