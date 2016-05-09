@@ -21,27 +21,44 @@
 </head>
 <body>
 
+<!-- VARIETY-DETAIL::START -->
 <!-- VARIETY-DETAIL-HEADER::START -->
 <div class="container-fluid variety-detail">
   <div class="row">
-    <div class="col-xs-12 col-sm-12">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fullsize">
       <section>
-        <img class="variety-detail__image" src="http://dummyimage.com/1000x800/ff0000/fff" alt="">
+        <img class="variety-detail__image hisrc" src="http://loremflickr.com/1200/250/news?random=1" data-1x="http://loremflickr.com/2400/500/news?random=1" data-2x="http://loremflickr.com/news/news/4400/1000?random=1" alt="">
+        <span class="variety-detail__image-title">Tomatos</span>
       </section>
     </div>
-    <div class="col-xs-12 col-sm-12">
+  </div>
+</div>
+<div class="container variety-detail">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
       <section class="variety-detail__header">
         <p class="variety-detail__title">
           Etude
         </p>
+      </section>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+      <section class="variety-detail__header">
         <p class="variety-detail__description">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
         </p>
       </section>
     </div>
-    <div class="col-xs-12 col-sm-12">
+  </div>
+</div>
+<!-- VARIETY-DETAIL-HEADER::END -->
+<!-- VARIETY-DETAIL::END -->
+<!-- VARIETY-DETAIL-HEADER::START -->
+<div class="container variety-detail">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <section class="variety-detail__container">
-        <img class="variety-detail__image" src="http://dummyimage.com/1000x800/ff0000/fff" alt="">
+        <img class="variety-detail__image hisrc" src="http://loremflickr.com/1200/250/news?random=2" data-1x="http://loremflickr.com/2400/500/news?random=2" data-2x="http://loremflickr.com/news/news/4400/1000?random=2" alt="">
         <dl class="variety-detail__list">
           <dt class="variety-detail__list__title">Crop</dt>
           <dd class="variety-detail__list__description">Tomato</dd>
@@ -108,6 +125,7 @@
 
 <!-- build:js scripts/main.js -->
 <script src="../bower_components/jquery/jquery.js"></script>
+<script src="../bower_components/hisrc/hisrc.js"></script>
 <!-- fileblock:js appScript -->
 <script src="/scripts/core.js"></script>
 <script src="/scripts/carousel.js"></script>
