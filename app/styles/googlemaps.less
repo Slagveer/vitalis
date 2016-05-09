@@ -57,10 +57,10 @@
   }
   .googlemaps-map__icon {
     float: left;
-    max-width: 40px;
+    max-width: 36px;
     &:nth-of-type(2) {
       margin-left: 10px;
-      max-width: 50px;
+      max-width: 36px;
     }
   }
   .googlemaps-map__label {
@@ -98,6 +98,8 @@
 .gm-style > div:first-child > div + div > div:last-child > div > div:last-child > img
 {
   //display: none;
+  right: 40px !important;
+  top: 40px !important;
 }
 
 /* positioning of infowindow */
@@ -105,4 +107,15 @@
 {
   top: 22px !important;
   left: 22px !important;
+}
+
+.gm-style-iw {
+  &+ div {
+    right: 40px !important;
+    top: 30px !important;
+    &+ img {
+      right: 40px !important;
+      top: 30px !important;
+    }
+  }
 }

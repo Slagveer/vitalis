@@ -11407,11 +11407,11 @@ button.close {
 }
 .googlemaps-map .googlemaps-map__icon {
   float: left;
-  max-width: 40px;
+  max-width: 36px;
 }
 .googlemaps-map .googlemaps-map__icon:nth-of-type(2) {
   margin-left: 10px;
-  max-width: 50px;
+  max-width: 36px;
 }
 .googlemaps-map .googlemaps-map__label {
   float: left;
@@ -11437,10 +11437,22 @@ button.close {
   margin-top: 25px;
 }
 /* image icon inside close button */
+.gm-style > div:first-child > div + div > div:last-child > div > div:last-child > img {
+  right: 40px !important;
+  top: 40px !important;
+}
 /* positioning of infowindow */
 .gm-style-iw {
   top: 22px !important;
   left: 22px !important;
+}
+.gm-style-iw + div {
+  right: 40px !important;
+  top: 30px !important;
+}
+.gm-style-iw + div + img {
+  right: 40px !important;
+  top: 30px !important;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .container,
