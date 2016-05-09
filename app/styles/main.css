@@ -10371,6 +10371,7 @@ button.close {
   position: relative;
   width: 275px;
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
 .targetaudience .targetaudience__select:hover {
   color: #aac426;
@@ -10378,7 +10379,7 @@ button.close {
 .targetaudience .targetaudience__select .targetaudience__select__option {
   color: #515151;
   float: left;
-  display: inline-block;
+  display: block;
   line-height: 33.5px;
   padding-left: 50px;
 }
