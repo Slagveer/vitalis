@@ -111,7 +111,7 @@
 // DESKTOP::START
 @media (min-width: @desktop_min) {
   .navigation {
-    background: url('../images/navigation.fw.png') repeat-x 0 -19px !important;
+    background: url('../images/navigation-vitalis.fw.png') repeat-x 0 -19px !important;
     font-size: 18px !important;
     .container-fluid {
       position: relative;
@@ -466,7 +466,7 @@
           }
         }
         .navigation__menu__item__label {
-          background-color: @navigation-backgroundcolor;
+          background-color: @blue;//@navigation-backgroundcolor;
           border: 1px solid @dark-grey;
           border-left: none;
           border-right: none;
@@ -559,7 +559,7 @@
     height: 103px;//@navbar-height + @navbar-margin-bottom/2;
     margin: 0px;
     &.navigation__button--hamburger {
-      background-color: @navigation-backgroundcolor;
+      background-color: @blue;//@navigation-backgroundcolor;
       //background-image: url('../images/icon-cross.svg');
       //background-position: center;
       //background-repeat: no-repeat;
@@ -631,10 +631,13 @@
       svg {
         height: 27px;
         width: 27px;
+        path {
+          fill: @blue;
+        }
       }
     }
     &.navigation__button--enza {
-      background-color: @navigation-backgroundcolor;
+      background-color: @blue;//@navigation-backgroundcolor;
       color: @navigation-color;
       height: 103px;//@navbar-height + @navbar-margin-bottom/2;
       order: 2;

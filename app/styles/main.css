@@ -6829,7 +6829,7 @@ button.close {
 }
 @media (min-width: 1200px) {
   .navigation {
-    background: url('../images/navigation.fw.png') repeat-x 0 -19px !important;
+    background: url('../images/navigation-vitalis.fw.png') repeat-x 0 -19px !important;
     font-size: 18px !important;
   }
   .navigation .container-fluid {
@@ -7145,7 +7145,7 @@ button.close {
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--logo .navigation__menu__item__label,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label {
-  background-color: #222222;
+  background-color: #008095;
   border: 1px solid #515151;
   border-left: none;
   border-right: none;
@@ -7238,7 +7238,7 @@ button.close {
   margin: 0px;
 }
 .navigation .navigation__button.navigation__button--hamburger {
-  background-color: #222222;
+  background-color: #008095;
   background-size: 15px 15px;
   height: 103px;
   order: 1;
@@ -7288,8 +7288,11 @@ button.close {
   height: 27px;
   width: 27px;
 }
+.navigation .navigation__button.navigation__button--search svg path {
+  fill: #008095;
+}
 .navigation .navigation__button.navigation__button--enza {
-  background-color: #222222;
+  background-color: #008095;
   color: #ffffff;
   height: 103px;
   order: 2;
