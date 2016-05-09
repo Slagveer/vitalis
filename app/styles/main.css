@@ -8921,6 +8921,7 @@ button.close {
 .variety-detail .variety-detail__header .variety-detail__description {
   font-family: 'Open Sans', sans-serif;
   font-size: 13.5px;
+  padding-bottom: 52px !important;
   padding-left: 13px;
   padding-top: 15px;
 }
@@ -9154,9 +9155,6 @@ button.close {
   font-size: 13.5px;
   padding-left: 20px;
   padding-top: 15px;
-}
-.crop-overview .crop-overview__products {
-  padding-top: 52px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .content__introduction__title.quote {
