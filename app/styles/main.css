@@ -1591,7 +1591,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 960px;
   }
 }
 .container-fluid {
@@ -6834,7 +6834,7 @@ button.close {
   }
   .navigation .container-fluid {
     position: relative;
-    width: 1170px;
+    width: 960px;
   }
   .navigation .container-fluid .navigation__menu {
     margin-left: -15px;
@@ -9875,6 +9875,7 @@ button.close {
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .logo,
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .logo {
+  background-color: #ffffff;
   border: 1px solid #ffffff;
   min-width: 90px;
   width: 100%;
