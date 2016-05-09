@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed);
 @import url(https://fonts.googleapis.com/css?family=Crete+Round:400,400italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(../bower_components/animate.css/animate.css);
@@ -1590,7 +1591,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 960px;
+    width: 1170px;
   }
 }
 .container-fluid {
@@ -6833,7 +6834,7 @@ button.close {
   }
   .navigation .container-fluid {
     position: relative;
-    width: 960px;
+    width: 1170px;
   }
   .navigation .container-fluid .navigation__menu {
     margin-left: -15px;
@@ -9810,7 +9811,7 @@ button.close {
   margin-top: -3px;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label {
-  background-color: #222222;
+  background-color: #008095;
   border-bottom: 1px solid #cccccc;
   color: #ffffff;
   padding: 19px 0px 19px 30px;
@@ -9888,7 +9889,7 @@ button.close {
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .copyright,
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .copyright {
   clear: left;
-  color: #515151;
+  color: #a5d2d9;
   float: left;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .country,
@@ -9977,7 +9978,7 @@ button.close {
   color: #ffffff;
 }
 .navigation .footer__sub-menu {
-  background-color: #222222;
+  background-color: #008095;
   border-bottom: 0.5px solid #ffffff;
   display: none;
   height: 100%;
@@ -9994,7 +9995,7 @@ button.close {
   max-width: 153px;
 }
 .navigation .footer__sub-menu .copyright {
-  color: #515151;
+  color: #a5d2d9;
   font-family: 'Open Sans', sans-serif;
   font-size: 8px;
   padding-left: 30;
