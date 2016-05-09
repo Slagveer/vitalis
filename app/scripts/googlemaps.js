@@ -82,7 +82,7 @@
       $map = $(this.element);
       $country = $('.js-country-selector');
       $offices = $('.js-offices');
-      GoogleMapsLoader.KEY = 'AIzaSyA9i6uziMYIQk9ZyHd4sG0Vw-gRIVP39C4	';
+      GoogleMapsLoader.KEY = 'AIzaSyA7lvGhDgbfCng-3_3aORo_1lhAo4oHeL0 ';
       GoogleMapsLoader.LIBRARIES = ['geometry', 'places'];
       GoogleMapsLoader.load(function googleLoaded(google) {
         var enzaMapType = new google.maps.StyledMapType(Plugin.CUSTOMMAP, {
