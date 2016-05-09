@@ -48,8 +48,8 @@
 // DESKTOP::START
 @media (min-width: @desktop_min) {
   .navigation {
-    background: none !important;
     &.footer {
+      background: none !important;
       .container-fluid,
       .container {
         .row {
@@ -292,21 +292,33 @@
     display: none;
     height: 100%;
     position: absolute;
-    padding: 60px * @retina-factor 30px * @retina-factor 0px 0px;
+    padding: 0px * @retina-factor 30px * @retina-factor 0px 0px;
     right: 0px;
     text-align: center;
     top: 0px;
     width: 244px * @retina-factor;
+    .figure {
+      background-color: @white;
+      border-radius: 0 0 10px 10px;
+      height: 100px * @retina-factor;
+      top: 46px;
+    }
     .logo {
       border: 1px solid #fff;
       margin-left: 40px * @retina-factor;
       max-width: 306px * @retina-factor;
+      position: absolute;
+      right: 27px;
+      top: 10px;
     }
     .copyright {
       color: @blue-light;
       font-family: @font-family-open-sanse;
       font-size: 16px * @retina-factor;
       padding-left: 60 * @retina-factor;
+      position: absolute;
+      right: 27px;
+      top: 50px;
     }
   }}
 // MOBILE::END

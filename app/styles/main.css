@@ -6829,7 +6829,7 @@ button.close {
 }
 @media (min-width: 1200px) {
   .navigation {
-    background: url('../images/navigation.fw.png') repeat-x 0 -19px;
+    background: url('../images/navigation.fw.png') repeat-x 0 -19px !important;
     font-size: 18px !important;
   }
   .navigation .container-fluid {
@@ -9725,7 +9725,7 @@ button.close {
   }
 }
 @media (min-width: 1200px) {
-  .navigation {
+  .navigation.footer {
     background: none !important;
   }
   .navigation.footer .container-fluid .row .fullsize,
@@ -9983,22 +9983,34 @@ button.close {
   display: none;
   height: 100%;
   position: absolute;
-  padding: 30px 15px 0px 0px;
+  padding: 0px 15px 0px 0px;
   right: 0px;
   text-align: center;
   top: 0px;
   width: 122px;
 }
+.navigation .footer__sub-menu .figure {
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+  height: 50px;
+  top: 46px;
+}
 .navigation .footer__sub-menu .logo {
   border: 1px solid #fff;
   margin-left: 20px;
   max-width: 153px;
+  position: absolute;
+  right: 27px;
+  top: 10px;
 }
 .navigation .footer__sub-menu .copyright {
   color: #a5d2d9;
   font-family: 'Open Sans', sans-serif;
   font-size: 8px;
   padding-left: 30;
+  position: absolute;
+  right: 27px;
+  top: 50px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .item__image__text {
