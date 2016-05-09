@@ -25,7 +25,7 @@
                       .mail {
                         clear: none;
                         font-size: 18px * @retina-factor;
-                        line-height:60px * @retina-factor;
+                        line-height: 60px * @retina-factor;
                         padding-right: 60px * @retina-factor;
                       }
                     }
@@ -35,6 +35,7 @@
             }
             .footer__sub-menu {
               display: block;
+              z-index: 1;
             }
           }
         }
@@ -47,6 +48,7 @@
 // DESKTOP::START
 @media (min-width: @desktop_min) {
   .navigation {
+    background: none !important;
     &.footer {
       .container-fluid,
       .container {
@@ -57,7 +59,13 @@
             .footer__menu {
               float: left;
               width: 100%;
+              .nav {
+                &.navbar-nav {
+                  float: none !important;
+                }
+              }
               .footer__menu__item {
+                float: none !important;
                 &:last-child {
                   display: none;
                 }
@@ -81,6 +89,7 @@
             }
             .footer__sub-menu {
               display: block;
+              z-index: 1;
             }
           }
         }
