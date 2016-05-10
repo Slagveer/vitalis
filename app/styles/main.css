@@ -12462,7 +12462,7 @@ button.close {
   text-align: left;
 }
 .googlemaps .googlemaps__label {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 16px;
 }
 .googlemaps .googlemaps__select {
@@ -12470,7 +12470,7 @@ button.close {
   border: 1px solid #cccccc;
   border-radius: 0px;
   color: #515151;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 13.5px;
   height: 35px;
   padding: 0 15px;
@@ -12479,7 +12479,7 @@ button.close {
   -webkit-appearance: none;
 }
 .googlemaps .googlemaps__select:hover {
-  color: #aac426;
+  color: #008095;
 }
 .googlemaps .googlemaps__select .googlemaps__select__option {
   color: #515151;
@@ -12489,7 +12489,7 @@ button.close {
   padding-left: 50px;
 }
 .googlemaps .googlemaps__select .googlemaps__select__option:checked {
-  color: #aac426;
+  color: #008095;
 }
 .googlemaps .googlemaps__select .googlemaps__select__option:not(:checked) {
   color: #515151;
@@ -12504,7 +12504,7 @@ button.close {
   padding: 20px;
 }
 .googlemaps-map .googlemaps-map__title {
-  color: #aac426;
+  color: #008095;
   font-weight: bold;
 }
 .googlemaps-map .googlemaps-map__address {
@@ -12512,7 +12512,7 @@ button.close {
 }
 .googlemaps-map .googlemaps-map__phone,
 .googlemaps-map .googlemaps-map__mail {
-  color: #aac426;
+  color: #008095;
 }
 .googlemaps-map .googlemaps-map__icon {
   float: left;
