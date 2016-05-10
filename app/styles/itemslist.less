@@ -66,7 +66,7 @@
   }
   .itemslist__header {
     line-height: 80px * @retina-factor;
-    font-family: @font-family-crete;
+    font-family: @font-family-heart;
     font-size: 42px * @retina-factor;
     font-weight: bold;
     margin-bottom: 36px * @retina-factor;
@@ -75,6 +75,7 @@
   }
   .itemslist__item {
     border: 1px solid @grey;
+    border-radius: 20px;
     display: flex;
     margin-top: 27px * @retina-factor;
     padding: 19px * @retina-factor 0px;
@@ -107,7 +108,7 @@
         padding: 4px * @retina-factor 10px * @retina-factor;
         text-align: left;
         .label-square {
-          color: @itemlist-color;
+          color: @blue;//@itemlist-color;
           font-size: 17px * @retina-factor;//@label;
           line-height: @label-line-height * @retina-factor;
           font-weight: bold;
@@ -118,7 +119,7 @@
       .itemslist__item__date {
         clear: left;
         float: left;
-        font-family: @font-family-crete;
+        font-family: @font-family-heart;
         margin-top: -11px * @retina-factor;
       }
       .itemslist__item__description {
@@ -146,20 +147,20 @@
     .itemslist__item__link {
       align-self: flex-end;
       bottom: 20px * @retina-factor;
-      color: @green;
+      color: @blue;
       display: inline-block;
       flex-shrink: 0;
       font-size: @label;
       height: 48px * @retina-factor;//2 * @label;
       line-height: 1.8 * @label-line-height * @retina-factor;
       position: absolute;
-      right: 28px * @retina-factor;
+      right: 56px * @retina-factor;
       text-align: center;
       vertical-align: middle;
       width: 48px * @retina-factor;//2 * @label;
       svg {
         path {
-          fill: @green;
+          fill: @blue;
         }
       }
     }

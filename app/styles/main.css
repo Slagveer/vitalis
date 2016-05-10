@@ -9327,15 +9327,18 @@ button.close {
 .teaserbox.teaserbox--extra-content .teaserbox__description {
   bottom: inherit;
   color: #515151;
+  font-size: 17px;
   left: 16px;
-  line-height: 15.5px;
+  line-height: 20px;
   top: 178px;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__description .teaserbox__description__title {
   color: #515151;
-  font-size: 13.5px;
+  font-size: 17px;
+  font-weight: bold;
   line-height: 17.5px;
   padding-bottom: 6px;
+  width: 100%;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__link {
   bottom: 10px;
@@ -9559,7 +9562,7 @@ button.close {
 }
 .itemslist .itemslist__header {
   line-height: 40px;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 21px;
   font-weight: bold;
   margin-bottom: 18px;
@@ -9568,6 +9571,7 @@ button.close {
 }
 .itemslist .itemslist__item {
   border: 1px solid #cccccc;
+  border-radius: 20px;
   display: flex;
   margin-top: 13.5px;
   padding: 9.5px 0px;
@@ -9603,7 +9607,7 @@ button.close {
   text-align: left;
 }
 .itemslist .itemslist__item .itemslist__item__content .itemslist__item__title .label-square {
-  color: #515151;
+  color: #008095;
   font-size: 8.5px;
   line-height: 6pt;
   font-weight: bold;
@@ -9613,7 +9617,7 @@ button.close {
 .itemslist .itemslist__item .itemslist__item__content .itemslist__item__date {
   clear: left;
   float: left;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   margin-top: -5.5px;
 }
 .itemslist .itemslist__item .itemslist__item__content .itemslist__item__description.block-with-text {
@@ -9640,20 +9644,20 @@ button.close {
 .itemslist .itemslist__item .itemslist__item__link {
   align-self: flex-end;
   bottom: 10px;
-  color: #aac426;
+  color: #008095;
   display: inline-block;
   flex-shrink: 0;
   font-size: 11pt;
   height: 24px;
   line-height: 10.8pt;
   position: absolute;
-  right: 14px;
+  right: 28px;
   text-align: center;
   vertical-align: middle;
   width: 24px;
 }
 .itemslist .itemslist__item .itemslist__item__link svg path {
-  fill: #aac426;
+  fill: #008095;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .varietylist.varietylist--office {
@@ -9669,7 +9673,7 @@ button.close {
     margin-left: 0px !important;
   }
   .varietylist.varietylist--office .varietylist__item .varietylist__item__list__description.phone {
-    color: #aac426;
+    color: #008095;
     font-size: 12px;
     font-weight: bold;
   }
@@ -9700,7 +9704,7 @@ button.close {
     margin-left: 0px !important;
   }
   .varietylist.varietylist--office .varietylist__item .varietylist__item__list__description.phone {
-    color: #aac426;
+    color: #008095;
     font-size: 12px;
     font-weight: bold;
   }
@@ -9724,6 +9728,7 @@ button.close {
 .varietylist .varietylist__item {
   align-content: stretch;
   border: 1px solid #cccccc;
+  border-radius: 20px;
   display: flex;
   flex-flow: column nowrap;
   margin-top: 7.5px;
@@ -9754,10 +9759,10 @@ button.close {
 }
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__title {
   clear: right;
-  color: #aac426;
+  color: #008095;
   display: inline;
   float: left;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 14px;
   line-height: 6pt;
   padding: 2px;
@@ -9794,7 +9799,7 @@ button.close {
 }
 .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__tags {
   clear: left;
-  color: #aac426;
+  color: #008095;
   float: left;
   font-family: 'Open Sans', sans-serif;
   font-size: 5.5pt;
@@ -9810,15 +9815,15 @@ button.close {
 }
 .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__tags .badge.badge--variety {
   border-radius: 0px;
-  background-color: #f0f6d2;
-  color: #aac426;
+  background-color: #74ebff;
+  color: #008095;
   margin: 1.5px;
   padding: 1.5px;
 }
 .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__link {
   align-self: flex-end;
   bottom: 12.5px;
-  color: #aac426;
+  color: #008095;
   display: inline-block;
   flex-shrink: 0;
   font-size: 5.5pt;
@@ -9831,7 +9836,7 @@ button.close {
   width: 24px;
 }
 .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__link svg path {
-  fill: #aac426;
+  fill: #008095;
 }
 .block-with-text {
   display: block;
@@ -12328,7 +12333,7 @@ button.close {
   padding-right: 30px;
 }
 .content .content__paragraaf .content__paragraaf__title {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 23.5px;
   font-weight: bold;
   margin-bottom: 3px;
@@ -12352,12 +12357,12 @@ button.close {
   padding-top: 50px;
 }
 .extra-content .extra-content__header {
-  line-height: 80px;
+  line-height: 40px;
   font-family: 'Crete Round', serif;
-  font-size: 42px;
+  font-size: 21px;
   font-weight: bold;
-  margin-bottom: 26px;
-  margin-top: 6px;
+  margin-bottom: 13px;
+  margin-top: 3px;
   text-align: center;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
