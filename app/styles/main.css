@@ -9585,6 +9585,7 @@ button.close {
 }
 .itemslist .itemslist__item .itemslist__item__image {
   border: 1px solid #cccccc;
+  border-radius: 20px;
   float: left;
   height: 86.5px;
   max-width: 88.5px;
@@ -11977,6 +11978,7 @@ button.close {
 }
 .searchresultlist .searchresultlist__item {
   border: 1px solid #cccccc;
+  border-radius: 20px;
   display: block;
   height: 86px;
   margin-bottom: 15px;
@@ -12409,7 +12411,7 @@ button.close {
   border-radius: 0px;
   color: #515151;
   float: left;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 13.5px;
   height: 35px;
   margin-left: 20px;
@@ -12420,7 +12422,7 @@ button.close {
   -webkit-appearance: none;
 }
 .sortby .sortby__select:hover {
-  color: #aac426;
+  color: #008095;
 }
 .sortby .sortby__select .sortby__select__option {
   color: #515151;
@@ -12430,7 +12432,7 @@ button.close {
   padding-left: 50px;
 }
 .sortby .sortby__select .sortby__select__option:checked {
-  color: #aac426;
+  color: #008095;
 }
 .sortby .sortby__select .sortby__select__option:not(:checked) {
   color: #515151;
@@ -12440,7 +12442,7 @@ button.close {
   background-position: 30px;
   background-size: 14px;
   float: left;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 16px;
   line-height: 32px;
   padding-left: 52px;
@@ -12448,7 +12450,7 @@ button.close {
 .sortby .numberresults .numberresults__header .numberresults__header__container .numberresults__header__container__text {
   color: #cccccc;
   letter-spacing: 1.5px;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 15px;
   margin-left: 30px;
   white-space: nowrap;
