@@ -70,7 +70,7 @@
   }
   .vacancieslist__header {
     line-height: 80px * @retina-factor;
-    font-family: @font-family-crete;
+    font-family: @font-family-heart;
     font-size: 42px * @retina-factor;
     font-weight: bold;
     margin-bottom: 36px * @retina-factor;
@@ -79,6 +79,7 @@
   }
   .vacancieslist__item {
     border: 1px solid @grey;
+    border-radius: 20px;
     display: block;
     height: 172px * @retina-factor;
     margin-bottom: 30px * @retina-factor;
@@ -92,10 +93,10 @@
       padding-left: 30px * @retina-factor;
       .vacancieslist__item__title {
         clear: right;
-        color: @green;
+        color: @blue;
         display: inline;
         float: left;
-        font-family: @font-family-crete;
+        font-family: @font-family-heart;
         font-size: 30px * @retina-factor;
         letter-spacing: 1px;
         line-height: @label-line-height * @retina-factor;
@@ -115,7 +116,7 @@
     .vacancieslist__item__link {
       align-self: flex-end;
       bottom: 20px * @retina-factor;
-      color: @green;
+      color: @blue;
       display: inline-block;
       flex-shrink: 0;
       font-size: @label;
@@ -129,8 +130,8 @@
       svg {
         path,
         circle {
-          fill: @green;
-          stroke: @green;
+          fill: @blue;
+          stroke: @blue;
         }
       }
     }
@@ -144,7 +145,7 @@
     width: 100%;
     &:hover,
     &:active {
-      color: @green;
+      color: @blue;
       .vacancieslist__view-all__link {
         svg {
           path,
@@ -156,7 +157,7 @@
       }
     }
     .vacancieslist__view-all__title {
-      font-family: @font-family-crete;
+      font-family: @font-family-heart;
       line-height: 70px * @retina-factor;
       padding-right: 80px * @retina-factor;
     }
@@ -177,8 +178,8 @@
       svg {
         path,
         circle {
-          fill: @green;
-          stroke: @green;
+          fill: @blue;
+          stroke: @blue;
         }
       }
     }

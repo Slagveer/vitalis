@@ -11199,7 +11199,7 @@ button.close {
 }
 .container--carousel.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__quote {
   border: none;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 20.5px;
 }
 .container--carousel.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__name,
@@ -11226,7 +11226,7 @@ button.close {
   width: 10px;
 }
 .container--carousel.container--carousel-detail .carousel .carousel-indicators li.active {
-  background-color: #aac426;
+  background-color: #008095;
   height: 10px;
   margin: 0 0 0 7.5px;
   width: 10px;
@@ -11258,7 +11258,7 @@ button.close {
   bottom: 52.5px;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__text {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 45px;
   position: absolute;
   text-align: center;
@@ -11270,7 +11270,7 @@ button.close {
   border: 1px solid #ffffff;
   border-radius: 50px;
   color: #ffffff;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 13.5px;
   height: 40.5px;
   max-width: 155px;
@@ -11278,18 +11278,18 @@ button.close {
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:hover,
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:active {
-  border-color: #aac426;
+  border-color: #008095;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:hover .carousel-caption__button__text,
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:active .carousel-caption__button__text {
-  color: #aac426;
+  color: #008095;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:hover .carousel-caption__button__arrow svg path.circle,
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:active .carousel-caption__button__arrow svg path.circle,
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:hover .carousel-caption__button__arrow svg .arrow,
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:active .carousel-caption__button__arrow svg .arrow {
-  stroke: #aac426;
-  fill: #aac426;
+  stroke: #008095;
+  fill: #008095;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button .carousel-caption__button__text {
   float: left;
@@ -11325,7 +11325,7 @@ button.close {
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__overlay {
   position: absolute;
-  background-color: #aac426;
+  background-color: #008095;
   opacity: 0;
   width: 100%;
   height: 100%;
@@ -11337,7 +11337,7 @@ button.close {
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__image__text {
   color: #ffffff;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 15px;
   height: 100%;
   line-height: 60px;
@@ -11417,7 +11417,7 @@ button.close {
   text-align: center;
 }
 .targetaudience .targetaudience__label {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 16px;
 }
 .targetaudience .targetaudience__select {
@@ -11505,7 +11505,7 @@ button.close {
 }
 .vacancieslist .vacancieslist__header {
   line-height: 40px;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 21px;
   font-weight: bold;
   margin-bottom: 18px;
@@ -11514,6 +11514,7 @@ button.close {
 }
 .vacancieslist .vacancieslist__item {
   border: 1px solid #cccccc;
+  border-radius: 20px;
   display: block;
   height: 86px;
   margin-bottom: 15px;
@@ -11529,10 +11530,10 @@ button.close {
 }
 .vacancieslist .vacancieslist__item .vacancieslist__item__content .vacancieslist__item__title {
   clear: right;
-  color: #aac426;
+  color: #008095;
   display: inline;
   float: left;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 15px;
   letter-spacing: 1px;
   line-height: 6pt;
@@ -11551,7 +11552,7 @@ button.close {
 .vacancieslist .vacancieslist__item .vacancieslist__item__link {
   align-self: flex-end;
   bottom: 10px;
-  color: #aac426;
+  color: #008095;
   display: inline-block;
   flex-shrink: 0;
   font-size: 11pt;
@@ -11565,8 +11566,8 @@ button.close {
 }
 .vacancieslist .vacancieslist__item .vacancieslist__item__link svg path,
 .vacancieslist .vacancieslist__item .vacancieslist__item__link svg circle {
-  fill: #aac426;
-  stroke: #aac426;
+  fill: #008095;
+  stroke: #008095;
 }
 .vacancieslist .vacancieslist__view-all {
   display: inline-block;
@@ -11578,7 +11579,7 @@ button.close {
 }
 .vacancieslist .vacancieslist__view-all:hover,
 .vacancieslist .vacancieslist__view-all:active {
-  color: #aac426;
+  color: #008095;
 }
 .vacancieslist .vacancieslist__view-all:hover .vacancieslist__view-all__link svg path,
 .vacancieslist .vacancieslist__view-all:active .vacancieslist__view-all__link svg path,
@@ -11588,7 +11589,7 @@ button.close {
   stroke: #515151;
 }
 .vacancieslist .vacancieslist__view-all .vacancieslist__view-all__title {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   line-height: 35px;
   padding-right: 40px;
 }
@@ -11609,8 +11610,8 @@ button.close {
 }
 .vacancieslist .vacancieslist__view-all .vacancieslist__view-all__link svg path,
 .vacancieslist .vacancieslist__view-all .vacancieslist__view-all__link svg circle {
-  fill: #aac426;
-  stroke: #aac426;
+  fill: #008095;
+  stroke: #008095;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .row.row__list {
@@ -11640,6 +11641,7 @@ button.close {
     max-height: 201px !important;
   }
   .vacancy .vacancy__header .vacancy__title {
+    font-weight: bold;
     padding-left: 62px !important;
     padding-top: 47px !important;
     text-align: left;
@@ -11657,7 +11659,7 @@ button.close {
 .vacancy .vacancy__image-title {
   bottom: 0px;
   color: #ffffff;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 27.5px;
   left: 0px;
   line-height: 211px;
@@ -11675,7 +11677,7 @@ button.close {
   margin-bottom: 31px;
 }
 .vacancy .vacancy__header .vacancy__title {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 32px;
   padding-left: 20px;
   padding-top: 27.5px;
