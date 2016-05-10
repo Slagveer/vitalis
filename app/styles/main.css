@@ -9126,8 +9126,8 @@ button.close {
     padding-right: 15px !important;
   }
   .container .row .fullsize .teaserbox.teaserbox--icon {
-    margin-left: -15.5px;
-    margin-right: -14.5px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -9136,8 +9136,8 @@ button.close {
     padding-right: 15px !important;
   }
   .fullsize .teaserbox.teaserbox--icon {
-    margin-left: -15.5px;
-    margin-right: -14.5px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 .teaserbox {
@@ -9145,8 +9145,8 @@ button.close {
   border-radius: 20px;
   color: #008095;
   display: block;
-  height: 250px;
-  max-height: 250px;
+  height: 310px;
+  max-height: 310px;
   padding: 15px 15px 15px 15px;
   position: relative;
   overflow: hidden;
@@ -9189,8 +9189,10 @@ button.close {
 }
 .teaserbox.teaserbox--icon {
   background-color: #fff;
-  margin-left: 8.5px;
-  margin-right: -7.5px;
+  border: 1px solid #ededed;
+  margin-bottom: 18px;
+  margin-left: 0px;
+  margin-right: 0x;
 }
 .teaserbox.teaserbox--icon .teaserbox__description {
   bottom: 31px;
@@ -9373,8 +9375,9 @@ button.close {
 .teaserbox.teaserbox--story,
 .teaserbox.teaserbox--news--grey {
   background-color: #000;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-bottom: 18px;
+  margin-left: 0px;
+  margin-right: 0px;
   padding: 22.5px;
 }
 .teaserbox.teaserbox--news .teaserbox__image,
