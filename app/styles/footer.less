@@ -121,23 +121,23 @@
     color: @white;
     text-decoration: none;
     &:hover {
-      color: @green;
+      color: @red;
     }
   }
   float: left;
   margin-bottom: 60px * @retina-factor;
   &:hover {
-    color: @green;
+    color: @red;
     svg {
       path,
       polygon {
-        fill: @green;
+        fill: @red;
       }
     }
   }
   &:active {
-    background-color: @navigation-backgroundcolor;
-    color: @green;
+    background-color: @blue;//@navigation-backgroundcolor;
+    color: @red;
   }
 }
 // footer-icon::end
@@ -221,19 +221,19 @@
               width: 95px * @retina-factor;
             }
             &:hover {
-              background-color: @navigation-backgroundcolor;
+              background-color: @blue;//@navigation-backgroundcolor;
             }
           }
           &:active {
-            background-color: @navigation-backgroundcolor;
+            background-color: @blue;//@navigation-backgroundcolor;
             fill: red;
           }
         }
         &:hover {
-          color: @green;
+          color: @red;
         }
         &:active {
-          background-color: @green;
+          background-color: @red;
           color: @white;
         }
         &.footer__menu__item__label--contact,
@@ -280,7 +280,7 @@
             color: @white;
           }
           &:active {
-            background-color: @navigation-backgroundcolor;
+            background-color: @blue;//@navigation-backgroundcolor;
             color: @white;
           }
         }
