@@ -9955,7 +9955,7 @@ button.close {
 .variety-detail .variety-detail__image-title {
   bottom: 0px;
   color: #ffffff;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 27.5px;
   left: 0px;
   line-height: 211px;
@@ -9973,7 +9973,7 @@ button.close {
   margin-bottom: -8px;
 }
 .variety-detail .variety-detail__header .variety-detail__title {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 32px;
   padding-left: 13px;
   padding-top: 27.5px;
@@ -10010,7 +10010,7 @@ button.close {
   padding-top: 10px;
 }
 .variety-detail .variety-detail__brochures .variety-detail__brochures__title {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 17px;
   margin-bottom: 11px;
   padding-left: 14px;
@@ -10026,7 +10026,7 @@ button.close {
   padding: 5px 0;
 }
 .variety-detail .variety-detail__brochures .variety-detail__brochures__links .list-group .list-group-item:hover {
-  color: #aac426;
+  color: #008095;
 }
 .variety-detail .variety-detail__brochures .variety-detail__brochures__links .list-group .list-group-item .size {
   display: inline;
@@ -10039,7 +10039,7 @@ button.close {
   padding-top: 31px;
 }
 .variety-detail .variety-detail__information .variety-detail__information__title {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 17px;
   margin-bottom: 11px;
   text-align: center;
@@ -10063,12 +10063,12 @@ button.close {
   font-style: italic;
 }
 .variety-detail .variety-detail__information .variety-detail__information__image .mail {
-  color: #aac426;
+  color: #008095;
   font-size: 13px;
   font-weight: bold;
 }
 .variety-detail .variety-detail__information .variety-detail__information__image .phone {
-  color: #aac426;
+  color: #008095;
   font-size: 13px;
   font-weight: bold;
 }
@@ -10079,7 +10079,7 @@ button.close {
   padding-top: 31px;
 }
 .variety-detail .variety-detail__social .variety-detail__social__title {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 17px;
   margin-bottom: 15px;
   text-align: center;
@@ -10157,7 +10157,7 @@ button.close {
   text-align: center;
 }
 .variety-detail .variety-detail__others .variety-detail__others__title {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 20.5px;
   margin-bottom: 19.5px;
 }
@@ -11435,7 +11435,7 @@ button.close {
   -moz-appearance: none;
 }
 .targetaudience .targetaudience__select:hover {
-  color: #aac426;
+  color: #008095;
 }
 .targetaudience .targetaudience__select .targetaudience__select__option {
   color: #515151;
@@ -11445,7 +11445,7 @@ button.close {
   padding-left: 50px;
 }
 .targetaudience .targetaudience__select .targetaudience__select__option:checked {
-  color: #aac426;
+  color: #008095;
 }
 .targetaudience .targetaudience__select .targetaudience__select__option:not(:checked) {
   color: #515151;
@@ -11693,6 +11693,7 @@ button.close {
 .growingsadvisorslist .growingsadvisorslist__item {
   align-content: stretch;
   border: 1px solid #cccccc;
+  border-radius: 20px;
   display: flex;
   flex-flow: column nowrap;
   margin-top: 10px;
@@ -11723,10 +11724,10 @@ button.close {
 }
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__top .growingsadvisorslist__item__content .growingsadvisorslist__item__title {
   clear: right;
-  color: #aac426;
+  color: #008095;
   display: inline;
   float: left;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 14px;
   line-height: 12pt;
   padding: 2px;
@@ -11760,7 +11761,7 @@ button.close {
   width: 48px;
 }
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__top .growingsadvisorslist__item__content .growingsadvisorslist__item__list.growingsadvisorslist__item__list--contact {
-  color: #aac426;
+  color: #008095;
   font-weight: bold;
   margin-top: 0px;
 }
@@ -11783,7 +11784,7 @@ button.close {
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__bottom .growingsadvisorslist__item__link {
   align-self: flex-end;
   bottom: 12.5px;
-  color: #aac426;
+  color: #008095;
   display: inline-block;
   flex-shrink: 0;
   font-size: 11pt;
@@ -11796,7 +11797,7 @@ button.close {
   width: 24px;
 }
 .growingsadvisorslist .growingsadvisorslist__item .growingsadvisorslist__item__bottom .growingsadvisorslist__item__link svg path {
-  fill: #aac426;
+  fill: #008095;
 }
 .block-with-text {
   display: block;
@@ -11820,9 +11821,11 @@ button.close {
 .growingsbannerslist .growingsbannerslist__item {
   align-content: stretch;
   border: 1px solid #cccccc;
+  border-radius: 20px;
   display: flex;
   flex-flow: column nowrap;
   margin-top: 10px;
+  overflow: hidden;
   padding: 0px;
   height: 177.5px;
   text-decoration: none;
@@ -11854,7 +11857,7 @@ button.close {
 .growingsbannerslist .growingsbannerslist__item .growingsbannerslist__item__top .growingsbannerslist__item__content .growingsbannerslist__item__title {
   color: #515151;
   display: table-cell;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 19px;
   font-weight: bold;
   line-height: 21.5px;
@@ -11870,7 +11873,7 @@ button.close {
 .growingsbannerslist .growingsbannerslist__item .growingsbannerslist__item__bottom .growingsbannerslist__item__link {
   align-self: flex-end;
   bottom: 12.5px;
-  color: #aac426;
+  color: #008095;
   display: inline-block;
   flex-shrink: 0;
   font-size: 5.5pt;
@@ -11883,7 +11886,7 @@ button.close {
   width: 24px;
 }
 .growingsbannerslist .growingsbannerslist__item .growingsbannerslist__item__bottom .growingsbannerslist__item__link svg path {
-  fill: #aac426;
+  fill: #008095;
 }
 .growingsbannerslist .growingsbannerslist__paging {
   display: flex;
@@ -11899,7 +11902,7 @@ button.close {
 }
 .growingsbannerslist .growingsbannerslist__paging .growingsbannerslist__paging__link.growingsbannerslist__paging__link--left svg path,
 .growingsbannerslist .growingsbannerslist__paging .growingsbannerslist__paging__link.growingsbannerslist__paging__link--right svg path {
-  fill: #aac426;
+  fill: #008095;
 }
 .growingsbannerslist .growingsbannerslist__paging .growingsbannerslist__paging__link.growingsbannerslist__paging__link--left.disabled svg path,
 .growingsbannerslist .growingsbannerslist__paging .growingsbannerslist__paging__link.growingsbannerslist__paging__link--right.disabled svg path {
@@ -11909,8 +11912,8 @@ button.close {
   transform: rotate(180deg);
 }
 .growingsbannerslist .growingsbannerslist__paging .growingsbannerslist__paging__number {
-  color: #aac426;
-  font-family: 'Crete Round', serif;
+  color: #008095;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 14px;
   margin-left: 7.5px;
   margin-right: 7.5px;
@@ -12129,7 +12132,7 @@ button.close {
 .growings-advisors .growings-advisors__image-title {
   bottom: 0px;
   color: #ffffff;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 27.5px;
   left: 0px;
   line-height: 211px;
@@ -12147,7 +12150,7 @@ button.close {
   margin-bottom: 31px;
 }
 .growings-advisors .growings-advisors__header .growings-advisors__title {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 32px;
   padding-left: 20px;
   padding-top: 27.5px;
@@ -12232,7 +12235,7 @@ button.close {
   padding-top: 31px;
 }
 .person-contact .person-contact__information .person-contact__information__title {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 17px;
   margin-bottom: 11px;
   text-align: center;
@@ -12256,12 +12259,12 @@ button.close {
   font-style: italic;
 }
 .person-contact .person-contact__information .person-contact__information__image .mail {
-  color: #aac426;
+  color: #008095;
   font-size: 13px;
   font-weight: bold;
 }
 .person-contact .person-contact__information .person-contact__information__image .phone {
-  color: #aac426;
+  color: #008095;
   font-size: 13px;
   font-weight: bold;
 }
@@ -12310,7 +12313,7 @@ button.close {
   padding: 5px 0;
 }
 .docsdownload .docsdownload__brochures .docsdownload__brochures__links .list-group .list-group-item:hover {
-  color: #aac426;
+  color: #008095;
   background-color: #ffffff;
 }
 .docsdownload .docsdownload__brochures .docsdownload__brochures__links .list-group .list-group-item .size {
@@ -12574,6 +12577,12 @@ button.close {
 .container .row .fullsize,
 .container-fluid .row .fullsize {
   padding: 0px;
+}
+@font-face {
+  font-family: 'give_it_your_heartmedium';
+  src: url('../fonts/heart/give_it_your_heart-webfont.woff2') format('woff2'), url('../fonts/heart/give_it_your_heart-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 .browsehappy {
   margin: 0.2em 0;

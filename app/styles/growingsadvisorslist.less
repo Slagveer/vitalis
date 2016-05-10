@@ -9,6 +9,7 @@
   .growingsadvisorslist__item {
     align-content: stretch;
     border: 1px solid @grey;
+    border-radius: 20px;
     display: flex;
     flex-flow: column nowrap;
     margin-top: 20px * @retina-factor;
@@ -36,10 +37,10 @@
         position: relative;
         .growingsadvisorslist__item__title {
           clear: right;
-          color: @growingsadvisorslist-color;
+          color: @blue;
           display: inline;
           float: left;
-          font-family: @font-family-crete;
+          font-family: @font-family-heart;
           font-size: 28px * @retina-factor;
           line-height: @label-line-height;
           padding: 4px * @retina-factor;
@@ -72,7 +73,7 @@
             width: 96px * @retina-factor;
           }
           &.growingsadvisorslist__item__list--contact {
-            color: @green;
+            color: @blue;
             font-weight: bold;
             margin-top: 0px;
             .growingsadvisorslist__item__list__title {
@@ -97,7 +98,7 @@
       .growingsadvisorslist__item__link {
         align-self: flex-end;
         bottom: 25px * @retina-factor;
-        color: @green;
+        color: @blue;
         display: inline-block;
         flex-shrink: 0;
         font-size: @label;
@@ -110,7 +111,7 @@
         width: 48px * @retina-factor;//2.5 * @label;
         svg {
           path {
-            fill: @green;
+            fill: @blue;
           }
         }
       }
