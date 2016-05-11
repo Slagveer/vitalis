@@ -9585,7 +9585,7 @@ button.close {
 }
 .itemslist .itemslist__item .itemslist__item__image {
   border: 1px solid #cccccc;
-  border-radius: 20px;
+  border-radius: 10px;
   float: left;
   height: 86.5px;
   max-width: 88.5px;
@@ -11188,7 +11188,7 @@ button.close {
   }
   .container--carousel .carousel .thumbnail-controls .container,
   .container--carousel .carousel .thumbnail-controls .container-fluid {
-    width: 900px !important;
+    width: 930px !important;
   }
   .container--carousel .carousel .thumbnail-controls .container .item__image__text,
   .container--carousel .carousel .thumbnail-controls .container-fluid .item__image__text {
