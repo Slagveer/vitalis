@@ -9321,6 +9321,7 @@ button.close {
   height: 178px;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__image {
+  border-radius: 10px;
   height: 157.5px;
   width: 100%;
 }
@@ -9747,6 +9748,7 @@ button.close {
 }
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__image {
   border: 1px solid #cccccc;
+  border-radius: 10px;
   float: left;
   height: 90px;
   max-width: 102.5px;
