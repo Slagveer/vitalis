@@ -6890,6 +6890,9 @@ button.close {
   color: #515151;
   padding: 19px 0px 19px 23.5px;
 }
+.navigation .navigation__menu .navigation__menu__item .navigation__menu__item__label .menu {
+  height: 25px;
+}
 .navigation .navigation__menu .navigation__menu__item .navigation__menu__item__label:hover {
   color: #be2b35;
 }
@@ -7966,6 +7969,7 @@ button.close {
     top: 14px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .arrow {
+    height: 24px;
     right: -5px;
     top: 8px;
     width: 24px;
@@ -8019,6 +8023,9 @@ button.close {
     position: relative;
     top: 11px;
     width: 21px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label .contact-icon svg {
+    height: 24px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label:hover .contact-icon svg path,
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label:hover .contact-icon svg polygon {
@@ -8078,6 +8085,7 @@ button.close {
     max-width: 120px;
     top: 39px;
     right: 18px;
+    width: 120px;
   }
   .navigation {
     border-radius: 0;
@@ -10274,7 +10282,7 @@ button.close {
   margin-bottom: 49px;
 }
 .content .content__header .content__header__title {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 32px;
   letter-spacing: 2px;
   line-height: 36px;
@@ -10350,7 +10358,7 @@ button.close {
 }
 .content .content__introduction .content__introduction__title,
 .content .content__introduction .content__introduction__subtitle {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 23.5px;
   font-weight: bold;
   padding-bottom: 8px;
@@ -10410,7 +10418,7 @@ button.close {
   border: none;
   bottom: 0px;
   color: #ffffff;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 23.5px;
   font-style: italic;
   left: 16.5px;
@@ -10427,7 +10435,7 @@ button.close {
   padding-top: 65px;
 }
 .content .content__introduction.content__introduction--social .content__introduction--social__title {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 34px;
   margin-bottom: 30px;
   text-align: center;
@@ -10626,8 +10634,8 @@ button.close {
 }
 .filter .filter__header .filter__header__button:hover {
   background-color: #ffffff;
-  border-color: #aac426;
-  color: #aac426;
+  border-color: #008095;
+  color: #008095;
 }
 .filter .filter__header .filter__header__button .filter__header__button__text {
   float: left;
@@ -10645,7 +10653,7 @@ button.close {
   width: 25px;
 }
 .filter .filter__header .filter__header__button .filter__header__button__arrow svg path {
-  fill: #aac426;
+  fill: #008095;
 }
 .filter .filter__selected,
 .filter .filter__select {
@@ -10686,8 +10694,8 @@ button.close {
 .filter .filter__selected .filter__select__button:hover,
 .filter .filter__select .filter__select__button:hover {
   background-color: #ffffff;
-  border-color: #aac426;
-  color: #aac426;
+  border-color: #008095;
+  color: #008095;
 }
 .filter .filter__selected .filter__selected__button,
 .filter .filter__select .filter__selected__button {
@@ -10719,9 +10727,9 @@ button.close {
 .filter .filter__select .filter__selected__options .filter__selected__options__item,
 .filter .filter__selected .filter__select__options .filter__selected__options__item,
 .filter .filter__select .filter__select__options .filter__selected__options__item {
-  background-color: #f0f6d2;
-  border: 1px solid #aac426;
-  color: #aac426;
+  background-color: #74ebff;
+  border: 1px solid #008095;
+  color: #008095;
   font-size: 12.5px;
   font-weight: bold;
   height: 30px;
@@ -10748,7 +10756,7 @@ button.close {
 .filter .filter__select .filter__selected__options .filter__selected__options__item .filter__selected__options__item__icon svg path,
 .filter .filter__selected .filter__select__options .filter__selected__options__item .filter__selected__options__item__icon svg path,
 .filter .filter__select .filter__select__options .filter__selected__options__item .filter__selected__options__item__icon svg path {
-  fill: #aac426;
+  fill: #008095;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .navigation.footer .container-fluid .row .fullsize,
@@ -11357,6 +11365,29 @@ button.close {
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item:hover .item__overlay,
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item:active .item__overlay {
   opacity: .8;
+}
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
 }
 .loadmore {
   padding: 10px 0;
