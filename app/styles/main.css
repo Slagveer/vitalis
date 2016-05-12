@@ -9242,7 +9242,7 @@ button.close {
   max-width: 75px;
 }
 .teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--event {
-  margin-left: -11.5px;
+  margin-left: 0px;
   max-width: 81.5px;
 }
 .teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--event path {
@@ -9254,7 +9254,7 @@ button.close {
   display: block;
 }
 .teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--career {
-  margin-left: -3px;
+  margin-left: 0px;
 }
 .teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--career path {
   stroke: #008095;
