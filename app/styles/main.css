@@ -10235,17 +10235,37 @@ button.close {
   padding-top: 15px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .content__introduction__title.quote {
-    left: -300px;
+  .content__introduction {
+    padding-left: 0px !important;
+  }
+  .content__introduction .content__introduction__title.quote {
+    padding: 0px !important;
+    text-align: left;
+    width: 100%;
+  }
+  .person-contact {
+    border: none !important;
+  }
+  .right-column {
     position: absolute;
-    top: 50%;
-    width: 54%;
+    width: 90% !important;
+  }
+  .right-column .variety-detail .variety-detail__social .variety-detail__social__title {
+    border-bottom: 1px solid #ededed;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: left;
+  }
+  .right-column .itemslist .itemslist__header {
+    border-bottom: 1px solid #ededed;
+    text-align: left !important;
   }
   .container.content .row:nth-child(2) .content__paragraaf {
     padding-right: 15px !important;
   }
   .container.content .row:nth-child(2) .content__paragraaf .content__paragraaf__title:first-of-type {
     background-color: white;
+    border-radius: 20px 20px 0 0;
     margin-bottom: -71px;
     margin-left: -50px;
     padding-left: 50px;
@@ -10255,17 +10275,37 @@ button.close {
   }
 }
 @media (min-width: 1200px) {
-  .content__introduction__title.quote {
-    left: -300px;
+  .content__introduction {
+    padding-left: 0px !important;
+  }
+  .content__introduction .content__introduction__title.quote {
+    padding: 0px !important;
+    text-align: left;
+    width: 100%;
+  }
+  .person-contact {
+    border: none !important;
+  }
+  .right-column {
     position: absolute;
-    top: 50%;
-    width: 54%;
+    width: 90% !important;
+  }
+  .right-column .variety-detail .variety-detail__social .variety-detail__social__title {
+    border-bottom: 1px solid #ededed;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: left;
+  }
+  .right-column .itemslist .itemslist__header {
+    border-bottom: 1px solid #ededed;
+    text-align: left !important;
   }
   .container.content .row:nth-child(2) .content__paragraaf {
     padding-right: 15px !important;
   }
   .container.content .row:nth-child(2) .content__paragraaf .content__paragraaf__title:first-of-type {
     background-color: white;
+    border-radius: 20px 20px 0 0;
     margin-bottom: -71px;
     margin-left: -50px;
     padding-left: 50px;

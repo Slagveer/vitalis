@@ -1,11 +1,36 @@
 // TABLET::START
 @media (min-width: @tablet_min) and (max-width: @tablet_max) {
-  .content__introduction__title {
-    &.quote {
-      left: -300px;
-      position: absolute;
-      top: 50%;
-      width: 54%;
+  .content__introduction {
+    padding-left: 0px !important;
+    .content__introduction__title {
+      &.quote {
+        padding: 0px !important;
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+  .person-contact {
+    border: none !important;
+  }
+  .right-column {
+    position: absolute;
+    width: 90% !important;
+    .variety-detail {
+      .variety-detail__social {
+        .variety-detail__social__title {
+          border-bottom: 1px solid @light-grey;
+          font-size: 42px * @retina-factor;
+          font-weight: bold;
+          text-align: left;
+        }
+      }
+    }
+    .itemslist {
+      .itemslist__header {
+        border-bottom: 1px solid @light-grey;
+        text-align: left !important;
+      }
     }
   }
   .container.content {
@@ -15,6 +40,7 @@
           padding-right: 15px !important;
           .content__paragraaf__title:first-of-type {
             background-color: white;
+            border-radius: 20px 20px 0 0;
             margin-bottom: -71px;
             margin-left: -50px;
             padding-left: 50px;
@@ -31,12 +57,37 @@
 
 // DESKTOP::START
 @media (min-width: @desktop_min) {
-  .content__introduction__title {
-    &.quote {
-      left: -300px;
-      position: absolute;
-      top: 50%;
-      width: 54%;
+  .content__introduction {
+    padding-left: 0px !important;
+    .content__introduction__title {
+      &.quote {
+        padding: 0px !important;
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+  .person-contact {
+    border: none !important;
+  }
+  .right-column {
+    position: absolute;
+    width: 90% !important;
+    .variety-detail {
+      .variety-detail__social {
+        .variety-detail__social__title {
+          border-bottom: 1px solid @light-grey;
+          font-size: 42px * @retina-factor;
+          font-weight: bold;
+          text-align: left;
+        }
+      }
+    }
+    .itemslist {
+      .itemslist__header {
+        border-bottom: 1px solid @light-grey;
+        text-align: left !important;
+      }
     }
   }
   .container.content {
@@ -46,6 +97,7 @@
           padding-right: 15px !important;
           .content__paragraaf__title:first-of-type {
             background-color: white;
+            border-radius: 20px 20px 0 0;
             margin-bottom: -71px;
             margin-left: -50px;
             padding-left: 50px;
