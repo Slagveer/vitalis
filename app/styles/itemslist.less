@@ -21,6 +21,17 @@
       }
     }
   }
+  .right-column {
+    padding-left: 140px * @retina-factor;
+    position: absolute;
+    width: 90% !important;
+    .itemslist {
+      .itemslist__header {
+        border-bottom: 1px solid @light-grey;
+        text-align: left !important;
+      }
+    }
+  }
 }
 // TABLET::END
 
@@ -39,6 +50,21 @@
         .itemslist__item__link {
           right: 60px * @retina-factor;
         }
+      }
+    }
+  }
+  .right-column {
+    padding-left: 140px * @retina-factor;
+    position: absolute;
+    width: 90% !important;
+    .fullsize {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+    .itemslist {
+      .itemslist__header {
+        border-bottom: 1px solid @light-grey;
+        text-align: left !important;
       }
     }
   }

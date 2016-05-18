@@ -9550,6 +9550,15 @@ button.close {
   .itemslist .article--list .itemslist__item .itemslist__item__link {
     right: 30px;
   }
+  .right-column {
+    padding-left: 70px;
+    position: absolute;
+    width: 90% !important;
+  }
+  .right-column .itemslist .itemslist__header {
+    border-bottom: 1px solid #ededed;
+    text-align: left !important;
+  }
 }
 @media (min-width: 1200px) {
   .itemslist .article--list .itemslist__item .itemslist__item__content .itemslist__item__description.block-with-text {
@@ -9557,6 +9566,19 @@ button.close {
   }
   .itemslist .article--list .itemslist__item .itemslist__item__link {
     right: 30px;
+  }
+  .right-column {
+    padding-left: 70px;
+    position: absolute;
+    width: 90% !important;
+  }
+  .right-column .fullsize {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .right-column .itemslist .itemslist__header {
+    border-bottom: 1px solid #ededed;
+    text-align: left !important;
   }
 }
 .itemslist.container .fullsize .article--list {
@@ -9699,6 +9721,17 @@ button.close {
   .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__link {
     right: 50px !important;
   }
+  .right-column {
+    padding-left: 70px;
+    position: absolute;
+    width: 90% !important;
+  }
+  .right-column .variety-detail .variety-detail__social .variety-detail__social__title {
+    border-bottom: 1px solid #ededed;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: left;
+  }
 }
 @media (min-width: 1200px) {
   .varietylist.varietylist--office {
@@ -9729,6 +9762,17 @@ button.close {
   }
   .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__link {
     right: 50px !important;
+  }
+  .right-column {
+    padding-left: 70px;
+    position: absolute;
+    width: 90% !important;
+  }
+  .right-column .variety-detail .variety-detail__social .variety-detail__social__title {
+    border-bottom: 1px solid #ededed;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: left;
   }
 }
 .varietylist .article--list {
@@ -10246,20 +10290,6 @@ button.close {
   .person-contact {
     border: none !important;
   }
-  .right-column {
-    position: absolute;
-    width: 90% !important;
-  }
-  .right-column .variety-detail .variety-detail__social .variety-detail__social__title {
-    border-bottom: 1px solid #ededed;
-    font-size: 21px;
-    font-weight: bold;
-    text-align: left;
-  }
-  .right-column .itemslist .itemslist__header {
-    border-bottom: 1px solid #ededed;
-    text-align: left !important;
-  }
   .container.content .row:nth-child(2) .content__paragraaf {
     padding-right: 15px !important;
   }
@@ -10285,20 +10315,6 @@ button.close {
   }
   .person-contact {
     border: none !important;
-  }
-  .right-column {
-    position: absolute;
-    width: 90% !important;
-  }
-  .right-column .variety-detail .variety-detail__social .variety-detail__social__title {
-    border-bottom: 1px solid #ededed;
-    font-size: 21px;
-    font-weight: bold;
-    text-align: left;
-  }
-  .right-column .itemslist .itemslist__header {
-    border-bottom: 1px solid #ededed;
-    text-align: left !important;
   }
   .container.content .row:nth-child(2) .content__paragraaf {
     padding-right: 15px !important;
