@@ -27,8 +27,8 @@
 <div class="container-fluid variety-detail">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fullsize">
-      <section>
-        <img class="variety-detail__image hisrc" src="http://loremflickr.com/1200/250/news?random=1" data-1x="http://loremflickr.com/2400/500/news?random=1" data-2x="http://loremflickr.com/news/news/4400/1000?random=1" alt="">
+      <section class="variety-detail__image js-variety-detail__image">
+        <img src="http://loremflickr.com/1200/250/news?random=1" data-1x="http://loremflickr.com/2400/500/news?random=1" data-2x="http://loremflickr.com/news/news/4400/1000?random=1" alt="">
         <span class="variety-detail__image-title">Tomatos</span>
       </section>
     </div>
@@ -58,24 +58,26 @@
 <!-- CROP-OVERVIEW::START -->
 <div class="container crop-overview">
   <!-- CROP-OVERVIEW-PRODUCTS::START -->
-    <div class="row crop-overview__products">
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
-        <a href="#" title="" class="teaserbox teaserbox--child-overview">
-          <section>
-            <div class="teaserbox__overlay fade">&nbsp;</div>
-            <div class="teaserbox__overlay-bottom">&nbsp;</div>
-            <figure>
-              <img class="teaserbox__image hirsc" src="http://loremflickr.com/320/250/vegetables?random=1" data-1x="http://loremflickr.com/640/500/vegetables?random=1" data-2x="http://loremflickr.com/1280/1000/vegetables?random=1" alt="">
-              <figcaption class="teaserbox__description">
-                <p class="teaserbox__description__label">
-                  <span class="label-square">NEWS</span>
-                </p>
-                <p class="teaserbox__description__title">Tomatoes
-                </p>
-              </figcaption>
-            </figure>
-            <div class="teaserbox__link">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+  <div class="row crop-overview__products">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+      <a href="#" title="" class="teaserbox teaserbox--child-overview">
+        <section>
+          <div class="teaserbox__overlay fade">&nbsp;</div>
+          <div class="teaserbox__overlay-bottom">&nbsp;</div>
+          <figure>
+            <div class="teaserbox__image js-teaserbox__image">
+              <img src="http://loremflickr.com/320/250/vegetables?random=1" alt="">
+            </div>
+            <figcaption class="teaserbox__description">
+              <p class="teaserbox__description__label">
+                <span class="label-square">NEWS</span>
+              </p>
+              <p class="teaserbox__description__title">Tomatoes
+              </p>
+            </figcaption>
+          </figure>
+          <div class="teaserbox__link">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
                 <g>
                   <g>
                     <g>
@@ -94,89 +96,93 @@
                 <circle cx="20.4" cy="20.4" r="3.2"/>
                 <circle cx="20.4" cy="39.6" r="3.2"/>
               </svg>
-            </div>
-          </section>
-        </a>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
-        <a href="#" title="" class="teaserbox teaserbox--child-overview">
-          <section>
-            <div class="teaserbox__overlay fade">&nbsp;</div>
-            <div class="teaserbox__overlay-bottom">&nbsp;</div>
-            <figure>
-              <img class="teaserbox__image hirsc" src="http://loremflickr.com/320/250/vegetables?random=2" data-1x="http://loremflickr.com/640/500/vegetables?random=2" data-2x="http://loremflickr.com/1280/1000/vegetables?random=2" alt="">
-              <figcaption class="teaserbox__description">
-                <p class="teaserbox__description__label">
-                  <span class="label-square">NEWS</span>
-                </p>
-                <p class="teaserbox__description__title">Tomatoes
-                </p>
-              </figcaption>
-            </figure>
-            <div class="teaserbox__link">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
-                <g>
-                  <g>
-                    <g>
-                      <path d="M30,3c14.9,0,27,12.1,27,27c0,14.9-12.1,27-27,27S3,44.9,3,30C3,15.1,15.1,3,30,3 M30,0C13.5,0,0,13.5,0,30
-                        c0,16.5,13.5,30,30,30s30-13.5,30-30C60,13.5,46.5,0,30,0L30,0z"/>
-                    </g>
-                  </g>
-                </g>
-                <circle cx="30" cy="30" r="3.2"/>
-                <circle cx="30" cy="20.4" r="3.2"/>
-                <circle cx="30" cy="39.6" r="3.2"/>
-                <circle cx="39.6" cy="30" r="3.2"/>
-                <circle cx="39.6" cy="20.4" r="3.2"/>
-                <circle cx="39.6" cy="39.6" r="3.2"/>
-                <circle cx="20.4" cy="30" r="3.2"/>
-                <circle cx="20.4" cy="20.4" r="3.2"/>
-                <circle cx="20.4" cy="39.6" r="3.2"/>
-              </svg>
-            </div>
-          </section>
-        </a>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
-        <a href="#" title="" class="teaserbox teaserbox--child-overview">
-          <section>
-            <div class="teaserbox__overlay fade">&nbsp;</div>
-            <div class="teaserbox__overlay-bottom">&nbsp;</div>
-            <figure>
-              <img class="teaserbox__image hirsc" src="http://loremflickr.com/320/250/vegetables?random=3" data-1x="http://loremflickr.com/640/500/vegetables?random=3" data-2x="http://loremflickr.com/1280/1000/vegetables?random=3" alt="">
-              <figcaption class="teaserbox__description">
-                <p class="teaserbox__description__label">
-                  <span class="label-square">NEWS</span>
-                </p>
-                <p class="teaserbox__description__title">Tomatoes
-                </p>
-              </figcaption>
-            </figure>
-            <div class="teaserbox__link">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
-                <g>
-                  <g>
-                    <g>
-                      <path d="M30,3c14.9,0,27,12.1,27,27c0,14.9-12.1,27-27,27S3,44.9,3,30C3,15.1,15.1,3,30,3 M30,0C13.5,0,0,13.5,0,30
-                        c0,16.5,13.5,30,30,30s30-13.5,30-30C60,13.5,46.5,0,30,0L30,0z"/>
-                    </g>
-                  </g>
-                </g>
-                <circle cx="30" cy="30" r="3.2"/>
-                <circle cx="30" cy="20.4" r="3.2"/>
-                <circle cx="30" cy="39.6" r="3.2"/>
-                <circle cx="39.6" cy="30" r="3.2"/>
-                <circle cx="39.6" cy="20.4" r="3.2"/>
-                <circle cx="39.6" cy="39.6" r="3.2"/>
-                <circle cx="20.4" cy="30" r="3.2"/>
-                <circle cx="20.4" cy="20.4" r="3.2"/>
-                <circle cx="20.4" cy="39.6" r="3.2"/>
-              </svg>
-            </div>
-          </section>
-        </a>
-      </div>
+          </div>
+        </section>
+      </a>
     </div>
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+      <a href="#" title="" class="teaserbox teaserbox--child-overview">
+        <section>
+          <div class="teaserbox__overlay fade">&nbsp;</div>
+          <div class="teaserbox__overlay-bottom">&nbsp;</div>
+          <figure>
+            <div class="teaserbox__image js-teaserbox__image">
+              <img src="http://loremflickr.com/320/250/vegetables?random=2" alt="">
+            </div>
+            <figcaption class="teaserbox__description">
+              <p class="teaserbox__description__label">
+                <span class="label-square">NEWS</span>
+              </p>
+              <p class="teaserbox__description__title">Tomatoes
+              </p>
+            </figcaption>
+          </figure>
+          <div class="teaserbox__link">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+                <g>
+                  <g>
+                    <g>
+                      <path d="M30,3c14.9,0,27,12.1,27,27c0,14.9-12.1,27-27,27S3,44.9,3,30C3,15.1,15.1,3,30,3 M30,0C13.5,0,0,13.5,0,30
+                        c0,16.5,13.5,30,30,30s30-13.5,30-30C60,13.5,46.5,0,30,0L30,0z"/>
+                    </g>
+                  </g>
+                </g>
+                <circle cx="30" cy="30" r="3.2"/>
+                <circle cx="30" cy="20.4" r="3.2"/>
+                <circle cx="30" cy="39.6" r="3.2"/>
+                <circle cx="39.6" cy="30" r="3.2"/>
+                <circle cx="39.6" cy="20.4" r="3.2"/>
+                <circle cx="39.6" cy="39.6" r="3.2"/>
+                <circle cx="20.4" cy="30" r="3.2"/>
+                <circle cx="20.4" cy="20.4" r="3.2"/>
+                <circle cx="20.4" cy="39.6" r="3.2"/>
+              </svg>
+          </div>
+        </section>
+      </a>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+      <a href="#" title="" class="teaserbox teaserbox--child-overview">
+        <section>
+          <div class="teaserbox__overlay fade">&nbsp;</div>
+          <div class="teaserbox__overlay-bottom">&nbsp;</div>
+          <figure>
+            <div class="teaserbox__image js-teaserbox__image">
+              <img src="http://loremflickr.com/320/250/vegetables?random=3" alt="">
+            </div>
+            <figcaption class="teaserbox__description">
+              <p class="teaserbox__description__label">
+                <span class="label-square">NEWS</span>
+              </p>
+              <p class="teaserbox__description__title">Tomatoes
+              </p>
+            </figcaption>
+          </figure>
+          <div class="teaserbox__link">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+                <g>
+                  <g>
+                    <g>
+                      <path d="M30,3c14.9,0,27,12.1,27,27c0,14.9-12.1,27-27,27S3,44.9,3,30C3,15.1,15.1,3,30,3 M30,0C13.5,0,0,13.5,0,30
+                        c0,16.5,13.5,30,30,30s30-13.5,30-30C60,13.5,46.5,0,30,0L30,0z"/>
+                    </g>
+                  </g>
+                </g>
+                <circle cx="30" cy="30" r="3.2"/>
+                <circle cx="30" cy="20.4" r="3.2"/>
+                <circle cx="30" cy="39.6" r="3.2"/>
+                <circle cx="39.6" cy="30" r="3.2"/>
+                <circle cx="39.6" cy="20.4" r="3.2"/>
+                <circle cx="39.6" cy="39.6" r="3.2"/>
+                <circle cx="20.4" cy="30" r="3.2"/>
+                <circle cx="20.4" cy="20.4" r="3.2"/>
+                <circle cx="20.4" cy="39.6" r="3.2"/>
+              </svg>
+          </div>
+        </section>
+      </a>
+    </div>
+  </div>
 
   <!-- CROP-OVERVIEW-PRODUCTS::END -->
 </div>
@@ -208,7 +214,10 @@
 
 <!-- build:js scripts/main.js -->
 <script src="../bower_components/jquery/jquery.js"></script>
-<script src="../bower_components/hisrc/hisrc.js"></script>
+<script src="../bower_components/underscore/underscore.js"></script>
+<script src="../bower_components/ev-emitter/ev-emitter.js"></script>
+<script src="../bower_components/imagesloaded/imagesloaded.js"></script>
+<script src="../bower_components/imagefill/js/jquery-imagefill.js"></script>
 <!-- fileblock:js appScript -->
 <script src="/scripts/core.js"></script>
 <script src="/scripts/carousel.js"></script>
@@ -218,6 +227,7 @@
 <script src="/scripts/loadmore.js"></script>
 <script src="/scripts/main.js"></script>
 <script src="/scripts/navigation.js"></script>
+<script src="/scripts/scrolltotop.js"></script>
 <script src="/scripts/targetaudience.js"></script>
 <script src="/scripts/teaserbox.js"></script>
 <!-- endfileblock -->

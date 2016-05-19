@@ -39,7 +39,9 @@
             <!-- CAROUSEL-SLIDES::START -->
             <div class="carousel-inner container--carousel__slides" role="listbox">
               <div class="item active container--carousel__slides__item">
-                <img class="container--carousel__slides__item__image hiscr" src="http://loremflickr.com/2640/305/news?random=1" data-1x="http://loremflickr.com/5280/610/news?random=1" data-2x="http://loremflickr.com/15060/1220/news?random=1" alt="Slide 1">
+                <div class="container--carousel__slides__item__image js-container--carousel__slides__item__image">
+                  <img src="http://loremflickr.com/2640/2000/news?random=1" alt="Slide 1">
+                </div>
                 <div class="carousel-caption">
                   <blockquote class="carousel-caption__quote">
                     Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.
@@ -49,7 +51,9 @@
                 </div>
               </div>
               <div class="item container--carousel__slides__item">
-                <img class="container--carousel__slides__item__image hiscr" src="http://loremflickr.com/2640/305/news?random=2" data-1x="http://loremflickr.com/5280/610/news?random=2" data-2x="http://loremflickr.com/15060/1220/news?random=2" alt="Slide 2">
+                <div class="container--carousel__slides__item__image js-container--carousel__slides__item__image">
+                  <img src="http://loremflickr.com/2640/2000/news?random=2" alt="Slide 2">
+                </div>
                 <div class="carousel-caption">
                   <blockquote class="carousel-caption__quote">
                     Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.
@@ -59,7 +63,9 @@
                 </div>
               </div>
               <div class="item container--carousel__slides__item">
-                <img class="container--carousel__slides__item__image hiscr" src="http://loremflickr.com/2640/305/news?random=3" data-1x="http://loremflickr.com/5280/610/news?random=3" data-2x="http://loremflickr.com/15060/1220/news?random=3" alt="Slide 3">
+                <div class="container--carousel__slides__item__image js-container--carousel__slides__item__image">
+                  <img src="http://loremflickr.com/2640/2000/news?random=3" alt="Slide 3">
+                </div>
                 <div class="carousel-caption">
                   <blockquote class="carousel-caption__quote">
                     Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.
@@ -144,7 +150,9 @@
 <!-- build:js scripts/main.js -->
 <script src="../bower_components/jquery/jquery.js"></script>
 <script src="../bower_components/underscore/underscore.js"></script>
-<script src="../bower_components/hisrc/hisrc.js"></script>
+<script src="../bower_components/ev-emitter/ev-emitter.js"></script>
+<script src="../bower_components/imagesloaded/imagesloaded.js"></script>
+<script src="../bower_components/imagefill/js/jquery-imagefill.js"></script>
 <!-- fileblock:js appScript -->
 <script src="/scripts/core.js"></script>
 <script src="/scripts/carousel.js"></script>
@@ -154,6 +162,7 @@
 <script src="/scripts/loadmore.js"></script>
 <script src="/scripts/main.js"></script>
 <script src="/scripts/navigation.js"></script>
+<script src="/scripts/scrolltotop.js"></script>
 <script src="/scripts/targetaudience.js"></script>
 <script src="/scripts/teaserbox.js"></script>
 <!-- endfileblock -->
