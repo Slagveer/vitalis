@@ -11406,14 +11406,15 @@ button.close {
   position: relative;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item.active .item__overlay {
-  opacity: .8;
+  opacity: 0;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__overlay {
   position: absolute;
   background-color: #008095;
-  opacity: 0;
+  height: 102%;
   width: 100%;
-  height: 100%;
+  opacity: .8;
+  z-index: 1;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__image {
   border: none;
@@ -11429,6 +11430,7 @@ button.close {
   position: absolute;
   text-align: center;
   width: 100%;
+  z-index: 2;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item:hover .item__overlay,
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item:active .item__overlay {
