@@ -28,6 +28,9 @@
           $('.js-thumbnail-item').removeClass('active');
           $($('.js-thumbnail-item')[slide]).addClass('active');
         });
+        $carousel.on('click', function() {
+          $carousel.carousel('pause');
+        });
       }
       if($loadmore) {
         $loadmore.loadmore();
