@@ -11789,6 +11789,7 @@ button.close {
 .vacancy .vacancy__header .vacancy__title {
   font-family: 'give_it_your_heartmedium', serif;
   font-size: 32px;
+  margin-top: 0px;
   padding-left: 20px;
   padding-top: 27.5px;
 }
@@ -12265,6 +12266,7 @@ button.close {
 .growings-advisors .growings-advisors__header .growings-advisors__title {
   font-family: 'give_it_your_heartmedium', serif;
   font-size: 32px;
+  margin-top: -15px;
   padding-left: 20px;
   padding-top: 27.5px;
 }
