@@ -99,7 +99,7 @@
     map = new google.maps.Map($map[0],{
       center: {lat: -34.397, lng: 150.644},
       scrollwheel: true,
-      zoom: 4
+      zoom: (mapType === 'worldwide') ? 2 : 4
     });
     map.mapTypes.set('enza', enzaMapType);
     map.setMapTypeId('enza');
