@@ -136,8 +136,32 @@
         .container,
         .container-fluid {
           width: 930px !important;
-          .item__image__text {
-            display: block !important;
+          .container--carousel__thumbnails {
+            .container--carousel__thumbnails__item {
+              .item__image__text {
+                display: block !important;
+              }
+              &:nth-child(1) {
+                .item__overlay {
+                  border-radius: 20px 0 0 0;
+                }
+                .item__image {
+                  img {
+                    border-radius: 20px 0 0 0;
+                  }
+                }
+              }
+              &:nth-child(3) {
+                .item__overlay {
+                  border-radius: 0 20px 0 0;
+                }
+                .item__image {
+                  img {
+                    border-radius: 0 20px 0 0;
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -310,8 +334,10 @@
       }
       .item__image {
         border: none;
-        height: 113px * @retina-factor;
+        bottom: -1px;
+        height: 114px * @retina-factor;
         width: 100%;
+        overflow: hidden;
       }
       .item__image__text {
         color: @white;

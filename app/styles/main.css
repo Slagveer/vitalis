@@ -11269,9 +11269,25 @@ button.close {
   .container--carousel .carousel .thumbnail-controls .container-fluid {
     width: 930px !important;
   }
-  .container--carousel .carousel .thumbnail-controls .container .item__image__text,
-  .container--carousel .carousel .thumbnail-controls .container-fluid .item__image__text {
+  .container--carousel .carousel .thumbnail-controls .container .container--carousel__thumbnails .container--carousel__thumbnails__item .item__image__text,
+  .container--carousel .carousel .thumbnail-controls .container-fluid .container--carousel__thumbnails .container--carousel__thumbnails__item .item__image__text {
     display: block !important;
+  }
+  .container--carousel .carousel .thumbnail-controls .container .container--carousel__thumbnails .container--carousel__thumbnails__item:nth-child(1) .item__overlay,
+  .container--carousel .carousel .thumbnail-controls .container-fluid .container--carousel__thumbnails .container--carousel__thumbnails__item:nth-child(1) .item__overlay {
+    border-radius: 20px 0 0 0;
+  }
+  .container--carousel .carousel .thumbnail-controls .container .container--carousel__thumbnails .container--carousel__thumbnails__item:nth-child(1) .item__image img,
+  .container--carousel .carousel .thumbnail-controls .container-fluid .container--carousel__thumbnails .container--carousel__thumbnails__item:nth-child(1) .item__image img {
+    border-radius: 20px 0 0 0;
+  }
+  .container--carousel .carousel .thumbnail-controls .container .container--carousel__thumbnails .container--carousel__thumbnails__item:nth-child(3) .item__overlay,
+  .container--carousel .carousel .thumbnail-controls .container-fluid .container--carousel__thumbnails .container--carousel__thumbnails__item:nth-child(3) .item__overlay {
+    border-radius: 0 20px 0 0;
+  }
+  .container--carousel .carousel .thumbnail-controls .container .container--carousel__thumbnails .container--carousel__thumbnails__item:nth-child(3) .item__image img,
+  .container--carousel .carousel .thumbnail-controls .container-fluid .container--carousel__thumbnails .container--carousel__thumbnails__item:nth-child(3) .item__image img {
+    border-radius: 0 20px 0 0;
   }
 }
 .container--carousel {
@@ -11419,8 +11435,10 @@ button.close {
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__image {
   border: none;
-  height: 56.5px;
+  bottom: -1px;
+  height: 57px;
   width: 100%;
+  overflow: hidden;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__image__text {
   color: #ffffff;
