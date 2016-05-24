@@ -99,7 +99,7 @@
     map = new google.maps.Map($map[0],{
       center: {lat: -34.397, lng: 150.644},
       scrollwheel: true,
-      zoom: (mapType === 'worldwide') ? 2 : 4
+      zoom: 4
     });
     map.mapTypes.set('enza', enzaMapType);
     map.setMapTypeId('enza');
@@ -131,13 +131,9 @@
     evt.preventDefault();
     selectedCountry = evt.target.value;
     if(selectedCountry) {
-      if(mapType === 'worldwide') {
-        countrypage = $country.find('.js-option[value="' + selectedCountry + '"]').data('countrypage');
-        $countryForm.attr('action', countrypage);
-        $countryForm.submit();
-      } else {
-        // /map.setCenter(new google.maps.LatLng(countries[selectedCountry][0], countries[selectedCountry][1]));
-      }
+      countrypage = $country.find('.js-option[value="' + selectedCountry + '"]').data('countrypage');
+      $countryForm.attr('action', countrypage);
+      $countryForm.submit();
     }
     addOffices(selectedCountry);
     addOfficesList(selectedCountry);
