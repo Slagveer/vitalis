@@ -9180,6 +9180,7 @@ button.close {
 .teaserbox .teaserbox__overlay,
 .teaserbox .teaserbox__overlay-bottom {
   background-color: #008095;
+  border-radius: 20px;
   bottom: 0;
   left: 0;
   position: absolute;
@@ -10769,7 +10770,7 @@ button.close {
 }
 .filter .filter__selected .filter__selected__button.clear,
 .filter .filter__select .filter__selected__button.clear {
-  line-height: 8px;
+  line-height: 5px;
 }
 .filter .filter__selected .filter__select__button,
 .filter .filter__select .filter__select__button {
