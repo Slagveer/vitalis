@@ -10617,6 +10617,7 @@ button.close {
 }
 .enza-checkbox .enza-checkbox__element {
   margin: 0 0 0;
+  opacity: 0;
 }
 .enza-checkbox .enza-checkbox__element:checked + .enza-checkbox__label {
   border: 1px solid #aac426;
