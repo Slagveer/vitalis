@@ -43,10 +43,6 @@
           maxCheckboxes: 5
         });
       }
-      // $('.hirsc').hisrc({
-      //   useTransparentGif: false,
-      //   speedTestUri: '../bower_components/hisrc/50K.jpg'
-      // });
       $('.js-maps').googlemaps();
       $('.js-teaserbox__image').imagefill();
       $('.js-item__image').imagefill();
