@@ -9323,6 +9323,15 @@ button.close {
 .teaserbox.teaserbox--child-overview .teaserbox__link svg circle {
   fill: #008095;
 }
+.teaserbox.teaserbox--child-overview .teaserbox__image {
+  border-radius: 0px;
+  height: 135px;
+  width: 100%;
+}
+.teaserbox.teaserbox--child-overview .teaserbox__image img {
+  border-radius: 20px 20px 0 0;
+  position: static !important;
+}
 .teaserbox.teaserbox--extra-content {
   border-color: #cccccc;
   height: 345px;
@@ -10307,6 +10316,7 @@ button.close {
     border-radius: 20px 20px 0 0;
     margin-bottom: -71px;
     margin-left: -50px;
+    margin-right: -20px;
     padding-left: 50px;
     padding-top: 50px;
     position: relative;
@@ -10333,6 +10343,7 @@ button.close {
     border-radius: 20px 20px 0 0;
     margin-bottom: -71px;
     margin-left: -50px;
+    margin-right: -1px;
     padding-left: 50px;
     padding-top: 50px;
     position: relative;
@@ -10404,7 +10415,6 @@ button.close {
 }
 .content .content__image--extra-small {
   height: 141px;
-  margin-bottom: -19px;
   padding: 9px 0 35.5px 0;
   width: 100%;
 }
@@ -10475,8 +10485,7 @@ button.close {
 }
 .content .content__introduction.content__introduction--image .content__introduction--image__image {
   height: 197.5px;
-  margin-bottom: 24px;
-  margin-top: 30px;
+  margin-top: 10px;
   padding: 0 5px;
   width: 100%;
 }

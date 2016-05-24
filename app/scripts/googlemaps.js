@@ -168,9 +168,9 @@
         if(_.where(markers, office).length === 0) {
           markers.push(office);
           latlng = new google.maps.LatLng(parseFloat(office.Latitude), parseFloat(office.Longitude));
-          source = $infoTemplate.html();
-          template = Handlebars.compile(source);
-          html = template(office);
+          //source = $infoTemplate.html();
+          //template = Handlebars.compile(source);
+          //html = template(office);
           infowindow = new google.maps.InfoWindow({
             content: html,
             size: new google.maps.Size(150, 50)

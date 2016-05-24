@@ -251,6 +251,17 @@
       }
     }
   }
+  &.teaserbox--child-overview {
+    .teaserbox__image {
+      border-radius: 0px;
+      height: 270px * @retina-factor;
+      width: 100%;
+      img {
+        border-radius: 20px 20px 0 0;
+        position: static !important;
+      }
+    }
+  }
   &.teaserbox--extra-content {
     border-color: @grey;
     height: 690px * @retina-factor;

@@ -180,7 +180,7 @@
   </div>
 </div>
 <!-- GOOGLEMAPS::END -->
-<div class="container crop-overview">
+<div class="container crop-overview container--teaserboxes">
   <div class="row">
     <!-- GOOGLEMAPS-ICONS::START -->
     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 googlemaps-map visible-sm visible-md visible-lg">
@@ -194,7 +194,7 @@
   <!-- GOOGLEMAPS-OFFICES::START -->
   <!-- CROP-OVERVIEW::START -->
   <!-- CROP-OVERVIEW-PRODUCTS::START -->
-  <div class="row crop-overview__products googlemaps-lands visible-sm visible-md visible-lg">
+  <div class="row googlemaps-info-template  googlemaps-lands visible-sm visible-md visible-lg">
     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
       <a href="#" title="" class="teaserbox teaserbox--child-overview">
         <section>
@@ -324,6 +324,17 @@
   <!-- GOOGLEMAPS-OFFICES::END -->
 </div>
 <!-- GOOGLEMAPS-TEMPLATES::START -->
+<!-- GOOGLEMAPS-INFO::START -->
+<script id="googlemaps-info-template" type="text/x-handlebars-template">
+  <div class="googlemaps-map">
+    <h3 class="googlemaps-map__title">{{ TypeName }}</h3>
+    <span class="googlemaps-map__address">{{ 'Adresregel 1' }}</span><br>
+    <span class="googlemaps-map__address">{{ Postcode }}</span>
+    <span class="googlemaps-map__address">{{ Plaats }}</span><br>
+    <span class="googlemaps-map__phone">{{ 'Primair telefoonnummer' }}</span>
+  </div>
+</script>
+<!-- GOOGLEMAPS-INFO::END -->
 <!-- GOOGLEMAPS-OFFICE::START -->
 <script id="googlemaps-office-template" type="text/x-handlebars-template">
   <article class="article--list">
@@ -436,10 +447,4 @@
 <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
 <script src="../bower_components/bootstrap/js/collapse.js"></script>
 <script src="../bower_components/bootstrap/js/tab.js"></script>
-<!-- endbuild -->
-</body>
-</html>
-
-
-
-
+<!-- endbuild
