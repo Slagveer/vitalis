@@ -11319,7 +11319,7 @@ button.close {
   }
   .container--carousel .carousel .thumbnail-controls {
     position: absolute;
-    bottom: 0px !important;
+    bottom: 1px !important;
     width: 100%;
   }
   .container--carousel .carousel .thumbnail-controls .container,
@@ -11348,7 +11348,7 @@ button.close {
   }
 }
 .container--carousel {
-  padding-bottom: 50px;
+  padding-bottom: 57px;
 }
 .container--carousel.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .carousel-caption {
   bottom: 43.5px;
@@ -12512,14 +12512,14 @@ button.close {
   font-weight: normal;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  figure {
+  .content__paragraaf figure {
     position: relative;
     left: -20px;
     width: 110%;
   }
 }
 @media (min-width: 1200px) {
-  figure {
+  .content__paragraaf figure {
     position: relative;
     left: -20px;
     width: 110%;
