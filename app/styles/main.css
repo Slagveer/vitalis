@@ -10435,18 +10435,30 @@ button.close {
 .content .content__image {
   height: 355px;
   margin-bottom: 30px;
+  overflow: hidden;
   padding-bottom: 0px;
   width: 100%;
 }
+.content .content__image img {
+  position: static;
+}
 .content .content__image--small {
   height: 206px;
+  overflow: hidden;
   padding-top: 27.5px;
   width: 100%;
 }
+.content .content__image--small img {
+  position: static;
+}
 .content .content__image--extra-small {
   height: 141px;
+  overflow: hidden;
   padding: 9px 0 35.5px 0;
   width: 100%;
+}
+.content .content__image--extra-small img {
+  position: static;
 }
 .content .content__image__caption {
   font-style: italic;

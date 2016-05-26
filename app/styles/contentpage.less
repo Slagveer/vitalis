@@ -13,7 +13,6 @@
   .person-contact {
     border: none !important;
   }
-
   .container.content {
     .row {
       &:nth-child(2) {
@@ -128,19 +127,31 @@
   .content__image {
     height: 710px * @retina-factor;
     margin-bottom: 60px * @retina-factor;
+    overflow: hidden;
     padding-bottom: 0px;
     width: 100%;
+    img {
+      position: static;
+    }
   }
   .content__image--small {
     height: 412px * @retina-factor;
+    overflow: hidden;
     padding-top: 55px * @retina-factor;
     width: 100%;
+    img {
+      position: static;
+    }
   }
   .content__image--extra-small {
     height: 282px * @retina-factor;
     //margin-bottom: -38px * @retina-factor;
+    overflow: hidden;
     padding: 18px * @retina-factor 0 71px * @retina-factor 0;
     width: 100%;
+    img {
+      position: static;
+    }
   }
   .content__image__caption {
     font-style: italic;
