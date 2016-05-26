@@ -10528,8 +10528,12 @@ button.close {
 .content .content__introduction.content__introduction--image .content__introduction--image__image {
   height: 197.5px;
   margin-top: 10px;
+  overflow: hidden;
   padding: 0 5px;
   width: 100%;
+}
+.content .content__introduction.content__introduction--image .content__introduction--image__image img {
+  position: static;
 }
 .content .content__introduction.content__introduction--image .content__introduction--image__title {
   border: none;
