@@ -7877,6 +7877,7 @@ button.close {
     font-size: 18px !important;
   }
   .navigation .container-fluid {
+    border-bottom: 1px solid #ededed;
     position: relative;
     width: 960px;
   }
@@ -8077,13 +8078,16 @@ button.close {
     position: absolute;
     right: 0px;
   }
+  .navigation .container-fluid .navbar-header .navigation__button {
+    height: 20px;
+  }
   .navigation .container-fluid .navbar-header .navigation__button.navbar-brand {
     opacity: 1 !important;
   }
   .navigation .container-fluid .navbar-header .navigation__button.navigation__button--logo .navigation__button__image {
     border: none;
     max-width: 120px;
-    top: 39px;
+    top: 53px;
     right: 18px;
     width: 120px;
   }
