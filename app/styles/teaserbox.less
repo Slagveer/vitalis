@@ -25,6 +25,7 @@
           padding-left: 15px !important;
           padding-right: 15px !important;
           .teaserbox {
+            border-radius: 20px;
             &.teaserbox--icon {
               margin-left: 0px;
               margin-right: 0px;
@@ -45,6 +46,7 @@
         padding-left: 15px !important;
         padding-right: 15px !important;
         .teaserbox {
+          border-radius: 20px !important;
           &.teaserbox--icon {
             margin-left: 0px;
             margin-right: 0px;
@@ -169,9 +171,11 @@
       }
     }
     .teaserbox__image {
+      border-radius: 20px;
       margin-left: 4px * @retina-factor;
       margin-top: 3px * @retina-factor;
       max-width: 150px * @retina-factor;
+      overflow: hidden;
       &.teaserbox__image--event {
         margin-left: 0px * @retina-factor;
         max-width: 163px * @retina-factor;
@@ -275,9 +279,13 @@
       height: 356px * @retina-factor;
     }
     .teaserbox__image {
-      border-radius: 10px;
+      border-radius: 20px;
       height: 315px * @retina-factor;
       width: 100%;
+      img {
+        border-radius: 20px 20px 0 0;
+        position: static !important;
+      }
     }
     .teaserbox__description {
       bottom: inherit;
@@ -350,11 +358,13 @@
   &.teaserbox--story,
   &.teaserbox--news--grey {
     background-color: #000;
+    border-radius: 20px;
     margin-bottom: 36px * @retina-factor;
     margin-left: 0px;
     margin-right: 0px;
     padding: 45px * @retina-factor;
     .teaserbox__image {
+      border-radius: 20px;
       left: 0;
       width: 100%;
       height: 620px * @retina-factor;
@@ -362,6 +372,9 @@
       position: absolute;
       right: 0;
       top: 0;
+      img {
+        position: static !important;
+      }
     }
     .teaserbox__link {
       //bottom: 29px;

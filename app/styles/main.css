@@ -9137,6 +9137,9 @@ button.close {
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
+  .container.container--teaserboxes .row .fullsize .teaserbox {
+    border-radius: 20px;
+  }
   .container.container--teaserboxes .row .fullsize .teaserbox.teaserbox--icon {
     margin-left: 0px;
     margin-right: 0px;
@@ -9146,6 +9149,9 @@ button.close {
   .container.container--teaserboxes .fullsize {
     padding-left: 15px !important;
     padding-right: 15px !important;
+  }
+  .container.container--teaserboxes .fullsize .teaserbox {
+    border-radius: 20px !important;
   }
   .container.container--teaserboxes .fullsize .teaserbox.teaserbox--icon {
     margin-left: 0px;
@@ -9243,9 +9249,11 @@ button.close {
   fill: #008095;
 }
 .teaserbox.teaserbox--icon .teaserbox__image {
+  border-radius: 20px;
   margin-left: 2px;
   margin-top: 1.5px;
   max-width: 75px;
+  overflow: hidden;
 }
 .teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--event {
   margin-left: 0px;
@@ -9350,9 +9358,13 @@ button.close {
   height: 178px;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__image {
-  border-radius: 10px;
+  border-radius: 20px;
   height: 157.5px;
   width: 100%;
+}
+.teaserbox.teaserbox--extra-content .teaserbox__image img {
+  border-radius: 20px 20px 0 0;
+  position: static !important;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__description {
   bottom: inherit;
@@ -9408,6 +9420,7 @@ button.close {
 .teaserbox.teaserbox--story,
 .teaserbox.teaserbox--news--grey {
   background-color: #000;
+  border-radius: 20px;
   margin-bottom: 18px;
   margin-left: 0px;
   margin-right: 0px;
@@ -9416,6 +9429,7 @@ button.close {
 .teaserbox.teaserbox--news .teaserbox__image,
 .teaserbox.teaserbox--story .teaserbox__image,
 .teaserbox.teaserbox--news--grey .teaserbox__image {
+  border-radius: 20px;
   left: 0;
   width: 100%;
   height: 310px;
@@ -9423,6 +9437,11 @@ button.close {
   position: absolute;
   right: 0;
   top: 0;
+}
+.teaserbox.teaserbox--news .teaserbox__image img,
+.teaserbox.teaserbox--story .teaserbox__image img,
+.teaserbox.teaserbox--news--grey .teaserbox__image img {
+  position: static !important;
 }
 .teaserbox.teaserbox--news .teaserbox__description,
 .teaserbox.teaserbox--story .teaserbox__description,
