@@ -22,26 +22,39 @@
   .content__paragraaf {
     padding-left: 60px * @retina-factor;
     padding-right: 60px * @retina-factor;
-    .content__paragraaf__title {
+    .content__paragraaf__title,
+    h3,
+    h2 {
       font-family: @font-family-heart;
       font-size: 47px * @retina-factor;
       font-weight: bold;
       margin-bottom: 6px * @retina-factor;
       padding-bottom: 0px * @retina-factor;
     }
+    h3 {
+      font-size: 20px;
+    }
     .content__paragraaf__description--bold,
+    p,
+    ul,
+    ol,
     .content__paragraaf__description--normal {
       font-family: @font-family-open-sanse;
       font-size: 27px * @retina-factor;
       font-weight: normal;
       margin-bottom: 37px * @retina-factor;
       padding-top: 24px * @retina-factor;
-  }
+    }
     .content__paragraaf__description--normal {
       font-weight: normal;
     }
     .content__paragraaf__description--bold {
       font-weight: bold;
+    }
+    p {
+      strong {
+        font-weight: bold;
+      }
     }
   }
 }

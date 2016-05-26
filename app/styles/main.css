@@ -12499,14 +12499,22 @@ button.close {
   padding-left: 30px;
   padding-right: 30px;
 }
-.content .content__paragraaf .content__paragraaf__title {
+.content .content__paragraaf .content__paragraaf__title,
+.content .content__paragraaf h3,
+.content .content__paragraaf h2 {
   font-family: 'give_it_your_heartmedium', serif;
   font-size: 23.5px;
   font-weight: bold;
   margin-bottom: 3px;
   padding-bottom: 0px;
 }
+.content .content__paragraaf h3 {
+  font-size: 20px;
+}
 .content .content__paragraaf .content__paragraaf__description--bold,
+.content .content__paragraaf p,
+.content .content__paragraaf ul,
+.content .content__paragraaf ol,
 .content .content__paragraaf .content__paragraaf__description--normal {
   font-family: 'Open Sans', sans-serif;
   font-size: 13.5px;
@@ -12518,6 +12526,9 @@ button.close {
   font-weight: normal;
 }
 .content .content__paragraaf .content__paragraaf__description--bold {
+  font-weight: bold;
+}
+.content .content__paragraaf p strong {
   font-weight: bold;
 }
 .extra-content {
