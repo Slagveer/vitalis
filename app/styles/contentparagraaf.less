@@ -17,25 +17,54 @@
   }
 }
 
+// TABLET::START
+@media (min-width: @tablet_min) and (max-width: @tablet_max) {
+  figure {
+    position: relative;
+    left: -20px;
+    width: 100% + 10px;
+  }
+}
+// TABLET::END
+
+// DESKTOP::START
+// DESKTOP::START
+@media (min-width: @desktop_min) {
+  figure {
+    position: relative;
+    left: -20px;
+    width: 100% + 10px;
+  }
+}
+// DESKTOP::END
+
 // MOBILE::START
 .content {
   .content__paragraaf {
     padding-left: 60px * @retina-factor;
     padding-right: 60px * @retina-factor;
     .content__paragraaf__title,
+    h4,
     h3,
     h2 {
       font-family: @font-family-heart;
-      font-size: 47px * @retina-factor;
+      font-size: @H2;
       font-weight: bold;
+      line-height: @H2-line-height;
       margin-bottom: 6px * @retina-factor;
       padding-bottom: 0px * @retina-factor;
     }
     h3 {
-      font-size: 20px;
+      font-size: @H3;
+      line-height: @H3-line-height;
+    }
+    h4 {
+      font-size: @H4;
+      line-height: @H4;
     }
     .content__paragraaf__description--bold,
     p,
+    address,
     ul,
     ol,
     .content__paragraaf__description--normal {
@@ -51,9 +80,47 @@
     .content__paragraaf__description--bold {
       font-weight: bold;
     }
-    p {
+    p,
+    caption,
+    td,
+    th {
       strong {
         font-weight: bold;
+      }
+      mark {
+        background-color: @light-grey;
+      }
+      &.quote {
+        border: none;
+        font-family: @font-family-heart;
+        font-size: 47px * @retina-factor;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 60px * @retina-factor;
+        margin-bottom: 63px * @retina-factor;
+        padding-bottom: 16px * @retina-factor;
+        padding-top: 45px * @retina-factor;
+      }
+      a {
+        text-decoration: underline;
+      }
+    }
+    td,
+    caption {
+      font-family: @font-family-open-sanse;
+      font-size: 27px * @retina-factor;
+    }
+    address {
+      margin-bottom: 0px;
+      padding-top: 0px;
+      strong {
+        font-weight: bold;
+      }
+    }
+    figure {
+      embed {
+        height: 206px;
+        width: 100% !important;
       }
     }
   }
