@@ -119,6 +119,7 @@
   clear: left;
   *[href] {
     color: @white;
+    font-weight: bold;
     text-decoration: none;
     &:hover {
       color: @red;
@@ -256,14 +257,19 @@
               clear: left;
               color: @blue-light;
               float: left;
+              font-weight: bold;
             }
             .country {
               margin-bottom: 28px * @retina-factor;
             }
             .phone {
+              position: relative;
+              top: -2px;
               .footer-icon();
             }
             .mail {
+              position: relative;
+              top: -2px;
               .footer-icon();
             }
             * {
@@ -308,7 +314,7 @@
     .logo {
       border: 1px solid #fff;
       margin-left: 40px * @retina-factor;
-      max-width: 306px * @retina-factor;
+      width: 180px * @retina-factor;
       position: absolute;
       right: 27px;
       top: 10px;
