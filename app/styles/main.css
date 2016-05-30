@@ -10202,10 +10202,18 @@ button.close {
   font-size: 13px;
   font-weight: bold;
 }
+.variety-detail .variety-detail__information .variety-detail__information__image .mail a {
+  color: #008095;
+  text-decoration: none;
+}
 .variety-detail .variety-detail__information .variety-detail__information__image .phone {
   color: #008095;
   font-size: 13px;
   font-weight: bold;
+}
+.variety-detail .variety-detail__information .variety-detail__information__image .phone a {
+  color: #008095;
+  text-decoration: none;
 }
 .variety-detail .variety-detail__social {
   border-bottom: 1px solid #ededed;
