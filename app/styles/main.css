@@ -12828,7 +12828,7 @@ button.close {
 }
 .googlemaps-map .googlemaps-map__icon {
   float: left;
-  max-width: 36px;
+  max-width: 22px;
 }
 .googlemaps-map .googlemaps-map__icon:nth-of-type(2) {
   margin-left: 10px;
