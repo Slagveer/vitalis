@@ -12490,10 +12490,18 @@ button.close {
   font-size: 13px;
   font-weight: bold;
 }
+.person-contact .person-contact__information .person-contact__information__image .mail a {
+  color: #008095;
+  text-decoration: none;
+}
 .person-contact .person-contact__information .person-contact__information__image .phone {
   color: #008095;
   font-size: 13px;
   font-weight: bold;
+}
+.person-contact .person-contact__information .person-contact__information__image .phone a {
+  color: #008095;
+  text-decoration: none;
 }
 .numberresults .numberresults__header {
   width: 100%;
