@@ -8019,8 +8019,41 @@ button.close {
     background-color: #ffffff;
     height: 60px !important;
   }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item:hover,
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item:active,
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item:focus {
+    background-color: #ffffff !important;
+    color: #008095;
+  }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item .navigation__menu__item__label {
     height: 60px !important;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item .navigation__menu__item__sub {
+    text-align: center;
+    width: 100%;
+    box-shadow: none;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item .navigation__menu__item__sub .navigation__menu__item__sub__item {
+    border: 1px solid #ededed;
+    cursor: pointer;
+    display: table-row;
+    font-size: 13pt;
+    height: 60px;
+    line-height: 12pt;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item .navigation__menu__item__sub .navigation__menu__item__sub__item:hover {
+    color: #008095;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item .navigation__menu__item__sub .navigation__menu__item__sub__item:last-child .menu-label {
+    border-bottom: 1px solid #cccccc;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item .navigation__menu__item__sub .navigation__menu__item__sub__item .menu-label {
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #cccccc;
+    border-bottom: 0px solid #cccccc;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label {
     border: none;
@@ -10871,6 +10904,10 @@ button.close {
   margin-bottom: 15px;
   margin-top: 0px;
   width: 125px;
+}
+.filter .filter__selected .filter__select__button.less,
+.filter .filter__select .filter__select__button.less {
+  display: none;
 }
 .filter .filter__selected .filter__selected__options,
 .filter .filter__select .filter__selected__options,
