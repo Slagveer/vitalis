@@ -6907,6 +6907,9 @@ button.close {
 .navigation .navigation__menu .navigation__menu__form .form-control {
   font-size: 16px;
 }
+.navigation .navigation__menu .navigation__menu__form .btn {
+  border-left: none;
+}
 .navigation .navigation__menu .navigation__menu__item {
   background-color: #ffffff;
 }
@@ -6998,7 +7001,7 @@ button.close {
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .flag,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--logo .navigation__menu__item__label .flag,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label .flag {
-  margin-right: 2.5px;
+  margin-right: 6.5px;
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .arrow,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--logo .navigation__menu__item__label .arrow,
@@ -7160,7 +7163,9 @@ button.close {
   background: url(../images/flags.png) no-repeat;
   background-position: -176px -44px;
   display: inline-block;
-  height: 8px;
+  height: 10px;
+  position: relative;
+  top: 2px;
   width: 16px;
 }
 .navigation .flag.flag-ad {
@@ -8003,7 +8008,7 @@ button.close {
     position: relative;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .flag {
-    left: 34px;
+    left: 30px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--sub {
     display: none;
@@ -8029,7 +8034,7 @@ button.close {
     padding-left: 33px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .flag {
-    left: 36px;
+    left: 30px;
     position: absolute;
     top: 14px;
   }
@@ -11533,15 +11538,25 @@ button.close {
 .container--carousel .container--carousel__slides .container--carousel__slides__item .container--carousel__slides__item__image {
   height: 297px;
 }
+.container--carousel .container--carousel__slides .container--carousel__slides__item .container--carousel__slides__item__image .slide-background {
+  background-color: #515151;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: .3;
+}
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption {
-  bottom: 52.5px;
+  bottom: 80px;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__text {
   font-family: 'give_it_your_heartmedium', serif;
   font-size: 45px;
-  position: absolute;
+  line-height: 50px;
+  position: relative;
   text-align: center;
-  top: -125px;
+  top: -20px;
   width: 100%;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button {
