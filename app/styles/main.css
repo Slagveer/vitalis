@@ -8101,6 +8101,8 @@ button.close {
     vertical-align: middle;
     border: 1px solid #cccccc;
     border-bottom: 0px solid #cccccc;
+    padding: 0px !important;
+    white-space: normal !important;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label {
     border: none;
