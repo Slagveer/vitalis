@@ -9262,6 +9262,9 @@ button.close {
     margin-right: 0px;
   }
 }
+.container.container--teaserboxes {
+  margin-bottom: -15px !important;
+}
 .teaserbox {
   background-color: #fff;
   border: 1px solid #ededed;
@@ -9361,7 +9364,8 @@ button.close {
 }
 .teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--event {
   margin-left: 0px;
-  max-width: 81.5px;
+  width: 100px;
+  max-width: 100px;
 }
 .teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--event path {
   fill: #008095;
@@ -9694,11 +9698,13 @@ button.close {
     padding-left: 95px;
   }
   .itemslist .article--list .itemslist__item {
+    border-radius: 20px;
     padding: 0px;
     height: 173px;
     margin-top: 24px;
   }
   .itemslist .article--list .itemslist__item .itemslist__item__image {
+    border-radius: 20px 0 0 20px;
     height: 173px;
     margin-left: 0px;
     max-width: 173px;
@@ -9821,7 +9827,7 @@ button.close {
 .itemslist .itemslist__item .itemslist__item__content .itemslist__item__date {
   clear: left;
   float: left;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   margin-top: -5.5px;
   padding-top: 20px;
 }
@@ -10587,7 +10593,7 @@ button.close {
   position: static;
 }
 .content .content__image--extra-small {
-  height: 141px;
+  height: 180px;
   overflow: hidden;
   padding: 9px 0 35.5px 0;
   width: 100%;
@@ -11020,6 +11026,9 @@ button.close {
   fill: #008095;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+  .navigation.footer {
+    padding-top: 25px !important;
+  }
   .navigation.footer .container-fluid .row .fullsize,
   .navigation.footer .container .row .fullsize {
     padding-left: 0px !important;
@@ -11062,6 +11071,7 @@ button.close {
 @media (min-width: 1200px) {
   .navigation.footer {
     background: none !important;
+    padding-top: 35px !important;
   }
   .navigation.footer .container-fluid .row .fullsize,
   .navigation.footer .container .row .fullsize {
@@ -11111,13 +11121,14 @@ button.close {
   }
 }
 .navigation.footer {
+  background-color: #ffffff;
   border-radius: 0;
   border-width: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: bold;
   line-height: 19pt;
-  padding-top: 50px;
+  padding-top: 25px;
   position: static;
 }
 .navigation.footer .container .row .fullsize {
@@ -11625,7 +11636,6 @@ button.close {
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item {
   flex-grow: 1;
-  max-width: 33.33333333%;
   position: relative;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item.active .item__overlay {
@@ -11634,14 +11644,16 @@ button.close {
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__overlay {
   position: absolute;
   background-color: #515151;
-  height: 102%;
-  width: 101%;
+  height: 57px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
   opacity: .8;
   z-index: 1;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__image {
   border: none;
-  bottom: -1px;
+  bottom: 0px;
   height: 57px;
   width: 101%;
   overflow: hidden;
@@ -11683,8 +11695,25 @@ button.close {
 .carousel-fade .carousel-control {
   z-index: 2;
 }
+@media (min-width: 1200px) {
+  .loadmore {
+    padding: 35px 0 0 0 !important;
+  }
+  .loadmore .carousel-caption__button {
+    max-width: 200px !important;
+    height: 53px !important;
+  }
+  .loadmore .carousel-caption__button .carousel-caption__button__arrow {
+    left: 45px !important;
+    top: 13px !important;
+  }
+  .loadmore .carousel-caption__button .carousel-caption__button__text {
+    margin-top: 3px !important;
+    padding-left: 66px !important;
+  }
+}
 .loadmore {
-  padding: 10px 0;
+  padding: 25px 0 0 0;
   text-align: center;
 }
 .loadmore .carousel-caption__button {
@@ -11701,16 +11730,16 @@ button.close {
 }
 .loadmore .carousel-caption__button:hover,
 .loadmore .carousel-caption__button:active {
-  border-color: #008095;
+  border-color: #aac426;
 }
 .loadmore .carousel-caption__button:hover .carousel-caption__button__text,
 .loadmore .carousel-caption__button:active .carousel-caption__button__text {
-  color: #008095;
+  color: #aac426;
 }
 .loadmore .carousel-caption__button:hover .carousel-caption__button__arrow svg path,
 .loadmore .carousel-caption__button:active .carousel-caption__button__arrow svg path {
-  stroke: #008095;
-  fill: #008095;
+  stroke: #aac426;
+  fill: #aac426;
 }
 .loadmore .carousel-caption__button .carousel-caption__button__text {
   float: left;
@@ -12503,11 +12532,12 @@ button.close {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .person-contact {
-    border-bottom: 1px solid #ededed;
-    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed !important;
+    border-top: 1px solid #ededed !important;
   }
   .person-contact .person-contact__information {
     border-bottom: 0px solid #ededed !important;
+    border-left: 1px solid #ededed;
     padding-left: 72px;
     padding-top: 16px !important;
     padding-bottom: -30px !important;
@@ -12537,11 +12567,11 @@ button.close {
 }
 @media (min-width: 1200px) {
   .person-contact {
-    border-bottom: 1px solid #ededed;
-    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed !important;
+    border-top: 1px solid #ededed !important;
   }
   .person-contact .person-contact__information {
-    border: none !important;
+    border-left: 1px solid #ededed;
     padding-left: 72px;
     padding-top: 16px !important;
     padding-bottom: -30px !important;
@@ -12593,6 +12623,7 @@ button.close {
 .person-contact .person-contact__information .person-contact__information__image .name {
   font-size: 13px;
   font-weight: bold;
+  margin-bottom: 0px;
 }
 .person-contact .person-contact__information .person-contact__information__image .job {
   font-size: 13px;
@@ -12602,6 +12633,7 @@ button.close {
   color: #008095;
   font-size: 13px;
   font-weight: bold;
+  margin-bottom: 0px;
 }
 .person-contact .person-contact__information .person-contact__information__image .mail a {
   color: #008095;

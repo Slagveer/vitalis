@@ -26,7 +26,7 @@
       $loadmore.on('click', function onClick(evt) {
         evt.preventDefault();
         if(!disabled) {
-          $arrow.addClass('loadmore');
+          //$arrow.addClass('loadmore');
           getTeasers($loadmore.data('amount-teaserboxes'));
         }
       });
@@ -68,9 +68,9 @@
                   $('.js-teaserbox__image').imagefill();
                 });
               }
-              $arrow.removeClass('loadmore');
+              //$arrow.removeClass('loadmore');
             }).fail(function(err) {
-              $arrow.removeClass('loadmore');
+              //$arrow.removeClass('loadmore');
             });
         }
       }
