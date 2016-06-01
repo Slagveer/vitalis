@@ -25,7 +25,7 @@
                       .mail {
                         clear: none;
                         font-size: 18px * @retina-factor;
-                        line-height: 60px * @retina-factor;
+                        line-height: 23px;
                         padding-right: 60px * @retina-factor;
                       }
                     }
@@ -79,7 +79,7 @@
                       .mail {
                         clear: none;
                         font-size: 18px * @retina-factor;
-                        line-height:60px * @retina-factor;
+                        line-height: 23px;
                         padding-right: 60px * @retina-factor;
                       }
                     }
@@ -126,7 +126,7 @@
     }
   }
   float: left;
-  margin-bottom: 60px * @retina-factor;
+  //margin-bottom: 60px * @retina-factor;
   &:hover {
     color: @red;
     svg {
@@ -151,6 +151,7 @@
     font-size: 32px * @retina-factor;//@body;
     font-weight: bold;
     line-height: @body-line-height;
+    padding-top: 50px;
     position: static;
     .container {
       .row {
@@ -260,16 +261,20 @@
               font-weight: bold;
             }
             .country {
-              margin-bottom: 28px * @retina-factor;
+              //margin-bottom: 28px * @retina-factor;
+              padding-bottom: 1px;
             }
             .phone {
               position: relative;
-              top: -2px;
+              //top: -2px;
+              line-height: 10px;
+              //margin-top: -12px;
               .footer-icon();
             }
             .mail {
               position: relative;
-              top: -2px;
+              //top: -2px;
+              padding-bottom: 3px;
               .footer-icon();
             }
             * {

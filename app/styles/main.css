@@ -11050,7 +11050,7 @@ button.close {
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail {
     clear: none;
     font-size: 9px;
-    line-height: 30px;
+    line-height: 23px;
     padding-right: 30px;
   }
   .navigation.footer .container-fluid .row .fullsize .footer__sub-menu,
@@ -11101,7 +11101,7 @@ button.close {
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail {
     clear: none;
     font-size: 9px;
-    line-height: 30px;
+    line-height: 23px;
     padding-right: 30px;
   }
   .navigation.footer .container-fluid .row .fullsize .footer__sub-menu,
@@ -11117,6 +11117,7 @@ button.close {
   font-size: 16px;
   font-weight: bold;
   line-height: 19pt;
+  padding-top: 50px;
   position: static;
 }
 .navigation.footer .container .row .fullsize {
@@ -11230,15 +11231,14 @@ button.close {
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .country,
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country {
-  margin-bottom: 14px;
+  padding-bottom: 1px;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone,
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone {
   position: relative;
-  top: -2px;
+  line-height: 10px;
   clear: left;
   float: left;
-  margin-bottom: 30px;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone *[href],
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone *[href] {
@@ -11268,10 +11268,9 @@ button.close {
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail,
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail {
   position: relative;
-  top: -2px;
+  padding-bottom: 3px;
   clear: left;
   float: left;
-  margin-bottom: 30px;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail *[href],
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail *[href] {
