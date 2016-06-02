@@ -9417,6 +9417,9 @@ button.close {
 .teaserbox.teaserbox--child-overview {
   margin-bottom: 30px;
 }
+.teaserbox.teaserbox--variety-detail .teaserbox__image {
+  border-radius: 20px 20px 0 0 !important;
+}
 .teaserbox.teaserbox--variety-detail,
 .teaserbox.teaserbox--extra-content,
 .teaserbox.teaserbox--child-overview {
@@ -9745,11 +9748,13 @@ button.close {
     padding-left: 95px;
   }
   .itemslist .article--list .itemslist__item {
+    border-radius: 20px;
     padding: 0px;
     height: 173px;
     margin-top: 24px;
   }
   .itemslist .article--list .itemslist__item .itemslist__item__image {
+    border-radius: 20px 0 0 20px;
     height: 173px;
     margin-left: 0px;
     max-width: 173px;
