@@ -9377,6 +9377,7 @@ button.close {
   margin-left: 2px;
   margin-top: 1.5px;
   max-width: 75px;
+  width: 75px;
   overflow: hidden;
 }
 .teaserbox.teaserbox--icon .teaserbox__image.teaserbox__image--event {
