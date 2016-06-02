@@ -6768,6 +6768,7 @@ button.close {
   }
   .navigation .container-fluid .navbar-header .navigation__button.navigation__button--logo .navigation__button__image {
     max-width: 87.5px;
+    top: 11px;
     z-index: 1 !important;
   }
   .navigation .container-fluid .navbar-header .navigation__button.navigation__button--hamburger {
@@ -8202,10 +8203,9 @@ button.close {
   }
   .navigation .container-fluid .navbar-header .navigation__button.navigation__button--logo .navigation__button__image {
     border: none;
-    max-width: 120px;
-    top: 53px;
-    right: 17px;
-    width: 120px;
+    top: 41px;
+    right: 0px;
+    width: 137px;
   }
   .navigation {
     border-radius: 0;
@@ -8436,10 +8436,13 @@ button.close {
     width: 178px;
   }
   .navigation .navigation__button.navigation__button--logo .navigation__button__image {
-    border: 1px solid #ffffff;
+    border-right: 1px solid #ededed !important;
+    height: 60px;
     max-width: 150px;
     padding: 0px;
     position: absolute;
+    top: 41px;
+    width: 150px;
     z-index: 0;
   }
   .navigation .navigation__button.navigation__button--logo.hide-logo {

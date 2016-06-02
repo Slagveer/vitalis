@@ -288,11 +288,11 @@
           &.navigation__button--logo {
             .navigation__button__image {
               border: none;
-              max-width: 120px;
-              top: 53px;
+              //max-width: 120px;
+              top: 41px;
               //right: 227px;
-              right: 17px;
-              width: 120px;
+              right: 0px;
+              width: 137px;
             }
           }
         }
@@ -557,10 +557,13 @@
       top: 0px;
       width: 178px;//2 * (@navbar-height + @navbar-margin-bottom/2);
       .navigation__button__image {
-        border: 1px solid @white;
+        border-right: 1px solid @light-grey !important;
+        height: 60px;
         max-width: 150px;
         padding: 0px;
         position: absolute;
+        top: 41px;
+        width: 150px;
         z-index: 0;
       }
       &.hide-logo {
