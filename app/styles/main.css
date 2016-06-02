@@ -8047,7 +8047,7 @@ button.close {
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--logo {
     border: none;
     display: block;
-    font-family: 'Crete Round', serif;
+    font-family: 'give_it_your_heartmedium', serif;
     height: 41px;
     text-align: left;
     width: 157px;
@@ -8209,7 +8209,7 @@ button.close {
   .navigation {
     border-radius: 0;
     border-width: 0;
-    font-family: 'Crete Round', serif;
+    font-family: 'give_it_your_heartmedium', serif;
     font-size: 32px;
     line-height: 19pt;
     margin-bottom: 0px;
@@ -11678,7 +11678,6 @@ button.close {
   height: 57px;
   left: 0px;
   right: 0px;
-  width: 100%;
   opacity: .6;
   z-index: 1;
 }
