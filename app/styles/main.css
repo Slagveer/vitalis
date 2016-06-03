@@ -9953,6 +9953,7 @@ button.close {
 }
 .itemslist .itemslist__item {
   border: 1px solid #cccccc;
+  border-radius: 20px;
   display: flex;
   margin-top: 13.5px;
   padding: 9.5px 0px;
@@ -9966,6 +9967,7 @@ button.close {
 }
 .itemslist .itemslist__item .itemslist__item__image {
   border: 1px solid #cccccc;
+  border-radius: 20px;
   float: left;
   height: 86.5px;
   max-width: 88.5px;
