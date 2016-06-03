@@ -18,25 +18,45 @@
 }
 
 // TABLET::START
+@media (min-width: @tablet_min) and (max-width: @tablet_max_quote) {
+  p {
+    &.quote {
+      left: -225px !important;
+    }
+  }
+}
 @media (min-width: @tablet_min) and (max-width: @tablet_max) {
   .content__paragraaf {
-    figure {
-      position: relative;
-      left: -20px;
-      width: 100% + 10px;
+    p {
+      &.quote {
+        left: -300px;
+        position: absolute;
+        top: 0px;
+        width: 40%;
+      }
+    }
+    .content__image--extra-small {
+      //margin-left:-415px;
+      //min-width: 215%;
     }
   }
 }
 // TABLET::END
 
 // DESKTOP::START
-// DESKTOP::START
 @media (min-width: @desktop_min) {
   .content__paragraaf {
-    figure {
-      position: relative;
-      left: -20px;
-      width: 100% + 10px;
+    p {
+      &.quote {
+        //left: -300px;
+        //position: absolute;
+        //top: 0;
+        //width: 50%;
+      }
+    }
+    .content__image--extra-small {
+      //margin-left: -415px;
+      //width: 185%;
     }
   }
 }
@@ -51,7 +71,7 @@
     h4,
     h3,
     h2 {
-      font-family: @font-family-heart;
+      font-family: @font-family-crete;
       font-size: @H2;
       font-weight: bold;
       line-height: @H2-line-height;
@@ -96,7 +116,7 @@
       }
       &.quote {
         border: none;
-        font-family: @font-family-heart;
+        font-family: @font-family-crete;
         font-size: 47px * @retina-factor;
         font-style: italic;
         font-weight: bold;
@@ -123,9 +143,13 @@
     }
     figure {
       embed {
+        border-radius: 20px;
         height: 206px;
         width: 100% !important;
       }
+    }
+    .content__introduction--image__image {
+
     }
   }
 }

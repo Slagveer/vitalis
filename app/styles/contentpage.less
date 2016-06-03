@@ -1,18 +1,12 @@
 // TABLET::START
 @media (min-width: @tablet_min) and (max-width: @tablet_max) {
-  .content__introduction {
-    padding-left: 0px !important;
-    .content__introduction__title {
-      &.quote {
-        padding: 0px !important;
-        text-align: left;
-        width: 100%;
-
-      }
+  .content__introduction__title {
+    &.quote {
+      left: -300px;
+      position: absolute;
+      top: 40%;
+      width: 52%;
     }
-  }
-  .person-contact {
-    border: none !important;
   }
   .container.content {
     margin-top: 50px !important;
@@ -20,16 +14,24 @@
       &:nth-child(2) {
         .content__paragraaf {
           padding-right: 15px !important;
+          &:nth-of-type(2) {
+            padding-left: 70px;
+            top: -60px;
+          }
           .content__paragraaf__title:first-of-type {
             background-color: white;
-            border-radius: 20px 20px 0 0;
+            height: 95px;
             margin-bottom: -71px;
-            margin-left: -50px;
+            margin-left: -23px;
             margin-right: -20px;
-            padding-left: 50px;
+            padding-left: 130px;
             padding-top: 50px;
             position: relative;
-            top: -100px;
+            top: -150px;
+          }
+          h2:first-of-type {
+            position: absolute;
+            top: -65px;
           }
         }
       }
@@ -40,38 +42,46 @@
 
 // DESKTOP::START
 @media (min-width: @desktop_min) {
-  .content__introduction {
-    padding-left: 0px !important;
-    .content__introduction__title {
-      &.quote {
-        padding: 0px !important;
-        text-align: left;
-        width: 100%;
-      }
+  .content__introduction__title {
+    &.quote {
+      left: -300px;
+      position: absolute;
+      top: 40%;
+      width: 54%;
     }
   }
-  .person-contact {
-    border: none !important;
-  }
-  .container.content {
-    margin-top: 80px !important;
-    .row {
-      &:nth-child(2) {
-        .content__paragraaf {
-          padding-right: 15px !important;
-          .content__paragraaf__title:first-of-type {
-            background-color: white;
-            border-radius: 20px 20px 0 0;
-            margin-bottom: -71px;
-            margin-left: -50px;
-            margin-right: -1px;
-            padding-left: 50px;
-            padding-top: 50px;
-            position: relative;
-            top: -100px;
+  .container {
+    &.content {
+      margin-top: 80px !important;
+      .row {
+        &:nth-child(2) {
+          .content__lists {
+            margin-top: -52px;
           }
-          + .content__paragraaf {
-            margin-top: -25px;
+          .content__paragraaf {
+            padding-right: 15px !important;
+            &:nth-of-type(2) {
+              padding-left: 70px;
+              top: -60px;
+            }
+            .content__paragraaf__title:first-of-type {
+              background-color: white;
+              height: 95px;
+              margin-bottom: -71px;
+              margin-left: -23px;
+              margin-right: -20px;
+              padding-left: 130px;
+              padding-top: 50px;
+              position: relative;
+              top: -150px;
+            }
+            h2:first-of-type {
+              position: absolute;
+              top: -65px;
+            }
+            + .content__paragraaf {
+              //margin-top: -25px;
+            }
           }
         }
       }
@@ -106,7 +116,7 @@
     flex-flow: column;
     margin-bottom: 98px * @retina-factor;
     .content__header__title {
-      font-family: @font-family-heart;
+      font-family: @font-family-crete;
       font-size: 64px * @retina-factor;
       letter-spacing: 4px * @retina-factor;
       line-height: 72px * @retina-factor;
@@ -133,33 +143,23 @@
     border-radius: 20px;
     height: 710px * @retina-factor;
     margin-bottom: 60px * @retina-factor;
-    overflow: hidden;
     padding-bottom: 0px;
     width: 100%;
-    img {
-      position: static;
-    }
   }
   .content__image--small {
-    border-radius: 20px;
     height: 412px * @retina-factor;
-    overflow: hidden;
+    margin-bottom: 15px;
     padding-top: 55px * @retina-factor;
     width: 100%;
-    img {
-      position: static;
-    }
   }
   .content__image--extra-small {
     border-radius: 20px;
     height: 180px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     //margin-bottom: -38px * @retina-factor;
-    overflow: hidden;
     padding: 18px * @retina-factor 0 71px * @retina-factor 0;
     width: 100%;
-    img {
-      position: static;
-    }
   }
   .content__image__caption {
     font-style: italic;
@@ -176,7 +176,7 @@
     padding-left: 40px * @retina-factor;
     .content__introduction__title,
     .content__introduction__subtitle {
-      font-family: @font-family-heart;
+      font-family: @font-family-crete;
       font-size: 47px * @retina-factor;
       font-weight: bold;
       padding-bottom: 16px * @retina-factor;
@@ -202,7 +202,7 @@
       font-size: 27px * @retina-factor;
       font-weight: normal;
       padding-top: 24px * @retina-factor;
-  }
+    }
     .content__introduction__description--normal {
       padding-top: 0px;
     }
@@ -225,20 +225,16 @@
       position: relative;
       .content__introduction--image__image {
         height: 395px * @retina-factor;
-        //margin-bottom: 48px * @retina-factor;
-        margin-top: 20px * @retina-factor;
-        overflow: hidden;
+        margin-bottom: 30px * @retina-factor;
+        margin-top: 30px * @retina-factor;
         padding: 0 10px * @retina-factor;
         width: 100%;
-        img {
-          position: static;
-        }
       }
       .content__introduction--image__title {
         border: none;
         bottom: 0px;
         color: @white;
-        font-family: @font-family-heart;
+        font-family: @font-family-crete;
         font-size: 47px * @retina-factor;
         font-style: italic;
         left: 33px * @retina-factor;
@@ -255,7 +251,7 @@
       padding-bottom: 74px;
       padding-top: 65px;
       .content__introduction--social__title {
-        font-family: @font-family-heart;
+        font-family: @font-family-crete;
         font-size: 34px;
         margin-bottom: 30px;
         text-align: center;
