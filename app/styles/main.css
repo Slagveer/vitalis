@@ -7158,6 +7158,7 @@ button.close {
 .navigation .navigation__button.navigation__button--enza {
   background-color: #008095;
   color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
   height: 51.5px;
   order: 2;
   position: relative;
