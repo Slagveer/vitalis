@@ -21,6 +21,7 @@
       padding-left: 0px;
       padding-right: 0px;
       .navbar-header {
+        border-bottom: 1px solid @light-grey;
         float: none;
         &.flex {
           display: block;
@@ -70,6 +71,7 @@
           right: 100px;
           width: auto;
           .form-control {
+            box-shadow: none;
             font-size: 16px;
           }
           .btn {
@@ -192,6 +194,7 @@
       right: 88px;
       width: 50%;
       .form-control {
+        box-shadow: none;
         font-size: 16px;
       }
       .btn {
@@ -353,7 +356,7 @@
     }
   }
   .navbar-header {
-    border-bottom: 0px solid @dark-grey;
+    border-bottom: 1px solid @light-grey;
     &.flex {
       background-color: #fff;
       display: flex;
@@ -431,6 +434,8 @@
     }
     &.navigation__button--search {
       background-color: #fff;
+      border-left: 1px solid @light-grey;
+      border-right: 1px solid @light-grey;
       color: #333;
       height: 103px * @retina-factor;//@navbar-height + @navbar-margin-bottom/2;
       margin: 0px;

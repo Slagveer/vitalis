@@ -6750,6 +6750,7 @@ button.close {
     padding-right: 0px;
   }
   .navigation .container-fluid .navbar-header {
+    border-bottom: 1px solid #ededed;
     float: none;
   }
   .navigation .container-fluid .navbar-header.flex {
@@ -6800,6 +6801,7 @@ button.close {
     width: auto;
   }
   .navigation .container-fluid .navigation__menu .navigation__menu__form .form-control {
+    box-shadow: none;
     font-size: 16px;
   }
   .navigation .container-fluid .navigation__menu .navigation__menu__form .btn {
@@ -6903,6 +6905,7 @@ button.close {
   width: 50%;
 }
 .navigation .navigation__menu .navigation__menu__form .form-control {
+  box-shadow: none;
   font-size: 16px;
 }
 .navigation .navigation__menu .navigation__menu__form .btn {
@@ -7061,7 +7064,7 @@ button.close {
   display: none;
 }
 .navigation .navbar-header {
-  border-bottom: 0px solid #515151;
+  border-bottom: 1px solid #ededed;
 }
 .navigation .navbar-header.flex {
   background-color: #fff;
@@ -7116,6 +7119,8 @@ button.close {
 }
 .navigation .navigation__button.navigation__button--search {
   background-color: #fff;
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
   color: #333;
   height: 51.5px;
   margin: 0px;
@@ -7992,7 +7997,7 @@ button.close {
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu.desktop .dropdown-menu__search {
     position: absolute;
-    right: 18px;
+    right: 7px;
     top: -60px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu .navigation__menu__item {
@@ -8267,8 +8272,10 @@ button.close {
     display: block;
   }
   .navigation .navigation__menu .navigation__menu__item .dropdown-menu .form-control {
+    border-right: 0px;
     font-size: 16px;
     height: 42px;
+    box-shadow: none;
   }
   .navigation .navigation__menu .navigation__menu__item.start {
     margin-top: -6px;
