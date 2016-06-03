@@ -6806,6 +6806,7 @@ button.close {
   }
   .navigation .container-fluid .navigation__menu .navigation__menu__form .btn {
     border-left: none;
+    border-radius: 0px;
   }
   .navigation .container-fluid .navigation__menu .navigation__menu__item .navigation__menu__item__label.navigation__menu__item__label--email {
     width: 189px;
@@ -6905,11 +6906,14 @@ button.close {
   width: 50%;
 }
 .navigation .navigation__menu .navigation__menu__form .form-control {
+  border-radius: 0px;
   box-shadow: none;
   font-size: 16px;
 }
 .navigation .navigation__menu .navigation__menu__form .btn {
   border-left: none;
+  border-radius: 0px !important;
+  height: 43px;
 }
 .navigation .navigation__menu .navigation__menu__item {
   background-color: #ffffff;
@@ -6924,7 +6928,11 @@ button.close {
   display: block;
 }
 .navigation .navigation__menu .navigation__menu__item .dropdown-menu .form-control {
+  border-radius: 0px;
   font-size: 8px;
+}
+.navigation .navigation__menu .navigation__menu__item .dropdown-menu .btn {
+  border-radius: 0px !important;
 }
 .navigation .navigation__menu .navigation__menu__item.start {
   margin-top: -3px;
@@ -7998,7 +8006,7 @@ button.close {
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu.desktop .dropdown-menu__search {
     position: absolute;
-    right: 7px;
+    right: 11px;
     top: -60px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu .navigation__menu__item {
