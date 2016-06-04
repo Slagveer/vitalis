@@ -1,6 +1,15 @@
 // TABLET::START
 @media (min-width: @tablet_min) and (max-width: @tablet_max) {
-
+  .loadmore {
+    padding: 25px 0 0 0 !important;
+    .carousel-caption__button {
+      .carousel-caption__button__arrow {
+        &.next {
+          top: 2px !important;
+        }
+      }
+    }
+  }
 }
 // TABLET::END
 
@@ -9,11 +18,15 @@
   .loadmore {
     padding: 35px 0 0 0 !important;
     .carousel-caption__button {
-      max-width: 200px !important;
+      max-width: 100% !important;
       height: 53px !important;
       .carousel-caption__button__arrow {
         left: 45px !important;
         top: 13px !important;
+        &.next {
+          left: 0px !important;
+          top: 8px !important;
+        }
       }
       .carousel-caption__button__text {
         margin-top: 3px !important;
@@ -25,30 +38,42 @@
 // DESKTOP::END
 
 .loadmore {
-  padding: 25px 0 0 0;
+  padding: 25px 0 25px 0;
   text-align: center;
   .carousel-caption__button {
     background: none;
     border: 1px solid @dark-grey;
-    border-radius: 50px * @retina-factor;
+    border-radius: 25px * @retina-factor;
     color: @dark-grey;
     font-family: @font-family-crete;
     font-size: 27px * @retina-factor;
     height: 81px * @retina-factor;
-    max-width: 310px * @retina-factor;
+    //max-width: 310px * @retina-factor;
     position: relative;
-    width: 100%;
+    //width: auto;
     &:hover,
     &:active {
-      border-color: @green;
+      border-color: @blue;
       .carousel-caption__button__text {
-        color: @green;
+        color: @blue;
       }
       .carousel-caption__button__arrow {
         svg {
           path {
-            stroke: @green;
-            fill: @green;
+            stroke: @blue;
+            fill: @blue;
+          }
+          .circle {
+            fill: @blue;
+            stroke: @blue;
+            opacity: 0;
+          }
+          .border {
+            fill: @blue;
+            stroke: @blue;
+          }
+          .arrow {
+            fill: @blue;
           }
         }
       }
@@ -59,6 +84,11 @@
       line-height: 67px * @retina-factor;
       margin-top: -3px;
       padding-left: 100px * @retina-factor;
+      padding-right: 30px;
+      &.next {
+        padding-left: 15px !important;
+        padding-right: 10px !important;
+      }
     }
     .carousel-caption__button__arrow {
       left: 48px * @retina-factor;
@@ -70,12 +100,31 @@
         top: 0px;
         -webkit-animation: rotate .6s linear infinite;
       }
+      &.next {
+        display: inline-block;
+        left: 0px;
+        padding-right: 20px;
+        position: relative;
+        top: 2px;
+      }
       svg {
         height: 47px * @retina-factor;
         width: 47px * @retina-factor;
         path {
           fill: @dark-grey;
           stroke: @dark-grey;
+        }
+        .circle {
+          fill: @white;
+          stroke: @white;
+          opacity: 0;
+        }
+        .border {
+          fill: @dark-grey;
+          stroke: @dark-grey;
+        }
+        .arrow {
+          fill: @dark-grey;
         }
       }
     }

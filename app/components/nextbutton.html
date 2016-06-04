@@ -10,7 +10,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Enza zaden - Navigation</title>
+  <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -20,7 +20,30 @@
   <!-- endbuild -->
 </head>
 <body>
-XXXXXXXXXXX
+
+<div style="width:100%;background:black;height:20px;"></div>
+<!-- NEXTBUTTON::START -->
+<div class="container">
+  <div class="row">
+    <div class="loadmore">
+      <a href="#" title="" class="btn btn-default carousel-caption__button js-loadmore"
+         data-target=".js-teaserboxes" data-step="5" data-max="10" data-amount-teaserboxes="0" data-service="../data/teaserboxes.json">
+        <span class="carousel-caption__button__text next">
+          Read more
+        </span>
+        <div class="carousel-caption__button__arrow next js-arrow">
+          <svg version="1.1" viewBox="-2 -2 64 64">
+              <path class="border" d="M30,3A27,27,0,1,1,3,30,27,27,0,0,1,30,3m0-3A30,30,0,1,0,60,30,30.09,30.09,0,0,0,30,0h0Z"/>
+              <circle class="circle" opacity="1" cx="30" cy="30" r="27"/>
+              <path class="arrow" d="M29.3,17.7a2.35,2.35,0,0,0-3.3,0A2.19,2.19,0,0,0,26,21l9.1,9L26,39a2.37,2.37,0,0,0,3.4,3.3L40,31.7a2.35,2.35,0,0,0,0-3.3Z"/>
+            </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- NEXTBUTTON::END -->
+
 <!-- FOOTER::START -->
 <nav class="navigation footer navbar navbar-default navbar-static-top js-footer">
   <div class="container">
@@ -101,7 +124,7 @@ XXXXXXXXXXX
                           <polygon fill="#fff" points="15.2,34.7 15.2,65.6 35.2,50.6 "/>
                         </svg>
                       </span>
-                      <a href="mailto:info@enzazaden.com" title="INFO@VITALIS.COM" target="_blank">INFO@VITALIS.COM</a>
+                      <a href="mailto:info@enzazaden.com" title="INFO@ENZAZADEN.COM" target="_blank">INFO@ENZAZADEN.COM</a>
                     </span>
                 </p>
               </div>
@@ -109,7 +132,7 @@ XXXXXXXXXXX
             <li class="footer__menu__item">
               <div class="footer__menu__item__label footer__menu__item__label--contact">
                 <a href="#">
-                  <img width="90px" class="logo" src="../images/vitalis-logo-nl.svg" alt="Vitalis">
+                  <img width="90px" class="logo" src="../images/vitalis-logo-nl.svg" alt="Enza Zaden">
                 </a>
                 <p class="info visible-xs">
                   <span class="country">UK UNITED KINGDOM</span>
@@ -133,9 +156,9 @@ XXXXXXXXXXX
                           <polygon fill="#fff" points="15.2,34.7 15.2,65.6 35.2,50.6 "/>
                         </svg>
                       </span>
-                      <a href="mailto:info@enzazaden.com" title="INFO@ENZAZADEN.COM">INFO@VITALIS.COM</a>
+                      <a href="mailto:info@enzazaden.com" title="INFO@ENZAZADEN.COM">INFO@ENZAZADEN.COM</a>
                     </span>
-                  <span class="copyright">2016 Vitalis</span>
+                  <span class="copyright">2016 Enza Zaden</span>
                 </p>
               </div>
             </li>
@@ -144,9 +167,9 @@ XXXXXXXXXXX
         <div class="footer__sub-menu">
           <a href="#">
             <figure class="figure">
-              <img class="logo" src="../images/vitalis-logo-nl.svg" alt="Vitalis">
+              <img class="logo" src="../images/vitalis-logo-nl.svg" alt="Enza Zaden">
               <figcaption>
-                <span class="copyright">&copy; 2016 Vitalis</span>
+                <span class="copyright">&copy; 2016 Enza Zaden</span>
               </figcaption>
             </figure>
           </a>
@@ -185,6 +208,7 @@ XXXXXXXXXXX
 
 <!-- build:js scripts/main.js -->
 <script src="../bower_components/jquery/jquery.js"></script>
+<script src="../bower_components/handlebars/handlebars.js"></script>
 <script src="../bower_components/underscore/underscore.js"></script>
 <script src="../bower_components/ev-emitter/ev-emitter.js"></script>
 <script src="../bower_components/imagesloaded/imagesloaded.js"></script>
@@ -220,3 +244,4 @@ XXXXXXXXXXX
 <!-- endbuild -->
 </body>
 </html>
+                                                                                                                                                                                                                                                                                                                                                 
