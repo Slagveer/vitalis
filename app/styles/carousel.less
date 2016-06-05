@@ -7,6 +7,7 @@
     &.container__carousel {
       //padding-left: 0px !important;
       //padding-right: 0px !important;
+      padding-bottom: 0px !important;
     }
     .carousel {
       &.carousel--detail {
@@ -57,6 +58,13 @@
         .container {
           padding-left: 0px !important;
           padding-right: 0px !important;
+          .container--carousel {
+            .container--carousel__thumbnails__item {
+              .item__image__text {
+                display: block !important;
+              }
+            }
+          }
         }
       }
     }
@@ -100,7 +108,8 @@
         text-align: left;
         width: 100%;
         .carousel-caption__quote {
-          padding-left: 0px;
+          margin: 0 0 0pt !important;
+          padding: 10.5pt 21pt 0 0pt !important;
           text-align: left;
           width: 40%;
         }
@@ -118,46 +127,47 @@
     }
   }
   .container--carousel {
-    padding-bottom: 0px !important;
-    .row {
-      .fullsize {
-        padding-left: 0px !important;
-        padding-right: 0px !important;
+      padding-bottom: 0px !important;
+      .row {
+        .fullsize {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
       }
-    }
-    .carousel {
-      .container--carousel__slides__item__image {
-        height: 610px * @retina-factor !important;
-      }
-      .thumbnail-controls {
-        position: absolute;
-        bottom: 2px * @retina-factor !important;
-        width: 100%;
-        .container,
-        .container-fluid {
-          width: 930px !important;
-          .container--carousel__thumbnails {
-            .container--carousel__thumbnails__item {
-              .item__image__text {
-                display: block !important;
-              }
-              &:nth-child(1) {
-                .item__overlay {
-                  border-radius: 20px 0 0 0;
+      .carousel {
+        .container--carousel__slides__item__image {
+          height: 610px * @retina-factor !important;
+        }
+        .thumbnail-controls {
+          position: absolute;
+          bottom: 0px * @retina-factor !important;
+          width: 100%;
+          .container,
+          .container-fluid {
+            width: 930px !important;
+            .container--carousel__thumbnails {
+              .container--carousel__thumbnails__item {
+                .item__image__text {
+                  display: block !important;
                 }
-                .item__image {
-                  img {
+                &:nth-child(1) {
+                  .item__overlay {
                     border-radius: 20px 0 0 0;
                   }
+                  .item__image {
+                    img {
+                      border-radius: 20px 0 0 0;
+                    }
+                  }
                 }
-              }
-              &:nth-child(3) {
-                .item__overlay {
-                  border-radius: 0 20px 0 0;
-                }
-                .item__image {
-                  img {
+                &:nth-child(3) {
+                  .item__overlay {
                     border-radius: 0 20px 0 0;
+                  }
+                  .item__image {
+                    img {
+                      border-radius: 0 20px 0 0;
+                    }
                   }
                 }
               }
@@ -166,15 +176,14 @@
         }
       }
     }
-  }
 }
 // DESKTOP::END
 
 // MOBILE::START
 .container--carousel {
-  padding-bottom: 57px;
   //margin-left: -15px;
   //margin-right: -15px;
+  padding-bottom: 57px;
   &.container--carousel-detail {
     .container--carousel__slides {
       .container--carousel__slides__item {
@@ -252,7 +261,7 @@
       .container--carousel__slides__item__image {
         height: 594px * @retina-factor;
         .slide-background {
-          background-color: @dark-grey;
+          background-color: @black;
           position: absolute;
           top: 0px;
           bottom: 0px;
@@ -263,9 +272,14 @@
       }
       .carousel-caption {
         bottom: 80px;
+        .carousel-caption__quote {
+          padding: 10.5pt 21pt 0 0pt !important;
+          margin: 0 0 0pt !important;
+        }
         .carousel-caption__text {
           font-family: @font-family-heart;
           font-size: 90px * @retina-factor;
+          font-weight: bold;
           line-height: 50px;
           position: relative;
           text-align: center;
@@ -275,13 +289,13 @@
         .carousel-caption__button {
           background: none;
           border: 1px solid @white;
-          border-radius: 50px;
+          border-radius: 25px * @retina-factor;
           color: @white;
-          font-family: @font-family-heart;
+          font-family: @font-family-open-sanse;
           font-size: 27px * @retina-factor;
           height: 81px * @retina-factor;
-          max-width: 310px * @retina-factor;
-          width: 100%;
+          //max-width: 310px * @retina-factor;
+          //width: 100%;
           &:hover,
           &:active {
             border-color: @blue;
@@ -305,10 +319,12 @@
             padding-left: 48px * @retina-factor;
           }
           .carousel-caption__button__arrow {
-            float: right;
+            float: left;
             display: inline-block;
             line-height: 83px * @retina-factor;
+            padding-left: 10px;
             padding-right: 26px * @retina-factor;
+            position: relative;
             svg {
               height: 47px * @retina-factor;
               width: 47px * @retina-factor;
@@ -326,6 +342,7 @@
     display: flex;
     flex-direction: row;
     .container--carousel__thumbnails__item {
+      cursor: pointer;
       flex-grow: 1;
       //max-width: 100/3%;
       position: relative;
@@ -336,7 +353,7 @@
       }
       .item__overlay {
         position: absolute;
-        background-color: @black;
+        background-color: @blue;
         height: 57px;
         left: 0px;
         right: 0px;
@@ -348,13 +365,14 @@
         border: none;
         bottom: 0px;
         height: 114px * @retina-factor;
-        width: 101%;
+        width: 100%;
         overflow: hidden;
       }
       .item__image__text {
         color: @white;
-        font-family: @font-family-heart;
+        font-family: @font-family-open-sanse;
         font-size: 30px * @retina-factor;
+        font-weight: bold;
         height: 100%;
         line-height: 120px * @retina-factor;
         position: absolute;

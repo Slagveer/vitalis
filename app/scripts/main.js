@@ -55,6 +55,7 @@
       $('.js-content__image--small').imagefill();
       $('.js-content__image--extra-small').imagefill();
       $('.js-content__introduction--image__image').imagefill();
+      $('.js-varietylist__item__image').imagefill();
       $('.js-scroll-top-wrapper').scrolltotop();
     });
   });

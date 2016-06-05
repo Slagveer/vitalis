@@ -9583,6 +9583,18 @@ button.close {
   margin-right: 0px;
   padding: 22.5px;
 }
+.teaserbox.teaserbox--news .image-background,
+.teaserbox.teaserbox--story .image-background,
+.teaserbox.teaserbox--news--grey .image-background {
+  background-color: #000000;
+  border-radius: 20px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: .3;
+}
 .teaserbox.teaserbox--news .teaserbox__image,
 .teaserbox.teaserbox--story .teaserbox__image,
 .teaserbox.teaserbox--news--grey .teaserbox__image {
@@ -9673,8 +9685,9 @@ button.close {
   color: #008095;
   clear: left;
   display: table-cell;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 19.75px;
+  font-weight: bold;
   float: left;
   line-height: 22.75px;
   margin-bottom: 6.5px;
@@ -9786,7 +9799,7 @@ button.close {
     padding-top: 10px;
   }
   .container.itemslist .article--list .itemslist__item .itemslist__item__link {
-    right: 30px;
+    right: 12px;
   }
 }
 @media (min-width: 1200px) {
@@ -9923,11 +9936,21 @@ button.close {
   .itemslist {
     padding-left: 95px;
   }
+  .itemslist.itemslist--extra-content .itemslist__item {
+    position: relative;
+  }
+  .itemslist.itemslist--extra-content .itemslist__item .itemslist__item__content {
+    padding-top: 29px !important;
+  }
+  .itemslist.itemslist--extra-content .itemslist__item .itemslist__item__link {
+    right: 14px !important;
+  }
   .itemslist .article--list .itemslist__item {
     border-radius: 20px;
     padding: 0px;
     height: 173px;
     margin-top: 24px;
+    position: relative;
   }
   .itemslist .article--list .itemslist__item .itemslist__item__image {
     border-radius: 20px 0 0 20px;
@@ -9950,7 +9973,7 @@ button.close {
     padding-top: 10px;
   }
   .itemslist .article--list .itemslist__item .itemslist__item__link {
-    right: 30px;
+    right: 12px;
   }
 }
 .itemslist {
@@ -9965,6 +9988,12 @@ button.close {
 }
 .itemslist.itemslist--content {
   padding-top: 33.5px;
+}
+.itemslist.itemslist--extra-content .itemslist__item .itemslist__item__link {
+  right: 25px;
+}
+.itemslist.itemslist--extra-content .itemslist__item .itemslist__item__content {
+  padding-top: 8px;
 }
 .itemslist .itemslist__header {
   line-height: 40px;
@@ -9997,6 +10026,7 @@ button.close {
   max-width: 88.5px;
   margin-left: 9px;
   position: relative;
+  top: 0px;
   width: 100%;
 }
 .itemslist .itemslist__item .itemslist__item__content {
@@ -10007,6 +10037,7 @@ button.close {
   border: 1px solid #cccccc;
   clear: right;
   display: inline;
+  font-family: 'give_it_your_heartmedium', serif;
   float: left;
   letter-spacing: 0px;
   line-height: 0px;
@@ -10014,6 +10045,12 @@ button.close {
   margin-top: 4.5px;
   padding: 2px 5px;
   text-align: left;
+}
+.itemslist .itemslist__item .itemslist__item__content .itemslist__item__title.extra-content {
+  border: 0px;
+  font-size: 24px;
+  padding-left: 0px;
+  padding-bottom: 10px;
 }
 .itemslist .itemslist__item .itemslist__item__content .itemslist__item__title .label-square {
   color: #515151;
@@ -10045,6 +10082,9 @@ button.close {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.itemslist .itemslist__item .itemslist__item__content .itemslist__item__description.extra-content {
+  font-family: 'Open Sans', sans-serif;
+}
 .itemslist .itemslist__item .itemslist__item__content .itemslist__item__date {
   font-family: 'Open Sans', sans-serif;
   font-size: 8.5px;
@@ -10061,7 +10101,7 @@ button.close {
   height: 24px;
   line-height: 10.8pt;
   position: absolute;
-  right: 28px;
+  right: 13px;
   text-align: center;
   vertical-align: middle;
   width: 24px;
@@ -10116,7 +10156,6 @@ button.close {
     padding-top: 70px;
   }
   .varietylist.varietylist--office .varietylist__item {
-    height: 186px !important;
     margin-left: 37px !important;
     margin-right: 37px !important;
     padding: 19px !important;
@@ -10133,13 +10172,12 @@ button.close {
     display: none;
   }
   .varietylist .varietylist__item {
-    height: 186px !important;
     margin-left: 37px !important;
     margin-right: 37px !important;
     padding: 19px !important;
   }
   .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__link {
-    right: 50px !important;
+    right: 54px !important;
   }
   .right-column {
     padding-left: 70px;
@@ -10165,7 +10203,7 @@ button.close {
   flex-flow: column nowrap;
   margin-top: 15px;
   padding: 25px;
-  height: 207.5px;
+  height: auto;
 }
 .varietylist .varietylist__item:hover {
   text-decoration: none;
@@ -10768,8 +10806,9 @@ button.close {
   margin-bottom: 49px;
 }
 .content .content__header .content__header__title {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 32px;
+  font-weight: bold;
   letter-spacing: 2px;
   line-height: 36px;
   padding-left: 20px;
@@ -10784,7 +10823,9 @@ button.close {
 }
 .content .content__header .content__header__sub-title .content__header__sub-title__date {
   float: left;
+  font-weight: bold;
   margin-right: 10px;
+  margin-top: 3px;
 }
 .content .content__header .content__header__sub-title .content__header__sub-title__label {
   float: left;
@@ -10849,7 +10890,7 @@ button.close {
 }
 .content .content__introduction .content__introduction__title,
 .content .content__introduction .content__introduction__subtitle {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 23.5px;
   font-weight: bold;
   padding-bottom: 8px;
@@ -10909,7 +10950,7 @@ button.close {
   border: none;
   bottom: 0px;
   color: #ffffff;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 23.5px;
   font-style: italic;
   left: 16.5px;
@@ -10926,7 +10967,7 @@ button.close {
   padding-top: 65px;
 }
 .content .content__introduction.content__introduction--social .content__introduction--social__title {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 34px;
   margin-bottom: 30px;
   text-align: center;
@@ -11598,6 +11639,9 @@ button.close {
   .item__image__text {
     display: block !important;
   }
+  .container.container__carousel {
+    padding-bottom: 0px !important;
+  }
   .container .carousel.carousel--detail .carousel-control {
     display: block !important;
   }
@@ -11642,6 +11686,9 @@ button.close {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+  .container .carousel .thumbnail-controls .container .container--carousel .container--carousel__thumbnails__item .item__image__text {
+    display: block !important;
+  }
 }
 @media (min-width: 1200px) {
   .carousel.carousel--detail .carousel-control {
@@ -11675,7 +11722,8 @@ button.close {
     width: 100%;
   }
   .carousel.carousel--detail .carousel-caption .carousel-caption__quote {
-    padding-left: 0px;
+    margin: 0 0 0pt !important;
+    padding: 10.5pt 21pt 0 0pt !important;
     text-align: left;
     width: 40%;
   }
@@ -11699,7 +11747,7 @@ button.close {
   }
   .container--carousel .carousel .thumbnail-controls {
     position: absolute;
-    bottom: 1px !important;
+    bottom: 0px !important;
     width: 100%;
   }
   .container--carousel .carousel .thumbnail-controls .container,
@@ -11794,7 +11842,7 @@ button.close {
   height: 297px;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .container--carousel__slides__item__image .slide-background {
-  background-color: #515151;
+  background-color: #000000;
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -11805,9 +11853,14 @@ button.close {
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption {
   bottom: 80px;
 }
+.container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__quote {
+  padding: 10.5pt 21pt 0 0pt !important;
+  margin: 0 0 0pt !important;
+}
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__text {
   font-family: 'give_it_your_heartmedium', serif;
   font-size: 45px;
+  font-weight: bold;
   line-height: 50px;
   position: relative;
   text-align: center;
@@ -11817,13 +11870,11 @@ button.close {
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button {
   background: none;
   border: 1px solid #ffffff;
-  border-radius: 50px;
+  border-radius: 12.5px;
   color: #ffffff;
-  font-family: 'give_it_your_heartmedium', serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 13.5px;
   height: 40.5px;
-  max-width: 155px;
-  width: 100%;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:hover,
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:active {
@@ -11847,10 +11898,12 @@ button.close {
   padding-left: 24px;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button .carousel-caption__button__arrow {
-  float: right;
+  float: left;
   display: inline-block;
   line-height: 41.5px;
+  padding-left: 10px;
   padding-right: 13px;
+  position: relative;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button .carousel-caption__button__arrow svg {
   height: 23.5px;
@@ -11865,6 +11918,7 @@ button.close {
   flex-direction: row;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item {
+  cursor: pointer;
   flex-grow: 1;
   position: relative;
 }
@@ -11873,7 +11927,7 @@ button.close {
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__overlay {
   position: absolute;
-  background-color: #000000;
+  background-color: #008095;
   height: 57px;
   left: 0px;
   right: 0px;
@@ -11884,13 +11938,14 @@ button.close {
   border: none;
   bottom: 0px;
   height: 57px;
-  width: 101%;
+  width: 100%;
   overflow: hidden;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__image__text {
   color: #ffffff;
-  font-family: 'give_it_your_heartmedium', serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 15px;
+  font-weight: bold;
   height: 100%;
   line-height: 60px;
   position: absolute;
@@ -12989,6 +13044,7 @@ button.close {
 @media (min-width: 768px) and (max-width: 900px) {
   p.quote {
     left: -225px !important;
+    width: 40% !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -12996,7 +13052,7 @@ button.close {
     left: -300px;
     position: absolute;
     top: 0px;
-    width: 40%;
+    width: 40% !important;
   }
 }
 .content .content__paragraaf {
@@ -13007,7 +13063,7 @@ button.close {
 .content .content__paragraaf h4,
 .content .content__paragraaf h3,
 .content .content__paragraaf h2 {
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 21.66666667px;
   font-weight: bold;
   line-height: 16.85185185px;
@@ -13022,6 +13078,9 @@ button.close {
   font-size: 11.55555556px;
   line-height: 11.55555556px;
 }
+.content .content__paragraaf p {
+  width: 90%;
+}
 .content .content__paragraaf .content__paragraaf__description--bold,
 .content .content__paragraaf p,
 .content .content__paragraaf address,
@@ -13033,6 +13092,7 @@ button.close {
   font-weight: normal;
   margin-bottom: 18.5px;
   padding-top: 12px;
+  width: 90%;
 }
 .content .content__paragraaf .content__paragraaf__description--normal {
   font-weight: normal;
@@ -13057,7 +13117,7 @@ button.close {
 .content .content__paragraaf td.quote,
 .content .content__paragraaf th.quote {
   border: none;
-  font-family: 'Crete Round', serif;
+  font-family: 'give_it_your_heartmedium', serif;
   font-size: 23.5px;
   font-style: italic;
   font-weight: bold;
