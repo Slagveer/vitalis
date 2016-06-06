@@ -6939,7 +6939,6 @@ button.close {
 }
 .navigation .navigation__menu .navigation__menu__item .navigation__menu__item__label {
   color: #515151;
-  font-weight: bold;
   padding: 19px 0px 19px 23.5px;
 }
 .navigation .navigation__menu .navigation__menu__item .navigation__menu__item__label .menu {
@@ -8231,7 +8230,7 @@ button.close {
     border-radius: 0;
     border-width: 0;
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 32px;
     line-height: 19pt;
     margin-bottom: 0px;
