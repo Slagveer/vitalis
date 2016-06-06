@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed);
 @import url(https://fonts.googleapis.com/css?family=Crete+Round:400,400italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(../bower_components/animate.css/animate.css);
@@ -6869,7 +6868,7 @@ button.close {
 }
 .navigation + .container:first-of-type,
 .navigation + .container-fluid:first-of-type {
-  padding-top: 100px;
+  padding-top: 0px;
 }
 .navigation .modal-backdrop {
   margin-left: 100%;
