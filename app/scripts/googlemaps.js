@@ -104,14 +104,15 @@
     map.mapTypes.set('enza', enzaMapType);
     map.setMapTypeId('enza');
     forklift = {
-      url: '/images/forklifttruck.png',
-      size: new google.maps.Size(40, 64),
+      //url: '/images/forklifttruck.png',
+      url: '/images/icon-map-marker-distributors.svg',
+      size: new google.maps.Size(60, 74),
       origin: new google.maps.Point(0, 0),
       anchor: new google.maps.Point(20, 64)
     }
     building = {
-      url: '/images/officebuilding.png',
-      size: new google.maps.Size(40, 64),
+      url: '/images/icon-map-marker-office.svg',
+      size: new google.maps.Size(60, 74),
       origin: new google.maps.Point(0, 0),
       anchor: new google.maps.Point(20, 64)
     };
@@ -168,9 +169,9 @@
         if(_.where(markers, office).length === 0) {
           markers.push(office);
           latlng = new google.maps.LatLng(parseFloat(office.Latitude), parseFloat(office.Longitude));
-          //source = $infoTemplate.html();
-          //template = Handlebars.compile(source);
-          //html = template(office);
+          source = $infoTemplate.html();
+          template = Handlebars.compile(source);
+          html = template(office);
           infowindow = new google.maps.InfoWindow({
             content: html,
             size: new google.maps.Size(150, 50)
