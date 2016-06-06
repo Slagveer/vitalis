@@ -145,6 +145,19 @@
       }
     }
   }
+  .variety-detail {
+    .variety-detail__others {
+      .variety-detail__others__horizontal-list {
+        height: 260px !important;
+        overflow-x: visible !important;
+        .list-group {
+          &.list-group-horizontal {
+            height: 260px !important;
+          }
+        }
+      }
+    }
+  }
 }
 // DESKTOP::END
 
@@ -225,6 +238,7 @@
       font-weight: bold;
       .list-group {
         .list-group-item {
+          background: none;
           border: none;
           font-size: 30px * @retina-factor;
           line-height: 50px * @retina-factor;
