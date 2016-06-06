@@ -10760,6 +10760,7 @@ button.close {
   }
   .container.content .row:nth-child(2) .content__paragraaf .content__paragraaf__title:first-of-type {
     background-color: white;
+    border-radius: 20px 0 0 0;
     height: 95px;
     margin-bottom: -71px;
     margin-left: -23px;
@@ -10822,7 +10823,7 @@ button.close {
   font-family: 'give_it_your_heartmedium', serif;
   font-size: 32px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   line-height: 36px;
   padding-left: 20px;
   padding-top: 6.5px;
