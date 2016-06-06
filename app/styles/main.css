@@ -8240,7 +8240,7 @@ button.close {
   }
   .navigation + .container:first-of-type,
   .navigation + .container-fluid:first-of-type {
-    padding-top: 100px;
+    padding-top: 1px;
   }
   .navigation .modal-backdrop {
     margin-left: 640px;
