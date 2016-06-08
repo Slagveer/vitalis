@@ -13589,6 +13589,11 @@ button.close {
     padding-left: 41% !important;
     padding-right: 0% !important;
   }
+  .onepager .onepager__image-container .onepager__image__content.other-direction {
+    padding-left: 18% !important;
+    right: inherit!important;
+    width: 70% !important;
+  }
 }
 @media (min-width: 1200px) {
   .onepager .onepager__image-container .onepager__image__content {
