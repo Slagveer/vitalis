@@ -11742,6 +11742,7 @@ button.close {
   }
   .container.container--onepager {
     margin-bottom: -50px !important;
+    padding-bottom: 50px !important;
   }
   .container.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption {
     left: 18% !important;
@@ -11849,6 +11850,9 @@ button.close {
   .container--carousel {
     padding-bottom: 0px !important;
   }
+  .container--carousel.container--onepager {
+    padding-bottom: 57px !important;
+  }
   .container--carousel.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption {
     left: 18% !important;
   }
@@ -11901,6 +11905,7 @@ button.close {
 }
 .container--carousel.container--onepager {
   margin-bottom: -57px;
+  padding-bottom: 57px;
 }
 .container--carousel.container--onepager.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .carousel-caption {
   top: 60px;
