@@ -8237,7 +8237,8 @@ button.close {
     border: none;
     top: 41px;
     right: 0px;
-    width: 137px;
+    width: 123px;
+    padding-right: 16px;
   }
   .navigation {
     border-radius: 0;
@@ -9316,6 +9317,8 @@ button.close {
 }
 .container.container--teaserboxes {
   margin-bottom: -15px !important;
+  position: relative;
+  top: 20px;
 }
 .teaserbox {
   background-color: #fff;
@@ -9606,7 +9609,7 @@ button.close {
 .teaserbox.teaserbox--news,
 .teaserbox.teaserbox--story,
 .teaserbox.teaserbox--news--grey {
-  background-color: #000;
+  background-color: #ffffff;
   border-radius: 20px;
   margin-bottom: 18px;
   margin-left: 0px;
@@ -9801,7 +9804,6 @@ button.close {
   }
   .container.itemslist {
     margin-top: 50px;
-    padding-left: 95px;
   }
   .container.itemslist .article--list .itemslist__item {
     border-radius: 20px;
@@ -9812,11 +9814,11 @@ button.close {
   }
   .container.itemslist .article--list .itemslist__item .itemslist__item__image {
     border-radius: 20px 0 0 20px;
-    height: 173px;
+    height: 173px !important;
     margin-left: 0px;
-    max-width: 173px;
+    max-width: 173px !important;
     position: absolute !important;
-    width: 173px;
+    width: 173px !important;
   }
   .container.itemslist .article--list .itemslist__item .itemslist__item__content {
     padding-left: 254px;
@@ -9968,10 +9970,13 @@ button.close {
   }
   .itemslist {
     margin-top: 50px;
-    padding-left: 95px;
   }
   .itemslist.itemslist--extra-content .itemslist__item {
     position: relative;
+  }
+  .itemslist.itemslist--extra-content .itemslist__item .itemslist__item__image {
+    height: 173px !important;
+    max-width: 173px !important;
   }
   .itemslist.itemslist--extra-content .itemslist__item .itemslist__item__content {
     padding-top: 29px !important;
@@ -9982,7 +9987,7 @@ button.close {
   .itemslist .article--list .itemslist__item {
     border-radius: 20px;
     padding: 0px;
-    height: 173px;
+    height: 173px !important;
     margin-top: 24px;
     position: relative;
   }
@@ -10022,6 +10027,18 @@ button.close {
 }
 .itemslist.itemslist--content {
   padding-top: 33.5px;
+}
+.itemslist.itemslist--extra-content .itemslist__item {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding-right: 20px;
+}
+.itemslist.itemslist--extra-content .itemslist__item .itemslist__item__image {
+  height: 300px;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 100%;
 }
 .itemslist.itemslist--extra-content .itemslist__item .itemslist__item__link {
   right: 25px;
@@ -10083,6 +10100,7 @@ button.close {
 .itemslist .itemslist__item .itemslist__item__content .itemslist__item__title.extra-content {
   border: 0px;
   font-size: 24px;
+  font-weight: bold;
   padding-left: 0px;
   padding-bottom: 10px;
 }
@@ -10291,6 +10309,19 @@ button.close {
   font-weight: bold;
   line-height: 6pt;
   padding: 0px;
+}
+.varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__phone,
+.varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__mail {
+  clear: left;
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  padding-left: 3px;
+  text-decoration: none;
+}
+.varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__phone:hover,
+.varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__mail:hover {
+  color: #008095;
 }
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list {
   clear: left;
@@ -10931,7 +10962,7 @@ button.close {
 }
 .content .content__image--extra-small {
   border-radius: 20px;
-  height: 180px;
+  height: 355px;
   margin-bottom: 20px;
   margin-top: 20px;
   padding: 9px 0 35.5px 0;
@@ -11997,6 +12028,7 @@ button.close {
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button .carousel-caption__button__text {
   float: left;
+  font-weight: bold;
   display: inline-block;
   line-height: 26.5px;
   padding-left: 13px;
@@ -12062,9 +12094,6 @@ button.close {
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item:active .item__overlay {
   opacity: .6;
-}
-.carousel-fade .carousel-inner .item {
-  transition-property: opacity;
 }
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
@@ -13673,6 +13702,7 @@ button.close {
 }
 .onepager .onepager__quote {
   background-color: #faf7d8;
+  border: none;
   height: 375px;
   margin: 0 0 0 0;
   padding: 10% 0;

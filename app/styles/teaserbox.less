@@ -62,6 +62,8 @@
 .container {
   &.container--teaserboxes {
     margin-bottom: -15px !important;
+    position: relative;
+    top: 20px;
   }
 }
 .teaserbox {
@@ -397,7 +399,7 @@
   &.teaserbox--news,
   &.teaserbox--story,
   &.teaserbox--news--grey {
-    background-color: #000;
+    background-color: @white;
     border-radius: 20px;
     margin-bottom: 36px * @retina-factor;
     margin-left: 0px;
