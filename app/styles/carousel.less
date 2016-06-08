@@ -57,6 +57,9 @@
           left: 50% !important;
           text-align: left;
           width: 100%;
+          &.other-direction {
+            padding-left: 20%;
+          }
           .carousel-caption__quote {
             margin: 0px;
             padding: 0px !important;
@@ -148,6 +151,9 @@
         .container--carousel__slides__item {
           .carousel-caption {
             left: 18% !important;
+            &.other-direction {
+              padding-left: 20%;
+            }
             .carousel-caption__text {
               text-align: left !important;
               width: 50% !important;
@@ -213,6 +219,7 @@
   //margin-right: -15px;
   padding-bottom: 57px;
   &.container--onepager {
+    margin-bottom: -57px;
     &.container--carousel-detail {
       .container--carousel__slides {
         .container--carousel__slides__item {
@@ -459,7 +466,7 @@
 .carousel-fade {
   .carousel-inner {
     .item {
-      //transition-property: opacity;
+      transition-property: opacity;
     }
 
     .item,
