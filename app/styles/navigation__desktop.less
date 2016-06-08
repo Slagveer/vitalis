@@ -36,11 +36,19 @@
                   padding: 5px;
                   .dropdown-menu__form {
                     width: 300px;
-                    .form-control {
-                      border-right: none;
-                    }
-                    .btn {
-                      border-left: none
+                    .input-group {
+                      border: 1px solid @light-grey;
+                      .form-control {
+                        border: none;
+                        border-right: none;
+                        font-family: @font-family-heart;
+                      }
+                      .btn {
+                        border: none;
+                        border-left: none;
+                        height: 42px;
+                        width: 43px;
+                      }
                     }
                   }
                 }
@@ -54,7 +62,7 @@
                 position: relative;
                 .dropdown-menu__search {
                   position: absolute;
-                  right: 11px;
+                  right: -42px;
                   top: -60px;
                 }
               }
@@ -562,7 +570,7 @@
       flex-shrink: 0;
       order: 4;
       padding: 0px 20px 0 0;
-      right: 20px;
+      right: 0px;
       top: 0px;
       width: 178px;//2 * (@navbar-height + @navbar-margin-bottom/2);
       .navigation__button__image {

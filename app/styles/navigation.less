@@ -21,7 +21,7 @@
       padding-left: 0px;
       padding-right: 0px;
       .navbar-header {
-        border-bottom: 1px solid @light-grey;
+        border-bottom: 0px solid @light-grey;
         float: none;
         &.flex {
           display: block;
@@ -36,6 +36,7 @@
             min-width: 203px * @retina-factor;
             opacity: 1;
             .navigation__button__image {
+              left: 1px;
               max-width: 175px * @retina-factor;
               top: 11px;
               z-index: 1 !important;
@@ -61,7 +62,7 @@
           padding-bottom: 15px * @retina-factor;
           padding-top: 15px * @retina-factor;
           background: none;
-          border-width: 0;
+          //border-width: 0;
           float: right;
           font-size: 16px;
           line-height: @body-line-height * @retina-factor;
@@ -185,7 +186,8 @@
     }
     .navigation__menu__form {
       background: none;
-      border-width: 0;
+      border: 1px solid @light-grey;
+      //border-width: 0;
       float: right;
       font-size: @body * @retina-factor;
       line-height: @body-line-height * @retina-factor;
@@ -196,13 +198,17 @@
       width: 50%;
       .form-control {
         border-radius: 0px;
+        border: none;
         box-shadow: none;
+        font-family: @font-family-heart;
         font-size: 16px;
       }
       .btn {
+        border: none;
         border-left: none;
         border-radius: 0px !important;
         height: 43px;
+        width: 43px;
       }
     }
     .navigation__menu__item {
@@ -425,7 +431,8 @@
       flex-shrink: 0;
       order: 4;
       padding: 0px 20px * @retina-factor 0 0;
-      right: 20px * @retina-factor;
+      position: relative;
+      right: -6px;//20px * @retina-factor;
       top: 0px;
       width: 178px * @retina-factor;//2 * (@navbar-height + @navbar-margin-bottom/2);
       .navigation__button__image {
