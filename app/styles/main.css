@@ -10293,7 +10293,7 @@ button.close {
 }
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content {
   flex-grow: 5;
-  height: 90px;
+  height: auto;
   padding-left: 14px;
   position: relative;
 }
@@ -10341,6 +10341,7 @@ button.close {
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list .varietylist__item__list__description {
   float: left;
   margin-left: 25px;
+  word-break: break-all;
 }
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list .varietylist__item__list__title {
   clear: left;
@@ -11424,6 +11425,7 @@ button.close {
   .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info,
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info {
     padding-top: 10px;
+    display: flex !important;
   }
   .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country,
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country,
@@ -11431,6 +11433,10 @@ button.close {
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone,
   .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail,
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     clear: none;
     font-size: 9px;
     line-height: 40px;
@@ -11609,6 +11615,36 @@ button.close {
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info {
   font-size: 10.5px;
   padding-left: 15px;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info:nth-child(2),
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info:nth-child(2) {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info:nth-child(2) .country,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info:nth-child(2) .country {
+  flex: 3;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info:nth-child(2) .phone,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info:nth-child(2) .phone {
+  flex: 1;
+  padding-bottom: 5px;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info:nth-child(2) .mail,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info:nth-child(2) .mail {
+  flex: 4;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info:nth-child(2) .copyright,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info:nth-child(2) .copyright {
+  flex: 0;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info:nth-child(2) .mail .icon,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info:nth-child(2) .mail .icon,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info:nth-child(2) .phone .icon,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info:nth-child(2) .phone .icon {
+  height: 20px;
+  top: 9px;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .country,
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country,
@@ -11904,6 +11940,7 @@ button.close {
   .container--carousel .carousel .thumbnail-controls .container .container--carousel__thumbnails .container--carousel__thumbnails__item:nth-child(1) .item__image img,
   .container--carousel .carousel .thumbnail-controls .container-fluid .container--carousel__thumbnails .container--carousel__thumbnails__item:nth-child(1) .item__image img {
     border-radius: 20px 0 0 0;
+    top: 0px !important;
   }
   .container--carousel .carousel .thumbnail-controls .container .container--carousel__thumbnails .container--carousel__thumbnails__item:nth-child(3) .item__overlay,
   .container--carousel .carousel .thumbnail-controls .container-fluid .container--carousel__thumbnails .container--carousel__thumbnails__item:nth-child(3) .item__overlay {
@@ -11912,6 +11949,7 @@ button.close {
   .container--carousel .carousel .thumbnail-controls .container .container--carousel__thumbnails .container--carousel__thumbnails__item:nth-child(3) .item__image img,
   .container--carousel .carousel .thumbnail-controls .container-fluid .container--carousel__thumbnails .container--carousel__thumbnails__item:nth-child(3) .item__image img {
     border-radius: 0 20px 0 0;
+    top: 0px !important;
   }
 }
 .container--carousel {
