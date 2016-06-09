@@ -9678,7 +9678,7 @@ button.close {
 }
 .teaserbox.teaserbox--story .teaserbox__description .teaserbox__description__title {
   color: #ffffff;
-  font-style: italic;
+  font-style: normal;
 }
 .teaserbox.teaserbox--story .teaserbox__description .teaserbox__description__label {
   border-color: #ffffff;
@@ -10542,6 +10542,9 @@ button.close {
     height: 260px !important;
   }
 }
+.variety-detail.onepager .variety-detail__header {
+  padding-top: 50px;
+}
 .variety-detail .variety-detail__image {
   width: 100%;
   height: 219.5px;
@@ -10572,7 +10575,7 @@ button.close {
   font-weight: bold;
   margin-top: 15px;
   padding-left: 13px;
-  padding-top: 27.5px;
+  padding-top: 0px;
 }
 .variety-detail .variety-detail__header .variety-detail__description {
   font-family: 'Open Sans', sans-serif;
@@ -11473,6 +11476,7 @@ button.close {
   .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info,
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info {
     padding-top: 10px;
+    display: flex !important;
   }
   .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country,
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country,
@@ -11480,6 +11484,10 @@ button.close {
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone,
   .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail,
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     clear: none;
     font-size: 9px;
     line-height: 40px;
